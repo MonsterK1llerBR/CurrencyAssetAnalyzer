@@ -2,9 +2,9 @@
 
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
+using System.Globalization;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
@@ -26,7 +26,33 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Currency Asset Analyzer";
 
         private const string VERSION =
-            "7.4.0";
+            "7.3.2";
+
+        /*
+         * ============================================================
+         * CONFIGURAÇÃO DO REPOSITÓRIO
+         * ============================================================
+         *
+         * Este é o diretório local do repositório GitHub.
+         *
+         * O Analyzer copiará automaticamente os relatórios gerados
+         * pelo jogo para:
+         *
+         * Reports\MoneyPack
+         *
+         * dentro deste diretório.
+         */
+        private const string RepositoryRoot =
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer";
+
+        private const string RepositoryMoneyPackDirectory =
+            "Reports\\MoneyPack";
+
+        /*
+         * ============================================================
+         * ESTADO DO PLUGIN
+         * ============================================================
+         */
 
         private static CurrencyAssetAnalyzer Instance;
 
@@ -38,12 +64,23 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         private static string ReportDirectory;
         private static string MoneyPackDirectory;
 
+        private static string RepositoryReportDirectory;
+
+        /*
+         * ============================================================
+         * LOAD
+         * ============================================================
+         */
+
         public override void Load()
         {
             Instance = this;
 
             try
             {
+                /*
+                 * Diretório utilizado pelo Analyzer dentro do jogo.
+                 */
                 ReportDirectory = Path.Combine(
                     Paths.PluginPath,
                     "CurrencyAssetAnalyzer",
@@ -55,31 +92,108 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "MoneyPack"
                 );
 
-                Directory.CreateDirectory(ReportDirectory);
-                Directory.CreateDirectory(MoneyPackDirectory);
+                /*
+                 * Diretório do repositório GitHub.
+                 */
+                RepositoryReportDirectory = Path.Combine(
+                    RepositoryRoot,
+                    RepositoryMoneyPackDirectory
+                );
 
-                Log.LogInfo("========================================");
-                Log.LogInfo("Currency Asset Analyzer v7.4.0");
-                Log.LogInfo("========================================");
+                /*
+                 * Cria os diretórios necessários.
+                 */
+                Directory.CreateDirectory(
+                    ReportDirectory
+                );
+
+                Directory.CreateDirectory(
+                    MoneyPackDirectory
+                );
+
+                /*
+                 * Tenta criar o diretório do repositório.
+                 *
+                 * Caso o projeto não esteja disponível neste computador,
+                 * o Analyzer continua funcionando normalmente.
+                 */
+                try
+                {
+                    Directory.CreateDirectory(
+                        RepositoryReportDirectory
+                    );
+                }
+                catch (Exception repositoryException)
+                {
+                    Log.LogWarning(
+                        "Não foi possível preparar o diretório do repositório: " +
+                        repositoryException.Message
+                    );
+                }
+
+                Log.LogInfo(
+                    "========================================"
+                );
+
+                Log.LogInfo(
+                    "Currency Asset Analyzer v7.3.2"
+                );
+
+                Log.LogInfo(
+                    "========================================"
+                );
+
                 Log.LogInfo(
                     "Modo: engenharia reversa exclusiva de MoneyPack."
                 );
+
                 Log.LogInfo(
                     "Scan global de GameObjects: DESATIVADO."
                 );
+
                 Log.LogInfo(
                     "Análise de componentes físicos: via reflexão."
                 );
+
                 Log.LogInfo(
-                    "Análise UV/Mesh: ATIVADA."
-                );
-                Log.LogInfo(
-                    "Objetivo: identificar regiões UV das texturas."
-                );
-                Log.LogInfo(
-                    "Relatórios: " + ReportDirectory
+                    "Relatórios: " +
+                    ReportDirectory
                 );
 
+                Log.LogInfo(
+                    "Sincronização GitHub: ATIVADA."
+                );
+
+                Log.LogInfo(
+                    "Destino GitHub: " +
+                    RepositoryReportDirectory
+                );
+
+                /*
+                 * Verifica se o repositório existe.
+                 */
+                if (Directory.Exists(RepositoryRoot))
+                {
+                    Log.LogInfo(
+                        "Repositório local encontrado."
+                    );
+                }
+                else
+                {
+                    Log.LogWarning(
+                        "Repositório local não encontrado: " +
+                        RepositoryRoot
+                    );
+
+                    Log.LogWarning(
+                        "O Analyzer continuará funcionando, mas os relatórios " +
+                        "não serão sincronizados com o GitHub."
+                    );
+                }
+
+                /*
+                 * Aplica o patch.
+                 */
                 PatchSpawnMoney();
             }
             catch (Exception ex)
@@ -90,6 +204,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
             }
         }
+
+        /*
+         * ============================================================
+         * PATCH SPAWN MONEY
+         * ============================================================
+         */
 
         private void PatchSpawnMoney()
         {
@@ -113,7 +233,9 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 MethodInfo spawnMoney =
-                    FindSpawnMoneyMethod(managerType);
+                    FindSpawnMoneyMethod(
+                        managerType
+                    );
 
                 if (spawnMoney == null)
                 {
@@ -169,6 +291,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * TYPE FINDER
+         * ============================================================
+         */
+
         private static Type FindType(
             string typeName
         )
@@ -176,7 +304,9 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             try
             {
                 Type type =
-                    AccessTools.TypeByName(typeName);
+                    AccessTools.TypeByName(
+                        typeName
+                    );
 
                 if (type != null)
                     return type;
@@ -193,7 +323,9 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 try
                 {
                     Type type =
-                        assemblies[i].GetType(typeName);
+                        assemblies[i].GetType(
+                            typeName
+                        );
 
                     if (type != null)
                         return type;
@@ -205,6 +337,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             return null;
         }
+
+        /*
+         * ============================================================
+         * FIND SPAWN MONEY
+         * ============================================================
+         */
 
         private static MethodInfo FindSpawnMoneyMethod(
             Type managerType
@@ -220,11 +358,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         BindingFlags.NonPublic
                     );
 
-                for (
-                    int i = 0;
-                    i < methods.Length;
-                    i++
-                )
+                for (int i = 0; i < methods.Length; i++)
                 {
                     MethodInfo method =
                         methods[i];
@@ -258,6 +392,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
+        /*
+         * ============================================================
+         * SPAWN MONEY POSTFIX
+         * ============================================================
+         */
+
         private static void SpawnMoneyPostfix(
             object moneyPack,
             bool isCoin
@@ -287,6 +427,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 }
             }
         }
+
+        /*
+         * ============================================================
+         * MONEY PACK ANALYSIS
+         * ============================================================
+         */
 
         private static void AnalyzeMoneyPack(
             object moneyPack,
@@ -355,6 +501,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * READ VALUE
+         * ============================================================
+         */
+
         private static float ReadMoneyPackValue(
             object moneyPack
         )
@@ -419,6 +571,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return -1f;
         }
 
+        /*
+         * ============================================================
+         * READ GAMEOBJECT
+         * ============================================================
+         */
+
         private static GameObject ReadMoneyPackGameObject(
             object moneyPack
         )
@@ -458,6 +616,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
+        /*
+         * ============================================================
+         * HIERARCHY ANALYSIS
+         * ============================================================
+         */
+
         private static void AnalyzeHierarchy(
             GameObject root,
             bool isCoin,
@@ -494,12 +658,18 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         fileName
                     );
 
+                /*
+                 * ====================================================
+                 * CRIAÇÃO DO RELATÓRIO
+                 * ====================================================
+                 */
+
                 using (
                     StreamWriter writer =
-                        new StreamWriter(
-                            path,
-                            false
-                        )
+                    new StreamWriter(
+                        path,
+                        false
+                    )
                 )
                 {
                     writer.WriteLine(
@@ -507,7 +677,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "CURRENCY ASSET ANALYZER v7.4.0"
+                        "CURRENCY ASSET ANALYZER v7.3.2"
                     );
 
                     writer.WriteLine(
@@ -584,6 +754,21 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "Relatório MoneyPack salvo: " +
                     path
                 );
+
+                /*
+                 * ====================================================
+                 * SINCRONIZAÇÃO AUTOMÁTICA
+                 * ====================================================
+                 *
+                 * Depois que o relatório é salvo no diretório do jogo,
+                 * copiamos automaticamente o arquivo para o repositório
+                 * local do GitHub.
+                 */
+
+                SyncReportToRepository(
+                    path,
+                    fileName
+                );
             }
             catch (Exception ex)
             {
@@ -593,6 +778,132 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
             }
         }
+
+        /*
+         * ============================================================
+         * SYNC REPORT TO GITHUB REPOSITORY
+         * ============================================================
+         */
+
+        private static void SyncReportToRepository(
+            string sourcePath,
+            string fileName
+        )
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(
+                    RepositoryReportDirectory
+                ))
+                {
+                    Instance.Log.LogWarning(
+                        "Diretório do repositório não configurado."
+                    );
+
+                    return;
+                }
+
+                if (!Directory.Exists(
+                    RepositoryRoot
+                ))
+                {
+                    Instance.Log.LogWarning(
+                        "Repositório local não encontrado. " +
+                        "Relatório não sincronizado."
+                    );
+
+                    Instance.Log.LogWarning(
+                        "Esperado em: " +
+                        RepositoryRoot
+                    );
+
+                    return;
+                }
+
+                if (!File.Exists(
+                    sourcePath
+                ))
+                {
+                    Instance.Log.LogWarning(
+                        "Relatório de origem não encontrado: " +
+                        sourcePath
+                    );
+
+                    return;
+                }
+
+                /*
+                 * Garante que Reports\MoneyPack exista.
+                 */
+                Directory.CreateDirectory(
+                    RepositoryReportDirectory
+                );
+
+                string destinationPath =
+                    Path.Combine(
+                        RepositoryReportDirectory,
+                        fileName
+                    );
+
+                /*
+                 * Sobrescreve automaticamente o relatório anterior.
+                 */
+                File.Copy(
+                    sourcePath,
+                    destinationPath,
+                    true
+                );
+
+                FileInfo sourceInfo =
+                    new FileInfo(
+                        sourcePath
+                    );
+
+                FileInfo destinationInfo =
+                    new FileInfo(
+                        destinationPath
+                    );
+
+                Instance.Log.LogInfo(
+                    "Relatório sincronizado com o repositório:"
+                );
+
+                Instance.Log.LogInfo(
+                    "  Origem: " +
+                    sourcePath
+                );
+
+                Instance.Log.LogInfo(
+                    "  Destino: " +
+                    destinationPath
+                );
+
+                Instance.Log.LogInfo(
+                    "  Tamanho: " +
+                    destinationInfo.Length +
+                    " bytes"
+                );
+            }
+            catch (Exception ex)
+            {
+                /*
+                 * Falha na sincronização NÃO interrompe o Analyzer.
+                 *
+                 * O relatório original já foi salvo no diretório
+                 * do jogo e continua disponível.
+                 */
+                Instance.Log.LogError(
+                    "Erro sincronizando relatório com o repositório: " +
+                    ex
+                );
+            }
+        }
+
+        /*
+         * ============================================================
+         * TRANSFORM ANALYSIS
+         * ============================================================
+         */
 
         private static void AnalyzeTransform(
             Transform transform,
@@ -676,6 +987,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * COMPONENT ANALYSIS
+         * ============================================================
+         */
+
         private static void AnalyzeComponentsByReflection(
             GameObject gameObject,
             string indent,
@@ -758,6 +1075,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * GET COMPONENTS SAFELY
+         * ============================================================
+         */
+
         private static Component[] GetAllComponentsSafely(
             GameObject gameObject
         )
@@ -776,6 +1099,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             return new Component[0];
         }
+
+        /*
+         * ============================================================
+         * RENDERER ANALYSIS
+         * ============================================================
+         */
 
         private static void AnalyzeRenderer(
             GameObject gameObject,
@@ -940,6 +1269,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * TEXTURE PROPERTY
+         * ============================================================
+         */
+
         private static void AnalyzeTextureProperty(
             Material material,
             string property,
@@ -949,8 +1284,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         {
             try
             {
-                if (!material.HasProperty(property))
+                if (!material.HasProperty(
+                    property
+                ))
+                {
                     return;
+                }
 
                 Texture texture =
                     material.GetTexture(
@@ -987,6 +1326,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             {
             }
         }
+
+        /*
+         * ============================================================
+         * MESH FILTER
+         * ============================================================
+         */
 
         private static void AnalyzeMeshFilter(
             GameObject gameObject,
@@ -1073,12 +1418,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         "SubMeshes: " +
                         mesh.subMeshCount
                     );
-
-                    AnalyzeMeshUV(
-                        mesh,
-                        indent,
-                        writer
-                    );
                 }
             }
             catch (Exception ex)
@@ -1091,412 +1430,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        private static void AnalyzeMeshUV(
-            Mesh mesh,
-            string indent,
-            StreamWriter writer
-        )
-        {
-            try
-            {
-                writer.WriteLine();
-
-                writer.WriteLine(
-                    indent +
-                    "UV ANALYSIS"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "--------------------------------"
-                );
-
-                Vector2[] uv =
-                    mesh.uv;
-
-                if (
-                    uv == null ||
-                    uv.Length == 0
-                )
-                {
-                    writer.WriteLine(
-                        indent +
-                        "UV0: NONE"
-                    );
-
-                    return;
-                }
-
-                writer.WriteLine(
-                    indent +
-                    "UV0 Count: " +
-                    uv.Length
-                );
-
-                float minX =
-                    float.MaxValue;
-
-                float maxX =
-                    float.MinValue;
-
-                float minY =
-                    float.MaxValue;
-
-                float maxY =
-                    float.MinValue;
-
-                for (
-                    int i = 0;
-                    i < uv.Length;
-                    i++
-                )
-                {
-                    Vector2 value =
-                        uv[i];
-
-                    if (value.x < minX)
-                        minX = value.x;
-
-                    if (value.x > maxX)
-                        maxX = value.x;
-
-                    if (value.y < minY)
-                        minY = value.y;
-
-                    if (value.y > maxY)
-                        maxY = value.y;
-                }
-
-                writer.WriteLine(
-                    indent +
-                    "UV0 Bounds:"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "  MinX: " +
-                    FormatFloat(minX)
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "  MaxX: " +
-                    FormatFloat(maxX)
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "  MinY: " +
-                    FormatFloat(minY)
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "  MaxY: " +
-                    FormatFloat(maxY)
-                );
-
-                writer.WriteLine();
-
-                writer.WriteLine(
-                    indent +
-                    "UV0 VERTICES"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "--------------------------------"
-                );
-
-                for (
-                    int i = 0;
-                    i < uv.Length;
-                    i++
-                )
-                {
-                    writer.WriteLine(
-                        indent +
-                        "Vertex[" +
-                        i +
-                        "] = (" +
-                        FormatFloat(uv[i].x) +
-                        ", " +
-                        FormatFloat(uv[i].y) +
-                        ")"
-                    );
-                }
-
-                writer.WriteLine();
-
-                AnalyzeSubMeshes(
-                    mesh,
-                    uv,
-                    indent,
-                    writer
-                );
-            }
-            catch (Exception ex)
-            {
-                writer.WriteLine(
-                    indent +
-                    "[ERRO UV] " +
-                    ex
-                );
-            }
-        }
-
-        private static void AnalyzeSubMeshes(
-            Mesh mesh,
-            Vector2[] uv,
-            string indent,
-            StreamWriter writer
-        )
-        {
-            try
-            {
-                writer.WriteLine(
-                    indent +
-                    "SUBMESH UV ANALYSIS"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "--------------------------------"
-                );
-
-                for (
-                    int subMeshIndex = 0;
-                    subMeshIndex < mesh.subMeshCount;
-                    subMeshIndex++
-                )
-                {
-                    int[] indices;
-
-                    try
-                    {
-                        indices =
-                            mesh.GetIndices(
-                                subMeshIndex
-                            );
-                    }
-                    catch (Exception ex)
-                    {
-                        writer.WriteLine(
-                            indent +
-                            "SubMesh #" +
-                            (subMeshIndex + 1) +
-                            ": ERRO AO LER INDICES: " +
-                            ex.Message
-                        );
-
-                        continue;
-                    }
-
-                    writer.WriteLine(
-                        indent +
-                        "SubMesh #" +
-                        (subMeshIndex + 1)
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "Index Count: " +
-                        (
-                            indices == null
-                                ? 0
-                                : indices.Length
-                        )
-                    );
-
-                    if (
-                        indices == null ||
-                        indices.Length == 0
-                    )
-                    {
-                        writer.WriteLine();
-                        continue;
-                    }
-
-                    float minX =
-                        float.MaxValue;
-
-                    float maxX =
-                        float.MinValue;
-
-                    float minY =
-                        float.MaxValue;
-
-                    float maxY =
-                        float.MinValue;
-
-                    HashSet<int> uniqueVertices =
-                        new HashSet<int>();
-
-                    for (
-                        int i = 0;
-                        i < indices.Length;
-                        i++
-                    )
-                    {
-                        int vertexIndex =
-                            indices[i];
-
-                        if (
-                            vertexIndex < 0 ||
-                            vertexIndex >= uv.Length
-                        )
-                        {
-                            continue;
-                        }
-
-                        uniqueVertices.Add(
-                            vertexIndex
-                        );
-
-                        Vector2 value =
-                            uv[vertexIndex];
-
-                        if (value.x < minX)
-                            minX = value.x;
-
-                        if (value.x > maxX)
-                            maxX = value.x;
-
-                        if (value.y < minY)
-                            minY = value.y;
-
-                        if (value.y > maxY)
-                            maxY = value.y;
-                    }
-
-                    writer.WriteLine(
-                        indent +
-                        "Unique Vertices: " +
-                        uniqueVertices.Count
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "UV Bounds:"
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "  MinX: " +
-                        FormatFloat(minX)
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "  MaxX: " +
-                        FormatFloat(maxX)
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "  MinY: " +
-                        FormatFloat(minY)
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "  MaxY: " +
-                        FormatFloat(maxY)
-                    );
-
-                    writer.WriteLine();
-
-                    writer.WriteLine(
-                        indent +
-                        "Vertices usados:"
-                    );
-
-                    int counter = 0;
-
-                    foreach (
-                        int vertexIndex
-                        in uniqueVertices
-                    )
-                    {
-                        writer.WriteLine(
-                            indent +
-                            "  Vertex[" +
-                            vertexIndex +
-                            "] = (" +
-                            FormatFloat(
-                                uv[vertexIndex].x
-                            ) +
-                            ", " +
-                            FormatFloat(
-                                uv[vertexIndex].y
-                            ) +
-                            ")"
-                        );
-
-                        counter++;
-
-                        if (counter >= 500)
-                        {
-                            writer.WriteLine(
-                                indent +
-                                "  [LISTA LIMITADA A 500 VERTICES]"
-                            );
-
-                            break;
-                        }
-                    }
-
-                    writer.WriteLine();
-
-                    writer.WriteLine(
-                        indent +
-                        "Indices:"
-                    );
-
-                    int indexLimit =
-                        Math.Min(
-                            indices.Length,
-                            1000
-                        );
-
-                    for (
-                        int i = 0;
-                        i < indexLimit;
-                        i++
-                    )
-                    {
-                        writer.WriteLine(
-                            indent +
-                            "  [" +
-                            i +
-                            "] = " +
-                            indices[i]
-                        );
-                    }
-
-                    if (
-                        indices.Length >
-                        indexLimit
-                    )
-                    {
-                        writer.WriteLine(
-                            indent +
-                            "  [LISTA LIMITADA A 1000 INDICES]"
-                        );
-                    }
-
-                    writer.WriteLine();
-                }
-            }
-            catch (Exception ex)
-            {
-                writer.WriteLine(
-                    indent +
-                    "[ERRO SUBMESH] " +
-                    ex
-                );
-            }
-        }
+        /*
+         * ============================================================
+         * PHYSICS COMPONENTS
+         * ============================================================
+         */
 
         private static void AnalyzePhysicsComponents(
             GameObject gameObject,
@@ -1599,6 +1537,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * COMPONENT PROPERTIES
+         * ============================================================
+         */
+
         private static void DumpComponentProperties(
             Component component,
             string indent,
@@ -1669,6 +1613,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * RELATIVE PATH
+         * ============================================================
+         */
+
         private static string GetRelativePath(
             Transform current,
             Transform root
@@ -1707,6 +1657,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        /*
+         * ============================================================
+         * SANITIZE FILE NAME
+         * ============================================================
+         */
+
         private static string SanitizeFileName(
             string value
         )
@@ -1728,16 +1684,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
 
             return value;
-        }
-
-        private static string FormatFloat(
-            float value
-        )
-        {
-            return value.ToString(
-                "0.000000",
-                CultureInfo.InvariantCulture
-            );
         }
     }
 }

@@ -1,0 +1,402 @@
+========================================
+CURRENCY ASSET ANALYZER v7.3.2
+========================================
+Trigger: SpawnMoney
+Type: BILL
+MoneyPack: 50 Dollar Pack
+Value: 50
+InstanceID: -5548
+ActiveSelf: True
+ActiveInHierarchy: True
+
+HIERARQUIA
+----------------------------------------
+GameObject: 50 Dollar Pack
+Path: 50 Dollar Pack
+LocalPosition: (-0.10, 0.06, 0.17)
+LocalRotation: (0.00, 0.60, 0.00)
+LocalScale: (1.00, 1.00, 1.00)
+COMPONENTES
+--------------------------------
+Count: 5
+- UnityEngine.Transform
+- UnityEngine.Component
+- MoneyPack
+- UnityEngine.Component
+- UnityEngine.Component
+
+  GameObject: Visuals
+  Path: 50 Dollar Pack/Visuals
+  LocalPosition: (0.00, 0.00, 0.00)
+  LocalRotation: (0.00, 0.00, 0.00)
+  LocalScale: (1.00, 1.00, 1.00)
+  COMPONENTES
+  --------------------------------
+  Count: 1
+  - UnityEngine.Transform
+
+    GameObject: 50 Dollar Pack Variant
+    Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant
+    LocalPosition: (0.00, 0.00, 0.00)
+    LocalRotation: (270.00, 270.00, 0.00)
+    LocalScale: (0.87, 0.77, 0.87)
+    COMPONENTES
+    --------------------------------
+    Count: 1
+    - UnityEngine.Transform
+
+      GameObject: Paper Dollar Base
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base
+      LocalPosition: (0.00, 0.00, 0.00)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (1)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (1)
+      LocalPosition: (0.00, 0.00, 0.00)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (2)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (2)
+      LocalPosition: (0.00, 0.00, -0.01)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (3)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (3)
+      LocalPosition: (0.00, 0.00, -0.01)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (4)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (4)
+      LocalPosition: (0.00, 0.00, -0.02)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (5)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (5)
+      LocalPosition: (0.00, 0.00, -0.02)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (6)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (6)
+      LocalPosition: (0.00, 0.00, -0.02)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (7)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (7)
+      LocalPosition: (0.00, 0.00, -0.03)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+      GameObject: Paper Dollar Base (8)
+      Path: 50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (8)
+      LocalPosition: (0.00, 0.00, -0.03)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (2.00, 0.45, 2.00)
+      COMPONENTES
+      --------------------------------
+      Count: 4
+      - UnityEngine.Transform
+      - UnityEngine.Component
+      - UnityEngine.Component
+      - UnityEngine.Component
+
+      RENDERERS
+      --------------------------------
+      RENDERER #1
+      Type: UnityEngine.Renderer
+      Enabled: True
+      Materials: 1
+      MATERIAL #1
+      Name: 50$ Paper Front
+      Shader: Universal Render Pipeline/Lit
+      TEXTURE
+      Property: _BaseMap
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+      TEXTURE
+      Property: _MainTex
+      Name: 50_USD_Series_2004_Note_Front
+      Type: UnityEngine.Texture
+
+      MESH FILTER
+      --------------------------------
+      MeshFilter #1
+      Type: UnityEngine.MeshFilter
+      Mesh Name: 1_Dollar_Plane
+      Vertices: 24
+      SubMeshes: 2
+
+
+========================================
+FIM DO RELATÓRIO
+========================================

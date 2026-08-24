@@ -1,0 +1,733 @@
+========================================
+CURRENCY ASSET ANALYZER v7.3.2
+========================================
+Trigger: SpawnMoney
+Type: COIN
+MoneyPack: 1 Cent Pack
+Value: 0,01
+InstanceID: -5638
+ActiveSelf: True
+ActiveInHierarchy: True
+
+HIERARQUIA
+----------------------------------------
+GameObject: 1 Cent Pack
+Path: 1 Cent Pack
+LocalPosition: (0.16, 0.06, 0.28)
+LocalRotation: (0.00, 0.60, 0.00)
+LocalScale: (1.00, 1.00, 1.00)
+COMPONENTES
+--------------------------------
+Count: 5
+- UnityEngine.Transform
+- UnityEngine.Component
+- MoneyPack
+- UnityEngine.Component
+- UnityEngine.Component
+
+  GameObject: Visuals
+  Path: 1 Cent Pack/Visuals
+  LocalPosition: (0.00, 0.00, 0.00)
+  LocalRotation: (0.00, 0.00, 0.00)
+  LocalScale: (1.00, 1.00, 1.00)
+  COMPONENTES
+  --------------------------------
+  Count: 1
+  - UnityEngine.Transform
+
+    GameObject: 1 Cent Pack
+    Path: 1 Cent Pack/Visuals/1 Cent Pack
+    LocalPosition: (0.00, -0.04, 0.00)
+    LocalRotation: (270.00, 270.00, 0.00)
+    LocalScale: (0.87, 0.77, 0.87)
+    COMPONENTES
+    --------------------------------
+    Count: 1
+    - UnityEngine.Transform
+
+      GameObject: Coin_1_Cent
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent
+      LocalPosition: (0.00, 0.00, 0.00)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (0.86, 0.86, 0.90)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (1)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (1)
+      LocalPosition: (0.00, 0.01, 0.00)
+      LocalRotation: (341.50, 0.00, 234.98)
+      LocalScale: (0.87, 0.86, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (1)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (2)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (2)
+      LocalPosition: (-0.01, 0.00, 0.00)
+      LocalRotation: (351.73, 159.26, 139.87)
+      LocalScale: (0.87, 0.86, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (2)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (3)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (3)
+      LocalPosition: (0.01, 0.00, 0.00)
+      LocalRotation: (3.66, 204.43, 164.45)
+      LocalScale: (0.87, 0.86, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (3)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (4)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (4)
+      LocalPosition: (-0.01, 0.01, 0.00)
+      LocalRotation: (356.59, 351.85, 4.84)
+      LocalScale: (0.86, 0.86, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (4)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (5)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (5)
+      LocalPosition: (0.01, -0.01, 0.00)
+      LocalRotation: (0.00, 0.00, 0.00)
+      LocalScale: (0.86, 0.86, 0.90)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (5)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (6)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (6)
+      LocalPosition: (0.02, -0.01, 0.00)
+      LocalRotation: (0.83, 202.31, 272.51)
+      LocalScale: (0.86, 0.87, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (6)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (7)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (7)
+      LocalPosition: (-0.01, -0.01, 0.00)
+      LocalRotation: (355.76, 355.81, 351.57)
+      LocalScale: (0.86, 0.86, 0.90)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (7)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (8)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (8)
+      LocalPosition: (0.00, -0.02, 0.00)
+      LocalRotation: (332.82, 182.84, 46.42)
+      LocalScale: (0.87, 0.87, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (8)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (9)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (9)
+      LocalPosition: (-0.01, -0.02, 0.00)
+      LocalRotation: (9.55, 341.12, 252.23)
+      LocalScale: (0.87, 0.87, 0.89)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (9)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+      GameObject: Coin_1_Cent (10)
+      Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (10)
+      LocalPosition: (0.00, -0.01, 0.01)
+      LocalRotation: (353.03, 181.32, 178.87)
+      LocalScale: (0.86, 0.86, 0.90)
+      COMPONENTES
+      --------------------------------
+      Count: 2
+      - UnityEngine.Transform
+      - UnityEngine.Component
+
+        GameObject: SM_Coin_1_Cent
+        Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (10)/SM_Coin_1_Cent
+        LocalPosition: (0.00, 0.00, 0.00)
+        LocalRotation: (90.00, 0.00, 0.00)
+        LocalScale: (1.14, 1.14, 1.14)
+        COMPONENTES
+        --------------------------------
+        Count: 4
+        - UnityEngine.Transform
+        - UnityEngine.Component
+        - UnityEngine.Component
+        - UnityEngine.Component
+
+        RENDERERS
+        --------------------------------
+        RENDERER #1
+        Type: UnityEngine.Renderer
+        Enabled: True
+        Materials: 1
+        MATERIAL #1
+        Name: M_Money
+        Shader: Universal Render Pipeline/Lit
+        TEXTURE
+        Property: _BaseMap
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MainTex
+        Name: T_Money_AlbedoTransparency
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _BumpMap
+        Name: T_Money_Normal
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _MetallicGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+        TEXTURE
+        Property: _SpecGlossMap
+        Name: T_Money_SpecularSmoothness
+        Type: UnityEngine.Texture
+
+        MESH FILTER
+        --------------------------------
+        MeshFilter #1
+        Type: UnityEngine.MeshFilter
+        Mesh Name: SM_Coin_1_Cent
+        Vertices: 194
+        SubMeshes: 1
+
+
+========================================
+FIM DO RELATÓRIO
+========================================
