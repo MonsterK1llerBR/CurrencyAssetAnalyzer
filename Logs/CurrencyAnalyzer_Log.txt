@@ -1,0 +1,1095 @@
+﻿[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ANÁLISE DA CLASSE MONEYGENERATOR
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Classe encontrada: MoneyGenerator
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando SpawnMoney(float, Transform)...
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SpawnMoney encontrado: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parâmetros:
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]   value : System.Single
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]   parent : UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Análise inicial concluída.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando método MoneyGenerator.SpawnMoney(float, Transform)...
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Método alvo encontrado: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PatchAll executado com sucesso.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -64528
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64528
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant/SM_50_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant/SM_50_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/50 Dollar Variant/SM_50_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #2
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -64962
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64962
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #3
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -64976
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64976
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #4
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65002
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65002
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65024
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65024
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #6
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65046
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65046
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #7
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -64962
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #8
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -64976
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #9
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65514
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65514
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/5 Dollar Variant/SM_5_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65574
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65574
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/20 Dollar Variant/SM_20_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #11
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65640
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65640
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #12
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65688
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65688
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.44)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.60, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (0.79, 0.79, 0.81)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #13
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65702
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65702
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.44)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.60, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (0.79, 0.79, 0.81)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #14
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65746
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65746
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.41)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.63, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.10, 1.10, 1.10)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #15
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65788
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -65788
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.38)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.66, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.39, 1.39, 1.33)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #16
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -66174
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -66174
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.47)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.58, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.05, 1.05, 1.20)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #17
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -66218
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -66218
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.50)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.55, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (0.86, 0.86, 0.90)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent/SM_Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent/SM_Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_1_Cent/SM_Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #18
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65046
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #19
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65514
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65640
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #21
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65002
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #22
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -66400
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -66400
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (2.75, 1.65, 7.64)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (2.64, 0.89, -5.55)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.50000, -0.50000, -0.50000, -0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (2.00, 0.45, 2.00)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #23
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65788
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #24
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -67240
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67240
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.38)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.66, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.39, 1.39, 1.33)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -67292
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67292
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.38)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.66, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.39, 1.39, 1.33)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #26
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -67642
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67642
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.38)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.66, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.39, 1.39, 1.33)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #27
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -67668
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tipo: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67668
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Active: True
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Layer: 0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] TRANSFORM
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Position: (-2.30, 0.76, 4.38)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalPosition: (-0.66, 0.00, -0.42)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Rotation: (0.00000, -0.70711, -0.70711, 0.00000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalRotation: (-0.50000, -0.50000, -0.50000, 0.50000)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] LocalScale: (1.39, 1.39, 1.33)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ChildCount: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Transform | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | Money | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD COMPONENT | UnityEngine.Component | Path=---MANAGERS---/Checkout Manager/Checkout/Coin Change Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS E PROPRIEDADES DO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single m_Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | System.Single Value = System.Single | 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #28
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65702
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #29
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65024
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #30
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65640
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #31
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor solicitado: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Money InstanceID: -65002
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Este objeto já foi analisado anteriormente.

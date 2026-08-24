@@ -1,0 +1,907 @@
+﻿
+[Info   :   BepInEx] Loading [Currency Asset Analyzer 2.2.0]
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  CURRENCY ASSET ANALYZER v2.2
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Analyzer iniciado.
+[Info   :Currency Asset Analyzer] Modo: BepInEx IL2CPP
+[Info   :Currency Asset Analyzer] Aguardando SpawnMoney...
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MoneyGenerator encontrado: MoneyGenerator
+[Info   :Currency Asset Analyzer] MoneyGenerator encontrado: MoneyGenerator
+[Info   :Currency Asset Analyzer] SpawnMoney encontrado: MoneyGenerator.SpawnMoney
+[Info   :Currency Asset Analyzer] Assinatura: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   :Currency Asset Analyzer] Patch aplicado com sucesso.
+[Info   :Currency Asset Analyzer] Analyzer pronto.
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   : File Tree] |   |   |-- Unity.TextMeshPro.dll [993,28 KB]
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #1
+[Info   :Currency Asset Analyzer] Valor: 1
+[Info   :Currency Asset Analyzer] GameObject: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] InstanceID: -81198
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 
+Dollar Variant
+[Info   :Currency Asset Analyzer] InstanceID: -81198
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_1_Dollar
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change 
+Position/1 Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer]   InstanceID: -81204
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_1_Dollar
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 
+Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] InstanceID: -81210
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -81212
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_1_Dollar
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/1 
+Dollar Variant/SM_1_Dollar
+[Info   :Currency Asset Analyzer] Mesh: SM_1_Dollar
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 386440
+[Info   :Currency Asset Analyzer] Vertices: 24
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #5
+[Info   :Currency Asset Analyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] GameObject: Coin_25_Cents
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81334
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: Coin_25_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_25_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81334
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer]   InstanceID: -81340
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81346
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -81348
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_25_Cents/SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] Mesh: SM_Coin_25_Cents
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 61562
+[Info   :Currency Asset Analyzer] Vertices: 194
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: Coin_25_Cents
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #6
+[Info   :Currency Asset Analyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] GameObject: Coin_5_Cents
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81382
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: Coin_5_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_5_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81382
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer]   InstanceID: -81388
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81394
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -81396
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_5_Cents/SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] Mesh: SM_Coin_5_Cents
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 63080
+[Info   :Currency Asset Analyzer] Vertices: 194
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: Coin_5_Cents
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #7
+[Info   :Currency Asset Analyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] GameObject: Coin_10_Cents
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81406
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: Coin_10_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_10_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81406
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer]   InstanceID: -81412
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -81418
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -81420
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_10_Cents/SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] Mesh: SM_Coin_10_Cents
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 64114
+[Info   :Currency Asset Analyzer] Vertices: 194
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: Coin_10_Cents
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #10
+[Info   :Currency Asset Analyzer] Valor: 10
+[Info   :Currency Asset Analyzer] GameObject: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] InstanceID: -87058
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 
+Dollar Variant
+[Info   :Currency Asset Analyzer] InstanceID: -87058
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_10_Dollar
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change 
+Position/10 Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer]   InstanceID: -87064
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_10_Dollar
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 
+Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer] InstanceID: -87070
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -87072
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_10_Dollar
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Money Change Position/10 
+Dollar Variant/SM_10_Dollar
+[Info   :Currency Asset Analyzer] Mesh: SM_10_Dollar
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 385618
+[Info   :Currency Asset Analyzer] Vertices: 24
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  NOVO ASSET MONETÃRIO ENCONTRADO
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] SpawnMoney #12
+[Info   :Currency Asset Analyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] GameObject: Coin_50_Cents
+[Info   :Currency Asset Analyzer] Tipo retornado: Money
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ROOT GAMEOBJECT
+[Info   :Currency Asset Analyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -87566
+[Info   :Currency Asset Analyzer] Active: True
+[Info   :Currency Asset Analyzer] Layer: 0
+[Info   :Currency Asset Analyzer] Tag: Untagged
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] HIERARQUIA
+[Info   :Currency Asset Analyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] OBJECT: Coin_50_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_50_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -87566
+[Info   :Currency Asset Analyzer] Children: 1
+[Info   :Currency Asset Analyzer]   OBJECT: SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer]   Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer]   InstanceID: -87572
+[Info   :Currency Asset Analyzer]   Children: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  RENDERERS
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] Renderers encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] RENDERER #1
+[Info   :Currency Asset Analyzer] Tipo: UnityEngine.Renderer
+[Info   :Currency Asset Analyzer] GameObject: SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] InstanceID: -87578
+[Info   :Currency Asset Analyzer] Material count: 1
+[Info   :Currency Asset Analyzer] SharedMaterials: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer]   MATERIAL [0]
+[Info   :Currency Asset Analyzer]   Nome: M_Money (Instance)
+[Info   :Currency Asset Analyzer]   Tipo: UnityEngine.Material
+[Info   :Currency Asset Analyzer]   InstanceID: -87580
+[Info   :Currency Asset Analyzer]   Shader: Universal Render Pipeline/Lit
+[Info   :Currency Asset Analyzer]   Shader InstanceID: 414
+[Info   :Currency Asset Analyzer]   MainTexture: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]   Texture Type: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]   Texture InstanceID: 232060
+[Info   :Currency Asset Analyzer]   Shader Properties: 50
+[Info   :Currency Asset Analyzer]     PROPERTY [0] _WorkflowMode = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [1] _BaseMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [2] _BaseColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [3] _Cutoff = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [4] _Smoothness = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [5] _SmoothnessTextureChannel = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [6] _Metallic = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [7] _MetallicGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [8] _SpecColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [9] _SpecGlossMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_SpecularSmoothness
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232064
+[Info   :Currency Asset Analyzer]     PROPERTY [10] _SpecularHighlights = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [11] _EnvironmentReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [12] _BumpScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [13] _BumpMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_Normal
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232062
+[Info   :Currency Asset Analyzer]     PROPERTY [14] _Parallax = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [15] _ParallaxMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [16] _OcclusionStrength = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [17] _OcclusionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [18] _EmissionColor = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [19] _EmissionMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [20] _DetailMask = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [21] _DetailAlbedoMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [22] _DetailAlbedoMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [23] _DetailNormalMapScale = Range
+[Info   :Currency Asset Analyzer]     PROPERTY [24] _DetailNormalMap = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [25] _ClearCoatMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [26] _ClearCoatSmoothness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [27] _Surface = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [28] _Blend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [29] _Cull = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [30] _AlphaClip = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [31] _SrcBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [32] _DstBlend = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [33] _SrcBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [34] _DstBlendAlpha = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [35] _ZWrite = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [36] _BlendModePreserveSpecular = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [37] _AlphaToMask = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [38] _AddPrecomputedVelocity = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [39] _XRMotionVectorsPass = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [40] _ReceiveShadows = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [41] _QueueOffset = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [42] _MainTex = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: T_Money_AlbedoTransparency
+[Info   :Currency Asset Analyzer]       TYPE: UnityEngine.Texture
+[Info   :Currency Asset Analyzer]       ID: 232060
+[Info   :Currency Asset Analyzer]     PROPERTY [43] _Color = Color
+[Info   :Currency Asset Analyzer]     PROPERTY [44] _GlossMapScale = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [45] _Glossiness = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [46] _GlossyReflections = Float
+[Info   :Currency Asset Analyzer]     PROPERTY [47] unity_Lightmaps = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [48] unity_LightmapsInd = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer]     PROPERTY [49] unity_ShadowMasks = Texture
+[Info   :Currency Asset Analyzer]       TEXTURE: NULL
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  MESHES
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] MeshFilters encontrados: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] MESH FILTER: SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] Path: ---MANAGERS---/Checkout Manager/Checkout/Coin Change 
+Position/Coin_50_Cents/SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] Mesh: SM_Coin_50_Cents
+[Info   :Currency Asset Analyzer] Mesh Type: UnityEngine.Mesh
+[Info   :Currency Asset Analyzer] Mesh InstanceID: 63726
+[Info   :Currency Asset Analyzer] Vertices: 194
+[Info   :Currency Asset Analyzer] SubMeshes: 1
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] SkinnedMeshRenderers encontrados: 0
+[Info   :Currency Asset Analyzer] 
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer]  FIM DA ANÃLISE: Coin_50_Cents
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] 
+
+

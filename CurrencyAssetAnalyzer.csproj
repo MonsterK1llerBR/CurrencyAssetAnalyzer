@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+
+        <AssemblyName>CurrencyAssetAnalyzer</AssemblyName>
+        <RootNamespace>CurrencyAssetAnalyzer</RootNamespace>
+
+        <Product>Currency Asset Analyzer</Product>
+        <Description>Diagnostic tool for analyzing physical currency in Supermarket Simulator</Description>
+        <Version>0.1.0</Version>
+
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <Nullable>disable</Nullable>
+
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+    </PropertyGroup>
+
+    <ItemGroup>
+
+        <PackageReference
+            Include="BepInEx.Unity.IL2CPP"
+            Version="6.0.0-be.*"
+            IncludeAssets="compile" />
+
+        <PackageReference
+            Include="BepInEx.PluginInfoProps"
+            Version="2.*" />
+
+    </ItemGroup>
+
+    <ItemGroup>
+
+        <Reference Include="Assembly-CSharp">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\Assembly-CSharp.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\UnityEngine.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="Unity.TextMeshPro">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="UnityEngine.UI">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="Il2Cppmscorlib">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+        <Reference Include="BepInEx.Unity.IL2CPP">
+            <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+
+    </ItemGroup>
+
+    <Target Name="DeployToGame" AfterTargets="Build">
+
+        <MakeDir
+            Directories="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer" />
+
+        <Copy
+            SourceFiles="$(TargetPath)"
+            DestinationFolder="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer"
+            SkipUnchangedFiles="true" />
+
+        <Message
+            Text="=========================================="
+            Importance="high" />
+
+        <Message
+            Text="Currency Asset Analyzer compilado e copiado para o jogo!"
+            Importance="high" />
+
+        <Message
+            Text="Destino: Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer"
+            Importance="high" />
+
+        <Message
+            Text="=========================================="
+            Importance="high" />
+
+    </Target>
+
+</Project>

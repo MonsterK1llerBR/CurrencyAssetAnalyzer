@@ -1,0 +1,252 @@
+﻿[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void PrepareForCardSwipe(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void PlaceCreditCard(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_gamepadParent()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_gamepadParent(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_PosCam()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_PosCam(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_controllerPosCam()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_controllerPosCam(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_CurrentCard()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CurrentCard(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_gameObject()
+[Info   : File Tree] |   |   |-- Unity.RenderPipeline.Universal.ShaderLibrary.dll [11,78 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterRendererModule.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderRuntimeModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderVariantAnalyticsModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteMaskModule.dll [12,8 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteShapeModule.dll [10,24 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterRendererModule.dll [15,87 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderRuntimeModule.dll [14,85 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderVariantAnalyticsModule.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteMaskModule.dll [17,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteShapeModule.dll [20,99 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [16,9 KB]
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #2
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #3
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #4
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #6
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #7
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #8
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #9
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #11
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #12
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #13
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #14
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #15
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #16
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #17
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #18
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #19
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #21
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #22
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #23
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #24
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #26
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #27
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #28
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #29
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #30
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #31
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #32
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #33
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #34
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #35
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #36
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #37
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #38
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #39
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #40
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #41
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #42
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #43
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #44
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY

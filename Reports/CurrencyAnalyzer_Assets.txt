@@ -1,0 +1,145 @@
+﻿[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando SpawnMoney(float, Transform)...
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SpawnMoney encontrado: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando método MoneyGenerator.SpawnMoney(float, Transform)...
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Método alvo encontrado: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [16,9 KB]
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #2
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #3
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #4
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #6
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #7
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #8
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #9
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #11
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #12
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #13
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #14
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #15
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #16
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #17
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #18
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #19
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #21
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #22
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #23
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #24
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #26
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #27
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DOS FILHOS
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #28
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #29
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #30
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #31

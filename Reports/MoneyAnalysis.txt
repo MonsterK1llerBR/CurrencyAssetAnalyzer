@@ -1,0 +1,1965 @@
+﻿[Message: Preloader] BepInEx 6.0.0-be.785 - Supermarket Simulator (17/08/2026 15:56:06)
+[Message: Preloader] Built from commit 6abdba47eeebe08552282e7a58ef0f4a9ab60b62
+[Info   :   BepInEx] System platform: Windows 10 64-bit
+[Info   :   BepInEx] Process bitness: 64-bit (x64)
+[Info   :   BepInEx] Running under Unity 6000.3.6f1
+[Info   :   BepInEx] Runtime version: 6.0.7
+[Info   :   BepInEx] Runtime information: .NET 6.0.7
+[Info   :AssemblyPatcher] Loaded 1 patcher type from [BepInEx.SplashScreen.Patcher.BepInEx6 3.0.0.0]
+[Info   : Preloader] 1 patcher plugin loaded
+[Info   : Preloader] 1 assemblies discovered
+[Message:AssemblyPatcher] Executing 0 patch(es)
+[Message:   BepInEx] Chainloader initialized
+[Warning:Il2CppInterop] Class::Init signatures have been exhausted, using a substitute!
+[Info   :Il2CppInterop] Registered mono type Il2CppInterop.Runtime.DelegateSupport+Il2CppToMonoDelegateReference in il2cpp domain
+[Info   :   BepInEx] 5 plugins to load
+[Info   :   BepInEx] Loading [Brazilian Currency Format 1.0.0]
+[Info   :Brazilian Currency Format] [Debug] Procurando Extensions.ToMoneyText(float, float, float)...
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Currency Format] [Debug] ToMoneyText encontrado: System.String ToMoneyText(Single, Single, Single)
+[Info   :Brazilian Currency Format] [Debug] Procurando setter TMP_Text.text para diagnóstico...
+[Info   :Brazilian Currency Format] [Debug] TMP_Text.text setter encontrado: Void set_text(System.String)
+[Info   :Brazilian Currency Format] [Debug] Procurando classe PosTerminal...
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Currency Format] [Debug] Classe PosTerminal encontrada.
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_PosInteractedRemote(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_EnablePosInteraction()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_EnablePosInteraction(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SwitchNumpad(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SetGamepadValues(Boolean, Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Awake()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Start()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void ControllerInitialization()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SwitchGamePadParent(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppSystem.Collections.IEnumerator CheckKeyStroke()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void PrepareForCardSwipe(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SwipeCard()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void AddChar(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void RemoveCharacter()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Approve()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void PlaceCreditCard(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void RefreshTerminal()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void OnDestroy()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Checkout get_m_Checkout()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_Checkout(Checkout)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_gamepadParent()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_gamepadParent(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_PosCam()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_PosCam(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_controllerPosCam()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_controllerPosCam(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: TMPro.TMP_Text get_m_InputText()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_InputText(TMPro.TMP_Text)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: TMPro.TMP_InputField get_m_gamePadInput()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_gamePadInput(TMPro.TMP_InputField)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 get_m_MaxCharLimit()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_MaxCharLimit(Int32)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 get_m_MaxFloatingPointCharLimit()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_MaxFloatingPointCharLimit(Int32)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Transform get_m_CreditCardPlacedPosition()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CreditCardPlacedPosition(UnityEngine.Transform)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Transform get_m_CreditCardSwipeStartPosition()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CreditCardSwipeStartPosition(UnityEngine.Transform)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Transform get_m_CreditCardSwipeFinishPosition()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CreditCardSwipeFinishPosition(UnityEngine.Transform)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.UI.Button] get_m_Buttons()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_Buttons(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.UI.Button])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Single get_m_CreditCardPlacingAnimDuration()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CreditCardPlacingAnimDuration(Single)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Single get_m_Total()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_Total(Single)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_m_DeleteOnEdit()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_DeleteOnEdit(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_m_CurrentCard()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CurrentCard(UnityEngine.GameObject)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_m_CheckKeyInput()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CheckKeyInput(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_m_isGamepad()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_isGamepad(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: __Project__.Scripts.ControllerInputModule.GamePadUIPanel get_m_gamePadUIPanel()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_gamePadUIPanel(__Project__.Scripts.ControllerInputModule.GamePadUIPanel)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: NumpadSystem get_m_numpadUIPanel()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_numpadUIPanel(NumpadSystem)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_m_isPosInteracted()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_isPosInteracted(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppSystem.Threading.CancellationToken get_destroyCancellationToken()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void RaiseCancellation()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean IsInvoking()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void CancelInvoke()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Invoke(System.String, Single)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void InvokeRepeating(System.String, Single, Single)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void CancelInvoke(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean IsInvoking(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutine(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutine(System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutine(Il2CppSystem.Collections.IEnumerator)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutine_Auto(Il2CppSystem.Collections.IEnumerator)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopCoroutine(Il2CppSystem.Collections.IEnumerator)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopCoroutine(UnityEngine.Coroutine)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopCoroutine(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopAllCoroutines()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_useGUILayout()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_useGUILayout(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_didStart()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_didAwake()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutineManaged(System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Coroutine StartCoroutineManaged2(Il2CppSystem.Collections.IEnumerator)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopCoroutineManaged(UnityEngine.Coroutine)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void StopCoroutineFromEnumeratorManaged(Il2CppSystem.Collections.IEnumerator)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String GetScriptClassName()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void OnCancellationTokenCreated()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppSystem.Threading.CancellationTokenSource get_m_CancellationTokenSource()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CancellationTokenSource(Il2CppSystem.Threading.CancellationTokenSource)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_enabled()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_enabled(Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_isActiveAndEnabled()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Transform get_transform()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.GameObject get_gameObject()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponent(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponentFastPath(Il2CppSystem.Type, IntPtr)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T GetComponent[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean TryGetComponent(Il2CppSystem.Type, UnityEngine.Component ByRef)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean TryGetComponent[T](T ByRef)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponentInChildren(Il2CppSystem.Type, Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T GetComponentInChildren[T](Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T GetComponentInChildren[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase`1[T] GetComponentsInChildren[T](Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponentsInChildren[T](Boolean, Il2CppSystem.Collections.Generic.List`1[T])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase`1[T] GetComponentsInChildren[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponentsInChildren[T](Il2CppSystem.Collections.Generic.List`1[T])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponentInParent(Il2CppSystem.Type, Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T GetComponentInParent[T](Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T GetComponentInParent[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase`1[T] GetComponentsInParent[T](Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponentsInParent[T](Boolean, Il2CppSystem.Collections.Generic.List`1[T])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase`1[T] GetComponentsInParent[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponentsForListInternal(Il2CppSystem.Type, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponents(Il2CppSystem.Type, Il2CppSystem.Collections.Generic.List`1[UnityEngine.Component])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void GetComponents[T](Il2CppSystem.Collections.Generic.List`1[T])
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String get_tag()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_tag(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase`1[T] GetComponents[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean CompareTag(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessage(System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessage(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessage(System.String, Il2CppSystem.Object, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void BroadcastMessage(System.String, Il2CppSystem.Object, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponent(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponentInChildren(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.Component] GetComponentsInChildren(Il2CppSystem.Type, Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.Component] GetComponentsInChildren(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.Component GetComponentInParent(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.Component] GetComponentsInParent(Il2CppSystem.Type, Boolean)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.Component] GetComponentsInParent(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[UnityEngine.Component] GetComponents(Il2CppSystem.Type)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetComponentIndex()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessageUpwards(System.String, Il2CppSystem.Object, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessageUpwards(System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessageUpwards(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessageUpwards(System.String, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SendMessage(System.String, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void BroadcastMessage(System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void BroadcastMessage(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void BroadcastMessage(System.String, UnityEngine.SendMessageOptions)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String ToString()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String GetName()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void SetName(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void MarkDirty()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: IntPtr get_m_CachedPtr()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_m_CachedPtr(IntPtr)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.EntityId GetEntityId()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetInstanceID()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetHashCode()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean Equals(Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void EnsureRunningOnMainThread()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: IntPtr GetCachedPtr()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String get_name()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_name(System.String)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: UnityEngine.HideFlags get_hideFlags()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void set_hideFlags(UnityEngine.HideFlags)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Finalize()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppSystem.Type GetIl2CppType()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Il2CppSystem.Object MemberwiseClone()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void FieldGetter(System.String, System.String, Il2CppSystem.Object ByRef)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void FieldSetter(System.String, System.String, Il2CppSystem.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: IntPtr get_ObjectClass()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: IntPtr get_Pointer()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean get_WasCollected()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void CreateGCHandle(IntPtr)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T Cast[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T Unbox[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: T TryCast[T]()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Void Finalize()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.Type GetType()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.Object MemberwiseClone()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: System.String ToString()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean Equals(System.Object)
+[Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetHashCode()
+[Info   :Brazilian Currency Format] [Debug] PosTerminal.Start() encontrado: Void Start()
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Currency Format] [Debug] PosTerminal.AddChar(string) encontrado: Void AddChar(System.String)
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Currency Format] [Debug] PosTerminal.RemoveCharacter() encontrado: Void RemoveCharacter()
+[Info   :Brazilian Currency Format] Brazilian Currency Format 1.0.0 carregado.
+[Info   :   BepInEx] Loading [Currency Asset Analyzer 0.3.0]
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Currency Asset Analyzer iniciado.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Esta versão realiza apenas análise.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nenhuma alteração será feita no jogo.
+[Info   :Currency Asset Analyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando classe Money...
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Classe Money encontrada: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] INICIANDO ANÁLISE DA CLASSE MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Assembly: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CAMPOS DA CLASSE MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIELD | IntPtr NativeFieldInfoPtr_m_Value
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIELD | IntPtr NativeMethodInfoPtr_get_Value_Public_get_Single_0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIELD | IntPtr NativeMethodInfoPtr_set_Value_Public_set_Void_Single_0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIELD | IntPtr NativeMethodInfoPtr__ctor_Public_Void_0
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPRIEDADES DA CLASSE MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | Single m_Value
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] PROPERTY | Single Value
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] MÉTODOS DA CLASSE MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] METHOD | Single get_m_Value()
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] METHOD | Void set_m_Value(Single)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] METHOD | Single get_Value()
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] METHOD | Void set_Value(Single)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ANÁLISE DA CLASSE MONEY FINALIZADA
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Método candidato encontrado para diagnóstico: Single get_m_Value()
+[Warning:Il2CppInterop] Failed to init IL2CPP patch backend for float Money::get_m_Value(), using normal patch handlers: Method float Money::get_m_Value() is a field accessor, it can't be patched.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Procurando MoneyGenerator.SpawnMoney(float, Transform)...
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SpawnMoney encontrado: Money SpawnMoney(Single, UnityEngine.Transform)
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Patches aplicados com sucesso.
+[Info   :   BepInEx] Loading [Game Info 1.0.1]
+[Message: Game Info] Game Name: Supermarket Simulator
+[Message: Game Info] Game Developer: Nokta Games
+[Message: Game Info] Game Version: v1.6.0(223)
+[Info   :   BepInEx] Loading [Timestamp 3.0.1]
+[Info   :   BepInEx] Loading [File Tree 2.0.0]
+[Info   : File Tree] File Tree logging is enabled.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   : File Tree] B:\SteamLibrary\steamapps\common\Supermarket Simulator
+[Info   : File Tree] |
+[Info   : File Tree] |-- BepInEx
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- cache
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   \-- chainloader_typeloader.dat [1,97 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- config
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- BepInEx.cfg [7,61 KB]
+[Info   : File Tree] |   |   |-- BepInEx.SplashScreen.cfg [623 B]
+[Info   : File Tree] |   |   |-- br.monsterk1llerbr.supermarketsimulator.brcurrency.cfg [794 B]
+[Info   : File Tree] |   |   |-- Tobey.BepInEx.Timestamp.cfg [1,57 KB]
+[Info   : File Tree] |   |   \-- Tobey.FileTree.cfg [396 B]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- core
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- Tobey
+[Info   : File Tree] |   |   |   |
+[Info   : File Tree] |   |   |   \-- UniverseLib.BIE.IL2CPP.Interop.dll [2,89 MB]
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- 0Harmony.dll [264,19 KB]
+[Info   : File Tree] |   |   |-- AsmResolver.dll [67,58 KB]
+[Info   : File Tree] |   |   |-- AsmResolver.DotNet.dll [561,66 KB]
+[Info   : File Tree] |   |   |-- AsmResolver.PE.dll [397,82 KB]
+[Info   : File Tree] |   |   |-- AsmResolver.PE.File.dll [40,96 KB]
+[Info   : File Tree] |   |   |-- AssetRipper.CIL.dll [45,57 KB]
+[Info   : File Tree] |   |   |-- AssetRipper.Primitives.dll [29,18 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Core.dll [138,24 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Core.xml [91,63 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Preloader.Core.dll [52,74 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Preloader.Core.xml [16,39 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Unity.Common.dll [13,82 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Unity.Common.xml [1,2 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Unity.IL2CPP.dll [101,89 KB]
+[Info   : File Tree] |   |   |-- BepInEx.Unity.IL2CPP.dll.config [456 B]
+[Info   : File Tree] |   |   |-- BepInEx.Unity.IL2CPP.xml [9,31 KB]
+[Info   : File Tree] |   |   |-- Cpp2IL.Core.dll [394,24 KB]
+[Info   : File Tree] |   |   |-- Disarm.dll [139,26 KB]
+[Info   : File Tree] |   |   |-- dobby.dll [205,31 KB]
+[Info   : File Tree] |   |   |-- Gee.External.Capstone.dll [295,94 KB]
+[Info   : File Tree] |   |   |-- Iced.dll [1,9 MB]
+[Info   : File Tree] |   |   |-- Il2CppInterop.Common.dll [41,47 KB]
+[Info   : File Tree] |   |   |-- Il2CppInterop.Generator.dll [219,65 KB]
+[Info   : File Tree] |   |   |-- Il2CppInterop.HarmonySupport.dll [26,62 KB]
+[Info   : File Tree] |   |   |-- Il2CppInterop.Runtime.dll [284,67 KB]
+[Info   : File Tree] |   |   |-- LibCpp2IL.dll [312,32 KB]
+[Info   : File Tree] |   |   |-- Mono.Cecil.dll [356,86 KB]
+[Info   : File Tree] |   |   |-- Mono.Cecil.Mdb.dll [39,42 KB]
+[Info   : File Tree] |   |   |-- Mono.Cecil.Pdb.dll [89,6 KB]
+[Info   : File Tree] |   |   |-- Mono.Cecil.Rocks.dll [24,58 KB]
+[Info   : File Tree] |   |   |-- MonoMod.Backports.dll [29,18 KB]
+[Info   : File Tree] |   |   |-- MonoMod.ILHelpers.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- MonoMod.RuntimeDetour.dll [112,64 KB]
+[Info   : File Tree] |   |   |-- MonoMod.Utils.dll [193,02 KB]
+[Info   : File Tree] |   |   |-- SemanticVersioning.dll [34,82 KB]
+[Info   : File Tree] |   |   |-- StableNameDotNet.dll [28,16 KB]
+[Info   : File Tree] |   |   \-- WasmDisassembler.dll [22,53 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- interop
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- Assembly-CSharp-firstpass.dll [1,53 MB]
+[Info   : File Tree] |   |   |-- Assembly-CSharp.dll [10,45 MB]
+[Info   : File Tree] |   |   |-- assembly-hash.txt [32 B]
+[Info   : File Tree] |   |   |-- AYellowpaper.SerializedCollections.dll [27,14 KB]
+[Info   : File Tree] |   |   |-- Cinemachine.dll [761,34 KB]
+[Info   : File Tree] |   |   |-- CleanFlatUI.dll [657,41 KB]
+[Info   : File Tree] |   |   |-- CW.Common.dll [129,54 KB]
+[Info   : File Tree] |   |   |-- DOTween.dll [618,5 KB]
+[Info   : File Tree] |   |   |-- DOTweenPro.dll [39,42 KB]
+[Info   : File Tree] |   |   |-- Dreamteck.Splines.dll [592,9 KB]
+[Info   : File Tree] |   |   |-- Dreamteck.Utilities.dll [62,46 KB]
+[Info   : File Tree] |   |   |-- Facepunch.Steamworks.Win64.dll [2,36 MB]
+[Info   : File Tree] |   |   |-- Il2CppMono.Security.dll [313,86 KB]
+[Info   : File Tree] |   |   |-- Il2Cppmscorlib.dll [6,23 MB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Configuration.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Core.dll [1,64 MB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Data.dll [1,47 MB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.dll [3,17 MB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Drawing.dll [28,67 KB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Numerics.dll [89,09 KB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Runtime.Serialization.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Xml.dll [2,98 MB]
+[Info   : File Tree] |   |   |-- Il2CppSystem.Xml.Linq.dll [110,08 KB]
+[Info   : File Tree] |   |   |-- LeanCommon.dll [77,82 KB]
+[Info   : File Tree] |   |   |-- LeanPool.dll [48,13 KB]
+[Info   : File Tree] |   |   |-- M3D Font Creator - Runtime Only.dll [60,42 KB]
+[Info   : File Tree] |   |   |-- MethodAddressToToken.db [2,46 MB]
+[Info   : File Tree] |   |   |-- MethodXrefScanCache.db [36,04 MB]
+[Info   : File Tree] |   |   |-- MyBox.dll [408,06 KB]
+[Info   : File Tree] |   |   |-- NaisuPorter.dll [33,79 KB]
+[Info   : File Tree] |   |   |-- Newtonsoft.Json.dll [2,07 MB]
+[Info   : File Tree] |   |   |-- NodeCanvas.dll [781,31 KB]
+[Info   : File Tree] |   |   |-- ParadoxNotion.dll [971,26 KB]
+[Info   : File Tree] |   |   |-- Pathfinding.Ionic.Zip.Reduced.dll [612,86 KB]
+[Info   : File Tree] |   |   |-- PerfectCullingRuntime.dll [137,22 KB]
+[Info   : File Tree] |   |   |-- Photon3Unity3D.dll [556,54 KB]
+[Info   : File Tree] |   |   |-- PhotonChat.dll [89,09 KB]
+[Info   : File Tree] |   |   |-- PhotonRealtime.dll [305,15 KB]
+[Info   : File Tree] |   |   |-- PhotonUnityNetworking.Demos.dll [370,18 KB]
+[Info   : File Tree] |   |   |-- PhotonUnityNetworking.dll [251,39 KB]
+[Info   : File Tree] |   |   |-- PhotonUnityNetworking.Utilities.dll [144,9 KB]
+[Info   : File Tree] |   |   |-- Unity.Addressables.dll [357,89 KB]
+[Info   : File Tree] |   |   |-- Unity.AI.Navigation.dll [64,51 KB]
+[Info   : File Tree] |   |   |-- Unity.Animation.Rigging.dll [368,13 KB]
+[Info   : File Tree] |   |   |-- Unity.Burst.dll [1,45 MB]
+[Info   : File Tree] |   |   |-- Unity.Burst.Unsafe.dll [21,5 KB]
+[Info   : File Tree] |   |   |-- Unity.Collections.dll [1,68 MB]
+[Info   : File Tree] |   |   |-- Unity.Collections.LowLevel.ILSupport.dll [9,22 KB]
+[Info   : File Tree] |   |   |-- Unity.InputSystem.dll [2,81 MB]
+[Info   : File Tree] |   |   |-- Unity.InputSystem.ForUI.dll [33,28 KB]
+[Info   : File Tree] |   |   |-- Unity.InternalAPIEngineBridge.004.dll [8,19 KB]
+[Info   : File Tree] |   |   |-- Unity.Localization.dll [987,65 KB]
+[Info   : File Tree] |   |   |-- Unity.Mathematics.dll [2,21 MB]
+[Info   : File Tree] |   |   |-- Unity.MemoryProfiler.dll [11,78 KB]
+[Info   : File Tree] |   |   |-- Unity.Microsoft.GDK.dll [2,28 MB]
+[Info   : File Tree] |   |   |-- Unity.Microsoft.GDK.Tools.dll [200,7 KB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipeline.Universal.ShaderLibrary.dll [11,78 KB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipelines.Core.Runtime.dll [2,85 MB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipelines.Core.Runtime.Shared.dll [8,19 KB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipelines.GPUDriven.Runtime.dll [688,64 KB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipelines.Universal.2D.Runtime.dll [596,48 KB]
+[Info   : File Tree] |   |   |-- Unity.RenderPipelines.Universal.Runtime.dll [2,15 MB]
+[Info   : File Tree] |   |   |-- Unity.ResourceManager.dll [467,97 KB]
+[Info   : File Tree] |   |   |-- Unity.TextMeshPro.dll [993,28 KB]
+[Info   : File Tree] |   |   |-- Unity.Timeline.dll [411,65 KB]
+[Info   : File Tree] |   |   |-- Unity.UnifiedRayTracing.Runtime.dll [284,16 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AccessibilityModule.dll [84,99 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AdaptivePerformanceModule.dll [288,77 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AIModule.dll [133,63 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AndroidJNIModule.dll [200,19 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AnimationModule.dll [517,12 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AssetBundleModule.dll [38,91 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AudioModule.dll [241,15 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClothModule.dll [25,6 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterInputModule.dll [8,19 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterRendererModule.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ContentLoadModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.CoreModule.dll [4,63 MB]
+[Info   : File Tree] |   |   |-- UnityEngine.CrashReportingModule.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.DirectorModule.dll [44,03 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.dll [3,07 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.DSPGraphModule.dll [27,14 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GameCenterModule.dll [11,26 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GIModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GraphicsStateCollectionSerializerModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GridModule.dll [13,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HierarchyCoreModule.dll [209,92 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HierarchyModule.dll [27,65 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HotReloadModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.IdentifiersModule.dll [3,07 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ImageConversionModule.dll [15,36 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.IMGUIModule.dll [460,8 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputForUIModule.dll [108,03 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputLegacyModule.dll [64 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputModule.dll [15,87 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.JSONSerializeModule.dll [7,68 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.LocalizationModule.dll [6,14 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.MarshallingModule.dll [116,22 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.MultiplayerModule.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ParticleSystemModule.dll [452,61 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PerformanceReportingModule.dll [3,07 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.Physics2DModule.dll [920,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PhysicsBackendPhysXModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PhysicsModule.dll [395,26 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PropertiesModule.dll [436,74 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.RenderAs2DModule.dll [4,61 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ScreenCaptureModule.dll [4,61 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderRuntimeModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderVariantAnalyticsModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SharedInternalsModule.dll [36,35 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteMaskModule.dll [12,8 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteShapeModule.dll [10,24 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.StreamingModule.dll [4,61 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SubstanceModule.dll [6,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SubsystemsModule.dll [45,57 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TerrainModule.dll [166,91 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TerrainPhysicsModule.dll [4,61 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextCoreFontEngineModule.dll [141,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextCoreTextEngineModule.dll [605,7 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextRenderingModule.dll [59,9 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TilemapModule.dll [81,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TLSModule.dll [5,12 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UI.dll [849,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UIElementsModule.dll [5,85 MB]
+[Info   : File Tree] |   |   |-- UnityEngine.UIModule.dll [87,55 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UmbraModule.dll [2,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityAnalyticsCommonModule.dll [57,34 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityAnalyticsModule.dll [72,7 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityConnectModule.dll [10,24 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityConsentModule.dll [6,14 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityCurlModule.dll [7,17 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestAssetBundleModule.dll [14,34 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestAudioModule.dll [11,78 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestModule.dll [100,35 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestWWWModule.dll [7,68 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VectorGraphicsModule.dll [51,71 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VehiclesModule.dll [29,7 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VFXModule.dll [108,03 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VideoModule.dll [81,92 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VirtualTexturingModule.dll [18,43 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VRModule.dll [18,43 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.WindModule.dll [9,22 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.XRModule.dll [118,78 KB]
+[Info   : File Tree] |   |   \-- __Generated.dll [4,61 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- patchers
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   \-- .tobey.bepinex.pack
+[Info   : File Tree] |   |       |
+[Info   : File Tree] |   |       \-- BepInEx.SplashScreen
+[Info   : File Tree] |   |           |
+[Info   : File Tree] |   |           |-- BepInEx.SplashScreen.GUI.exe.config [263 B]
+[Info   : File Tree] |   |           |-- BepInEx.SplashScreen.Patcher.BepInEx6.dll [14,34 KB]
+[Info   : File Tree] |   |           |-- LICENSE [1,12 KB]
+[Info   : File Tree] |   |           |-- README.md [2,65 KB]
+[Info   : File Tree] |   |           \-- Supermarket Simulator.SplashScreen.GUI.exe [97,79 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- plugins
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- .tobey.bepinex.pack
+[Info   : File Tree] |   |   |   |
+[Info   : File Tree] |   |   |   |-- File Tree
+[Info   : File Tree] |   |   |   |   |
+[Info   : File Tree] |   |   |   |   \-- Tobey.FileTree.dll [26,11 KB]
+[Info   : File Tree] |   |   |   |
+[Info   : File Tree] |   |   |   |-- Tobey.BepInEx.GameInfo.dll [7,68 KB]
+[Info   : File Tree] |   |   |   \-- Tobey.BepInEx.Timestamp.dll [28,16 KB]
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- BrazilianCurrencyFormat
+[Info   : File Tree] |   |   |   |
+[Info   : File Tree] |   |   |   \-- BrazilianCurrencyFormat.dll [24,06 KB]
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   \-- CurrencyAssetAnalyzer
+[Info   : File Tree] |   |       |
+[Info   : File Tree] |   |       \-- CurrencyAssetAnalyzer.dll [22,53 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- unity-libs
+[Info   : File Tree] |   |   |
+[Info   : File Tree] |   |   |-- 6000.3.18.zip [3,04 MB]
+[Info   : File Tree] |   |   |-- 6000.3.6.zip [3,03 MB]
+[Info   : File Tree] |   |   |-- UnityEngine.AccessibilityModule.dll [39,42 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AdaptivePerformanceModule.dll [109,57 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AIModule.dll [66,05 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AndroidJNIModule.dll [110,59 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AnimationModule.dll [214,53 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AssetBundleModule.dll [31,23 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.AudioModule.dll [131,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClothModule.dll [25,6 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterInputModule.dll [16,9 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ClusterRendererModule.dll [15,87 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ContentLoadModule.dll [21,5 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.CoreModule.dll [1,97 MB]
+[Info   : File Tree] |   |   |-- UnityEngine.CrashReportingModule.dll [15,36 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.DirectorModule.dll [30,72 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.dll [184,83 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.DSPGraphModule.dll [20,48 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GameCenterModule.dll [34,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GIModule.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GraphicsStateCollectionSerializerModule.dll [3,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.GridModule.dll [19,46 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HierarchyCoreModule.dll [98,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HierarchyModule.dll [91,65 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.HotReloadModule.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.IdentifiersModule.dll [4,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ImageConversionModule.dll [20,48 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.IMGUIModule.dll [202,75 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputForUIModule.dll [47,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputLegacyModule.dll [34,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.InputModule.dll [17,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.JSONSerializeModule.dll [16,38 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.LocalizationModule.dll [15,87 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.MarshallingModule.dll [72,7 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.MultiplayerModule.dll [7,17 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ParticleSystemModule.dll [160,77 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PerformanceReportingModule.dll [14,34 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.Physics2DModule.dll [562,69 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PhysicsBackendPhysXModule.dll [3,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PhysicsModule.dll [171,01 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.PropertiesModule.dll [138,75 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.RenderAs2DModule.dll [14,85 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll [13,82 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ScreenCaptureModule.dll [15,36 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderRuntimeModule.dll [14,85 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.ShaderVariantAnalyticsModule.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SharedInternalsModule.dll [27,14 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteMaskModule.dll [17,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SpriteShapeModule.dll [20,99 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.StreamingModule.dll [14,85 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SubstanceModule.dll [18,43 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.SubsystemsModule.dll [30,72 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TerrainModule.dll [122,37 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TerrainPhysicsModule.dll [14,85 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextCoreFontEngineModule.dll [71,17 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextCoreTextEngineModule.dll [316,93 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TextRenderingModule.dll [28,67 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TilemapModule.dll [47,1 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.TLSModule.dll [20,48 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UIElementsModule.dll [2,41 MB]
+[Info   : File Tree] |   |   |-- UnityEngine.UIModule.dll [38,91 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UmbraModule.dll [13,31 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityAnalyticsCommonModule.dll [24,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityAnalyticsModule.dll [49,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityConnectModule.dll [16,38 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityConsentModule.dll [5,63 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityCurlModule.dll [15,36 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestAssetBundleModule.dll [17,92 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestAudioModule.dll [17,41 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestModule.dll [58,37 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestTextureModule.dll [16,9 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.UnityWebRequestWWWModule.dll [25,6 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VectorGraphicsModule.dll [241,66 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VehiclesModule.dll [20,48 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VFXModule.dll [67,58 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VideoModule.dll [38,4 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VirtualTexturingModule.dll [32,26 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.VRModule.dll [20,99 KB]
+[Info   : File Tree] |   |   |-- UnityEngine.WindModule.dll [15,36 KB]
+[Info   : File Tree] |   |   \-- UnityEngine.XRModule.dll [77,31 KB]
+[Info   : File Tree] |   |
+[Info   : File Tree] |   |-- diagnostico.txt [178,83 KB]
+[Info   : File Tree] |   |-- ErrorLog.log [0 B]
+[Info   : File Tree] |   \-- LogOutput.log [36,37 KB]
+[Info   : File Tree] |
+[Info   : File Tree] |-- D3D12
+[Info   : File Tree] |   |
+[Info   : File Tree] |   \-- (contents not shown)
+[Info   : File Tree] |
+[Info   : File Tree] |-- dotnet
+[Info   : File Tree] |   |
+[Info   : File Tree] |   \-- (contents not shown)
+[Info   : File Tree] |
+[Info   : File Tree] |-- Supermarket Simulator_Data
+[Info   : File Tree] |   |
+[Info   : File Tree] |   \-- (contents not shown)
+[Info   : File Tree] |
+[Info   : File Tree] |-- .doorstop_version [5 B]
+[Info   : File Tree] |-- baselib.dll [239,54 KB]
+[Info   : File Tree] |-- changelog.txt [5,45 KB]
+[Info   : File Tree] |-- doorstop_config.ini [1,64 KB]
+[Info   : File Tree] |-- GameAssembly.dll [81,15 MB]
+[Info   : File Tree] |-- Supermarket Simulator.exe [667,65 KB]
+[Info   : File Tree] |-- UnityCrashHandler64.exe [1,61 MB]
+[Info   : File Tree] |-- UnityPlayer.dll [35,72 MB]
+[Info   : File Tree] \-- winhttp.dll [26,11 KB]
+[Message: Timestamp] It is currently Sat, 22 Aug 2026 20:28:20 GMT according to time.cloudflare.com
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Seed4' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Initial' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Force' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Collision' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Seed4' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Initial' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Force' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Collision' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'LayerType' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Operation' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'ManifoldPointArray' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'State' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'LayerType' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Operation' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'ManifoldPointArray' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'State' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
+Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'PageStatistics' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
+System.TypeLoadException: Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'PageStatistics' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Failure has occurred while loading a type.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Failure has occurred while loading a type.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Seed4' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Initial' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Force' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Collision' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Seed4' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Initial' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Force' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Collision' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'LayerType' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'Operation' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'ManifoldPointArray' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'State' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'LayerType' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'Operation' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'ManifoldPointArray' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'State' from assembly 'UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
+Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'PageStatistics' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
+System.TypeLoadException: Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'PageStatistics' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Failure has occurred while loading a type.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Failure has occurred while loading a type.
+[Warning:  HarmonyX] AccessTools.TypeByName: Could not find type named BepInEx.ThreadingHelper
+[Message:   BepInEx] Chainloader startup complete
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64482
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_1_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #2
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 5 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64874
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_5_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #3
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 10 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64914
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_10_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #4
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 20 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64954
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_20_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 50 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 50
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64994
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_50_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #6
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67078
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_5_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #7
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67530
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #8
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67598
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #9
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67642
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #10
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67656
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #11
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68062
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #12
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67656
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #13
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68078
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #14
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67642
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #15
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68166
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_50_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #16
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68554
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_50_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #17
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68568
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_50_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #18
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68582
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_50_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #19
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67656
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #20
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67598
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #21
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67078
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_5_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #22
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67656
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #23
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -64482
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_1_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #24
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -69044
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_1_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Money Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: 1 Dollar Variant
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -69058
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_1_Dollar'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #26
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67598
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #27
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67078
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_5_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #28
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_25_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,25
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67656
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_25_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #29
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68062
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #30
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -69426
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #31
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67078
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_5_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #32
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -67530
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #33
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -72984
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #34
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -72998
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #35
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_5_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,05
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73014
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_5_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #36
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73030
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #37
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73044
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #38
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73058
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #39
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73072
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #40
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73086
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #41
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73100
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #42
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_1_Cent
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,01
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -73114
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_1_Cent'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #43
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_50_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,5
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -68166
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_50_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] SPAWNMONEY #44
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Value recebido pelo SpawnMoney: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Parent: Coin Change Position
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Retorno SpawnMoney: Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] GameObject retornado: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] OBJETO MONEY GERADO
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ------------------------------------------------------------
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Nome: Coin_10_Cents
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] Valor: 0,1
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] InstanceID: -69426
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] COMPONENTES DO GAMEOBJECT MONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ROOT COMPONENT | Money
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] CHILD [0] NAME='SM_Coin_10_Cents'
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Transform
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer]  COMPONENT | UnityEngine.Component
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] FIM DA ANÁLISE SPAWNMONEY
+[Info   :Currency Asset Analyzer] [CurrencyAnalyzer] ============================================================
