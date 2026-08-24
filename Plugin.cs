@@ -2,9 +2,9 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
-using System.Globalization;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
@@ -13,46 +13,24 @@ using UnityEngine;
 namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 {
     [BepInPlugin(
-        GUID,
-        NAME,
-        VERSION
+    GUID,
+    NAME,
+    VERSION
     )]
     public class CurrencyAssetAnalyzer : BasePlugin
     {
         private const string GUID =
-            "br.monsterk1llerbr.supermarketsimulator.currencyassetanalyzer";
+        "br.monsterk1llerbr.supermarketsimulator.currencyassetanalyzer";
 
-        private const string NAME =
-            "Currency Asset Analyzer";
+
+    private const string NAME =
+        "Currency Asset Analyzer";
 
         private const string VERSION =
             "7.3.2";
 
-        /*
-         * ============================================================
-         * CONFIGURAÇÃO DO REPOSITÓRIO
-         * ============================================================
-         *
-         * Este é o diretório local do repositório GitHub.
-         *
-         * O Analyzer copiará automaticamente os relatórios gerados
-         * pelo jogo para:
-         *
-         * Reports\MoneyPack
-         *
-         * dentro deste diretório.
-         */
-        private const string RepositoryRoot =
-            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer";
-
         private const string RepositoryMoneyPackDirectory =
-            "Reports\\MoneyPack";
-
-        /*
-         * ============================================================
-         * ESTADO DO PLUGIN
-         * ============================================================
-         */
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack";
 
         private static CurrencyAssetAnalyzer Instance;
 
@@ -62,15 +40,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             new HashSet<string>();
 
         private static string ReportDirectory;
+
         private static string MoneyPackDirectory;
-
-        private static string RepositoryReportDirectory;
-
-        /*
-         * ============================================================
-         * LOAD
-         * ============================================================
-         */
 
         public override void Load()
         {
@@ -78,9 +49,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             try
             {
-                /*
-                 * Diretório utilizado pelo Analyzer dentro do jogo.
-                 */
                 ReportDirectory = Path.Combine(
                     Paths.PluginPath,
                     "CurrencyAssetAnalyzer",
@@ -92,17 +60,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "MoneyPack"
                 );
 
-                /*
-                 * Diretório do repositório GitHub.
-                 */
-                RepositoryReportDirectory = Path.Combine(
-                    RepositoryRoot,
-                    RepositoryMoneyPackDirectory
-                );
-
-                /*
-                 * Cria os diretórios necessários.
-                 */
                 Directory.CreateDirectory(
                     ReportDirectory
                 );
@@ -110,26 +67,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 Directory.CreateDirectory(
                     MoneyPackDirectory
                 );
-
-                /*
-                 * Tenta criar o diretório do repositório.
-                 *
-                 * Caso o projeto não esteja disponível neste computador,
-                 * o Analyzer continua funcionando normalmente.
-                 */
-                try
-                {
-                    Directory.CreateDirectory(
-                        RepositoryReportDirectory
-                    );
-                }
-                catch (Exception repositoryException)
-                {
-                    Log.LogWarning(
-                        "Não foi possível preparar o diretório do repositório: " +
-                        repositoryException.Message
-                    );
-                }
 
                 Log.LogInfo(
                     "========================================"
@@ -161,39 +98,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
-                    "Sincronização GitHub: ATIVADA."
+                    "Sincronização do repositório: ATIVADA."
                 );
 
                 Log.LogInfo(
-                    "Destino GitHub: " +
-                    RepositoryReportDirectory
+                    "Destino: " +
+                    RepositoryMoneyPackDirectory
                 );
 
-                /*
-                 * Verifica se o repositório existe.
-                 */
-                if (Directory.Exists(RepositoryRoot))
-                {
-                    Log.LogInfo(
-                        "Repositório local encontrado."
-                    );
-                }
-                else
-                {
-                    Log.LogWarning(
-                        "Repositório local não encontrado: " +
-                        RepositoryRoot
-                    );
-
-                    Log.LogWarning(
-                        "O Analyzer continuará funcionando, mas os relatórios " +
-                        "não serão sincronizados com o GitHub."
-                    );
-                }
-
-                /*
-                 * Aplica o patch.
-                 */
                 PatchSpawnMoney();
             }
             catch (Exception ex)
@@ -205,18 +117,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * PATCH SPAWN MONEY
-         * ============================================================
-         */
-
         private void PatchSpawnMoney()
         {
             try
             {
                 Type managerType =
-                    FindType("CheckoutChangeManager");
+                    FindType(
+                        "CheckoutChangeManager"
+                    );
 
                 if (managerType == null)
                 {
@@ -252,7 +160,9 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 HarmonyInstance =
-                    new Harmony(GUID);
+                    new Harmony(
+                        GUID
+                    );
 
                 MethodInfo postfix =
                     AccessTools.Method(
@@ -291,12 +201,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * TYPE FINDER
-         * ============================================================
-         */
-
         private static Type FindType(
             string typeName
         )
@@ -318,7 +222,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             Assembly[] assemblies =
                 AppDomain.CurrentDomain.GetAssemblies();
 
-            for (int i = 0; i < assemblies.Length; i++)
+            for (
+                int i = 0;
+                i < assemblies.Length;
+                i++
+            )
             {
                 try
                 {
@@ -338,12 +246,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
-        /*
-         * ============================================================
-         * FIND SPAWN MONEY
-         * ============================================================
-         */
-
         private static MethodInfo FindSpawnMoneyMethod(
             Type managerType
         )
@@ -358,22 +260,40 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         BindingFlags.NonPublic
                     );
 
-                for (int i = 0; i < methods.Length; i++)
+                for (
+                    int i = 0;
+                    i < methods.Length;
+                    i++
+                )
                 {
                     MethodInfo method =
                         methods[i];
 
-                    if (method.Name != "SpawnMoney")
+                    if (
+                        method.Name !=
+                        "SpawnMoney"
+                    )
+                    {
                         continue;
+                    }
 
                     ParameterInfo[] parameters =
                         method.GetParameters();
 
-                    if (parameters.Length != 2)
+                    if (
+                        parameters.Length != 2
+                    )
+                    {
                         continue;
+                    }
 
-                    if (parameters[1].ParameterType != typeof(bool))
+                    if (
+                        parameters[1].ParameterType !=
+                        typeof(bool)
+                    )
+                    {
                         continue;
+                    }
 
                     return method;
                 }
@@ -391,12 +311,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             return null;
         }
-
-        /*
-         * ============================================================
-         * SPAWN MONEY POSTFIX
-         * ============================================================
-         */
 
         private static void SpawnMoneyPostfix(
             object moneyPack,
@@ -427,12 +341,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 }
             }
         }
-
-        /*
-         * ============================================================
-         * MONEY PACK ANALYSIS
-         * ============================================================
-         */
 
         private static void AnalyzeMoneyPack(
             object moneyPack,
@@ -474,8 +382,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         CultureInfo.InvariantCulture
                     );
 
-                if (!AnalyzedMoneyPacks.Add(key))
+                if (
+                    !AnalyzedMoneyPacks.Add(
+                        key
+                    )
+                )
+                {
                     return;
+                }
 
                 Instance.Log.LogInfo(
                     "Novo MoneyPack descoberto: " +
@@ -500,12 +414,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
             }
         }
-
-        /*
-         * ============================================================
-         * READ VALUE
-         * ============================================================
-         */
 
         private static float ReadMoneyPackValue(
             object moneyPack
@@ -571,12 +479,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return -1f;
         }
 
-        /*
-         * ============================================================
-         * READ GAMEOBJECT
-         * ============================================================
-         */
-
         private static GameObject ReadMoneyPackGameObject(
             object moneyPack
         )
@@ -616,12 +518,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
-        /*
-         * ============================================================
-         * HIERARCHY ANALYSIS
-         * ============================================================
-         */
-
         private static void AnalyzeHierarchy(
             GameObject root,
             bool isCoin,
@@ -636,7 +532,9 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                 string typeName =
-                    isCoin ? "COIN" : "BILL";
+                    isCoin
+                        ? "COIN"
+                        : "BILL";
 
                 string valueString =
                     value.ToString(
@@ -658,18 +556,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         fileName
                     );
 
-                /*
-                 * ====================================================
-                 * CRIAÇÃO DO RELATÓRIO
-                 * ====================================================
-                 */
-
                 using (
                     StreamWriter writer =
-                    new StreamWriter(
-                        path,
-                        false
-                    )
+                        new StreamWriter(
+                            path,
+                            false
+                        )
                 )
                 {
                     writer.WriteLine(
@@ -755,19 +647,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     path
                 );
 
-                /*
-                 * ====================================================
-                 * SINCRONIZAÇÃO AUTOMÁTICA
-                 * ====================================================
-                 *
-                 * Depois que o relatório é salvo no diretório do jogo,
-                 * copiamos automaticamente o arquivo para o repositório
-                 * local do GitHub.
-                 */
-
                 SyncReportToRepository(
-                    path,
-                    fileName
+                    path
                 );
             }
             catch (Exception ex)
@@ -779,131 +660,69 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * SYNC REPORT TO GITHUB REPOSITORY
-         * ============================================================
-         */
-
         private static void SyncReportToRepository(
-            string sourcePath,
-            string fileName
+            string sourceFile
         )
         {
             try
             {
-                if (string.IsNullOrEmpty(
-                    RepositoryReportDirectory
-                ))
+                if (
+                    string.IsNullOrWhiteSpace(
+                        sourceFile
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !File.Exists(
+                        sourceFile
+                    )
+                )
                 {
                     Instance.Log.LogWarning(
-                        "Diretório do repositório não configurado."
+                        "Arquivo de relatório não encontrado para sincronização: " +
+                        sourceFile
                     );
 
                     return;
                 }
 
-                if (!Directory.Exists(
-                    RepositoryRoot
-                ))
-                {
-                    Instance.Log.LogWarning(
-                        "Repositório local não encontrado. " +
-                        "Relatório não sincronizado."
-                    );
-
-                    Instance.Log.LogWarning(
-                        "Esperado em: " +
-                        RepositoryRoot
-                    );
-
-                    return;
-                }
-
-                if (!File.Exists(
-                    sourcePath
-                ))
-                {
-                    Instance.Log.LogWarning(
-                        "Relatório de origem não encontrado: " +
-                        sourcePath
-                    );
-
-                    return;
-                }
-
-                /*
-                 * Garante que Reports\MoneyPack exista.
-                 */
                 Directory.CreateDirectory(
-                    RepositoryReportDirectory
+                    RepositoryMoneyPackDirectory
                 );
 
-                string destinationPath =
+                string fileName =
+                    Path.GetFileName(
+                        sourceFile
+                    );
+
+                string destinationFile =
                     Path.Combine(
-                        RepositoryReportDirectory,
+                        RepositoryMoneyPackDirectory,
                         fileName
                     );
 
-                /*
-                 * Sobrescreve automaticamente o relatório anterior.
-                 */
                 File.Copy(
-                    sourcePath,
-                    destinationPath,
+                    sourceFile,
+                    destinationFile,
                     true
                 );
 
-                FileInfo sourceInfo =
-                    new FileInfo(
-                        sourcePath
-                    );
-
-                FileInfo destinationInfo =
-                    new FileInfo(
-                        destinationPath
-                    );
-
                 Instance.Log.LogInfo(
-                    "Relatório sincronizado com o repositório:"
-                );
-
-                Instance.Log.LogInfo(
-                    "  Origem: " +
-                    sourcePath
-                );
-
-                Instance.Log.LogInfo(
-                    "  Destino: " +
-                    destinationPath
-                );
-
-                Instance.Log.LogInfo(
-                    "  Tamanho: " +
-                    destinationInfo.Length +
-                    " bytes"
+                    "Relatório sincronizado com o repositório: " +
+                    destinationFile
                 );
             }
             catch (Exception ex)
             {
-                /*
-                 * Falha na sincronização NÃO interrompe o Analyzer.
-                 *
-                 * O relatório original já foi salvo no diretório
-                 * do jogo e continua disponível.
-                 */
                 Instance.Log.LogError(
                     "Erro sincronizando relatório com o repositório: " +
                     ex
                 );
             }
         }
-
-        /*
-         * ============================================================
-         * TRANSFORM ANALYSIS
-         * ============================================================
-         */
 
         private static void AnalyzeTransform(
             Transform transform,
@@ -987,12 +806,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * COMPONENT ANALYSIS
-         * ============================================================
-         */
-
         private static void AnalyzeComponentsByReflection(
             GameObject gameObject,
             string indent,
@@ -1075,12 +888,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * GET COMPONENTS SAFELY
-         * ============================================================
-         */
-
         private static Component[] GetAllComponentsSafely(
             GameObject gameObject
         )
@@ -1099,12 +906,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             return new Component[0];
         }
-
-        /*
-         * ============================================================
-         * RENDERER ANALYSIS
-         * ============================================================
-         */
 
         private static void AnalyzeRenderer(
             GameObject gameObject,
@@ -1264,16 +1065,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 writer.WriteLine(
                     indent +
                     "[ERRO RENDERER] " +
-                    ex.Message
+                    ex
                 );
             }
         }
-
-        /*
-         * ============================================================
-         * TEXTURE PROPERTY
-         * ============================================================
-         */
 
         private static void AnalyzeTextureProperty(
             Material material,
@@ -1284,9 +1079,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         {
             try
             {
-                if (!material.HasProperty(
-                    property
-                ))
+                if (
+                    !material.HasProperty(
+                        property
+                    )
+                )
                 {
                     return;
                 }
@@ -1326,12 +1123,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             {
             }
         }
-
-        /*
-         * ============================================================
-         * MESH FILTER
-         * ============================================================
-         */
 
         private static void AnalyzeMeshFilter(
             GameObject gameObject,
@@ -1425,16 +1216,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 writer.WriteLine(
                     indent +
                     "[ERRO MESHFILTER] " +
-                    ex.Message
+                    ex
                 );
             }
         }
-
-        /*
-         * ============================================================
-         * PHYSICS COMPONENTS
-         * ============================================================
-         */
 
         private static void AnalyzePhysicsComponents(
             GameObject gameObject,
@@ -1475,7 +1260,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         component.GetType();
 
                     string fullName =
-                        type.FullName ?? type.Name;
+                        type.FullName ??
+                        type.Name;
 
                     bool isCollider =
                         fullName.IndexOf(
@@ -1532,16 +1318,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 writer.WriteLine(
                     indent +
                     "[ERRO PHYSICS] " +
-                    ex.Message
+                    ex
                 );
             }
         }
-
-        /*
-         * ============================================================
-         * COMPONENT PROPERTIES
-         * ============================================================
-         */
 
         private static void DumpComponentProperties(
             Component component,
@@ -1613,12 +1393,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * RELATIVE PATH
-         * ============================================================
-         */
-
         private static string GetRelativePath(
             Transform current,
             Transform root
@@ -1657,12 +1431,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        /*
-         * ============================================================
-         * SANITIZE FILE NAME
-         * ============================================================
-         */
-
         private static string SanitizeFileName(
             string value
         )
@@ -1686,4 +1454,5 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return value;
         }
     }
+
 }
