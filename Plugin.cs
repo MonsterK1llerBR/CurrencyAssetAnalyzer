@@ -27,7 +27,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         "Currency Asset Analyzer";
 
         private const string VERSION =
-            "7.3.2";
+            "8.0.0";
 
         private const string RepositoryMoneyPackDirectory =
             @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack";
@@ -52,7 +52,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 ReportDirectory = Path.Combine(
                     Paths.PluginPath,
                     "CurrencyAssetAnalyzer",
-                    "AnalyzerV7"
+                    "AnalyzerV8"
                 );
 
                 MoneyPackDirectory = Path.Combine(
@@ -73,7 +73,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
-                    "Currency Asset Analyzer v7.3.2"
+                    "Currency Asset Analyzer v8.0.0"
                 );
 
                 Log.LogInfo(
@@ -82,6 +82,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 Log.LogInfo(
                     "Modo: engenharia reversa exclusiva de MoneyPack."
+                );
+
+                Log.LogInfo(
+                    "Objetivo: identificar Mesh, Material, Texture e UV."
                 );
 
                 Log.LogInfo(
@@ -569,7 +573,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "CURRENCY ASSET ANALYZER v7.3.2"
+                        "CURRENCY ASSET ANALYZER v8.0.0"
                     );
 
                     writer.WriteLine(
@@ -1011,6 +1015,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             material.name
                         );
 
+                        writer.WriteLine(
+                            indent +
+                            "InstanceID: " +
+                            material.GetInstanceID()
+                        );
+
                         Shader shader =
                             material.shader;
 
@@ -1020,6 +1030,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                                 indent +
                                 "Shader: " +
                                 shader.name
+                            );
+
+                            writer.WriteLine(
+                                indent +
+                                "ShaderProperties: " +
+                                shader.GetPropertyCount()
+                            );
+
+                            AnalyzeAllShaderProperties(
+                                material,
+                                shader,
+                                indent,
+                                writer
                             );
                         }
 
@@ -1057,6 +1080,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             indent,
                             writer
                         );
+
+                        AnalyzeMaterialValues(
+                            material,
+                            indent,
+                            writer
+                        );
                     }
                 }
             }
@@ -1067,6 +1096,231 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "[ERRO RENDERER] " +
                     ex
                 );
+            }
+        }
+
+        private static void AnalyzeAllShaderProperties(
+            Material material,
+            Shader shader,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                for (
+                    int i = 0;
+                    i < shader.GetPropertyCount();
+                    i++
+                )
+                {
+                    try
+                    {
+                        string propertyName =
+                            shader.GetPropertyName(i);
+
+                        UnityEngine.Rendering.ShaderPropertyType propertyType =
+                            shader.GetPropertyType(i);
+
+                        writer.WriteLine(
+                            indent +
+                            "  SHADER PROPERTY"
+                        );
+
+                        writer.WriteLine(
+                            indent +
+                            "  Name: " +
+                            propertyName
+                        );
+
+                        writer.WriteLine(
+                            indent +
+                            "  Type: " +
+                            propertyType
+                        );
+
+                        if (
+                            propertyType ==
+                            UnityEngine.Rendering.ShaderPropertyType.Texture
+                        )
+                        {
+                            Texture texture =
+                                material.GetTexture(
+                                    propertyName
+                                );
+
+                            if (texture != null)
+                            {
+                                writer.WriteLine(
+                                    indent +
+                                    "  Texture: " +
+                                    texture.name
+                                );
+
+                                writer.WriteLine(
+                                    indent +
+                                    "  TextureType: " +
+                                    texture.GetType().FullName
+                                );
+
+                                AnalyzeTextureDetails(
+                                    texture,
+                                    indent + "  ",
+                                    writer
+                                );
+                            }
+                        }
+                        else if (
+                            propertyType ==
+                            UnityEngine.Rendering.ShaderPropertyType.Color
+                        )
+                        {
+                            try
+                            {
+                                Color color =
+                                    material.GetColor(
+                                        propertyName
+                                    );
+
+                                writer.WriteLine(
+                                    indent +
+                                    "  Color: " +
+                                    color
+                                );
+                            }
+                            catch
+                            {
+                            }
+                        }
+                        else if (
+                            propertyType ==
+                            UnityEngine.Rendering.ShaderPropertyType.Float ||
+                            propertyType ==
+                            UnityEngine.Rendering.ShaderPropertyType.Range
+                        )
+                        {
+                            try
+                            {
+                                float value =
+                                    material.GetFloat(
+                                        propertyName
+                                    );
+
+                                writer.WriteLine(
+                                    indent +
+                                    "  Value: " +
+                                    value.ToString(
+                                        CultureInfo.InvariantCulture
+                                    )
+                                );
+                            }
+                            catch
+                            {
+                            }
+                        }
+                        else if (
+                            propertyType ==
+                            UnityEngine.Rendering.ShaderPropertyType.Vector
+                        )
+                        {
+                            try
+                            {
+                                Vector4 vector =
+                                    material.GetVector(
+                                        propertyName
+                                    );
+
+                                writer.WriteLine(
+                                    indent +
+                                    "  Vector: " +
+                                    vector
+                                );
+                            }
+                            catch
+                            {
+                            }
+                        }
+                    }
+                    catch
+                    {
+                    }
+                }
+            }
+            catch
+            {
+            }
+        }
+
+        private static void AnalyzeMaterialValues(
+            Material material,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                Vector2 offsetBase =
+                    material.GetTextureOffset(
+                        "_BaseMap"
+                    );
+
+                Vector2 scaleBase =
+                    material.GetTextureScale(
+                        "_BaseMap"
+                    );
+
+                writer.WriteLine(
+                    indent +
+                    "TEXTURE TRANSFORM _BaseMap"
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Offset: " +
+                    offsetBase
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Scale: " +
+                    scaleBase
+                );
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                Vector2 offsetMain =
+                    material.GetTextureOffset(
+                        "_MainTex"
+                    );
+
+                Vector2 scaleMain =
+                    material.GetTextureScale(
+                        "_MainTex"
+                    );
+
+                writer.WriteLine(
+                    indent +
+                    "TEXTURE TRANSFORM _MainTex"
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Offset: " +
+                    offsetMain
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Scale: " +
+                    scaleMain
+                );
+            }
+            catch
+            {
             }
         }
 
@@ -1118,9 +1372,93 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "Type: " +
                     texture.GetType().FullName
                 );
+
+                AnalyzeTextureDetails(
+                    texture,
+                    indent,
+                    writer
+                );
             }
             catch
             {
+            }
+        }
+
+        private static void AnalyzeTextureDetails(
+            Texture texture,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                writer.WriteLine(
+                    indent +
+                    "TextureInstanceID: " +
+                    texture.GetInstanceID()
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Width: " +
+                    texture.width
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "Height: " +
+                    texture.height
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "AnisoLevel: " +
+                    texture.anisoLevel
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "FilterMode: " +
+                    texture.filterMode
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "WrapMode: " +
+                    texture.wrapMode
+                );
+
+                Texture2D texture2D =
+                    texture as Texture2D;
+
+                if (texture2D != null)
+                {
+                    writer.WriteLine(
+                        indent +
+                        "Texture2D_Format: " +
+                        texture2D.format
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Texture2D_MipmapCount: " +
+                        texture2D.mipmapCount
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Texture2D_IsReadable: " +
+                        texture2D.isReadable
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                writer.WriteLine(
+                    indent +
+                    "[ERRO TEXTURE DETAILS] " +
+                    ex.Message
+                );
             }
         }
 
@@ -1200,6 +1538,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                     writer.WriteLine(
                         indent +
+                        "Mesh InstanceID: " +
+                        mesh.GetInstanceID()
+                    );
+
+                    writer.WriteLine(
+                        indent +
                         "Vertices: " +
                         mesh.vertexCount
                     );
@@ -1208,6 +1552,24 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         indent +
                         "SubMeshes: " +
                         mesh.subMeshCount
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Bounds: " +
+                        mesh.bounds
+                    );
+
+                    AnalyzeMeshUV(
+                        mesh,
+                        indent,
+                        writer
+                    );
+
+                    AnalyzeMeshSubMeshes(
+                        mesh,
+                        indent,
+                        writer
                     );
                 }
             }
@@ -1218,6 +1580,223 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "[ERRO MESHFILTER] " +
                     ex
                 );
+            }
+        }
+
+        private static void AnalyzeMeshUV(
+            Mesh mesh,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                Vector2[] uv =
+                    mesh.uv;
+
+                if (
+                    uv == null ||
+                    uv.Length == 0
+                )
+                {
+                    writer.WriteLine(
+                        indent +
+                        "UV0: NONE"
+                    );
+
+                    return;
+                }
+
+                writer.WriteLine(
+                    indent +
+                    "UV0 COUNT: " +
+                    uv.Length
+                );
+
+                float minX = float.MaxValue;
+                float maxX = float.MinValue;
+                float minY = float.MaxValue;
+                float maxY = float.MinValue;
+
+                for (
+                    int i = 0;
+                    i < uv.Length;
+                    i++
+                )
+                {
+                    Vector2 value =
+                        uv[i];
+
+                    if (value.x < minX)
+                        minX = value.x;
+
+                    if (value.x > maxX)
+                        maxX = value.x;
+
+                    if (value.y < minY)
+                        minY = value.y;
+
+                    if (value.y > maxY)
+                        maxY = value.y;
+                }
+
+                writer.WriteLine(
+                    indent +
+                    "UV0 Min: (" +
+                    minX.ToString(
+                        "0.######",
+                        CultureInfo.InvariantCulture
+                    ) +
+                    ", " +
+                    minY.ToString(
+                        "0.######",
+                        CultureInfo.InvariantCulture
+                    ) +
+                    ")"
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "UV0 Max: (" +
+                    maxX.ToString(
+                        "0.######",
+                        CultureInfo.InvariantCulture
+                    ) +
+                    ", " +
+                    maxY.ToString(
+                        "0.######",
+                        CultureInfo.InvariantCulture
+                    ) +
+                    ")"
+                );
+
+                writer.WriteLine(
+                    indent +
+                    "UV0 DATA:"
+                );
+
+                for (
+                    int i = 0;
+                    i < uv.Length;
+                    i++
+                )
+                {
+                    writer.WriteLine(
+                        indent +
+                        "  [" +
+                        i +
+                        "] " +
+                        uv[i]
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                writer.WriteLine(
+                    indent +
+                    "[ERRO UV] " +
+                    ex.Message
+                );
+            }
+        }
+
+        private static void AnalyzeMeshSubMeshes(
+            Mesh mesh,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                for (
+                    int i = 0;
+                    i < mesh.subMeshCount;
+                    i++
+                )
+                {
+                    try
+                    {
+                        int[] triangles =
+                            mesh.GetTriangles(
+                                i
+                            );
+
+                        writer.WriteLine();
+
+                        writer.WriteLine(
+                            indent +
+                            "SUBMESH #" +
+                            (i + 1)
+                        );
+
+                        writer.WriteLine(
+                            indent +
+                            "Topology: " +
+                            mesh.GetTopology(i)
+                        );
+
+                        writer.WriteLine(
+                            indent +
+                            "TriangleIndexCount: " +
+                            triangles.Length
+                        );
+
+                        if (
+                            triangles.Length <= 300
+                        )
+                        {
+                            writer.WriteLine(
+                                indent +
+                                "Triangles:"
+                            );
+
+                            for (
+                                int t = 0;
+                                t < triangles.Length;
+                                t += 3
+                            )
+                            {
+                                if (
+                                    t + 2 >=
+                                    triangles.Length
+                                )
+                                {
+                                    break;
+                                }
+
+                                writer.WriteLine(
+                                    indent +
+                                    "  " +
+                                    triangles[t] +
+                                    ", " +
+                                    triangles[t + 1] +
+                                    ", " +
+                                    triangles[t + 2]
+                                );
+                            }
+                        }
+                        else
+                        {
+                            writer.WriteLine(
+                                indent +
+                                "Triangles: OMITTED (>300 indices)"
+                            );
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        writer.WriteLine(
+                            indent +
+                            "[ERRO SUBMESH " +
+                            i +
+                            "] " +
+                            ex.Message
+                        );
+                    }
+                }
+            }
+            catch
+            {
             }
         }
 
