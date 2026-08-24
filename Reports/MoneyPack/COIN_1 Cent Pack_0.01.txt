@@ -1,5 +1,5 @@
 ========================================
-CURRENCY ASSET ANALYZER v8.0.0
+CURRENCY ASSET ANALYZER v8.1.1
 ========================================
 Trigger: SpawnMoney
 Type: COIN
@@ -79,233 +79,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -366,18 +139,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (1)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (1)
@@ -413,233 +188,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -700,18 +248,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (2)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (2)
@@ -747,233 +297,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -1034,18 +357,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (3)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (3)
@@ -1081,233 +406,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -1368,18 +466,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (4)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (4)
@@ -1415,233 +515,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -1702,18 +575,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (5)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (5)
@@ -1749,233 +624,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -2036,18 +684,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (6)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (6)
@@ -2083,233 +733,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -2370,18 +793,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (7)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (7)
@@ -2417,233 +842,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -2704,18 +902,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (8)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (8)
@@ -2751,233 +951,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -3038,18 +1011,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (9)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (9)
@@ -3085,233 +1060,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -3372,18 +1120,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
       GameObject: Coin_1_Cent (10)
       Path: 1 Cent Pack/Visuals/1 Cent Pack/Coin_1_Cent (10)
@@ -3419,233 +1169,6 @@ Count: 5
         Name: M_Money
         InstanceID: 61678
         Shader: Universal Render Pipeline/Lit
-        ShaderProperties: 50
-          SHADER PROPERTY
-          Name: _WorkflowMode
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _BaseMap
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _BaseColor
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _Cutoff
-          Type: Range
-          Value: 0.5
-          SHADER PROPERTY
-          Name: _Smoothness
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _SmoothnessTextureChannel
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Metallic
-          Type: Range
-          Value: 0
-          SHADER PROPERTY
-          Name: _MetallicGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecColor
-          Type: Color
-          Color: RGBA(0.565, 0.565, 0.565, 1.000)
-          SHADER PROPERTY
-          Name: _SpecGlossMap
-          Type: Texture
-          Texture: T_Money_SpecularSmoothness
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232064
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _SpecularHighlights
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _EnvironmentReflections
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpScale
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BumpMap
-          Type: Texture
-          Texture: T_Money_Normal
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232062
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Parallax
-          Type: Range
-          Value: 0.005
-          SHADER PROPERTY
-          Name: _ParallaxMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _OcclusionStrength
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _OcclusionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _EmissionColor
-          Type: Color
-          Color: RGBA(0.000, 0.000, 0.000, 1.000)
-          SHADER PROPERTY
-          Name: _EmissionMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailMask
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailAlbedoMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailAlbedoMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _DetailNormalMapScale
-          Type: Range
-          Value: 1
-          SHADER PROPERTY
-          Name: _DetailNormalMap
-          Type: Texture
-          SHADER PROPERTY
-          Name: _ClearCoatMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ClearCoatSmoothness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Surface
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Blend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Cull
-          Type: Float
-          Value: 2
-          SHADER PROPERTY
-          Name: _AlphaClip
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlend
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlend
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _SrcBlendAlpha
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _DstBlendAlpha
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _ZWrite
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _BlendModePreserveSpecular
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _AlphaToMask
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _AddPrecomputedVelocity
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _XRMotionVectorsPass
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _ReceiveShadows
-          Type: Float
-          Value: 1
-          SHADER PROPERTY
-          Name: _QueueOffset
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _MainTex
-          Type: Texture
-          Texture: T_Money_AlbedoTransparency
-          TextureType: UnityEngine.Texture
-          TextureInstanceID: 232060
-          Width: 2048
-          Height: 2048
-          AnisoLevel: 1
-          FilterMode: Bilinear
-          WrapMode: Repeat
-          SHADER PROPERTY
-          Name: _Color
-          Type: Color
-          Color: RGBA(1.000, 1.000, 1.000, 1.000)
-          SHADER PROPERTY
-          Name: _GlossMapScale
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _Glossiness
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: _GlossyReflections
-          Type: Float
-          Value: 0
-          SHADER PROPERTY
-          Name: unity_Lightmaps
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_LightmapsInd
-          Type: Texture
-          SHADER PROPERTY
-          Name: unity_ShadowMasks
-          Type: Texture
         TEXTURE
         Property: _BaseMap
         Name: T_Money_AlbedoTransparency
@@ -3706,18 +1229,20 @@ Count: 5
         MESH FILTER
         --------------------------------
         MeshFilter #1
-        Type: UnityEngine.MeshFilter
         Mesh Name: SM_Coin_1_Cent
         Mesh InstanceID: 63036
         Vertices: 194
         SubMeshes: 1
         Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.00, 0.01)
-        UV0: NONE
 
-        SUBMESH #1
-        Topology: Triangles
-        TriangleIndexCount: 0
-        Triangles:
+        UV0 ANALYSIS
+        --------------------------------
+        UV0 Count: 0
+        UV0: LISTA VAZIA
+
+        MESH INDEX ANALYSIS
+        --------------------------------
+        Triangles: NAO FOI POSSIVEL LER
 
 
 ========================================
