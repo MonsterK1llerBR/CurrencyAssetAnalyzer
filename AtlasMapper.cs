@@ -28,7 +28,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Currency Atlas Mapper";
 
         private const string VERSION =
-            "1.0.0";
+            "2.0.0";
 
         private const string RepositoryRoot =
             @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer";
@@ -50,6 +50,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         private static string ReportFile;
 
         private static Texture2D DiagnosticTexture;
+
+        private const int DiagnosticTextureSize = 1024;
+
+        private const int CaptureSize = 1024;
+
+        private const int DiagnosticLayer = 31;
 
         private static readonly byte[] PngSignature =
         {
@@ -98,35 +104,39 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 InitializeReport();
 
-                Log.LogInfo(
+                LogInfo(
                     "========================================"
                 );
 
-                Log.LogInfo(
-                    "Currency Atlas Mapper v1.0.0"
+                LogInfo(
+                    "Currency Atlas Mapper v2.0.0"
                 );
 
-                Log.LogInfo(
+                LogInfo(
                     "========================================"
                 );
 
-                Log.LogInfo(
-                    "Objetivo: descobrir regiao UV do atlas."
+                LogInfo(
+                    "Metodo: Renderer real + Camera real."
                 );
 
-                Log.LogInfo(
-                    "Metodo: renderizacao diagnostica."
-                );
-
-                Log.LogInfo(
+                LogInfo(
                     "Mesh.uv direto: NAO UTILIZADO."
                 );
 
-                Log.LogInfo(
-                    "MoneyPack scope: SOMENTE MOEDAS."
+                LogInfo(
+                    "Camera artificial: DESATIVADA."
                 );
 
-                Log.LogInfo(
+                LogInfo(
+                    "Probe artificial: DESATIVADO."
+                );
+
+                LogInfo(
+                    "Captura diagnostica U/V: ATIVADA."
+                );
+
+                LogInfo(
                     "Saida: " +
                     OutputDirectory
                 );
@@ -137,7 +147,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
             catch (Exception ex)
             {
-                Log.LogError(
+                LogError(
                     "Erro inicializando Currency Atlas Mapper: " +
                     ex
                 );
@@ -174,7 +184,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "Metodo: textura diagnostica codificando U/V."
+                        "Renderer real utilizado."
+                    );
+
+                    writer.WriteLine(
+                        "Camera real utilizada."
+                    );
+
+                    writer.WriteLine(
+                        "O material original e restaurado apos cada captura."
+                    );
+
+                    writer.WriteLine(
+                        "A posicao original da moeda e restaurada."
                     );
 
                     writer.WriteLine();
@@ -189,12 +211,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         {
             try
             {
-                const int size = 1024;
-
                 DiagnosticTexture =
                     new Texture2D(
-                        size,
-                        size,
+                        DiagnosticTextureSize,
+                        DiagnosticTextureSize,
                         TextureFormat.RGBA32,
                         false,
                         true
@@ -211,43 +231,56 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 Color32[] pixels =
                     new Color32[
-                        size * size
+                        DiagnosticTextureSize *
+                        DiagnosticTextureSize
                     ];
 
                 for (
                     int y = 0;
-                    y < size;
+                    y < DiagnosticTextureSize;
                     y++
                 )
                 {
                     float v =
                         (float)y /
-                        (float)(size - 1);
+                        (float)(
+                            DiagnosticTextureSize -
+                            1
+                        );
 
                     byte green =
                         (byte)(
-                            Mathf.Clamp01(v) *
+                            Mathf.Clamp01(
+                                v
+                            ) *
                             255f
                         );
 
                     for (
                         int x = 0;
-                        x < size;
+                        x < DiagnosticTextureSize;
                         x++
                     )
                     {
                         float u =
                             (float)x /
-                            (float)(size - 1);
+                            (float)(
+                                DiagnosticTextureSize -
+                                1
+                            );
 
                         byte red =
                             (byte)(
-                                Mathf.Clamp01(u) *
+                                Mathf.Clamp01(
+                                    u
+                                ) *
                                 255f
                             );
 
                         pixels[
-                            y * size + x
+                            y *
+                            DiagnosticTextureSize +
+                            x
                         ] =
                             new Color32(
                                 red,
@@ -352,7 +385,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (postfix == null)
                 {
                     LogError(
-                        "Postfix nao encontrado."
+                        "SpawnMoneyPostfix nao encontrado."
                     );
 
                     return;
@@ -482,13 +515,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
             catch (Exception ex)
             {
-                if (Instance != null)
-                {
-                    Instance.Log.LogError(
-                        "Erro procurando SpawnMoney: " +
-                        ex
-                    );
-                }
+                LogError(
+                    "Erro procurando SpawnMoney: " +
+                    ex
+                );
             }
 
             return null;
@@ -524,13 +554,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
             catch (Exception ex)
             {
-                if (Instance != null)
-                {
-                    Instance.Log.LogError(
-                        "Erro no Postfix: " +
-                        ex
-                    );
-                }
+                LogError(
+                    "Erro no Postfix: " +
+                    ex
+                );
             }
         }
 
@@ -587,7 +614,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (filter == null)
                 {
                     LogError(
-                        "MeshFilter de moeda nao encontrado em " +
+                        "MeshFilter da moeda nao encontrado: " +
                         root.name
                     );
 
@@ -600,7 +627,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (mesh == null)
                 {
                     LogError(
-                        "Mesh nulo em " +
+                        "Mesh nulo em: " +
                         root.name
                     );
 
@@ -629,18 +656,31 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                Renderer originalRenderer =
-                    filter.GetComponent<Renderer>();
+                Renderer renderer =
+                    FindRendererForMesh(
+                        filter
+                    );
 
-                Material originalMaterial =
-                    null;
-
-                if (
-                    originalRenderer != null
-                )
+                if (renderer == null)
                 {
-                    originalMaterial =
-                        originalRenderer.sharedMaterial;
+                    LogError(
+                        "Renderer da moeda nao encontrado: " +
+                        coinName
+                    );
+
+                    return;
+                }
+
+                Camera camera =
+                    FindBestGameCamera();
+
+                if (camera == null)
+                {
+                    LogError(
+                        "Nenhuma Camera ativa encontrada."
+                    );
+
+                    return;
                 }
 
                 LogInfo(
@@ -658,19 +698,21 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 LogInfo(
-                    "Material original: " +
-                    (
-                        originalMaterial != null
-                            ? originalMaterial.name
-                            : "null"
-                    )
+                    "Renderer: " +
+                    renderer.GetType().FullName
+                );
+
+                LogInfo(
+                    "Camera: " +
+                    camera.name
                 );
 
                 CoinMappingResult result =
-                    RenderCoinDiagnostic(
+                    CaptureRealCoin(
                         coinName,
-                        mesh,
-                        filter.transform
+                        filter,
+                        renderer,
+                        camera
                     );
 
                 WriteCoinReport(
@@ -733,10 +775,107 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
-        private static CoinMappingResult RenderCoinDiagnostic(
+        private static Renderer FindRendererForMesh(
+            MeshFilter filter
+        )
+        {
+            if (filter == null)
+                return null;
+
+            Renderer renderer =
+                filter.GetComponent<Renderer>();
+
+            if (renderer != null)
+                return renderer;
+
+            try
+            {
+                Renderer[] renderers =
+                    filter.gameObject.GetComponentsInChildren<Renderer>();
+
+                if (
+                    renderers != null &&
+                    renderers.Length > 0
+                )
+                {
+                    for (
+                        int i = 0;
+                        i < renderers.Length;
+                        i++
+                    )
+                    {
+                        if (renderers[i] != null)
+                            return renderers[i];
+                    }
+                }
+            }
+            catch
+            {
+            }
+
+            return null;
+        }
+
+        private static Camera FindBestGameCamera()
+        {
+            try
+            {
+                Camera main =
+                    Camera.main;
+
+                if (
+                    main != null &&
+                    main.isActiveAndEnabled
+                )
+                {
+                    return main;
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                Camera[] cameras =
+                    UnityEngine.Object.FindObjectsOfType<Camera>();
+
+                if (
+                    cameras != null &&
+                    cameras.Length > 0
+                )
+                {
+                    for (
+                        int i = 0;
+                        i < cameras.Length;
+                        i++
+                    )
+                    {
+                        Camera camera =
+                            cameras[i];
+
+                        if (
+                            camera != null &&
+                            camera.isActiveAndEnabled
+                        )
+                        {
+                            return camera;
+                        }
+                    }
+                }
+            }
+            catch
+            {
+            }
+
+            return null;
+        }
+
+        private static CoinMappingResult CaptureRealCoin(
             string coinName,
-            Mesh mesh,
-            Transform originalTransform
+            MeshFilter filter,
+            Renderer renderer,
+            Camera camera
         )
         {
             CoinMappingResult result =
@@ -746,7 +885,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 coinName;
 
             result.MeshName =
-                mesh.name;
+                (
+                    filter.sharedMesh != null
+                        ? filter.sharedMesh.name
+                        : "null"
+                );
 
             result.MinU =
                 1f;
@@ -760,10 +903,28 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             result.MaxV =
                 0f;
 
-            GameObject probe =
-                null;
+            Transform coinTransform =
+                filter.transform;
 
-            Camera camera =
+            Transform originalParent =
+                coinTransform.parent;
+
+            Vector3 originalPosition =
+                coinTransform.position;
+
+            Quaternion originalRotation =
+                coinTransform.rotation;
+
+            Vector3 originalScale =
+                coinTransform.localScale;
+
+            int originalLayer =
+                renderer.gameObject.layer;
+
+            Material originalMaterial =
+                renderer.sharedMaterial;
+
+            Material diagnosticMaterial =
                 null;
 
             RenderTexture renderTexture =
@@ -772,189 +933,95 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             Texture2D readable =
                 null;
 
-            Material material =
-                null;
+            RenderTexture previousTarget =
+                camera.targetTexture;
+
+            RenderTexture previousActive =
+                RenderTexture.active;
+
+            CameraClearFlags previousClearFlags =
+                camera.clearFlags;
+
+            Color previousBackground =
+                camera.backgroundColor;
+
+            int previousCullingMask =
+                camera.cullingMask;
+
+            bool previousHDR =
+                camera.allowHDR;
+
+            bool previousMSAA =
+                camera.allowMSAA;
+
+            bool rendererWasEnabled =
+                renderer.enabled;
 
             try
             {
-                probe =
-                    new GameObject(
-                        "CurrencyAtlasMapper_Probe"
-                    );
+                Shader diagnosticShader =
+                    FindDiagnosticShader();
 
-                probe.layer =
-                    31;
-
-                MeshFilter probeFilter =
-                    probe.AddComponent<
-                        MeshFilter
-                    >();
-
-                MeshRenderer probeRenderer =
-                    probe.AddComponent<
-                        MeshRenderer
-                    >();
-
-                probeFilter.sharedMesh =
-                    mesh;
-
-                Shader shader =
-                    Shader.Find(
-                        "Universal Render Pipeline/Unlit"
-                    );
-
-                if (shader == null)
-                {
-                    shader =
-                        Shader.Find(
-                            "Unlit/Texture"
-                        );
-                }
-
-                if (shader == null)
+                if (
+                    diagnosticShader == null
+                )
                 {
                     throw new Exception(
-                        "Shader Unlit nao encontrado."
+                        "Nenhum shader Unlit disponivel."
                     );
                 }
 
-                material =
+                diagnosticMaterial =
                     new Material(
-                        shader
+                        diagnosticShader
                     );
 
-                material.name =
-                    "CurrencyAtlasMapper_DiagnosticMaterial";
+                diagnosticMaterial.name =
+                    "CurrencyAtlasMapper_RuntimeDiagnostic";
 
-                if (
-                    material.HasProperty(
-                        "_BaseMap"
-                    )
-                )
-                {
-                    material.SetTexture(
-                        "_BaseMap",
-                        DiagnosticTexture
-                    );
-                }
+                SetDiagnosticTexture(
+                    diagnosticMaterial
+                );
 
-                if (
-                    material.HasProperty(
-                        "_MainTex"
-                    )
-                )
-                {
-                    material.SetTexture(
-                        "_MainTex",
-                        DiagnosticTexture
-                    );
-                }
+                renderer.gameObject.layer =
+                    DiagnosticLayer;
 
-                if (
-                    material.HasProperty(
-                        "_Color"
-                    )
-                )
-                {
-                    material.SetColor(
-                        "_Color",
-                        Color.white
-                    );
-                }
-
-                if (
-                    material.HasProperty(
-                        "_BaseColor"
-                    )
-                )
-                {
-                    material.SetColor(
-                        "_BaseColor",
-                        Color.white
-                    );
-                }
-
-                if (
-                    material.HasProperty(
-                        "_Cull"
-                    )
-                )
-                {
-                    material.SetFloat(
-                        "_Cull",
-                        0f
-                    );
-                }
-
-                probeRenderer.sharedMaterial =
-                    material;
-
-                probe.transform.position =
-                    Vector3.zero;
-
-                probe.transform.rotation =
-                    Quaternion.identity;
-
-                probe.transform.localScale =
-                    Vector3.one;
-
-                Bounds bounds =
-                    mesh.bounds;
-
-                float extent =
-                    Mathf.Max(
-                        bounds.extents.x,
-                        bounds.extents.y,
-                        bounds.extents.z
-                    );
-
-                if (extent < 0.0001f)
-                    extent = 0.01f;
-
-                float distance =
-                    extent *
-                    8f;
-
-                float orthographicSize =
-                    extent *
-                    2.5f;
-
-                if (
-                    orthographicSize <
-                    0.02f
-                )
-                {
-                    orthographicSize =
-                        0.02f;
-                }
-
-                GameObject cameraObject =
-                    new GameObject(
-                        "CurrencyAtlasMapper_Camera"
-                    );
-
-                cameraObject.layer =
-                    31;
-
-                camera =
-                    cameraObject.AddComponent<
-                        Camera
-                    >();
-
-                camera.enabled =
-                    false;
-
-                camera.orthographic =
+                renderer.enabled =
                     true;
 
-                camera.orthographicSize =
-                    orthographicSize;
+                renderer.sharedMaterial =
+                    diagnosticMaterial;
 
-                camera.nearClipPlane =
-                    0.0001f;
+                PositionCoinForCamera(
+                    coinTransform,
+                    camera,
+                    filter.sharedMesh
+                );
 
-                camera.farClipPlane =
-                    distance * 4f;
+                renderTexture =
+                    new RenderTexture(
+                        CaptureSize,
+                        CaptureSize,
+                        24,
+                        RenderTextureFormat.ARGB32
+                    );
+
+                renderTexture.name =
+                    "CurrencyAtlasMapper_RT";
+
+                renderTexture.Create();
+
+                if (
+                    !renderTexture.IsCreated()
+                )
+                {
+                    throw new Exception(
+                        "RenderTexture nao foi criada."
+                    );
+                }
+
+                camera.targetTexture =
+                    renderTexture;
 
                 camera.clearFlags =
                     CameraClearFlags.SolidColor;
@@ -963,7 +1030,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     Color.black;
 
                 camera.cullingMask =
-                    1 << 31;
+                    1 <<
+                    DiagnosticLayer;
 
                 camera.allowHDR =
                     false;
@@ -971,60 +1039,101 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 camera.allowMSAA =
                     false;
 
-                renderTexture =
-                    new RenderTexture(
-                        512,
-                        512,
-                        24,
-                        RenderTextureFormat.ARGB32
-                    );
+                CameraRenderWithoutPostProcessing(
+                    camera
+                );
 
-                renderTexture.Create();
-
-                camera.targetTexture =
+                RenderTexture.active =
                     renderTexture;
 
-                Vector3[] directions =
-                {
-                    Vector3.right,
-                    Vector3.left,
-                    Vector3.up,
-                    Vector3.down,
-                    Vector3.forward,
-                    Vector3.back
-                };
+                readable =
+                    new Texture2D(
+                        CaptureSize,
+                        CaptureSize,
+                        TextureFormat.RGBA32,
+                        false,
+                        true
+                    );
 
-                string[] names =
-                {
-                    "POS_X",
-                    "NEG_X",
-                    "POS_Y",
-                    "NEG_Y",
-                    "POS_Z",
-                    "NEG_Z"
-                };
+                readable.ReadPixels(
+                    new Rect(
+                        0,
+                        0,
+                        CaptureSize,
+                        CaptureSize
+                    ),
+                    0,
+                    0,
+                    false
+                );
 
-                for (
-                    int i = 0;
-                    i < directions.Length;
-                    i++
+                readable.Apply(
+                    false,
+                    false
+                );
+
+                Color32[] pixels =
+                    readable.GetPixels32();
+
+                int valid =
+                    AnalyzeDiagnosticPixels(
+                        result,
+                        pixels
+                    );
+
+                result.ValidPixelCount =
+                    valid;
+
+                result.MappingFound =
+                    valid >
+                    20;
+
+                string safeCoin =
+                    SanitizeFileName(
+                        coinName
+                    );
+
+                string outputPath =
+                    Path.Combine(
+                        OutputDirectory,
+                        safeCoin +
+                        "_REAL_CAMERA.png"
+                    );
+
+                byte[] png =
+                    EncodeTextureToPng(
+                        readable
+                    );
+
+                if (
+                    png != null &&
+                    png.Length > 0
                 )
                 {
-                    CaptureView(
-                        result,
-                        coinName,
-                        camera,
-                        directions[i],
-                        names[i],
-                        distance,
-                        renderTexture,
-                        ref readable
+                    File.WriteAllBytes(
+                        outputPath,
+                        png
+                    );
+
+                    SyncToRepository(
+                        outputPath
                     );
                 }
 
-                result.MappingFound =
-                    result.ValidPixelCount >
-                    10;
+                LogInfo(
+                    "Captura real concluida: " +
+                    coinName +
+                    " | Pixels=" +
+                    valid +
+                    " | U=" +
+                    FormatFloat(result.MinU) +
+                    ".." +
+                    FormatFloat(result.MaxU) +
+                    " | V=" +
+                    FormatFloat(result.MinV) +
+                    ".." +
+                    FormatFloat(result.MaxV)
+                );
 
                 return result;
             }
@@ -1034,7 +1143,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     ex.ToString();
 
                 LogError(
-                    "Erro renderizando " +
+                    "Erro capturando moeda real " +
                     coinName +
                     ": " +
                     ex
@@ -1044,6 +1153,86 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
             finally
             {
+                try
+                {
+                    RenderTexture.active =
+                        previousActive;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    camera.targetTexture =
+                        previousTarget;
+
+                    camera.clearFlags =
+                        previousClearFlags;
+
+                    camera.backgroundColor =
+                        previousBackground;
+
+                    camera.cullingMask =
+                        previousCullingMask;
+
+                    camera.allowHDR =
+                        previousHDR;
+
+                    camera.allowMSAA =
+                        previousMSAA;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    renderer.sharedMaterial =
+                        originalMaterial;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    renderer.enabled =
+                        rendererWasEnabled;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    renderer.gameObject.layer =
+                        originalLayer;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    coinTransform.SetParent(
+                        originalParent,
+                        true
+                    );
+
+                    coinTransform.position =
+                        originalPosition;
+
+                    coinTransform.rotation =
+                        originalRotation;
+
+                    coinTransform.localScale =
+                        originalScale;
+                }
+                catch
+                {
+                }
+
                 try
                 {
                     if (readable != null)
@@ -1074,36 +1263,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 try
                 {
-                    if (camera != null)
+                    if (diagnosticMaterial != null)
                     {
                         UnityEngine.Object.Destroy(
-                            camera.gameObject
-                        );
-                    }
-                }
-                catch
-                {
-                }
-
-                try
-                {
-                    if (probe != null)
-                    {
-                        UnityEngine.Object.Destroy(
-                            probe
-                        );
-                    }
-                }
-                catch
-                {
-                }
-
-                try
-                {
-                    if (material != null)
-                    {
-                        UnityEngine.Object.Destroy(
-                            material
+                            diagnosticMaterial
                         );
                     }
                 }
@@ -1113,170 +1276,264 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        private static void CaptureView(
-            CoinMappingResult result,
-            string coinName,
-            Camera camera,
-            Vector3 direction,
-            string viewName,
-            float distance,
-            RenderTexture renderTexture,
-            ref Texture2D readable
-        )
+        private static Shader FindDiagnosticShader()
         {
             try
             {
-                Vector3 target =
-                    Vector3.zero;
-
-                Vector3 position =
-                    target +
-                    direction *
-                    distance;
-
-                Vector3 up =
-                    GetCameraUpVector(
-                        direction
+                Shader shader =
+                    Shader.Find(
+                        "Universal Render Pipeline/Unlit"
                     );
 
-                camera.transform.position =
-                    position;
+                if (shader != null)
+                    return shader;
+            }
+            catch
+            {
+            }
 
-                camera.transform.rotation =
-                    Quaternion.LookRotation(
-                        target -
-                        position,
-                        up
+            try
+            {
+                Shader shader =
+                    Shader.Find(
+                        "Unlit/Texture"
                     );
 
-                camera.Render();
+                if (shader != null)
+                    return shader;
+            }
+            catch
+            {
+            }
 
-                RenderTexture previous =
-                    RenderTexture.active;
+            return null;
+        }
 
-                RenderTexture.active =
-                    renderTexture;
+        private static void SetDiagnosticTexture(
+            Material material
+        )
+        {
+            bool setBase =
+                false;
 
-                if (readable != null)
-                {
-                    UnityEngine.Object.Destroy(
-                        readable
-                    );
+            bool setMain =
+                false;
 
-                    readable =
-                        null;
-                }
-
-                readable =
-                    new Texture2D(
-                        512,
-                        512,
-                        TextureFormat.RGBA32,
-                        false,
-                        true
-                    );
-
-                readable.ReadPixels(
-                    new Rect(
-                        0,
-                        0,
-                        512,
-                        512
-                    ),
-                    0,
-                    0,
-                    false
-                );
-
-                readable.Apply(
-                    false,
-                    false
-                );
-
-                Color32[] pixels =
-                    readable.GetPixels32();
-
-                AnalyzeDiagnosticPixels(
-                    result,
-                    pixels
-                );
-
-                string safeCoin =
-                    SanitizeFileName(
-                        coinName
-                    );
-
-                string outputDirectory =
-                    Path.Combine(
-                        OutputDirectory,
-                        safeCoin
-                    );
-
-                Directory.CreateDirectory(
-                    outputDirectory
-                );
-
-                string outputPath =
-                    Path.Combine(
-                        outputDirectory,
-                        viewName +
-                        ".png"
-                    );
-
-                byte[] png =
-                    EncodeTextureToPng(
-                        readable
-                    );
-
+            try
+            {
                 if (
-                    png != null &&
-                    png.Length > 0
+                    material.HasProperty(
+                        "_BaseMap"
+                    )
                 )
                 {
-                    File.WriteAllBytes(
-                        outputPath,
-                        png
+                    material.SetTexture(
+                        "_BaseMap",
+                        DiagnosticTexture
                     );
 
-                    SyncToRepository(
-                        outputPath
+                    setBase =
+                        true;
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                if (
+                    material.HasProperty(
+                        "_MainTex"
+                    )
+                )
+                {
+                    material.SetTexture(
+                        "_MainTex",
+                        DiagnosticTexture
+                    );
+
+                    setMain =
+                        true;
+                }
+            }
+            catch
+            {
+            }
+
+            if (
+                !setBase &&
+                !setMain
+            )
+            {
+                throw new Exception(
+                    "Shader diagnostico nao possui _BaseMap nem _MainTex."
+                );
+            }
+
+            try
+            {
+                if (
+                    material.HasProperty(
+                        "_Color"
+                    )
+                )
+                {
+                    material.SetColor(
+                        "_Color",
+                        Color.white
                     );
                 }
-
-                RenderTexture.active =
-                    previous;
             }
-            catch (Exception ex)
+            catch
             {
-                result.Error +=
-                    Environment.NewLine +
-                    viewName +
-                    ": " +
-                    ex;
+            }
+
+            try
+            {
+                if (
+                    material.HasProperty(
+                        "_BaseColor"
+                    )
+                )
+                {
+                    material.SetColor(
+                        "_BaseColor",
+                        Color.white
+                    );
+                }
+            }
+            catch
+            {
             }
         }
 
-        private static Vector3 GetCameraUpVector(
-            Vector3 direction
+        private static void PositionCoinForCamera(
+            Transform coinTransform,
+            Camera camera,
+            Mesh mesh
         )
         {
             if (
-                Mathf.Abs(
-                    Vector3.Dot(
-                        direction.normalized,
-                        Vector3.up
-                    )
-                ) >
-                0.9f
+                coinTransform == null ||
+                camera == null
             )
             {
-                return Vector3.forward;
+                return;
             }
 
-            return Vector3.up;
+            Transform originalParent =
+                coinTransform.parent;
+
+            coinTransform.SetParent(
+                null,
+                true
+            );
+
+            Bounds bounds =
+                mesh != null
+                    ? mesh.bounds
+                    : new Bounds(
+                        Vector3.zero,
+                        Vector3.one
+                    );
+
+            float radius =
+                Mathf.Max(
+                    bounds.extents.x,
+                    bounds.extents.y,
+                    bounds.extents.z
+                );
+
+            if (
+                radius <
+                0.001f
+            )
+            {
+                radius =
+                    0.01f;
+            }
+
+            float distance =
+                Mathf.Max(
+                    radius * 8f,
+                    0.5f
+                );
+
+            Vector3 target =
+                camera.transform.position +
+                camera.transform.forward *
+                distance;
+
+            coinTransform.position =
+                target;
+
+            coinTransform.rotation =
+                camera.transform.rotation;
+
+            coinTransform.localScale =
+                Vector3.one;
+
+            try
+            {
+                Renderer renderer =
+                    coinTransform.GetComponent<Renderer>();
+
+                if (renderer != null)
+                {
+                    Bounds worldBounds =
+                        renderer.bounds;
+
+                    float size =
+                        Mathf.Max(
+                            worldBounds.size.x,
+                            worldBounds.size.y,
+                            worldBounds.size.z
+                        );
+
+                    if (
+                        size > 0.001f
+                    )
+                    {
+                        float desired =
+                            distance *
+                            0.55f;
+
+                        float multiplier =
+                            desired /
+                            size;
+
+                        multiplier =
+                            Mathf.Clamp(
+                                multiplier,
+                                0.25f,
+                                8f
+                            );
+
+                        coinTransform.localScale =
+                            Vector3.one *
+                            multiplier;
+                    }
+                }
+            }
+            catch
+            {
+            }
+
+            coinTransform.SetParent(
+                originalParent,
+                true
+            );
         }
 
-        private static void AnalyzeDiagnosticPixels(
+        private static void CameraRenderWithoutPostProcessing(
+            Camera camera
+        )
+        {
+            camera.Render();
+        }
+
+        private static int AnalyzeDiagnosticPixels(
             CoinMappingResult result,
             Color32[] pixels
         )
@@ -1285,8 +1542,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 pixels == null
             )
             {
-                return;
+                return 0;
             }
+
+            int valid =
+                0;
 
             for (
                 int i = 0;
@@ -1299,7 +1559,15 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 if (
                     pixel.b <
-                    200
+                    180
+                )
+                {
+                    continue;
+                }
+
+                if (
+                    pixel.r < 2 &&
+                    pixel.g < 2
                 )
                 {
                     continue;
@@ -1313,24 +1581,42 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     pixel.g /
                     255f;
 
-                if (u < result.MinU)
+                if (
+                    u < result.MinU
+                )
+                {
                     result.MinU =
                         u;
+                }
 
-                if (u > result.MaxU)
+                if (
+                    u > result.MaxU
+                )
+                {
                     result.MaxU =
                         u;
+                }
 
-                if (v < result.MinV)
+                if (
+                    v < result.MinV
+                )
+                {
                     result.MinV =
                         v;
+                }
 
-                if (v > result.MaxV)
+                if (
+                    v > result.MaxV
+                )
+                {
                     result.MaxV =
                         v;
+                }
 
-                result.ValidPixelCount++;
+                valid++;
             }
+
+            return valid;
         }
 
         private static void WriteCoinReport(
@@ -1436,27 +1722,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 SyncToRepository(
                     ReportFile
                 );
-
-                LogInfo(
-                    "Mapeamento concluido: " +
-                    result.CoinName +
-                    " | U=" +
-                    FormatFloat(
-                        result.MinU
-                    ) +
-                    ".." +
-                    FormatFloat(
-                        result.MaxU
-                    ) +
-                    " | V=" +
-                    FormatFloat(
-                        result.MinV
-                    ) +
-                    ".." +
-                    FormatFloat(
-                        result.MaxV
-                    )
-                );
             }
             catch (Exception ex)
             {
@@ -1536,11 +1801,20 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     (uint)height
                 );
 
-                ihdr[8] = 8;
-                ihdr[9] = 6;
-                ihdr[10] = 0;
-                ihdr[11] = 0;
-                ihdr[12] = 0;
+                ihdr[8] =
+                    8;
+
+                ihdr[9] =
+                    6;
+
+                ihdr[10] =
+                    0;
+
+                ihdr[11] =
+                    0;
+
+                ihdr[12] =
+                    0;
 
                 WritePngChunk(
                     output,
@@ -1854,15 +2128,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                if (
-                    !Directory.Exists(
-                        RepositoryRoot
-                    )
-                )
-                {
-                    return;
-                }
-
                 Directory.CreateDirectory(
                     RepositoryAtlasDirectory
                 );
@@ -1881,25 +2146,17 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     true
                 );
 
-                if (
-                    Instance != null
-                )
-                {
-                    Instance.Log.LogInfo(
-                        "Sincronizado: " +
-                        destination
-                    );
-                }
+                LogInfo(
+                    "Sincronizado: " +
+                    destination
+                );
             }
             catch (Exception ex)
             {
-                if (Instance != null)
-                {
-                    Instance.Log.LogError(
-                        "Erro sincronizando: " +
-                        ex
-                    );
-                }
+                LogError(
+                    "Erro sincronizando: " +
+                    ex
+                );
             }
         }
 

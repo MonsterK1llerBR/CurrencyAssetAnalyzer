@@ -1,8 +1,11 @@
 ========================================
 CURRENCY ATLAS MAPPER
-VERSION: 1.0.0
+VERSION: 2.0.0
 ========================================
-Metodo: textura diagnostica codificando U/V.
+Renderer real utilizado.
+Camera real utilizada.
+O material original e restaurado apos cada captura.
+A posicao original da moeda e restaurada.
 
 ----------------------------------------
 Coin: SM_Coin_50_Cents
