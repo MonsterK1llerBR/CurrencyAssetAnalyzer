@@ -6,7 +6,7 @@ Objetivo: descobrir a API real de UnityEngine.Mesh no runtime.
 
 ----------------------------------------
 MESH
-Name: SM_Coin_50_Cents
+Name: SM_Coin_25_Cents
 RuntimeType: UnityEngine.Mesh
 Assembly: UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 VertexCount: 194

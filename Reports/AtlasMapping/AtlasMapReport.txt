@@ -8,8 +8,8 @@ O material original e restaurado apos cada captura.
 A posicao original da moeda e restaurada.
 
 ----------------------------------------
-Coin: SM_Coin_50_Cents
-Mesh: SM_Coin_50_Cents
+Coin: SM_Coin_25_Cents
+Mesh: SM_Coin_25_Cents
 MappingFound: False
 ValidPixelCount: 0
 UV Min U: 1.000000
@@ -20,8 +20,8 @@ UV Width: -1.000000
 UV Height: -1.000000
 
 ----------------------------------------
-Coin: SM_Coin_25_Cents
-Mesh: SM_Coin_25_Cents
+Coin: SM_Coin_50_Cents
+Mesh: SM_Coin_50_Cents
 MappingFound: False
 ValidPixelCount: 0
 UV Min U: 1.000000
