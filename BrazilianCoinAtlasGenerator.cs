@@ -252,8 +252,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private Dictionary<string, string> FindMasks(
-            string pluginRoot
-        )
+    string pluginRoot
+)
         {
             Dictionary<string, string> result =
                 new Dictionary<string, string>(
@@ -276,6 +276,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     SearchOption.AllDirectories
                 );
 
+            Log.LogInfo(
+                "Mascaras encontradas no disco: " +
+                files.Length
+            );
+
             for (
                 int i = 0;
                 i < files.Length;
@@ -290,14 +295,32 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         file
                     );
 
-                bool isCoin =
-                    CoinNames.Contains(
-                        name,
-                        StringComparer.OrdinalIgnoreCase
-                    );
+                if (
+                    name.EndsWith(
+                        "_MASK",
+                        StringComparison.OrdinalIgnoreCase
+                    )
+                )
+                {
+                    name =
+                        name.Substring(
+                            0,
+                            name.Length - 5
+                        );
+                }
+
+                Log.LogInfo(
+                    "Mascara analisada: " +
+                    Path.GetFileName(file) +
+                    " -> " +
+                    name
+                );
 
                 if (
-                    !isCoin
+                    !CoinNames.Contains(
+                        name,
+                        StringComparer.OrdinalIgnoreCase
+                    )
                 )
                 {
                     continue;
@@ -313,8 +336,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         name,
                         file
                     );
+
+                    Log.LogInfo(
+                        "Mascara aceita: " +
+                        name
+                    );
                 }
             }
+
+            Log.LogInfo(
+                "Mascaras validas: " +
+                result.Count +
+                "/5"
+            );
 
             return result;
         }
