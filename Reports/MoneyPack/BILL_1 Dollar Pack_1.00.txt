@@ -1,5 +1,5 @@
 ========================================
-CURRENCY ASSET ANALYZER v8.1.1
+CURRENCY ASSET ANALYZER v8.2.3
 ========================================
 Trigger: SpawnMoney
 Type: BILL
@@ -64,6 +64,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -72,6 +73,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -82,12 +84,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -107,7 +119,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -132,6 +143,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -140,6 +152,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -150,12 +163,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -175,7 +198,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -200,6 +222,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -208,6 +231,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -218,12 +242,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -243,7 +277,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -268,6 +301,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -276,6 +310,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -286,12 +321,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -311,7 +356,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -336,6 +380,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -344,6 +389,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -354,12 +400,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -379,7 +435,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -404,6 +459,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -412,6 +468,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -422,12 +479,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -447,7 +514,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -472,6 +538,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -480,6 +547,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -490,12 +558,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -515,7 +593,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -540,6 +617,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -548,6 +626,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -558,12 +637,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -583,7 +672,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -608,6 +696,7 @@ Count: 5
       Type: UnityEngine.Renderer
       Enabled: True
       Materials: 1
+
       MATERIAL #1
       Name: 1$ Paper Front
       InstanceID: 63104
@@ -616,6 +705,7 @@ Count: 5
       Property: _BaseMap
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
@@ -626,12 +716,22 @@ Count: 5
       Property: _MainTex
       Name: US_one_dollar_bill,_obverse,_series_2009
       Type: UnityEngine.Texture
+      InstanceID: 350270
       TextureInstanceID: 350270
       Width: 512
       Height: 256
       AnisoLevel: 1
       FilterMode: Bilinear
       WrapMode: Repeat
+      TEXTURE
+      Property: _BumpMap
+      Texture: null
+      TEXTURE
+      Property: _MetallicGlossMap
+      Texture: null
+      TEXTURE
+      Property: _SpecGlossMap
+      Texture: null
       TEXTURE TRANSFORM _BaseMap
       Offset: (0.00, 0.00)
       Scale: (1.00, 1.00)
@@ -651,7 +751,6 @@ Count: 5
       UV0 ANALYSIS
       --------------------------------
       UV0 Count: 0
-      UV0: LISTA VAZIA
 
       MESH INDEX ANALYSIS
       --------------------------------
@@ -659,5 +758,5 @@ Count: 5
 
 
 ========================================
-FIM DO RELATÓRIO
+FIM DO RELATORIO
 ========================================

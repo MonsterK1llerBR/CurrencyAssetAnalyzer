@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.IO.Compression;
 using System.Reflection;
+using System.Text;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
@@ -13,24 +15,29 @@ using UnityEngine;
 namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 {
     [BepInPlugin(
-    GUID,
-    NAME,
-    VERSION
+        GUID,
+        NAME,
+        VERSION
     )]
     public class CurrencyAssetAnalyzer : BasePlugin
     {
         private const string GUID =
-        "br.monsterk1llerbr.supermarketsimulator.currencyassetanalyzer";
+            "br.monsterk1llerbr.supermarketsimulator.currencyassetanalyzer";
 
-
-    private const string NAME =
-        "Currency Asset Analyzer";
+        private const string NAME =
+            "Currency Asset Analyzer";
 
         private const string VERSION =
-            "8.1.1";
+            "8.2.3";
+
+        private const string RepositoryRoot =
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer";
 
         private const string RepositoryMoneyPackDirectory =
             @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack";
+
+        private const string RepositoryTextureDirectory =
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\Textures";
 
         private static CurrencyAssetAnalyzer Instance;
 
@@ -39,9 +46,28 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         private static readonly HashSet<string> AnalyzedMoneyPacks =
             new HashSet<string>();
 
+        private static readonly HashSet<int> ExtractedTextureInstanceIDs =
+            new HashSet<int>();
+
         private static string ReportDirectory;
 
         private static string MoneyPackDirectory;
+
+        private static string TextureDirectory;
+
+        private static string TextureExtractionReport;
+
+        private static readonly byte[] PngSignature =
+        {
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+        };
 
         public override void Load()
         {
@@ -60,6 +86,16 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "MoneyPack"
                 );
 
+                TextureDirectory = Path.Combine(
+                    ReportDirectory,
+                    "Textures"
+                );
+
+                TextureExtractionReport = Path.Combine(
+                    TextureDirectory,
+                    "TextureExtraction.txt"
+                );
+
                 Directory.CreateDirectory(
                     ReportDirectory
                 );
@@ -68,12 +104,18 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     MoneyPackDirectory
                 );
 
+                Directory.CreateDirectory(
+                    TextureDirectory
+                );
+
+                InitializeTextureExtractionReport();
+
                 Log.LogInfo(
                     "========================================"
                 );
 
                 Log.LogInfo(
-                    "Currency Asset Analyzer v8.1.1"
+                    "Currency Asset Analyzer v8.2.3"
                 );
 
                 Log.LogInfo(
@@ -85,7 +127,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
-                    "Objetivo: Mesh + Material + Texture + UV."
+                    "Objetivo: identificar e extrair texturas reais."
                 );
 
                 Log.LogInfo(
@@ -93,25 +135,34 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
-                    "Leitura UV via Mesh.GetUVs: ATIVADA."
+                    "Extracao via Graphics.Blit: ATIVADA."
                 );
 
                 Log.LogInfo(
-                    "Leitura de indices via Mesh.triangles: ATIVADA."
+                    "Codificacao PNG interna: ATIVADA."
                 );
 
                 Log.LogInfo(
-                    "Sincronização do repositório: ATIVADA."
+                    "Texture2D obrigatoria como origem: DESATIVADA."
                 );
 
                 Log.LogInfo(
-                    "Relatórios: " +
+                    "Sincronizacao do repositorio: ATIVADA."
+                );
+
+                Log.LogInfo(
+                    "Relatorios: " +
                     ReportDirectory
                 );
 
                 Log.LogInfo(
+                    "Texturas: " +
+                    TextureDirectory
+                );
+
+                Log.LogInfo(
                     "Destino: " +
-                    RepositoryMoneyPackDirectory
+                    RepositoryRoot
                 );
 
                 PatchSpawnMoney();
@@ -119,9 +170,54 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             catch (Exception ex)
             {
                 Log.LogError(
-                    "Erro durante inicialização: " +
+                    "Erro durante inicializacao: " +
                     ex
                 );
+            }
+        }
+
+        private static void InitializeTextureExtractionReport()
+        {
+            try
+            {
+                using (
+                    StreamWriter writer =
+                        new StreamWriter(
+                            TextureExtractionReport,
+                            false
+                        )
+                )
+                {
+                    writer.WriteLine(
+                        "========================================"
+                    );
+
+                    writer.WriteLine(
+                        "CURRENCY ASSET ANALYZER - TEXTURE EXTRACTION"
+                    );
+
+                    writer.WriteLine(
+                        "VERSION: " +
+                        VERSION
+                    );
+
+                    writer.WriteLine(
+                        "========================================"
+                    );
+
+                    writer.WriteLine(
+                        "A textura de origem e tratada como UnityEngine.Texture."
+                    );
+
+                    writer.WriteLine(
+                        "Nenhuma textura, material, mesh ou UV do jogo e alterado."
+                    );
+
+                    writer.WriteLine();
+                }
+            }
+            catch
+            {
             }
         }
 
@@ -137,7 +233,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (managerType == null)
                 {
                     Log.LogError(
-                        "CheckoutChangeManager não encontrado."
+                        "CheckoutChangeManager nao encontrado."
                     );
 
                     return;
@@ -156,7 +252,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (spawnMoney == null)
                 {
                     Log.LogError(
-                        "SpawnMoney(MoneyPack, bool) não encontrado."
+                        "SpawnMoney(MoneyPack, bool) nao encontrado."
                     );
 
                     return;
@@ -181,7 +277,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (postfix == null)
                 {
                     Log.LogError(
-                        "Não foi possível localizar SpawnMoneyPostfix."
+                        "SpawnMoneyPostfix nao localizado."
                     );
 
                     return;
@@ -289,7 +385,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         method.GetParameters();
 
                     if (
-                        parameters.Length != 2
+                        parameters.Length !=
+                        2
                     )
                     {
                         continue;
@@ -370,7 +467,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 if (gameObject == null)
                 {
                     Instance.Log.LogWarning(
-                        "MoneyPack encontrado, mas o GameObject não pôde " +
+                        "MoneyPack encontrado, mas o GameObject nao pode " +
                         "ser obtido. Value=" +
                         value
                     );
@@ -378,13 +475,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                string packName =
-                    gameObject.name;
-
                 string key =
                     (isCoin ? "COIN" : "BILL") +
                     "|" +
-                    packName +
+                    gameObject.name +
                     "|" +
                     value.ToString(
                         CultureInfo.InvariantCulture
@@ -403,7 +497,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "Novo MoneyPack descoberto: " +
                     (isCoin ? "COIN" : "BILL") +
                     " | Name=" +
-                    packName +
+                    gameObject.name +
                     " | Value=" +
                     value
                 );
@@ -577,7 +671,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "CURRENCY ASSET ANALYZER v8.1.1"
+                        "CURRENCY ASSET ANALYZER v8.2.3"
                     );
 
                     writer.WriteLine(
@@ -642,7 +736,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "FIM DO RELATÓRIO"
+                        "FIM DO RELATORIO"
                     );
 
                     writer.WriteLine(
@@ -651,82 +745,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 }
 
                 Instance.Log.LogInfo(
-                    "Relatório MoneyPack salvo: " +
+                    "Relatorio MoneyPack salvo: " +
                     path
                 );
 
                 SyncReportToRepository(
-                    path
-                );
-            }
-            catch (Exception ex)
-            {
-                Instance.Log.LogError(
-                    "Erro criando relatório: " +
-                    ex
-                );
-            }
-        }
-
-        private static void SyncReportToRepository(
-            string sourceFile
-        )
-        {
-            try
-            {
-                if (
-                    string.IsNullOrWhiteSpace(
-                        sourceFile
-                    )
-                )
-                {
-                    return;
-                }
-
-                if (
-                    !File.Exists(
-                        sourceFile
-                    )
-                )
-                {
-                    Instance.Log.LogWarning(
-                        "Arquivo de relatório não encontrado para sincronização: " +
-                        sourceFile
-                    );
-
-                    return;
-                }
-
-                Directory.CreateDirectory(
+                    path,
                     RepositoryMoneyPackDirectory
                 );
-
-                string fileName =
-                    Path.GetFileName(
-                        sourceFile
-                    );
-
-                string destinationFile =
-                    Path.Combine(
-                        RepositoryMoneyPackDirectory,
-                        fileName
-                    );
-
-                File.Copy(
-                    sourceFile,
-                    destinationFile,
-                    true
-                );
-
-                Instance.Log.LogInfo(
-                    "Relatório sincronizado com o repositório: " +
-                    destinationFile
-                );
             }
             catch (Exception ex)
             {
                 Instance.Log.LogError(
-                    "Erro sincronizando relatório com o repositório: " +
+                    "Erro criando relatorio: " +
                     ex
                 );
             }
@@ -1007,6 +1038,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         if (material == null)
                             continue;
 
+                        writer.WriteLine();
+
                         writer.WriteLine(
                             indent +
                             "MATERIAL #" +
@@ -1041,35 +1074,40 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             material,
                             "_BaseMap",
                             indent,
-                            writer
+                            writer,
+                            gameObject
                         );
 
                         AnalyzeTextureProperty(
                             material,
                             "_MainTex",
                             indent,
-                            writer
+                            writer,
+                            gameObject
                         );
 
                         AnalyzeTextureProperty(
                             material,
                             "_BumpMap",
                             indent,
-                            writer
+                            writer,
+                            gameObject
                         );
 
                         AnalyzeTextureProperty(
                             material,
                             "_MetallicGlossMap",
                             indent,
-                            writer
+                            writer,
+                            gameObject
                         );
 
                         AnalyzeTextureProperty(
                             material,
                             "_SpecGlossMap",
                             indent,
-                            writer
+                            writer,
+                            gameObject
                         );
 
                         AnalyzeMaterialValues(
@@ -1090,84 +1128,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        private static void AnalyzeMaterialValues(
-            Material material,
-            string indent,
-            StreamWriter writer
-        )
-        {
-            try
-            {
-                Vector2 offset =
-                    material.GetTextureOffset(
-                        "_BaseMap"
-                    );
-
-                Vector2 scale =
-                    material.GetTextureScale(
-                        "_BaseMap"
-                    );
-
-                writer.WriteLine(
-                    indent +
-                    "TEXTURE TRANSFORM _BaseMap"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "Offset: " +
-                    offset
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "Scale: " +
-                    scale
-                );
-            }
-            catch
-            {
-            }
-
-            try
-            {
-                Vector2 offset =
-                    material.GetTextureOffset(
-                        "_MainTex"
-                    );
-
-                Vector2 scale =
-                    material.GetTextureScale(
-                        "_MainTex"
-                    );
-
-                writer.WriteLine(
-                    indent +
-                    "TEXTURE TRANSFORM _MainTex"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "Offset: " +
-                    offset
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "Scale: " +
-                    scale
-                );
-            }
-            catch
-            {
-            }
-        }
-
         private static void AnalyzeTextureProperty(
             Material material,
             string property,
             string indent,
-            StreamWriter writer
+            StreamWriter writer,
+            GameObject owner
         )
         {
             try
@@ -1186,9 +1152,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         property
                     );
 
-                if (texture == null)
-                    return;
-
                 writer.WriteLine(
                     indent +
                     "TEXTURE"
@@ -1199,6 +1162,16 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "Property: " +
                     property
                 );
+
+                if (texture == null)
+                {
+                    writer.WriteLine(
+                        indent +
+                        "Texture: null"
+                    );
+
+                    return;
+                }
 
                 writer.WriteLine(
                     indent +
@@ -1212,11 +1185,986 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     texture.GetType().FullName
                 );
 
+                writer.WriteLine(
+                    indent +
+                    "InstanceID: " +
+                    texture.GetInstanceID()
+                );
+
                 AnalyzeTextureDetails(
                     texture,
                     indent,
                     writer
                 );
+
+                if (
+                    IsInterestingTexture(
+                        texture
+                    )
+                )
+                {
+                    LogInterestingTexture(
+                        texture,
+                        material,
+                        property,
+                        owner
+                    );
+
+                    ExtractTextureIfNeeded(
+                        texture,
+                        material,
+                        property,
+                        owner
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                writer.WriteLine(
+                    indent +
+                    "[ERRO TEXTURE] " +
+                    ex
+                );
+            }
+        }
+
+        private static bool IsInterestingTexture(
+            Texture texture
+        )
+        {
+            if (texture == null)
+                return false;
+
+            string name =
+                texture.name ??
+                string.Empty;
+
+            if (
+                name.IndexOf(
+                    "T_Money_AlbedoTransparency",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            if (
+                name.IndexOf(
+                    "T_Money_Normal",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            if (
+                name.IndexOf(
+                    "T_Money_SpecularSmoothness",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            if (
+                name.IndexOf(
+                    "Paper",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            if (
+                name.IndexOf(
+                    "Dollar",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            if (
+                name.IndexOf(
+                    "USD",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        private static void LogInterestingTexture(
+            Texture texture,
+            Material material,
+            string property,
+            GameObject owner
+        )
+        {
+            try
+            {
+                Instance.Log.LogInfo(
+                    "TEXTURA ALVO ENCONTRADA: " +
+                    texture.name +
+                    " | Type=" +
+                    texture.GetType().FullName +
+                    " | InstanceID=" +
+                    texture.GetInstanceID() +
+                    " | Material=" +
+                    material.name +
+                    " | Property=" +
+                    property +
+                    " | GameObject=" +
+                    owner.name
+                );
+            }
+            catch
+            {
+            }
+        }
+
+        private static void ExtractTextureIfNeeded(
+            Texture source,
+            Material material,
+            string property,
+            GameObject owner
+        )
+        {
+            try
+            {
+                int instanceID =
+                    source.GetInstanceID();
+
+                if (
+                    !ExtractedTextureInstanceIDs.Add(
+                        instanceID
+                    )
+                )
+                {
+                    return;
+                }
+
+                Instance.Log.LogInfo(
+                    "INICIANDO EXTRACAO: " +
+                    source.name +
+                    " | Type=" +
+                    source.GetType().FullName +
+                    " | InstanceID=" +
+                    instanceID
+                );
+
+                string safeName =
+                    SanitizeFileName(
+                        source.name
+                    );
+
+                if (
+                    string.IsNullOrWhiteSpace(
+                        safeName
+                    )
+                )
+                {
+                    safeName =
+                        "Texture_" +
+                        instanceID;
+                }
+
+                string fileName =
+                    safeName +
+                    "_" +
+                    instanceID +
+                    ".png";
+
+                string outputPath =
+                    Path.Combine(
+                        TextureDirectory,
+                        fileName
+                    );
+
+                bool success =
+                    TryExtractTextureToPNG(
+                        source,
+                        outputPath
+                    );
+
+                AppendTextureExtractionReport(
+                    source,
+                    material,
+                    property,
+                    owner,
+                    outputPath,
+                    success
+                );
+
+                if (success)
+                {
+                    Instance.Log.LogInfo(
+                        "TEXTURA EXTRAIDA COM SUCESSO: " +
+                        outputPath
+                    );
+
+                    SyncReportToRepository(
+                        outputPath,
+                        RepositoryTextureDirectory
+                    );
+
+                    SyncReportToRepository(
+                        TextureExtractionReport,
+                        RepositoryTextureDirectory
+                    );
+                }
+                else
+                {
+                    Instance.Log.LogWarning(
+                        "EXTRACAO FALHOU: " +
+                        source.name +
+                        " | InstanceID=" +
+                        instanceID
+                    );
+
+                    SyncReportToRepository(
+                        TextureExtractionReport,
+                        RepositoryTextureDirectory
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                Instance.Log.LogError(
+                    "Erro extraindo textura: " +
+                    ex
+                );
+            }
+        }
+
+        private static bool TryExtractTextureToPNG(
+            Texture source,
+            string outputPath
+        )
+        {
+            RenderTexture temporary =
+                null;
+
+            RenderTexture previousActive =
+                RenderTexture.active;
+
+            Texture2D readable =
+                null;
+
+            try
+            {
+                if (source == null)
+                    return false;
+
+                int width =
+                    source.width;
+
+                int height =
+                    source.height;
+
+                if (
+                    width <= 0 ||
+                    height <= 0
+                )
+                {
+                    Instance.Log.LogError(
+                        "Dimensoes invalidas: " +
+                        width +
+                        "x" +
+                        height
+                    );
+
+                    return false;
+                }
+
+                Instance.Log.LogInfo(
+                    "Criando RenderTexture: " +
+                    width +
+                    "x" +
+                    height
+                );
+
+                temporary =
+                    new RenderTexture(
+                        width,
+                        height,
+                        0,
+                        RenderTextureFormat.ARGB32
+                    );
+
+                temporary.filterMode =
+                    FilterMode.Point;
+
+                temporary.wrapMode =
+                    TextureWrapMode.Clamp;
+
+                temporary.Create();
+
+                if (
+                    !temporary.IsCreated()
+                )
+                {
+                    Instance.Log.LogError(
+                        "RenderTexture nao foi criada."
+                    );
+
+                    return false;
+                }
+
+                Graphics.Blit(
+                    source,
+                    temporary
+                );
+
+                RenderTexture.active =
+                    temporary;
+
+                readable =
+                    new Texture2D(
+                        width,
+                        height,
+                        TextureFormat.RGBA32,
+                        false,
+                        false
+                    );
+
+                readable.ReadPixels(
+                    new Rect(
+                        0,
+                        0,
+                        width,
+                        height
+                    ),
+                    0,
+                    0,
+                    false
+                );
+
+                readable.Apply(
+                    false,
+                    false
+                );
+
+                Color32[] pixels =
+                    readable.GetPixels32();
+
+                if (
+                    pixels == null ||
+                    pixels.Length !=
+                    width * height
+                )
+                {
+                    Instance.Log.LogError(
+                        "Quantidade de pixels inesperada: " +
+                        (
+                            pixels == null
+                                ? -1
+                                : pixels.Length
+                        )
+                    );
+
+                    return false;
+                }
+
+                Instance.Log.LogInfo(
+                    "Pixels capturados: " +
+                    pixels.Length
+                );
+
+                byte[] png =
+                    EncodePixelsToPng(
+                        pixels,
+                        width,
+                        height
+                    );
+
+                if (
+                    png == null ||
+                    png.Length == 0
+                )
+                {
+                    Instance.Log.LogError(
+                        "PNG vazio."
+                    );
+
+                    return false;
+                }
+
+                string directory =
+                    Path.GetDirectoryName(
+                        outputPath
+                    );
+
+                if (
+                    !string.IsNullOrEmpty(
+                        directory
+                    )
+                )
+                {
+                    Directory.CreateDirectory(
+                        directory
+                    );
+                }
+
+                File.WriteAllBytes(
+                    outputPath,
+                    png
+                );
+
+                Instance.Log.LogInfo(
+                    "PNG gravado: " +
+                    outputPath +
+                    " | Bytes=" +
+                    png.Length
+                );
+
+                return File.Exists(
+                    outputPath
+                );
+            }
+            catch (Exception ex)
+            {
+                if (Instance != null)
+                {
+                    Instance.Log.LogError(
+                        "Falha em TryExtractTextureToPNG: " +
+                        ex
+                    );
+                }
+
+                return false;
+            }
+            finally
+            {
+                try
+                {
+                    RenderTexture.active =
+                        previousActive;
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (readable != null)
+                    {
+                        UnityEngine.Object.Destroy(
+                            readable
+                        );
+                    }
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (temporary != null)
+                    {
+                        temporary.Release();
+
+                        UnityEngine.Object.Destroy(
+                            temporary
+                        );
+                    }
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        private static byte[] EncodePixelsToPng(
+            Color32[] pixels,
+            int width,
+            int height
+        )
+        {
+            if (
+                pixels == null ||
+                pixels.Length !=
+                width * height
+            )
+            {
+                return null;
+            }
+
+            using (
+                MemoryStream output =
+                    new MemoryStream()
+            )
+            {
+                output.Write(
+                    PngSignature,
+                    0,
+                    PngSignature.Length
+                );
+
+                byte[] ihdr =
+                    new byte[13];
+
+                WriteUInt32BigEndian(
+                    ihdr,
+                    0,
+                    (uint)width
+                );
+
+                WriteUInt32BigEndian(
+                    ihdr,
+                    4,
+                    (uint)height
+                );
+
+                ihdr[8] = 8;
+                ihdr[9] = 6;
+                ihdr[10] = 0;
+                ihdr[11] = 0;
+                ihdr[12] = 0;
+
+                WritePngChunk(
+                    output,
+                    "IHDR",
+                    ihdr
+                );
+
+                using (
+                    MemoryStream raw =
+                        new MemoryStream()
+                )
+                {
+                    for (
+                        int y = height - 1;
+                        y >= 0;
+                        y--
+                    )
+                    {
+                        raw.WriteByte(
+                            0
+                        );
+
+                        int rowStart =
+                            y * width;
+
+                        for (
+                            int x = 0;
+                            x < width;
+                            x++
+                        )
+                        {
+                            Color32 pixel =
+                                pixels[
+                                    rowStart +
+                                    x
+                                ];
+
+                            raw.WriteByte(
+                                pixel.r
+                            );
+
+                            raw.WriteByte(
+                                pixel.g
+                            );
+
+                            raw.WriteByte(
+                                pixel.b
+                            );
+
+                            raw.WriteByte(
+                                pixel.a
+                            );
+                        }
+                    }
+
+                    byte[] rawBytes =
+                        raw.ToArray();
+
+                    using (
+                        MemoryStream compressed =
+                            new MemoryStream()
+                    )
+                    {
+                        using (
+                            ZLibStream zlib =
+                                new ZLibStream(
+                                    compressed,
+                                    System.IO.Compression.CompressionLevel.Optimal,
+                                    true
+                                )
+                        )
+                        {
+                            zlib.Write(
+                                rawBytes,
+                                0,
+                                rawBytes.Length
+                            );
+                        }
+
+                        WritePngChunk(
+                            output,
+                            "IDAT",
+                            compressed.ToArray()
+                        );
+                    }
+                }
+
+                WritePngChunk(
+                    output,
+                    "IEND",
+                    new byte[0]
+                );
+
+                return output.ToArray();
+            }
+        }
+
+        private static void WritePngChunk(
+            Stream stream,
+            string type,
+            byte[] data
+        )
+        {
+            byte[] typeBytes =
+                Encoding.ASCII.GetBytes(
+                    type
+                );
+
+            WriteUInt32BigEndian(
+                stream,
+                (uint)data.Length
+            );
+
+            stream.Write(
+                typeBytes,
+                0,
+                typeBytes.Length
+            );
+
+            if (
+                data != null &&
+                data.Length > 0
+            )
+            {
+                stream.Write(
+                    data,
+                    0,
+                    data.Length
+                );
+            }
+
+            uint crc =
+                ComputeCrc32(
+                    typeBytes,
+                    data
+                );
+
+            WriteUInt32BigEndian(
+                stream,
+                crc
+            );
+        }
+
+        private static uint ComputeCrc32(
+            byte[] type,
+            byte[] data
+        )
+        {
+            uint crc =
+                0xFFFFFFFFu;
+
+            if (type != null)
+            {
+                for (
+                    int i = 0;
+                    i < type.Length;
+                    i++
+                )
+                {
+                    crc =
+                        UpdateCrc32(
+                            crc,
+                            type[i]
+                        );
+                }
+            }
+
+            if (data != null)
+            {
+                for (
+                    int i = 0;
+                    i < data.Length;
+                    i++
+                )
+                {
+                    crc =
+                        UpdateCrc32(
+                            crc,
+                            data[i]
+                        );
+                }
+            }
+
+            return ~crc;
+        }
+
+        private static uint UpdateCrc32(
+            uint crc,
+            byte value
+        )
+        {
+            uint current =
+                crc ^
+                value;
+
+            for (
+                int i = 0;
+                i < 8;
+                i++
+            )
+            {
+                if (
+                    (current & 1u) != 0u
+                )
+                {
+                    current =
+                        (
+                            current >>
+                            1
+                        ) ^
+                        0xEDB88320u;
+                }
+                else
+                {
+                    current >>=
+                        1;
+                }
+            }
+
+            return current;
+        }
+
+        private static void WriteUInt32BigEndian(
+            byte[] buffer,
+            int offset,
+            uint value
+        )
+        {
+            buffer[offset] =
+                (byte)(
+                    (value >> 24) &
+                    0xFF
+                );
+
+            buffer[offset + 1] =
+                (byte)(
+                    (value >> 16) &
+                    0xFF
+                );
+
+            buffer[offset + 2] =
+                (byte)(
+                    (value >> 8) &
+                    0xFF
+                );
+
+            buffer[offset + 3] =
+                (byte)(
+                    value &
+                    0xFF
+                );
+        }
+
+        private static void WriteUInt32BigEndian(
+            Stream stream,
+            uint value
+        )
+        {
+            stream.WriteByte(
+                (byte)(
+                    (value >> 24) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    (value >> 16) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    (value >> 8) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    value &
+                    0xFF
+                )
+            );
+        }
+
+        private static void AppendTextureExtractionReport(
+            Texture texture,
+            Material material,
+            string property,
+            GameObject owner,
+            string outputPath,
+            bool success
+        )
+        {
+            try
+            {
+                using (
+                    StreamWriter writer =
+                        new StreamWriter(
+                            TextureExtractionReport,
+                            true
+                        )
+                )
+                {
+                    writer.WriteLine(
+                        "----------------------------------------"
+                    );
+
+                    writer.WriteLine(
+                        "Texture: " +
+                        (
+                            texture != null
+                                ? texture.name
+                                : "null"
+                        )
+                    );
+
+                    if (texture != null)
+                    {
+                        writer.WriteLine(
+                            "Type: " +
+                            texture.GetType().FullName
+                        );
+
+                        writer.WriteLine(
+                            "InstanceID: " +
+                            texture.GetInstanceID()
+                        );
+
+                        writer.WriteLine(
+                            "Width: " +
+                            texture.width
+                        );
+
+                        writer.WriteLine(
+                            "Height: " +
+                            texture.height
+                        );
+
+                        writer.WriteLine(
+                            "FilterMode: " +
+                            texture.filterMode
+                        );
+
+                        writer.WriteLine(
+                            "WrapMode: " +
+                            texture.wrapMode
+                        );
+
+                        writer.WriteLine(
+                            "AnisoLevel: " +
+                            texture.anisoLevel
+                        );
+
+                        Texture2D texture2D =
+                            texture as Texture2D;
+
+                        if (texture2D != null)
+                        {
+                            writer.WriteLine(
+                                "Format: " +
+                                texture2D.format
+                            );
+
+                            writer.WriteLine(
+                                "MipmapCount: " +
+                                texture2D.mipmapCount
+                            );
+
+                            writer.WriteLine(
+                                "IsReadable: " +
+                                texture2D.isReadable
+                            );
+                        }
+                        else
+                        {
+                            writer.WriteLine(
+                                "Format: N/A"
+                            );
+
+                            writer.WriteLine(
+                                "MipmapCount: N/A"
+                            );
+
+                            writer.WriteLine(
+                                "IsReadable: N/A"
+                            );
+                        }
+                    }
+
+                    writer.WriteLine(
+                        "Material: " +
+                        (
+                            material != null
+                                ? material.name
+                                : "null"
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "MaterialInstanceID: " +
+                        (
+                            material != null
+                                ? material.GetInstanceID().ToString()
+                                : "null"
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "Property: " +
+                        property
+                    );
+
+                    writer.WriteLine(
+                        "GameObject: " +
+                        (
+                            owner != null
+                                ? owner.name
+                                : "null"
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "Output: " +
+                        outputPath
+                    );
+
+                    writer.WriteLine(
+                        "Success: " +
+                        success
+                    );
+
+                    writer.WriteLine();
+                }
             }
             catch
             {
@@ -1296,8 +2244,95 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 writer.WriteLine(
                     indent +
                     "[ERRO TEXTURE DETAILS] " +
-                    ex.Message
+                    ex
                 );
+            }
+        }
+
+        private static void AnalyzeMaterialValues(
+            Material material,
+            string indent,
+            StreamWriter writer
+        )
+        {
+            try
+            {
+                if (
+                    material.HasProperty(
+                        "_BaseMap"
+                    )
+                )
+                {
+                    Vector2 offset =
+                        material.GetTextureOffset(
+                            "_BaseMap"
+                        );
+
+                    Vector2 scale =
+                        material.GetTextureScale(
+                            "_BaseMap"
+                        );
+
+                    writer.WriteLine(
+                        indent +
+                        "TEXTURE TRANSFORM _BaseMap"
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Offset: " +
+                        offset
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Scale: " +
+                        scale
+                    );
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                if (
+                    material.HasProperty(
+                        "_MainTex"
+                    )
+                )
+                {
+                    Vector2 offset =
+                        material.GetTextureOffset(
+                            "_MainTex"
+                        );
+
+                    Vector2 scale =
+                        material.GetTextureScale(
+                            "_MainTex"
+                        );
+
+                    writer.WriteLine(
+                        indent +
+                        "TEXTURE TRANSFORM _MainTex"
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Offset: " +
+                        offset
+                    );
+
+                    writer.WriteLine(
+                        indent +
+                        "Scale: " +
+                        scale
+                    );
+                }
+            }
+            catch
+            {
             }
         }
 
@@ -1439,16 +2474,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 Il2CppSystem.Collections.Generic.List<Vector2> uvList =
                     new Il2CppSystem.Collections.Generic.List<Vector2>();
 
-                bool success = false;
-
                 try
                 {
                     mesh.GetUVs(
                         0,
                         uvList
                     );
-
-                    success = true;
                 }
                 catch (Exception ex)
                 {
@@ -1457,13 +2488,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         "GetUVs(0) falhou: " +
                         ex.Message
                     );
-                }
 
-                if (!success)
-                {
                     writer.WriteLine(
                         indent +
-                        "UV0: NAO FOI POSSIVEL LER"
+                        "UV0 Count: 0"
                     );
 
                     return;
@@ -1478,13 +2506,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     uvCount
                 );
 
-                if (uvCount == 0)
+                if (
+                    uvCount == 0
+                )
                 {
-                    writer.WriteLine(
-                        indent +
-                        "UV0: LISTA VAZIA"
-                    );
-
                     return;
                 }
 
@@ -1541,39 +2566,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     FormatFloat(maxY - minY) +
                     ")"
                 );
-
-                writer.WriteLine();
-
-                writer.WriteLine(
-                    indent +
-                    "UV0 DATA"
-                );
-
-                writer.WriteLine(
-                    indent +
-                    "--------------------------------"
-                );
-
-                for (
-                    int i = 0;
-                    i < uvCount;
-                    i++
-                )
-                {
-                    Vector2 uv =
-                        uvList[i];
-
-                    writer.WriteLine(
-                        indent +
-                        "[" +
-                        i +
-                        "] = (" +
-                        FormatFloat(uv.x) +
-                        ", " +
-                        FormatFloat(uv.y) +
-                        ")"
-                    );
-                }
             }
             catch (Exception ex)
             {
@@ -1605,20 +2597,16 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "--------------------------------"
                 );
 
-                int[] triangles = null;
+                int[] triangles =
+                    null;
 
                 try
                 {
                     triangles =
                         mesh.triangles;
                 }
-                catch (Exception ex)
+                catch
                 {
-                    writer.WriteLine(
-                        indent +
-                        "mesh.triangles falhou: " +
-                        ex.Message
-                    );
                 }
 
                 if (
@@ -1640,51 +2628,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     triangles.Length
                 );
 
-                int triangleCount =
-                    triangles.Length / 3;
-
                 writer.WriteLine(
                     indent +
                     "Triangle Count: " +
-                    triangleCount
+                    (
+                        triangles.Length /
+                        3
+                    )
                 );
-
-                int limit =
-                    Math.Min(
-                        triangles.Length,
-                        600
-                    );
-
-                for (
-                    int i = 0;
-                    i + 2 < limit;
-                    i += 3
-                )
-                {
-                    writer.WriteLine(
-                        indent +
-                        "Triangle[" +
-                        (i / 3) +
-                        "] = (" +
-                        triangles[i] +
-                        ", " +
-                        triangles[i + 1] +
-                        ", " +
-                        triangles[i + 2] +
-                        ")"
-                    );
-                }
-
-                if (
-                    triangles.Length >
-                    limit
-                )
-                {
-                    writer.WriteLine(
-                        indent +
-                        "[TRIANGLES LIMITADOS A 200 TRIANGULOS]"
-                    );
-                }
             }
             catch (Exception ex)
             {
@@ -1868,6 +2819,86 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
+        private static void SyncReportToRepository(
+            string sourceFile,
+            string destinationDirectory
+        )
+        {
+            try
+            {
+                if (
+                    string.IsNullOrWhiteSpace(
+                        sourceFile
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !File.Exists(
+                        sourceFile
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    string.IsNullOrWhiteSpace(
+                        destinationDirectory
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !Directory.Exists(
+                        RepositoryRoot
+                    )
+                )
+                {
+                    Instance.Log.LogWarning(
+                        "Repositorio local nao encontrado: " +
+                        RepositoryRoot
+                    );
+
+                    return;
+                }
+
+                Directory.CreateDirectory(
+                    destinationDirectory
+                );
+
+                string destinationFile =
+                    Path.Combine(
+                        destinationDirectory,
+                        Path.GetFileName(
+                            sourceFile
+                        )
+                    );
+
+                File.Copy(
+                    sourceFile,
+                    destinationFile,
+                    true
+                );
+
+                Instance.Log.LogInfo(
+                    "Arquivo sincronizado: " +
+                    destinationFile
+                );
+            }
+            catch (Exception ex)
+            {
+                Instance.Log.LogError(
+                    "Erro sincronizando arquivo: " +
+                    ex
+                );
+            }
+        }
+
         private static string GetRelativePath(
             Transform current,
             Transform root
@@ -1890,7 +2921,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     if (node == root)
                         break;
 
-                    node = node.parent;
+                    node =
+                        node.parent;
                 }
 
                 names.Reverse();
@@ -1939,6 +2971,4 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             );
         }
     }
-
-
 }
