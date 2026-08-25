@@ -6,7 +6,7 @@ Objetivo: descobrir a API real de UnityEngine.Mesh no runtime.
 
 ----------------------------------------
 MESH
-Name: SM_Coin_1_Cent
+Name: SM_Coin_50_Cents
 RuntimeType: UnityEngine.Mesh
 Assembly: UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 VertexCount: 194
@@ -57,6 +57,10 @@ METHODS RELACIONADOS A DADOS
 System.Int32 get_vertexCount()
 System.Int32 get_subMeshCount()
 System.Void GetUVsImpl(System.Int32 uvIndex,  uvs, System.Int32 dim)
+System.Int32 GetVertexAttributeStream(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeOffset(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexBufferStride(System.Int32 stream)
+UnityEngine.GraphicsBuffer GetVertexBuffer(System.Int32 index)
 UnityEngine.Rendering.IndexFormat get_indexFormat()
 System.Void set_indexFormat(UnityEngine.Rendering.IndexFormat value)
 UnityEngine.GraphicsBuffer+Target get_vertexBufferTarget()
@@ -259,7 +263,6 @@ System.Void GetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1
 System.Void SetVertexBufferParams(System.Int32 vertexCount, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
 System.Void SetVertexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 stream, UnityEngine.Rendering.MeshUpdateFlags flags)
 System.Void SetVertexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 stream, UnityEngine.Rendering.MeshUpdateFlags flags)
-UnityEngine.GraphicsBuffer GetVertexBuffer(System.Int32 index)
 UnityEngine.GraphicsBuffer GetIndexBuffer()
 System.Boolean CheckCanAccessSubmesh(System.Int32 submesh, System.Boolean errorAboutTriangles)
 System.Boolean CheckCanAccessSubmeshTriangles(System.Int32 submesh)
@@ -281,9 +284,6 @@ System.UInt32 GetBaseVertexImpl(System.Int32 submesh)
 System.Boolean HasVertexAttribute(UnityEngine.Rendering.VertexAttribute attr)
 System.Int32 GetVertexAttributeDimension(UnityEngine.Rendering.VertexAttribute attr)
 UnityEngine.Rendering.VertexAttributeFormat GetVertexAttributeFormat(UnityEngine.Rendering.VertexAttribute attr)
-System.Int32 GetVertexAttributeStream(UnityEngine.Rendering.VertexAttribute attr)
-System.Int32 GetVertexAttributeOffset(UnityEngine.Rendering.VertexAttribute attr)
-System.Int32 GetVertexBufferStride(System.Int32 stream)
 UnityEngine.GraphicsBuffer GetVertexBufferImpl(System.Int32 index)
 UnityEngine.GraphicsBuffer GetIndexBufferImpl()
 System.Void GetBlendShapeFrameVertices(System.Int32 shapeIndex, System.Int32 frameIndex, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaVertices, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaNormals, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaTangents)

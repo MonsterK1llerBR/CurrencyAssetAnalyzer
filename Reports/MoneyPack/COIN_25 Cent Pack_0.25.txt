@@ -65,8 +65,8 @@ Count: 5
         --------------------------------
         Count: 4
         - UnityEngine.Transform
-        - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.MeshFilter
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
