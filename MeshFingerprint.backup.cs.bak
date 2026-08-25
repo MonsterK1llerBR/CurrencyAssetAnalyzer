@@ -11,7 +11,6 @@ using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using UnityEngine;
-using Il2CppInterop.Runtime.InteropTypes.Arrays;
 
 namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 {
@@ -29,7 +28,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Currency Mesh Fingerprint";
 
         private const string VERSION =
-            "3.0.1";
+            "1.1.0";
 
         private const string OutputDirectoryName =
             "MeshFingerprint";
@@ -75,7 +74,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 LogInfo(
-                    "Currency Mesh Fingerprint v3.0.1"
+                    "Currency Mesh Fingerprint v1.1.0"
                 );
 
                 LogInfo(
@@ -164,7 +163,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "Metodo de leitura: Il2CppStructArray<T> direto do Mesh."
+                        "Metodo de leitura: List<T> IL2CPP."
                     );
 
                     writer.WriteLine(
@@ -523,22 +522,22 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     mesh.vertexCount
                 );
 
-                Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> vertices =
+                Il2CppSystem.Collections.Generic.List<Vector3> vertices =
                     ReadVertices(
                         mesh
                     );
 
-                Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> normals =
+                Il2CppSystem.Collections.Generic.List<Vector3> normals =
                     ReadNormals(
                         mesh
                     );
 
-                Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector4> tangents =
+                Il2CppSystem.Collections.Generic.List<Vector4> tangents =
                     ReadTangents(
                         mesh
                     );
 
-                Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector2> uv0 =
+                Il2CppSystem.Collections.Generic.List<Vector2> uv0 =
                     ReadUV0(
                         mesh
                     );
@@ -730,76 +729,105 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        private static Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> ReadVertices(
+        private static Il2CppSystem.Collections.Generic.List<Vector3> ReadVertices(
             Mesh mesh
         )
         {
             try
             {
-                return mesh.vertices;
+                Il2CppSystem.Collections.Generic.List<Vector3> list =
+                    new Il2CppSystem.Collections.Generic.List<Vector3>();
+
+                mesh.GetVertices(
+                    list
+                );
+
+                return list;
             }
             catch (Exception ex)
             {
                 LogError(
-                    "Falha lendo mesh.vertices: " +
-                    ex
+                    "GetVertices falhou: " +
+                    ex.Message
                 );
 
                 return null;
             }
         }
 
-        private static Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> ReadNormals(
+        private static Il2CppSystem.Collections.Generic.List<Vector3> ReadNormals(
             Mesh mesh
         )
         {
             try
             {
-                return mesh.normals;
+                Il2CppSystem.Collections.Generic.List<Vector3> list =
+                    new Il2CppSystem.Collections.Generic.List<Vector3>();
+
+                mesh.GetNormals(
+                    list
+                );
+
+                return list;
             }
             catch (Exception ex)
             {
                 LogError(
-                    "Falha lendo mesh.normals: " +
-                    ex
+                    "GetNormals falhou: " +
+                    ex.Message
                 );
 
                 return null;
             }
         }
 
-        private static Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector4> ReadTangents(
+        private static Il2CppSystem.Collections.Generic.List<Vector4> ReadTangents(
             Mesh mesh
         )
         {
             try
             {
-                return mesh.tangents;
+                Il2CppSystem.Collections.Generic.List<Vector4> list =
+                    new Il2CppSystem.Collections.Generic.List<Vector4>();
+
+                mesh.GetTangents(
+                    list
+                );
+
+                return list;
             }
             catch (Exception ex)
             {
                 LogError(
-                    "Falha lendo mesh.tangents: " +
-                    ex
+                    "GetTangents falhou: " +
+                    ex.Message
                 );
 
                 return null;
             }
         }
 
-        private static Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector2> ReadUV0(
+        private static Il2CppSystem.Collections.Generic.List<Vector2> ReadUV0(
             Mesh mesh
         )
         {
             try
             {
-                return mesh.uv;
+                Il2CppSystem.Collections.Generic.List<Vector2> list =
+                    new Il2CppSystem.Collections.Generic.List<Vector2>();
+
+                mesh.GetUVs(
+                    0,
+                    list
+                );
+
+                return list;
             }
             catch (Exception ex)
             {
                 LogError(
-                    "Falha lendo mesh.uv: " +
-                    ex
+                    "GetUVs(0) falhou: " +
+                    ex.Message
                 );
 
                 return null;
@@ -808,7 +836,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
         private static void WriteVertexStatistics(
             StreamWriter writer,
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> values
+            Il2CppSystem.Collections.Generic.List<Vector3> values
         )
         {
             if (
@@ -896,7 +924,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
         private static void WriteNormalStatistics(
             StreamWriter writer,
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> values
+            Il2CppSystem.Collections.Generic.List<Vector3> values
         )
         {
             if (
@@ -976,7 +1004,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
         private static void WriteTangentStatistics(
             StreamWriter writer,
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector4> values
+            Il2CppSystem.Collections.Generic.List<Vector4> values
         )
         {
             if (
@@ -1068,7 +1096,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
         private static void WriteUVStatistics(
             StreamWriter writer,
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector2> values
+            Il2CppSystem.Collections.Generic.List<Vector2> values
         )
         {
             if (
@@ -1172,7 +1200,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private static string ComputeVector3ListHash(
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> values
+            Il2CppSystem.Collections.Generic.List<Vector3> values
         )
         {
             if (
@@ -1223,7 +1251,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private static string ComputeVector4ListHash(
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector4> values
+            Il2CppSystem.Collections.Generic.List<Vector4> values
         )
         {
             if (
@@ -1279,7 +1307,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private static string ComputeVector2ListHash(
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector2> values
+            Il2CppSystem.Collections.Generic.List<Vector2> values
         )
         {
             if (
@@ -1325,7 +1353,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private static string ComputeNormalizedVertexListHash(
-            Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray<Vector3> values
+            Il2CppSystem.Collections.Generic.List<Vector3> values
         )
         {
             if (
@@ -1556,7 +1584,3 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
-
-
-
-

@@ -1,0 +1,532 @@
+========================================
+MESH API PROBE
+VERSION: 1.0.0
+========================================
+Objetivo: descobrir a API real de UnityEngine.Mesh no runtime.
+
+----------------------------------------
+MESH
+Name: SM_Coin_1_Cent
+RuntimeType: UnityEngine.Mesh
+Assembly: UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+VertexCount: 194
+SubMeshCount: 1
+
+PROPERTIES
+--------------------------------
+indexFormat : UnityEngine.Rendering.IndexFormat
+vertexBufferTarget : UnityEngine.GraphicsBuffer+Target
+indexBufferTarget : UnityEngine.GraphicsBuffer+Target
+blendShapeCount : System.Int32
+bindposes : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+isReadable : System.Boolean
+canAccess : System.Boolean
+vertexCount : System.Int32
+subMeshCount : System.Int32
+bounds : UnityEngine.Bounds
+vertices : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+normals : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+tangents : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv2 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv3 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv4 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+colors : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Color, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+colors32 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Color32, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+lodCount : System.Int32
+triangles : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]
+boneWeights : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.BoneWeight, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+vertexBufferCount : System.Int32
+bindposeCount : System.Int32
+uv5 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv6 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv7 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+uv8 : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]
+isLodSelectionActive : System.Boolean
+vertexAttributeCount : System.Int32
+skinWeightBufferLayout : UnityEngine.SkinWeights
+m_CachedPtr : System.IntPtr
+name : System.String
+hideFlags : UnityEngine.HideFlags
+ObjectClass : System.IntPtr
+Pointer : System.IntPtr
+WasCollected : System.Boolean
+
+METHODS RELACIONADOS A DADOS
+--------------------------------
+System.Int32 get_vertexCount()
+System.Int32 get_subMeshCount()
+System.Void GetUVsImpl(System.Int32 uvIndex,  uvs, System.Int32 dim)
+UnityEngine.Rendering.IndexFormat get_indexFormat()
+System.Void set_indexFormat(UnityEngine.Rendering.IndexFormat value)
+UnityEngine.GraphicsBuffer+Target get_vertexBufferTarget()
+System.Void set_vertexBufferTarget(UnityEngine.GraphicsBuffer+Target value)
+UnityEngine.GraphicsBuffer+Target get_indexBufferTarget()
+System.Void set_indexBufferTarget(UnityEngine.GraphicsBuffer+Target value)
+System.Void set_subMeshCount(System.Int32 value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_vertices()
+System.Void set_vertices(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_normals()
+System.Void set_normals(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_tangents()
+System.Void set_tangents(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv()
+System.Void set_uv(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv2()
+System.Void set_uv2(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv3()
+System.Void set_uv3(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv4()
+System.Void set_uv4(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+System.Int32 get_vertexBufferCount()
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv5()
+System.Void set_uv5(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv6()
+System.Void set_uv6(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv7()
+System.Void set_uv7(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv8()
+System.Void set_uv8(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
+System.Int32 get_vertexAttributeCount()
+UnityEngine.SkinWeights get_skinWeightBufferLayout()
+System.Void RecalculateUVDistributionMetric(System.Int32 uvSetIndex, System.Single uvAreaThreshold)
+System.Void RecalculateUVDistributionMetrics(System.Single uvAreaThreshold)
+System.Void OptimizeIndexBuffers()
+System.Void OptimizeReorderVertexBuffer()
+System.Void CombineMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.CombineInstance, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] combine, System.Boolean mergeSubMeshes, System.Boolean useMatrices, System.Boolean hasLightmapData)
+System.Void CombineMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.CombineInstance, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] combine, System.Boolean mergeSubMeshes, System.Boolean useMatrices)
+System.UInt32 GetTotalIndexCount_Injected(System.IntPtr _unity_self)
+System.Void SetVertexBufferParamsFromPtr_Injected(System.IntPtr _unity_self, System.Int32 vertexCount, System.IntPtr attributesPtr, System.Int32 attributesCount)
+Il2CppSystem.Array GetVertexAttributesAlloc_Injected(System.IntPtr _unity_self)
+System.Int32 GetVertexAttributesArray_Injected(System.IntPtr _unity_self, UnityEngine.Bindings.ManagedSpanWrapper& attributes)
+System.Int32 GetVertexAttributesList_Injected(System.IntPtr _unity_self, UnityEngine.Bindings.BlittableListWrapper& attributes)
+System.Int32 GetVertexAttributeCountImpl_Injected(System.IntPtr _unity_self)
+System.Void GetVertexAttribute_Injected(System.IntPtr _unity_self, System.Int32 index, UnityEngine.Rendering.VertexAttributeDescriptor& ret)
+System.Int32 get_vertexBufferCount_Injected(System.IntPtr _unity_self)
+System.IntPtr GetNativeVertexBufferPtr_Injected(System.IntPtr _unity_self, System.Int32 index)
+System.IntPtr GetNativeIndexBufferPtr_Injected(System.IntPtr _unity_self)
+System.IntPtr GetBoneWeightBufferImpl_Injected(System.IntPtr _unity_self, System.Int32 bonesPerVertex)
+System.IntPtr GetBlendShapeBufferImpl_Injected(System.IntPtr _unity_self, System.Int32 layout)
+System.Int32 GetBlendShapeIndex_Injected(System.IntPtr _unity_self, UnityEngine.Bindings.ManagedSpanWrapper& blendShapeName)
+System.Int32 GetBoneWeightBufferLayoutInternal_Injected(System.IntPtr _unity_self)
+System.IntPtr GetBonesPerVertexArray_Injected(System.IntPtr _unity_self)
+System.Void SetAllSubMeshesAtOnceFromArray_Injected(System.IntPtr _unity_self, UnityEngine.Bindings.ManagedSpanWrapper& desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetAllSubMeshesAtOnceFromNativeArray_Injected(System.IntPtr _unity_self, System.IntPtr desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void RecalculateUVDistributionMetricImpl_Injected(System.IntPtr _unity_self, System.Int32 uvSetIndex, System.Single uvAreaThreshold)
+System.Void RecalculateUVDistributionMetricsImpl_Injected(System.IntPtr _unity_self, System.Single uvAreaThreshold)
+System.Single GetUVDistributionMetric_Injected(System.IntPtr _unity_self, System.Int32 uvSetIndex)
+System.Void OptimizeIndexBuffersImpl_Injected(System.IntPtr _unity_self)
+System.Void OptimizeReorderVertexBufferImpl_Injected(System.IntPtr _unity_self)
+System.Void SetTangents( inTangents, System.Int32 start, System.Int32 length)
+System.Void SetTangents( inTangents, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void GetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void GetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] GetVertexAttributes()
+System.Int32 GetVertexAttributes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Int32 GetVertexAttributes(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Void SetVertexBufferParams(System.Int32 vertexCount, Unity.Collections.NativeArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Void SetVertexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 stream, UnityEngine.Rendering.MeshUpdateFlags flags)
+UnityEngine.GraphicsBuffer GetBoneWeightBuffer(UnityEngine.SkinWeights layout)
+UnityEngine.GraphicsBuffer GetBlendShapeBuffer(UnityEngine.Rendering.BlendShapeBufferLayout layout)
+UnityEngine.GraphicsBuffer GetBlendShapeBuffer()
+System.Void SetIndexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.UInt32 GetIndexStart(System.Int32 submesh, System.Int32 meshLod)
+System.UInt32 GetIndexCount(System.Int32 submesh, System.Int32 meshLod)
+System.Void SetSubMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetSubMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] desc, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetSubMeshes(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetSubMeshes(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] desc, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetSubMeshes( desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetSubMeshes( desc, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void ValidateLodIndex(System.Int32 level)
+System.Void ValidateSubMeshIndex(System.Int32 submesh)
+System.Int32 get_subMeshCount_Injected(System.IntPtr _unity_self)
+System.Void set_subMeshCount_Injected(System.IntPtr _unity_self, System.Int32 value)
+System.Void SetSubMesh_Injected(System.IntPtr _unity_self, System.Int32 index, UnityEngine.Rendering.SubMeshDescriptor& desc, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void GetSubMesh_Injected(System.IntPtr _unity_self, System.Int32 index, UnityEngine.Rendering.SubMeshDescriptor& ret)
+System.Void RecalculateNormalsImpl_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void RecalculateTangentsImpl_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void UploadMeshDataImpl_Injected(System.IntPtr _unity_self, System.Boolean markNoLongerReadable)
+System.Void CombineMeshesImpl_Injected(System.IntPtr _unity_self, UnityEngine.Bindings.ManagedSpanWrapper& combine, System.Boolean mergeSubMeshes, System.Boolean useMatrices, System.Boolean hasLightmapData)
+System.Void SetVertexBufferParamsFromArray(System.Int32 vertexCount, UnityEngine.Rendering.VertexAttributeDescriptor[] attributes)
+System.Void SetVertexBufferParams(System.Int32 vertexCount, UnityEngine.Rendering.VertexAttributeDescriptor[] attributes)
+System.UInt32 GetTotalIndexCount()
+System.Void SetVertexBufferParamsFromPtr(System.Int32 vertexCount, System.IntPtr attributesPtr, System.Int32 attributesCount)
+Il2CppSystem.Array GetVertexAttributesAlloc()
+System.Int32 GetVertexAttributesArray(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Int32 GetVertexAttributesList(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Int32 GetVertexAttributeCountImpl()
+UnityEngine.Rendering.VertexAttributeDescriptor GetVertexAttribute(System.Int32 index)
+System.IntPtr GetNativeVertexBufferPtr(System.Int32 index)
+System.IntPtr GetNativeIndexBufferPtr()
+UnityEngine.GraphicsBuffer GetBoneWeightBufferImpl(System.Int32 bonesPerVertex)
+UnityEngine.GraphicsBuffer GetBlendShapeBufferImpl(System.Int32 layout)
+System.Int32 GetBlendShapeIndex(System.String blendShapeName)
+Unity.Collections.NativeArray`1[[System.Byte, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] GetBonesPerVertex()
+System.Int32 GetBoneWeightBufferLayoutInternal()
+System.IntPtr GetBonesPerVertexArray()
+System.Void SetAllSubMeshesAtOnceFromArray(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.SubMeshDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetAllSubMeshesAtOnceFromNativeArray(System.IntPtr desc, System.Int32 start, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void RecalculateUVDistributionMetricImpl(System.Int32 uvSetIndex, System.Single uvAreaThreshold)
+System.Void RecalculateUVDistributionMetricsImpl(System.Single uvAreaThreshold)
+System.Single GetUVDistributionMetric(System.Int32 uvSetIndex)
+System.Void OptimizeIndexBuffersImpl()
+System.Void OptimizeReorderVertexBufferImpl()
+System.Void GetVertices(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] vertices)
+System.Void SetVertices(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices)
+System.Void SetVertices(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices, System.Int32 start, System.Int32 length)
+System.Void SetVertices(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void GetNormals(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] normals)
+System.Void SetNormals(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals)
+System.Void SetNormals(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals, System.Int32 start, System.Int32 length)
+System.Void SetNormals(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void GetTangents(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] tangents)
+System.Void SetTangents(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents)
+System.Void SetTangents(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents, System.Int32 start, System.Int32 length)
+System.Void SetTangents(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetTangents( inTangents)
+System.Void RecalculateNormals()
+System.Void RecalculateTangents()
+System.Void RecalculateNormals(UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void RecalculateTangents(UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void UploadMeshData(System.Boolean markNoLongerReadable)
+System.Void CombineMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.CombineInstance, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] combine, System.Boolean mergeSubMeshes)
+System.Void CombineMeshes(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.CombineInstance, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] combine)
+UnityEngine.Rendering.IndexFormat get_indexFormat_Injected(System.IntPtr _unity_self)
+System.Void set_indexFormat_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.IndexFormat value)
+System.Void SetIndexBufferParams_Injected(System.IntPtr _unity_self, System.Int32 indexCount, UnityEngine.Rendering.IndexFormat format)
+System.Void InternalSetIndexBufferData_Injected(System.IntPtr _unity_self, System.IntPtr data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void InternalSetIndexBufferDataFromArray_Injected(System.IntPtr _unity_self, Il2CppSystem.Array data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetVertexBufferParamsFromArray_Injected(System.IntPtr _unity_self, System.Int32 vertexCount, UnityEngine.Bindings.ManagedSpanWrapper& attributes)
+System.Void InternalSetVertexBufferData_Injected(System.IntPtr _unity_self, System.Int32 stream, System.IntPtr data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void InternalSetVertexBufferDataFromArray_Injected(System.IntPtr _unity_self, System.Int32 stream, Il2CppSystem.Array data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.UInt32 GetIndexStartImpl_Injected(System.IntPtr _unity_self, System.Int32 submesh, System.Int32 meshlod)
+System.UInt32 GetIndexCountImpl_Injected(System.IntPtr _unity_self, System.Int32 submesh, System.Int32 meshlod)
+System.UInt32 GetBaseVertexImpl_Injected(System.IntPtr _unity_self, System.Int32 submesh)
+System.Boolean HasVertexAttribute_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeDimension_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.VertexAttribute attr)
+UnityEngine.Rendering.VertexAttributeFormat GetVertexAttributeFormat_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeStream_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeOffset_Injected(System.IntPtr _unity_self, UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexBufferStride_Injected(System.IntPtr _unity_self, System.Int32 stream)
+System.IntPtr GetVertexBufferImpl_Injected(System.IntPtr _unity_self, System.Int32 index)
+System.IntPtr GetIndexBufferImpl_Injected(System.IntPtr _unity_self)
+UnityEngine.GraphicsBuffer+Target get_vertexBufferTarget_Injected(System.IntPtr _unity_self)
+System.Void set_vertexBufferTarget_Injected(System.IntPtr _unity_self, UnityEngine.GraphicsBuffer+Target value)
+UnityEngine.GraphicsBuffer+Target get_indexBufferTarget_Injected(System.IntPtr _unity_self)
+System.Void set_indexBufferTarget_Injected(System.IntPtr _unity_self, UnityEngine.GraphicsBuffer+Target value)
+System.Void GetBlendShapeFrameVertices_Injected(System.IntPtr _unity_self, System.Int32 shapeIndex, System.Int32 frameIndex, UnityEngine.Bindings.ManagedSpanWrapper& deltaVertices, UnityEngine.Bindings.ManagedSpanWrapper& deltaNormals, UnityEngine.Bindings.ManagedSpanWrapper& deltaTangents)
+System.Int32 get_vertexCount_Injected(System.IntPtr _unity_self)
+System.Void SetVertices(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices)
+System.Void SetVertices(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices, System.Int32 start, System.Int32 length)
+System.Void SetVertices(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inVertices, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetVertices( inVertices)
+System.Void SetVertices( inVertices, System.Int32 start, System.Int32 length)
+System.Void SetVertices( inVertices, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetNormals(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals)
+System.Void SetNormals(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals, System.Int32 start, System.Int32 length)
+System.Void SetNormals(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inNormals, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetNormals( inNormals)
+System.Void SetNormals( inNormals, System.Int32 start, System.Int32 length)
+System.Void SetNormals( inNormals, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetTangents(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents)
+System.Void SetTangents(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents, System.Int32 start, System.Int32 length)
+System.Void SetTangents(Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] inTangents, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUvsImpl(System.Int32 uvIndex, System.Int32 dim,  uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUvsImpl(System.Int32 uvIndex, System.Int32 dim, Il2CppSystem.Array uvs, System.Int32 arrayStart, System.Int32 arraySize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetUVs(System.Int32 channel,  uvs)
+System.Void SetUVs(System.Int32 channel,  uvs, System.Int32 start, System.Int32 length)
+System.Void SetUVs(System.Int32 channel,  uvs, System.Int32 start, System.Int32 length, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void GetUVs(System.Int32 channel, Il2CppSystem.Collections.Generic.List`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] uvs)
+System.Void SetVertexBufferParams(System.Int32 vertexCount, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Void SetVertexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 stream, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetVertexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 stream, UnityEngine.Rendering.MeshUpdateFlags flags)
+UnityEngine.GraphicsBuffer GetVertexBuffer(System.Int32 index)
+UnityEngine.GraphicsBuffer GetIndexBuffer()
+System.Boolean CheckCanAccessSubmesh(System.Int32 submesh, System.Boolean errorAboutTriangles)
+System.Boolean CheckCanAccessSubmeshTriangles(System.Int32 submesh)
+System.Boolean CheckCanAccessSubmeshIndices(System.Int32 submesh)
+System.Void SetIndexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetIndexBufferData( data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.UInt32 GetIndexStart(System.Int32 submesh)
+System.UInt32 GetIndexCount(System.Int32 submesh)
+System.UInt32 GetBaseVertex(System.Int32 submesh)
+System.Void SetIndexBufferParams(System.Int32 indexCount, UnityEngine.Rendering.IndexFormat format)
+System.Void InternalSetIndexBufferData(System.IntPtr data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void InternalSetIndexBufferDataFromArray(Il2CppSystem.Array data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void SetVertexBufferParamsFromArray(System.Int32 vertexCount, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Rendering.VertexAttributeDescriptor, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] attributes)
+System.Void InternalSetVertexBufferData(System.Int32 stream, System.IntPtr data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void InternalSetVertexBufferDataFromArray(System.Int32 stream, Il2CppSystem.Array data, System.Int32 dataStart, System.Int32 meshBufferStart, System.Int32 count, System.Int32 elemSize, UnityEngine.Rendering.MeshUpdateFlags flags)
+System.UInt32 GetIndexStartImpl(System.Int32 submesh, System.Int32 meshlod)
+System.UInt32 GetIndexCountImpl(System.Int32 submesh, System.Int32 meshlod)
+System.UInt32 GetBaseVertexImpl(System.Int32 submesh)
+System.Boolean HasVertexAttribute(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeDimension(UnityEngine.Rendering.VertexAttribute attr)
+UnityEngine.Rendering.VertexAttributeFormat GetVertexAttributeFormat(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeStream(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexAttributeOffset(UnityEngine.Rendering.VertexAttribute attr)
+System.Int32 GetVertexBufferStride(System.Int32 stream)
+UnityEngine.GraphicsBuffer GetVertexBufferImpl(System.Int32 index)
+UnityEngine.GraphicsBuffer GetIndexBufferImpl()
+System.Void GetBlendShapeFrameVertices(System.Int32 shapeIndex, System.Int32 frameIndex, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaVertices, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaNormals, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaTangents)
+System.Void SetSubMesh(System.Int32 index, UnityEngine.Rendering.SubMeshDescriptor desc, UnityEngine.Rendering.MeshUpdateFlags flags)
+UnityEngine.Rendering.SubMeshDescriptor GetSubMesh(System.Int32 index)
+System.Void RecalculateNormalsImpl(UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void RecalculateTangentsImpl(UnityEngine.Rendering.MeshUpdateFlags flags)
+System.Void UploadMeshDataImpl(System.Boolean markNoLongerReadable)
+System.Void CombineMeshesImpl(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.CombineInstance, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] combine, System.Boolean mergeSubMeshes, System.Boolean useMatrices, System.Boolean hasLightmapData)
+UnityEngine.Rendering.VertexAttribute GetUVChannel(System.Int32 uvIndex)
+
+NESTED TYPES
+--------------------------------
+UnityEngine.Mesh+MeshData
+UnityEngine.Mesh+MethodInfoStoreGeneric_GetAllocArrayFromChannel_Private_Il2CppArrayBase_1_T_VertexAttribute_VertexAttributeFormat_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_GetAllocArrayFromChannel_Private_Il2CppArrayBase_1_T_VertexAttribute_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetArrayForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_Il2CppArrayBase_1_T_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetArrayForChannel_Private_Void_VertexAttribute_Il2CppArrayBase_1_T_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetListForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_List_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetListForChannel_Private_Void_VertexAttribute_List_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_GetListForChannel_Private_Void_List_1_T_Int32_VertexAttribute_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_GetListForChannel_Private_Void_List_1_T_Int32_VertexAttribute_Int32_VertexAttributeFormat_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetVertices_Public_Void_NativeArray_1_T_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetVertices_Public_Void_NativeArray_1_T_Int32_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetVertices_Public_Void_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetNormals_Public_Void_NativeArray_1_T_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetNormals_Public_Void_NativeArray_1_T_Int32_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetNormals_Public_Void_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetUvsImpl_Private_Void_Int32_Int32_List_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetUVs_Public_Void_Int32_NativeArray_1_T_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetUVs_Public_Void_Int32_NativeArray_1_T_Int32_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetUVs_Public_Void_Int32_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_GetUVsImpl_Private_Void_Int32_List_1_T_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetVertexBufferData_Public_Void_NativeArray_1_T_Int32_Int32_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetVertexBufferData_Public_Void_Il2CppArrayBase_1_T_Int32_Int32_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetIndexBufferData_Public_Void_NativeArray_1_T_Int32_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetIndexBufferData_Public_Void_Il2CppArrayBase_1_T_Int32_Int32_Int32_MeshUpdateFlags_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetIndices_Public_Void_NativeArray_1_T_MeshTopology_Int32_Boolean_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetIndices_Public_Void_NativeArray_1_T_Int32_Int32_MeshTopology_Int32_Boolean_Int32_0`1
+UnityEngine.Mesh+MethodInfoStoreGeneric_SetIndices_Public_Void_NativeArray_1_T_Int32_Int32_MeshTopology_Int32_Int32_Boolean_Int32_0`1
+UnityEngine.Mesh+GetTotalIndexCount_InjectedDelegate
+UnityEngine.Mesh+SetVertexBufferParamsFromPtr_InjectedDelegate
+UnityEngine.Mesh+GetVertexAttributesAlloc_InjectedDelegate
+UnityEngine.Mesh+GetVertexAttributesArray_InjectedDelegate
+UnityEngine.Mesh+GetVertexAttributesList_InjectedDelegate
+UnityEngine.Mesh+GetVertexAttributeCountImpl_InjectedDelegate
+UnityEngine.Mesh+GetVertexAttribute_InjectedDelegate
+UnityEngine.Mesh+GetTrianglesCountImpl_InjectedDelegate
+UnityEngine.Mesh+GetTrianglesNonAllocImpl_InjectedDelegate
+UnityEngine.Mesh+GetTrianglesNonAllocImpl16_InjectedDelegate
+UnityEngine.Mesh+GetIndicesNonAllocImpl_InjectedDelegate
+UnityEngine.Mesh+GetIndicesNonAllocImpl16_InjectedDelegate
+UnityEngine.Mesh+get_vertexBufferCount_InjectedDelegate
+UnityEngine.Mesh+GetNativeVertexBufferPtr_InjectedDelegate
+UnityEngine.Mesh+GetNativeIndexBufferPtr_InjectedDelegate
+UnityEngine.Mesh+GetBoneWeightBufferImpl_InjectedDelegate
+UnityEngine.Mesh+GetBlendShapeBufferImpl_InjectedDelegate
+UnityEngine.Mesh+GetBlendShapeIndex_InjectedDelegate
+UnityEngine.Mesh+HasBoneWeights_InjectedDelegate
+UnityEngine.Mesh+InternalSetBoneWeights_InjectedDelegate
+UnityEngine.Mesh+GetAllBoneWeightsArraySize_InjectedDelegate
+UnityEngine.Mesh+GetBoneWeightBufferLayoutInternal_InjectedDelegate
+UnityEngine.Mesh+GetAllBoneWeightsArray_InjectedDelegate
+UnityEngine.Mesh+GetBonesPerVertexArray_InjectedDelegate
+UnityEngine.Mesh+get_bindposeCount_InjectedDelegate
+UnityEngine.Mesh+SetBindposesFromScript_NativeArray_InjectedDelegate
+UnityEngine.Mesh+GetBindposesArray_InjectedDelegate
+UnityEngine.Mesh+GetBoneWeightsNonAllocImpl_InjectedDelegate
+UnityEngine.Mesh+GetBindposesNonAllocImpl_InjectedDelegate
+UnityEngine.Mesh+SetAllSubMeshesAtOnceFromArray_InjectedDelegate
+UnityEngine.Mesh+SetAllSubMeshesAtOnceFromNativeArray_InjectedDelegate
+UnityEngine.Mesh+SetLodCount_InjectedDelegate
+UnityEngine.Mesh+SetLodsFromArray_InjectedDelegate
+UnityEngine.Mesh+SetLodsFromNativeArray_InjectedDelegate
+UnityEngine.Mesh+GetLodsAlloc_InjectedDelegate
+UnityEngine.Mesh+GetLodsNonAlloc_InjectedDelegate
+UnityEngine.Mesh+MarkModified_InjectedDelegate
+UnityEngine.Mesh+GetTopologyImpl_InjectedDelegate
+UnityEngine.Mesh+RecalculateUVDistributionMetricImpl_InjectedDelegate
+UnityEngine.Mesh+RecalculateUVDistributionMetricsImpl_InjectedDelegate
+UnityEngine.Mesh+GetUVDistributionMetric_InjectedDelegate
+UnityEngine.Mesh+OptimizeImpl_InjectedDelegate
+UnityEngine.Mesh+OptimizeIndexBuffersImpl_InjectedDelegate
+UnityEngine.Mesh+OptimizeReorderVertexBufferImpl_InjectedDelegate
+
+STATIC MEMBERS RELATED TO MESH DATA
+--------------------------------
+NativeMethodInfoPtr_Internal_Create_Private_Static_Void_Mesh_0 : System.IntPtr
+NativeMethodInfoPtr_FromInstanceID_Internal_Static_Mesh_EntityId_0 : System.IntPtr
+NativeMethodInfoPtr_get_indexFormat_Public_get_IndexFormat_0 : System.IntPtr
+NativeMethodInfoPtr_set_indexFormat_Public_set_Void_IndexFormat_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndexBufferParams_Public_Void_Int32_IndexFormat_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetIndexBufferData_Private_Void_IntPtr_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetIndexBufferDataFromArray_Private_Void_Array_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertexBufferParamsFromArray_Private_Void_Int32_Il2CppStructArray_1_VertexAttributeDescriptor_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetVertexBufferData_Private_Void_Int32_IntPtr_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetVertexBufferDataFromArray_Private_Void_Int32_Array_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexStartImpl_Private_UInt32_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexCountImpl_Private_UInt32_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetBaseVertexImpl_Private_UInt32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndicesImpl_Private_Void_Int32_MeshTopology_IndexFormat_Array_Int32_Int32_Boolean_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndicesNativeArrayImpl_Private_Void_Int32_MeshTopology_IndexFormat_IntPtr_Int32_Int32_Boolean_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_PrintErrorCantAccessChannel_Private_Void_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_HasVertexAttribute_Public_Boolean_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeDimension_Public_Int32_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeFormat_Public_VertexAttributeFormat_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeStream_Public_Int32_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeOffset_Public_Int32_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_SetArrayForChannelImpl_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_Array_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetNativeArrayForChannelImpl_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_IntPtr_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetAllocArrayFromChannelImpl_Private_Array_VertexAttribute_VertexAttributeFormat_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetArrayFromChannelImpl_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_Array_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexBufferStride_Public_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexBufferImpl_Private_GraphicsBuffer_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexBufferImpl_Private_GraphicsBuffer_0 : System.IntPtr
+NativeMethodInfoPtr_get_vertexBufferTarget_Public_get_Target_0 : System.IntPtr
+NativeMethodInfoPtr_set_vertexBufferTarget_Public_set_Void_Target_0 : System.IntPtr
+NativeMethodInfoPtr_get_indexBufferTarget_Public_get_Target_0 : System.IntPtr
+NativeMethodInfoPtr_set_indexBufferTarget_Public_set_Void_Target_0 : System.IntPtr
+NativeMethodInfoPtr_get_vertexCount_Public_get_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_get_subMeshCount_Public_get_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_set_subMeshCount_Public_set_Void_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetSubMesh_Public_Void_Int32_SubMeshDescriptor_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetSubMesh_Public_SubMeshDescriptor_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateBoundsImpl_Private_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateNormalsImpl_Private_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateTangentsImpl_Private_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_UploadMeshDataImpl_Private_Void_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_CombineMeshesImpl_Private_Void_Il2CppStructArray_1_CombineInstance_Boolean_Boolean_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_GetUVChannel_Internal_Static_VertexAttribute_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_DefaultDimensionForChannel_Internal_Static_Int32_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetAllocArrayFromChannel_Private_Il2CppArrayBase_1_T_VertexAttribute_VertexAttributeFormat_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetAllocArrayFromChannel_Private_Il2CppArrayBase_1_T_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_SetSizedArrayForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_Array_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetSizedNativeArrayForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_IntPtr_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetArrayForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_Il2CppArrayBase_1_T_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetArrayForChannel_Private_Void_VertexAttribute_Il2CppArrayBase_1_T_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetListForChannel_Private_Void_VertexAttribute_VertexAttributeFormat_Int32_List_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetListForChannel_Private_Void_VertexAttribute_List_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetListForChannel_Private_Void_List_1_T_Int32_VertexAttribute_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetListForChannel_Private_Void_List_1_T_Int32_VertexAttribute_Int32_VertexAttributeFormat_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertices_Public_Void_List_1_Vector3_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertices_Public_Void_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetNormals_Public_Void_List_1_Vector3_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetNormals_Public_Void_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetTangents_Public_Void_List_1_Vector4_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetColors_Public_Void_List_1_Color_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetColors_Public_Void_List_1_Color32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUvsImpl_Private_Void_Int32_Int32_List_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUVs_Public_Void_Int32_List_1_Vector2_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUVs_Public_Void_Int32_List_1_Vector4_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUvsImpl_Private_Void_Int32_Int32_Array_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUVs_Public_Void_Int32_Il2CppStructArray_1_Vector4_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetUVs_Public_Void_Int32_NativeArray_1_T_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertexBufferParams_Public_Void_Int32_Il2CppStructArray_1_VertexAttributeDescriptor_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertexBufferData_Public_Void_NativeArray_1_T_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertexBufferData_Public_Void_Il2CppArrayBase_1_T_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexBuffer_Public_GraphicsBuffer_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexBuffer_Public_GraphicsBuffer_0 : System.IntPtr
+NativeMethodInfoPtr_CheckCanAccessSubmesh_Private_Boolean_Int32_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_CheckCanAccessSubmeshTriangles_Private_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_CheckCanAccessSubmeshIndices_Private_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndexBufferData_Public_Void_NativeArray_1_T_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndexBufferData_Public_Void_Il2CppArrayBase_1_T_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexStart_Public_UInt32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexCount_Public_UInt32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetBaseVertex_Public_UInt32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetTrianglesImpl_Private_Void_Int32_IndexFormat_Array_Int32_Int32_Int32_Boolean_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_Int32_MeshTopology_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_Int32_MeshTopology_Int32_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_Int32_Int32_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_Int32_Int32_Int32_MeshTopology_Int32_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_UInt16_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_UInt16_Int32_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_Il2CppStructArray_1_UInt16_Int32_Int32_MeshTopology_Int32_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_NativeArray_1_T_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_NativeArray_1_T_Int32_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_NativeArray_1_T_Int32_Int32_MeshTopology_Int32_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_List_1_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_List_1_Int32_Int32_Int32_MeshTopology_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndices_Public_Void_List_1_Int32_Int32_Int32_MeshTopology_Int32_Int32_Boolean_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateBounds_Public_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateNormals_Public_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateTangents_Public_Void_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_UploadMeshData_Public_Void_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_CombineMeshes_Public_Void_Il2CppStructArray_1_CombineInstance_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_CombineMeshes_Public_Void_Il2CppStructArray_1_CombineInstance_0 : System.IntPtr
+NativeMethodInfoPtr_get_indexFormat_Injected_Private_Static_IndexFormat_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_set_indexFormat_Injected_Private_Static_Void_IntPtr_IndexFormat_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndexBufferParams_Injected_Private_Static_Void_IntPtr_Int32_IndexFormat_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetIndexBufferData_Injected_Private_Static_Void_IntPtr_IntPtr_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetIndexBufferDataFromArray_Injected_Private_Static_Void_IntPtr_Array_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetVertexBufferParamsFromArray_Injected_Private_Static_Void_IntPtr_Int32_byref_ManagedSpanWrapper_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetVertexBufferData_Injected_Private_Static_Void_IntPtr_Int32_IntPtr_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_InternalSetVertexBufferDataFromArray_Injected_Private_Static_Void_IntPtr_Int32_Array_Int32_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexStartImpl_Injected_Private_Static_UInt32_IntPtr_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexCountImpl_Injected_Private_Static_UInt32_IntPtr_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetBaseVertexImpl_Injected_Private_Static_UInt32_IntPtr_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndicesImpl_Injected_Private_Static_Void_IntPtr_Int32_MeshTopology_IndexFormat_Array_Int32_Int32_Boolean_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetIndicesNativeArrayImpl_Injected_Private_Static_Void_IntPtr_Int32_MeshTopology_IndexFormat_IntPtr_Int32_Int32_Boolean_Int32_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_PrintErrorCantAccessChannel_Injected_Private_Static_Void_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_HasVertexAttribute_Injected_Private_Static_Boolean_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeDimension_Injected_Private_Static_Int32_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeFormat_Injected_Private_Static_VertexAttributeFormat_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeStream_Injected_Private_Static_Int32_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexAttributeOffset_Injected_Private_Static_Int32_IntPtr_VertexAttribute_0 : System.IntPtr
+NativeMethodInfoPtr_SetArrayForChannelImpl_Injected_Private_Static_Void_IntPtr_VertexAttribute_VertexAttributeFormat_Int32_Array_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_SetNativeArrayForChannelImpl_Injected_Private_Static_Void_IntPtr_VertexAttribute_VertexAttributeFormat_Int32_IntPtr_Int32_Int32_Int32_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetAllocArrayFromChannelImpl_Injected_Private_Static_Array_IntPtr_VertexAttribute_VertexAttributeFormat_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetArrayFromChannelImpl_Injected_Private_Static_Void_IntPtr_VertexAttribute_VertexAttributeFormat_Int32_Array_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexBufferStride_Injected_Private_Static_Int32_IntPtr_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetVertexBufferImpl_Injected_Private_Static_IntPtr_IntPtr_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_GetIndexBufferImpl_Injected_Private_Static_IntPtr_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_get_vertexBufferTarget_Injected_Private_Static_Target_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_set_vertexBufferTarget_Injected_Private_Static_Void_IntPtr_Target_0 : System.IntPtr
+NativeMethodInfoPtr_get_indexBufferTarget_Injected_Private_Static_Target_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_set_indexBufferTarget_Injected_Private_Static_Void_IntPtr_Target_0 : System.IntPtr
+NativeMethodInfoPtr_get_vertexCount_Injected_Private_Static_Int32_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_get_subMeshCount_Injected_Private_Static_Int32_IntPtr_0 : System.IntPtr
+NativeMethodInfoPtr_set_subMeshCount_Injected_Private_Static_Void_IntPtr_Int32_0 : System.IntPtr
+NativeMethodInfoPtr_SetSubMesh_Injected_Private_Static_Void_IntPtr_Int32_byref_SubMeshDescriptor_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_GetSubMesh_Injected_Private_Static_Void_IntPtr_Int32_byref_SubMeshDescriptor_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateBoundsImpl_Injected_Private_Static_Void_IntPtr_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateNormalsImpl_Injected_Private_Static_Void_IntPtr_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_RecalculateTangentsImpl_Injected_Private_Static_Void_IntPtr_MeshUpdateFlags_0 : System.IntPtr
+NativeMethodInfoPtr_UploadMeshDataImpl_Injected_Private_Static_Void_IntPtr_Boolean_0 : System.IntPtr
+NativeMethodInfoPtr_CombineMeshesImpl_Injected_Private_Static_Void_IntPtr_byref_ManagedSpanWrapper_Boolean_Boolean_Boolean_0 : System.IntPtr
+GetTotalIndexCount_InjectedDelegateField : UnityEngine.Mesh+GetTotalIndexCount_InjectedDelegate
+SetVertexBufferParamsFromPtr_InjectedDelegateField : UnityEngine.Mesh+SetVertexBufferParamsFromPtr_InjectedDelegate
+GetVertexAttributesAlloc_InjectedDelegateField : UnityEngine.Mesh+GetVertexAttributesAlloc_InjectedDelegate
+GetVertexAttributesArray_InjectedDelegateField : UnityEngine.Mesh+GetVertexAttributesArray_InjectedDelegate
+GetVertexAttributesList_InjectedDelegateField : UnityEngine.Mesh+GetVertexAttributesList_InjectedDelegate
+GetVertexAttributeCountImpl_InjectedDelegateField : UnityEngine.Mesh+GetVertexAttributeCountImpl_InjectedDelegate
+GetVertexAttribute_InjectedDelegateField : UnityEngine.Mesh+GetVertexAttribute_InjectedDelegate
+get_vertexBufferCount_InjectedDelegateField : UnityEngine.Mesh+get_vertexBufferCount_InjectedDelegate
+GetNativeVertexBufferPtr_InjectedDelegateField : UnityEngine.Mesh+GetNativeVertexBufferPtr_InjectedDelegate
+GetNativeIndexBufferPtr_InjectedDelegateField : UnityEngine.Mesh+GetNativeIndexBufferPtr_InjectedDelegate
+GetBlendShapeIndex_InjectedDelegateField : UnityEngine.Mesh+GetBlendShapeIndex_InjectedDelegate
+GetBonesPerVertexArray_InjectedDelegateField : UnityEngine.Mesh+GetBonesPerVertexArray_InjectedDelegate
+SetAllSubMeshesAtOnceFromArray_InjectedDelegateField : UnityEngine.Mesh+SetAllSubMeshesAtOnceFromArray_InjectedDelegate
+SetAllSubMeshesAtOnceFromNativeArray_InjectedDelegateField : UnityEngine.Mesh+SetAllSubMeshesAtOnceFromNativeArray_InjectedDelegate
+OptimizeIndexBuffersImpl_InjectedDelegateField : UnityEngine.Mesh+OptimizeIndexBuffersImpl_InjectedDelegate
+OptimizeReorderVertexBufferImpl_InjectedDelegateField : UnityEngine.Mesh+OptimizeReorderVertexBufferImpl_InjectedDelegate
+
+END
