@@ -5,6 +5,7 @@ using System.IO;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
+using Il2CppInterop.Runtime;
 using HarmonyLib;
 using Unity.Collections;
 using UnityEngine;
@@ -121,50 +122,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
 
             return base.Unload();
-        }
-
-        private void Update()
-        {
-            try
-            {
-                if (
-                    !RequestPending ||
-                    Finished
-                )
-                {
-                    return;
-                }
-
-                if (
-                    !PendingRequest.done
-                )
-                {
-                    return;
-                }
-
-                RequestPending =
-                    false;
-
-                ProcessReadback();
-
-                Finished =
-                    true;
-            }
-            catch (Exception ex)
-            {
-                LogError(
-                    "Erro no Update do readback: " +
-                    ex
-                );
-
-                RequestPending =
-                    false;
-
-                Finished =
-                    true;
-
-                ReleaseBuffer();
-            }
         }
 
         private static void InitializeReport()
@@ -452,7 +409,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 PendingRequest =
                     AsyncGPUReadback.Request(
-                        buffer
+                        buffer,
+                        DelegateSupport.ConvertDelegate<Il2CppSystem.Action<AsyncGPUReadbackRequest>>(
+                            new Action<AsyncGPUReadbackRequest>(
+                                ReadbackCompleted
+                            )
+                        )
                     );
 
                 RequestPending =
@@ -485,7 +447,29 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
         }
 
-        private static void ProcessReadback()
+        private static void ReadbackCompleted(
+            AsyncGPUReadbackRequest request
+        )
+        {
+            try
+            {
+                ProcessReadback(
+                    request
+                );
+            }
+            catch (Exception ex)
+            {
+                LogError(
+                    "Erro no callback de GPU Readback: " +
+                    ex
+                );
+
+                ReleaseBuffer();
+            }
+        }
+        private static void ProcessReadback(
+            AsyncGPUReadbackRequest request
+        )
         {
             try
             {
@@ -498,7 +482,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 if (
-                    PendingRequest.hasError
+                    request.hasError
                 )
                 {
                     WriteReport(
@@ -523,7 +507,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 NativeArray<byte> data =
-                    PendingRequest.GetData<byte>(0);
+                    request.GetData<byte>(0);
 
                 if (
                     !data.IsCreated
@@ -1264,3 +1248,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
+
+
+
+
+
+
+
