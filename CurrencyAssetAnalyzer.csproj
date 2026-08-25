@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <SupportedOSPlatformVersion>6.1</SupportedOSPlatformVersion>
 
         <AssemblyName>CurrencyAssetAnalyzer</AssemblyName>
         <RootNamespace>CurrencyAssetAnalyzer</RootNamespace>
@@ -23,14 +25,11 @@
 
     <ItemGroup>
 
-        <PackageReference
-            Include="BepInEx.Unity.IL2CPP"
-            Version="6.0.0-be.*"
-            IncludeAssets="compile" />
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" IncludeAssets="compile" />
 
-        <PackageReference
-            Include="BepInEx.PluginInfoProps"
-            Version="2.*" />
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+
+        <PackageReference Include="System.Drawing.Common" Version="8.0.19" />
 
     </ItemGroup>
 
@@ -75,30 +74,19 @@
 
     <Target Name="DeployToGame" AfterTargets="Build">
 
-        <MakeDir
-            Directories="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer" />
+        <MakeDir Directories="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer" />
 
-        <Copy
-            SourceFiles="$(TargetPath)"
-            DestinationFolder="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer"
-            SkipUnchangedFiles="true" />
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer" SkipUnchangedFiles="true" />
 
-        <Message
-            Text="=========================================="
-            Importance="high" />
+        <Message Text="==========================================" Importance="high" />
 
-        <Message
-            Text="Currency Asset Analyzer compilado e copiado para o jogo!"
-            Importance="high" />
+        <Message Text="Currency Asset Analyzer compilado e copiado para o jogo!" Importance="high" />
 
-        <Message
-            Text="Destino: Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer"
-            Importance="high" />
+        <Message Text="Destino: Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer" Importance="high" />
 
-        <Message
-            Text="=========================================="
-            Importance="high" />
+        <Message Text="==========================================" Importance="high" />
 
     </Target>
 
 </Project>
+
