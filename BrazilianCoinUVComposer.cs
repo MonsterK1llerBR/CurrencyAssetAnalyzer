@@ -27,13 +27,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Brazilian Coin UV Composer";
 
         private const string VERSION =
-            "1.0.0";
-
-        private const int AtlasWidth =
-            2048;
-
-        private const int AtlasHeight =
-            2048;
+            "1.1.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -90,23 +84,43 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             {
                 {
                     "SM_Coin_50_Cents",
-                    Color.FromArgb(190, 193, 192)
+                    Color.FromArgb(
+                        190,
+                        193,
+                        192
+                    )
                 },
                 {
                     "SM_Coin_25_Cents",
-                    Color.FromArgb(188, 122, 60)
+                    Color.FromArgb(
+                        188,
+                        122,
+                        60
+                    )
                 },
                 {
                     "SM_Coin_10_Cents",
-                    Color.FromArgb(188, 122, 60)
+                    Color.FromArgb(
+                        188,
+                        122,
+                        60
+                    )
                 },
                 {
                     "SM_Coin_5_Cents",
-                    Color.FromArgb(156, 91, 43)
+                    Color.FromArgb(
+                        156,
+                        91,
+                        43
+                    )
                 },
                 {
                     "SM_Coin_1_Cent",
-                    Color.FromArgb(156, 91, 43)
+                    Color.FromArgb(
+                        156,
+                        91,
+                        43
+                    )
                 }
             };
 
@@ -204,6 +218,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             Log.LogInfo(
                 "Objetivo: compor frente, verso e lateral das moedas brasileiras."
+            );
+
+            Log.LogInfo(
+                "Modo: PROCESSAMENTO PARCIAL AUTOMATICO."
             );
 
             Log.LogInfo(
@@ -348,17 +366,78 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "/5"
                 );
 
+                List<string> readyCoins =
+                    new List<string>();
+
+                foreach (
+                    string coinName in CoinNames
+                )
+                {
+                    bool hasFront =
+                        sourceFront.ContainsKey(
+                            coinName
+                        );
+
+                    bool hasBack =
+                        sourceBack.ContainsKey(
+                            coinName
+                        );
+
+                    if (
+                        hasFront &&
+                        hasBack
+                    )
+                    {
+                        readyCoins.Add(
+                            coinName
+                        );
+
+                        Log.LogInfo(
+                            "Moeda pronta para composicao: " +
+                            coinName
+                        );
+                    }
+                    else
+                    {
+                        Log.LogInfo(
+                            "Moeda aguardando arte: " +
+                            coinName +
+                            " | FRONT=" +
+                            (
+                                hasFront
+                                    ? "OK"
+                                    : "FALTA"
+                            ) +
+                            " | BACK=" +
+                            (
+                                hasBack
+                                    ? "OK"
+                                    : "FALTA"
+                            )
+                        );
+                    }
+                }
+
+                Log.LogInfo(
+                    "Moedas prontas: " +
+                    readyCoins.Count +
+                    "/5"
+                );
+
                 if (
-                    sourceFront.Count != 5 ||
-                    sourceBack.Count != 5
+                    readyCoins.Count == 0
                 )
                 {
                     Log.LogInfo(
-                        "As dez artes de referencia ainda nao estao presentes."
+                        "Nenhuma moeda possui FRONT + BACK."
                     );
 
                     Log.LogInfo(
-                        "O compositor gerou as instrucoes em:"
+                        "O compositor esta aguardando as artes."
+                    );
+
+                    Log.LogInfo(
+                        "Pasta de entrada:"
                     );
 
                     Log.LogInfo(
@@ -374,7 +453,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     atlasPath,
                     masks,
                     sourceFront,
-                    sourceBack
+                    sourceBack,
+                    readyCoins
                 );
             }
             catch (
@@ -581,7 +661,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             string atlasPath,
             Dictionary<string, string> masks,
             Dictionary<string, string> sourceFront,
-            Dictionary<string, string> sourceBack
+            Dictionary<string, string> sourceBack,
+            List<string> readyCoins
         )
         {
             string finalAtlas =
@@ -617,6 +698,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     LoadBitmap(
                         atlasPath
                     );
+
+                if (
+                    original.Width != 2048 ||
+                    original.Height != 2048
+                )
+                {
+                    Log.LogWarning(
+                        "Dimensoes inesperadas do atlas: " +
+                        original.Width +
+                        "x" +
+                        original.Height
+                    );
+                }
 
                 result =
                     CloneBitmap(
@@ -663,6 +757,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 report.Add(
+                    "Metodo: mascaras UV reais + composicao pixel a pixel."
+                );
+
+                report.Add(
                     "Atlas original:"
                 );
 
@@ -686,10 +784,29 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 report.Add("");
 
+                report.Add(
+                    "Moedas processadas nesta execucao: " +
+                    readyCoins.Count +
+                    "/5"
+                );
+
+                report.Add(
+                    string.Join(
+                        ", ",
+                        readyCoins
+                    )
+                );
+
+                report.Add("");
+
                 foreach (
-                    string coinName in CoinNames
+                    string coinName in readyCoins
                 )
                 {
+                    Log.LogInfo(
+                        "========================================"
+                    );
+
                     Log.LogInfo(
                         "Compondo: " +
                         coinName
@@ -715,8 +832,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                                 sourceBack[
                                     coinName
                                 ]
-                            )
-                    )
+                            ))
                     {
                         CoinComponents components =
                             DetectComponents(
@@ -724,15 +840,44 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             );
 
                         if (
-                            components.All.Count < 3
+                            components.All.Count < 3 ||
+                            components.Side == null ||
+                            components.FaceA == null ||
+                            components.FaceB == null
                         )
                         {
                             throw new InvalidOperationException(
                                 "A mascara de " +
                                 coinName +
-                                " possui menos de 3 ilhas UV detectaveis."
+                                " nao produziu 3 componentes UV validos."
                             );
                         }
+
+                        Log.LogInfo(
+                            "Componentes detectados: " +
+                            components.All.Count
+                        );
+
+                        Log.LogInfo(
+                            "Side: " +
+                            FormatComponent(
+                                components.Side
+                            )
+                        );
+
+                        Log.LogInfo(
+                            "Face A: " +
+                            FormatComponent(
+                                components.FaceA
+                            )
+                        );
+
+                        Log.LogInfo(
+                            "Face B: " +
+                            FormatComponent(
+                                components.FaceB
+                            )
+                        );
 
                         DrawCoin(
                             result,
@@ -753,6 +898,20 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         report.Add(
                             "Coin: " +
                             coinName
+                        );
+
+                        report.Add(
+                            "Front Source: " +
+                            sourceFront[
+                                coinName
+                            ]
+                        );
+
+                        report.Add(
+                            "Back Source: " +
+                            sourceBack[
+                                coinName
+                            ]
                         );
 
                         report.Add(
@@ -816,7 +975,13 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 report.Add(
-                    "FINAL GERADO COM SUCESSO."
+                    "COMPOSICAO CONCLUIDA."
+                );
+
+                report.Add(
+                    "Moedas processadas: " +
+                    readyCoins.Count +
+                    "/5"
                 );
 
                 report.Add(
@@ -837,17 +1002,32 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
-                    "FINAL: " +
+                    "Moedas processadas: " +
+                    readyCoins.Count +
+                    "/5"
+                );
+
+                Log.LogInfo(
+                    "FINAL:"
+                );
+
+                Log.LogInfo(
                     finalAtlas
                 );
 
                 Log.LogInfo(
-                    "PREVIEW: " +
+                    "PREVIEW:"
+                );
+
+                Log.LogInfo(
                     previewAtlas
                 );
 
                 Log.LogInfo(
-                    "REPORT: " +
+                    "REPORT:"
+                );
+
+                Log.LogInfo(
                     reportPath
                 );
 
@@ -1041,13 +1221,23 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     LinearGradientMode.Horizontal
                 );
 
-            return new TextureBrush(
+            Bitmap bitmap =
                 CreateBrushBitmap(
                     bounds.Width,
                     bounds.Height,
                     gradient
-                )
-            );
+                );
+
+            gradient.Dispose();
+
+            TextureBrush brush =
+                new TextureBrush(
+                    bitmap
+                );
+
+            bitmap.Dispose();
+
+            return brush;
         }
 
         private Bitmap CreateBrushBitmap(
@@ -1090,8 +1280,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     safeHeight
                 );
             }
-
-            gradient.Dispose();
 
             return bitmap;
         }
@@ -1391,7 +1579,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                             Component component =
                                 FloodFill(
-                                    mask,
                                     data,
                                     visited,
                                     x,
@@ -1442,7 +1629,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 components.Count >= 3
             )
             {
-                List<Component> firstThree =
+                List<Component> candidates =
                     components
                         .OrderBy(
                             c =>
@@ -1451,10 +1638,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         .Take(
                             3
                         )
-                        .ToList();
-
-                firstThree =
-                    firstThree
                         .OrderBy(
                             c =>
                                 c.CenterX
@@ -1462,20 +1645,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         .ToList();
 
                 result.Side =
-                    firstThree[0];
+                    candidates[0];
 
                 result.FaceA =
-                    firstThree[1];
+                    candidates[1];
 
                 result.FaceB =
-                    firstThree[2];
+                    candidates[2];
             }
 
             return result;
         }
 
         private unsafe Component FloodFill(
-            Bitmap mask,
             BitmapData data,
             bool[,] visited,
             int startX,
@@ -1520,37 +1702,29 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 component.PixelCount++;
 
-                if (
-                    x < component.MinX
-                )
-                {
-                    component.MinX =
-                        x;
-                }
+                component.MinX =
+                    Math.Min(
+                        component.MinX,
+                        x
+                    );
 
-                if (
-                    x > component.MaxX
-                )
-                {
-                    component.MaxX =
-                        x;
-                }
+                component.MaxX =
+                    Math.Max(
+                        component.MaxX,
+                        x
+                    );
 
-                if (
-                    y < component.MinY
-                )
-                {
-                    component.MinY =
-                        y;
-                }
+                component.MinY =
+                    Math.Min(
+                        component.MinY,
+                        y
+                    );
 
-                if (
-                    y > component.MaxY
-                )
-                {
-                    component.MaxY =
-                        y;
-                }
+                component.MaxY =
+                    Math.Max(
+                        component.MaxY,
+                        y
+                    );
 
                 TryEnqueue(
                     data,
@@ -1824,15 +1998,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     "README.txt"
                 );
 
-            if (
-                File.Exists(
-                    path
-                )
-            )
-            {
-                return;
-            }
-
             List<string> lines =
                 new List<string>();
 
@@ -1847,7 +2012,15 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             lines.Add("");
 
             lines.Add(
-                "Coloque 10 PNGs nesta pasta:"
+                "Coloque os PNGs correspondentes."
+            );
+
+            lines.Add(
+                "O compositor processa automaticamente"
+            );
+
+            lines.Add(
+                "somente moedas que tenham FRONT + BACK."
             );
 
             lines.Add("");
@@ -1905,25 +2078,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             lines.Add("");
 
             lines.Add(
-                "Use imagens de referencia sem fundo,"
-            );
-
-            lines.Add(
-                "preferencialmente vistas de frente,"
-            );
-
-            lines.Add(
-                "para evitar deformacao durante o mapeamento."
-            );
-
-            lines.Add("");
-
-            lines.Add(
                 "O atlas original nunca sera sobrescrito."
             );
 
             lines.Add(
-                "O resultado sera:"
+                "Resultado:"
             );
 
             lines.Add(
