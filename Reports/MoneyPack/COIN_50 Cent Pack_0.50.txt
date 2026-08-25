@@ -5,7 +5,7 @@ Trigger: SpawnMoney
 Type: COIN
 MoneyPack: 50 Cent Pack
 Value: 0,5
-InstanceID: -6480
+InstanceID: -6482
 ActiveSelf: True
 ActiveInHierarchy: True
 

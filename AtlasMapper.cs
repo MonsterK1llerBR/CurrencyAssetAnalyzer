@@ -1,0 +1,1984 @@
+﻿#nullable disable
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.IO.Compression;
+using System.Reflection;
+using System.Text;
+using BepInEx;
+using BepInEx.Unity.IL2CPP;
+using HarmonyLib;
+using UnityEngine;
+
+namespace MonsterK1llerBR.CurrencyAssetAnalyzer
+{
+    [BepInPlugin(
+        GUID,
+        NAME,
+        VERSION
+    )]
+    public class CurrencyAtlasMapper : BasePlugin
+    {
+        private const string GUID =
+            "br.monsterk1llerbr.supermarketsimulator.currencyatlasmapper";
+
+        private const string NAME =
+            "Currency Atlas Mapper";
+
+        private const string VERSION =
+            "1.0.0";
+
+        private const string RepositoryRoot =
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer";
+
+        private const string RepositoryAtlasDirectory =
+            @"C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\AtlasMapping";
+
+        private static CurrencyAtlasMapper Instance;
+
+        private Harmony HarmonyInstance;
+
+        private static readonly HashSet<string> AnalyzedCoins =
+            new HashSet<string>();
+
+        private static string ReportDirectory;
+
+        private static string OutputDirectory;
+
+        private static string ReportFile;
+
+        private static Texture2D DiagnosticTexture;
+
+        private static readonly byte[] PngSignature =
+        {
+            137,
+            80,
+            78,
+            71,
+            13,
+            10,
+            26,
+            10
+        };
+
+        public override void Load()
+        {
+            Instance = this;
+
+            try
+            {
+                ReportDirectory =
+                    Path.Combine(
+                        Paths.PluginPath,
+                        "CurrencyAssetAnalyzer",
+                        "AnalyzerV9"
+                    );
+
+                OutputDirectory =
+                    Path.Combine(
+                        ReportDirectory,
+                        "AtlasMapping"
+                    );
+
+                ReportFile =
+                    Path.Combine(
+                        OutputDirectory,
+                        "AtlasMapReport.txt"
+                    );
+
+                Directory.CreateDirectory(
+                    ReportDirectory
+                );
+
+                Directory.CreateDirectory(
+                    OutputDirectory
+                );
+
+                InitializeReport();
+
+                Log.LogInfo(
+                    "========================================"
+                );
+
+                Log.LogInfo(
+                    "Currency Atlas Mapper v1.0.0"
+                );
+
+                Log.LogInfo(
+                    "========================================"
+                );
+
+                Log.LogInfo(
+                    "Objetivo: descobrir regiao UV do atlas."
+                );
+
+                Log.LogInfo(
+                    "Metodo: renderizacao diagnostica."
+                );
+
+                Log.LogInfo(
+                    "Mesh.uv direto: NAO UTILIZADO."
+                );
+
+                Log.LogInfo(
+                    "MoneyPack scope: SOMENTE MOEDAS."
+                );
+
+                Log.LogInfo(
+                    "Saida: " +
+                    OutputDirectory
+                );
+
+                CreateDiagnosticTexture();
+
+                PatchSpawnMoney();
+            }
+            catch (Exception ex)
+            {
+                Log.LogError(
+                    "Erro inicializando Currency Atlas Mapper: " +
+                    ex
+                );
+            }
+        }
+
+        private static void InitializeReport()
+        {
+            try
+            {
+                using (
+                    StreamWriter writer =
+                        new StreamWriter(
+                            ReportFile,
+                            false
+                        )
+                )
+                {
+                    writer.WriteLine(
+                        "========================================"
+                    );
+
+                    writer.WriteLine(
+                        "CURRENCY ATLAS MAPPER"
+                    );
+
+                    writer.WriteLine(
+                        "VERSION: " +
+                        VERSION
+                    );
+
+                    writer.WriteLine(
+                        "========================================"
+                    );
+
+                    writer.WriteLine(
+                        "Metodo: textura diagnostica codificando U/V."
+                    );
+
+                    writer.WriteLine();
+                }
+            }
+            catch
+            {
+            }
+        }
+
+        private static void CreateDiagnosticTexture()
+        {
+            try
+            {
+                const int size = 1024;
+
+                DiagnosticTexture =
+                    new Texture2D(
+                        size,
+                        size,
+                        TextureFormat.RGBA32,
+                        false,
+                        true
+                    );
+
+                DiagnosticTexture.name =
+                    "CurrencyAtlasMapper_DiagnosticUV";
+
+                DiagnosticTexture.filterMode =
+                    FilterMode.Point;
+
+                DiagnosticTexture.wrapMode =
+                    TextureWrapMode.Clamp;
+
+                Color32[] pixels =
+                    new Color32[
+                        size * size
+                    ];
+
+                for (
+                    int y = 0;
+                    y < size;
+                    y++
+                )
+                {
+                    float v =
+                        (float)y /
+                        (float)(size - 1);
+
+                    byte green =
+                        (byte)(
+                            Mathf.Clamp01(v) *
+                            255f
+                        );
+
+                    for (
+                        int x = 0;
+                        x < size;
+                        x++
+                    )
+                    {
+                        float u =
+                            (float)x /
+                            (float)(size - 1);
+
+                        byte red =
+                            (byte)(
+                                Mathf.Clamp01(u) *
+                                255f
+                            );
+
+                        pixels[
+                            y * size + x
+                        ] =
+                            new Color32(
+                                red,
+                                green,
+                                255,
+                                255
+                            );
+                    }
+                }
+
+                DiagnosticTexture.SetPixels32(
+                    pixels
+                );
+
+                DiagnosticTexture.Apply(
+                    false,
+                    false
+                );
+
+                string diagnosticPath =
+                    Path.Combine(
+                        OutputDirectory,
+                        "UV_Diagnostic_1024.png"
+                    );
+
+                byte[] png =
+                    EncodeTextureToPng(
+                        DiagnosticTexture
+                    );
+
+                if (
+                    png != null &&
+                    png.Length > 0
+                )
+                {
+                    File.WriteAllBytes(
+                        diagnosticPath,
+                        png
+                    );
+
+                    SyncToRepository(
+                        diagnosticPath
+                    );
+                }
+
+                LogInfo(
+                    "Textura diagnostica criada."
+                );
+            }
+            catch (Exception ex)
+            {
+                LogError(
+                    "Erro criando textura diagnostica: " +
+                    ex
+                );
+            }
+        }
+
+        private void PatchSpawnMoney()
+        {
+            try
+            {
+                Type managerType =
+                    FindType(
+                        "CheckoutChangeManager"
+                    );
+
+                if (managerType == null)
+                {
+                    LogError(
+                        "CheckoutChangeManager nao encontrado."
+                    );
+
+                    return;
+                }
+
+                MethodInfo spawnMoney =
+                    FindSpawnMoneyMethod(
+                        managerType
+                    );
+
+                if (spawnMoney == null)
+                {
+                    LogError(
+                        "SpawnMoney(MoneyPack, bool) nao encontrado."
+                    );
+
+                    return;
+                }
+
+                HarmonyInstance =
+                    new Harmony(
+                        GUID
+                    );
+
+                MethodInfo postfix =
+                    AccessTools.Method(
+                        typeof(CurrencyAtlasMapper),
+                        nameof(SpawnMoneyPostfix)
+                    );
+
+                if (postfix == null)
+                {
+                    LogError(
+                        "Postfix nao encontrado."
+                    );
+
+                    return;
+                }
+
+                HarmonyInstance.Patch(
+                    spawnMoney,
+                    null,
+                    new HarmonyMethod(
+                        postfix
+                    ),
+                    null,
+                    null,
+                    null
+                );
+
+                LogInfo(
+                    "Patch de SpawnMoney aplicado."
+                );
+            }
+            catch (Exception ex)
+            {
+                LogError(
+                    "Erro aplicando patch: " +
+                    ex
+                );
+            }
+        }
+
+        private static Type FindType(
+            string typeName
+        )
+        {
+            try
+            {
+                Type type =
+                    AccessTools.TypeByName(
+                        typeName
+                    );
+
+                if (type != null)
+                    return type;
+            }
+            catch
+            {
+            }
+
+            Assembly[] assemblies =
+                AppDomain.CurrentDomain.GetAssemblies();
+
+            for (
+                int i = 0;
+                i < assemblies.Length;
+                i++
+            )
+            {
+                try
+                {
+                    Type type =
+                        assemblies[i].GetType(
+                            typeName
+                        );
+
+                    if (type != null)
+                        return type;
+                }
+                catch
+                {
+                }
+            }
+
+            return null;
+        }
+
+        private static MethodInfo FindSpawnMoneyMethod(
+            Type managerType
+        )
+        {
+            try
+            {
+                MethodInfo[] methods =
+                    managerType.GetMethods(
+                        BindingFlags.Instance |
+                        BindingFlags.Static |
+                        BindingFlags.Public |
+                        BindingFlags.NonPublic
+                    );
+
+                for (
+                    int i = 0;
+                    i < methods.Length;
+                    i++
+                )
+                {
+                    MethodInfo method =
+                        methods[i];
+
+                    if (
+                        method.Name !=
+                        "SpawnMoney"
+                    )
+                    {
+                        continue;
+                    }
+
+                    ParameterInfo[] parameters =
+                        method.GetParameters();
+
+                    if (
+                        parameters.Length !=
+                        2
+                    )
+                    {
+                        continue;
+                    }
+
+                    if (
+                        parameters[1].ParameterType !=
+                        typeof(bool)
+                    )
+                    {
+                        continue;
+                    }
+
+                    return method;
+                }
+            }
+            catch (Exception ex)
+            {
+                if (Instance != null)
+                {
+                    Instance.Log.LogError(
+                        "Erro procurando SpawnMoney: " +
+                        ex
+                    );
+                }
+            }
+
+            return null;
+        }
+
+        private static void SpawnMoneyPostfix(
+            object moneyPack,
+            bool isCoin
+        )
+        {
+            try
+            {
+                if (Instance == null)
+                    return;
+
+                if (!isCoin)
+                    return;
+
+                if (moneyPack == null)
+                    return;
+
+                GameObject root =
+                    ReadMoneyPackGameObject(
+                        moneyPack
+                    );
+
+                if (root == null)
+                    return;
+
+                AnalyzeCoinPack(
+                    root
+                );
+            }
+            catch (Exception ex)
+            {
+                if (Instance != null)
+                {
+                    Instance.Log.LogError(
+                        "Erro no Postfix: " +
+                        ex
+                    );
+                }
+            }
+        }
+
+        private static GameObject ReadMoneyPackGameObject(
+            object moneyPack
+        )
+        {
+            try
+            {
+                Type type =
+                    moneyPack.GetType();
+
+                PropertyInfo property =
+                    type.GetProperty(
+                        "gameObject",
+                        BindingFlags.Instance |
+                        BindingFlags.Public |
+                        BindingFlags.NonPublic
+                    );
+
+                if (property != null)
+                {
+                    object result =
+                        property.GetValue(
+                            moneyPack,
+                            null
+                        );
+
+                    GameObject gameObject =
+                        result as GameObject;
+
+                    if (gameObject != null)
+                        return gameObject;
+                }
+            }
+            catch
+            {
+            }
+
+            return null;
+        }
+
+        private static void AnalyzeCoinPack(
+            GameObject root
+        )
+        {
+            try
+            {
+                MeshFilter filter =
+                    FindCoinMeshFilter(
+                        root.transform
+                    );
+
+                if (filter == null)
+                {
+                    LogError(
+                        "MeshFilter de moeda nao encontrado em " +
+                        root.name
+                    );
+
+                    return;
+                }
+
+                Mesh mesh =
+                    filter.sharedMesh;
+
+                if (mesh == null)
+                {
+                    LogError(
+                        "Mesh nulo em " +
+                        root.name
+                    );
+
+                    return;
+                }
+
+                string coinName =
+                    mesh.name;
+
+                if (
+                    !coinName.StartsWith(
+                        "SM_Coin_",
+                        StringComparison.OrdinalIgnoreCase
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !AnalyzedCoins.Add(
+                        coinName
+                    )
+                )
+                {
+                    return;
+                }
+
+                Renderer originalRenderer =
+                    filter.GetComponent<Renderer>();
+
+                Material originalMaterial =
+                    null;
+
+                if (
+                    originalRenderer != null
+                )
+                {
+                    originalMaterial =
+                        originalRenderer.sharedMaterial;
+                }
+
+                LogInfo(
+                    "========================================"
+                );
+
+                LogInfo(
+                    "Mapeando: " +
+                    coinName
+                );
+
+                LogInfo(
+                    "Mesh vertices: " +
+                    mesh.vertexCount
+                );
+
+                LogInfo(
+                    "Material original: " +
+                    (
+                        originalMaterial != null
+                            ? originalMaterial.name
+                            : "null"
+                    )
+                );
+
+                CoinMappingResult result =
+                    RenderCoinDiagnostic(
+                        coinName,
+                        mesh,
+                        filter.transform
+                    );
+
+                WriteCoinReport(
+                    result
+                );
+            }
+            catch (Exception ex)
+            {
+                LogError(
+                    "Erro analisando moeda: " +
+                    ex
+                );
+            }
+        }
+
+        private static MeshFilter FindCoinMeshFilter(
+            Transform node
+        )
+        {
+            if (node == null)
+                return null;
+
+            MeshFilter filter =
+                node.GetComponent<MeshFilter>();
+
+            if (
+                filter != null &&
+                filter.sharedMesh != null
+            )
+            {
+                string meshName =
+                    filter.sharedMesh.name;
+
+                if (
+                    meshName.StartsWith(
+                        "SM_Coin_",
+                        StringComparison.OrdinalIgnoreCase
+                    )
+                )
+                {
+                    return filter;
+                }
+            }
+
+            for (
+                int i = 0;
+                i < node.childCount;
+                i++
+            )
+            {
+                MeshFilter result =
+                    FindCoinMeshFilter(
+                        node.GetChild(i)
+                    );
+
+                if (result != null)
+                    return result;
+            }
+
+            return null;
+        }
+
+        private static CoinMappingResult RenderCoinDiagnostic(
+            string coinName,
+            Mesh mesh,
+            Transform originalTransform
+        )
+        {
+            CoinMappingResult result =
+                new CoinMappingResult();
+
+            result.CoinName =
+                coinName;
+
+            result.MeshName =
+                mesh.name;
+
+            result.MinU =
+                1f;
+
+            result.MinV =
+                1f;
+
+            result.MaxU =
+                0f;
+
+            result.MaxV =
+                0f;
+
+            GameObject probe =
+                null;
+
+            Camera camera =
+                null;
+
+            RenderTexture renderTexture =
+                null;
+
+            Texture2D readable =
+                null;
+
+            Material material =
+                null;
+
+            try
+            {
+                probe =
+                    new GameObject(
+                        "CurrencyAtlasMapper_Probe"
+                    );
+
+                probe.layer =
+                    31;
+
+                MeshFilter probeFilter =
+                    probe.AddComponent<
+                        MeshFilter
+                    >();
+
+                MeshRenderer probeRenderer =
+                    probe.AddComponent<
+                        MeshRenderer
+                    >();
+
+                probeFilter.sharedMesh =
+                    mesh;
+
+                Shader shader =
+                    Shader.Find(
+                        "Universal Render Pipeline/Unlit"
+                    );
+
+                if (shader == null)
+                {
+                    shader =
+                        Shader.Find(
+                            "Unlit/Texture"
+                        );
+                }
+
+                if (shader == null)
+                {
+                    throw new Exception(
+                        "Shader Unlit nao encontrado."
+                    );
+                }
+
+                material =
+                    new Material(
+                        shader
+                    );
+
+                material.name =
+                    "CurrencyAtlasMapper_DiagnosticMaterial";
+
+                if (
+                    material.HasProperty(
+                        "_BaseMap"
+                    )
+                )
+                {
+                    material.SetTexture(
+                        "_BaseMap",
+                        DiagnosticTexture
+                    );
+                }
+
+                if (
+                    material.HasProperty(
+                        "_MainTex"
+                    )
+                )
+                {
+                    material.SetTexture(
+                        "_MainTex",
+                        DiagnosticTexture
+                    );
+                }
+
+                if (
+                    material.HasProperty(
+                        "_Color"
+                    )
+                )
+                {
+                    material.SetColor(
+                        "_Color",
+                        Color.white
+                    );
+                }
+
+                if (
+                    material.HasProperty(
+                        "_BaseColor"
+                    )
+                )
+                {
+                    material.SetColor(
+                        "_BaseColor",
+                        Color.white
+                    );
+                }
+
+                if (
+                    material.HasProperty(
+                        "_Cull"
+                    )
+                )
+                {
+                    material.SetFloat(
+                        "_Cull",
+                        0f
+                    );
+                }
+
+                probeRenderer.sharedMaterial =
+                    material;
+
+                probe.transform.position =
+                    Vector3.zero;
+
+                probe.transform.rotation =
+                    Quaternion.identity;
+
+                probe.transform.localScale =
+                    Vector3.one;
+
+                Bounds bounds =
+                    mesh.bounds;
+
+                float extent =
+                    Mathf.Max(
+                        bounds.extents.x,
+                        bounds.extents.y,
+                        bounds.extents.z
+                    );
+
+                if (extent < 0.0001f)
+                    extent = 0.01f;
+
+                float distance =
+                    extent *
+                    8f;
+
+                float orthographicSize =
+                    extent *
+                    2.5f;
+
+                if (
+                    orthographicSize <
+                    0.02f
+                )
+                {
+                    orthographicSize =
+                        0.02f;
+                }
+
+                GameObject cameraObject =
+                    new GameObject(
+                        "CurrencyAtlasMapper_Camera"
+                    );
+
+                cameraObject.layer =
+                    31;
+
+                camera =
+                    cameraObject.AddComponent<
+                        Camera
+                    >();
+
+                camera.enabled =
+                    false;
+
+                camera.orthographic =
+                    true;
+
+                camera.orthographicSize =
+                    orthographicSize;
+
+                camera.nearClipPlane =
+                    0.0001f;
+
+                camera.farClipPlane =
+                    distance * 4f;
+
+                camera.clearFlags =
+                    CameraClearFlags.SolidColor;
+
+                camera.backgroundColor =
+                    Color.black;
+
+                camera.cullingMask =
+                    1 << 31;
+
+                camera.allowHDR =
+                    false;
+
+                camera.allowMSAA =
+                    false;
+
+                renderTexture =
+                    new RenderTexture(
+                        512,
+                        512,
+                        24,
+                        RenderTextureFormat.ARGB32
+                    );
+
+                renderTexture.Create();
+
+                camera.targetTexture =
+                    renderTexture;
+
+                Vector3[] directions =
+                {
+                    Vector3.right,
+                    Vector3.left,
+                    Vector3.up,
+                    Vector3.down,
+                    Vector3.forward,
+                    Vector3.back
+                };
+
+                string[] names =
+                {
+                    "POS_X",
+                    "NEG_X",
+                    "POS_Y",
+                    "NEG_Y",
+                    "POS_Z",
+                    "NEG_Z"
+                };
+
+                for (
+                    int i = 0;
+                    i < directions.Length;
+                    i++
+                )
+                {
+                    CaptureView(
+                        result,
+                        coinName,
+                        camera,
+                        directions[i],
+                        names[i],
+                        distance,
+                        renderTexture,
+                        ref readable
+                    );
+                }
+
+                result.MappingFound =
+                    result.ValidPixelCount >
+                    10;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result.Error =
+                    ex.ToString();
+
+                LogError(
+                    "Erro renderizando " +
+                    coinName +
+                    ": " +
+                    ex
+                );
+
+                return result;
+            }
+            finally
+            {
+                try
+                {
+                    if (readable != null)
+                    {
+                        UnityEngine.Object.Destroy(
+                            readable
+                        );
+                    }
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (renderTexture != null)
+                    {
+                        renderTexture.Release();
+
+                        UnityEngine.Object.Destroy(
+                            renderTexture
+                        );
+                    }
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (camera != null)
+                    {
+                        UnityEngine.Object.Destroy(
+                            camera.gameObject
+                        );
+                    }
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (probe != null)
+                    {
+                        UnityEngine.Object.Destroy(
+                            probe
+                        );
+                    }
+                }
+                catch
+                {
+                }
+
+                try
+                {
+                    if (material != null)
+                    {
+                        UnityEngine.Object.Destroy(
+                            material
+                        );
+                    }
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        private static void CaptureView(
+            CoinMappingResult result,
+            string coinName,
+            Camera camera,
+            Vector3 direction,
+            string viewName,
+            float distance,
+            RenderTexture renderTexture,
+            ref Texture2D readable
+        )
+        {
+            try
+            {
+                Vector3 target =
+                    Vector3.zero;
+
+                Vector3 position =
+                    target +
+                    direction *
+                    distance;
+
+                Vector3 up =
+                    GetCameraUpVector(
+                        direction
+                    );
+
+                camera.transform.position =
+                    position;
+
+                camera.transform.rotation =
+                    Quaternion.LookRotation(
+                        target -
+                        position,
+                        up
+                    );
+
+                camera.Render();
+
+                RenderTexture previous =
+                    RenderTexture.active;
+
+                RenderTexture.active =
+                    renderTexture;
+
+                if (readable != null)
+                {
+                    UnityEngine.Object.Destroy(
+                        readable
+                    );
+
+                    readable =
+                        null;
+                }
+
+                readable =
+                    new Texture2D(
+                        512,
+                        512,
+                        TextureFormat.RGBA32,
+                        false,
+                        true
+                    );
+
+                readable.ReadPixels(
+                    new Rect(
+                        0,
+                        0,
+                        512,
+                        512
+                    ),
+                    0,
+                    0,
+                    false
+                );
+
+                readable.Apply(
+                    false,
+                    false
+                );
+
+                Color32[] pixels =
+                    readable.GetPixels32();
+
+                AnalyzeDiagnosticPixels(
+                    result,
+                    pixels
+                );
+
+                string safeCoin =
+                    SanitizeFileName(
+                        coinName
+                    );
+
+                string outputDirectory =
+                    Path.Combine(
+                        OutputDirectory,
+                        safeCoin
+                    );
+
+                Directory.CreateDirectory(
+                    outputDirectory
+                );
+
+                string outputPath =
+                    Path.Combine(
+                        outputDirectory,
+                        viewName +
+                        ".png"
+                    );
+
+                byte[] png =
+                    EncodeTextureToPng(
+                        readable
+                    );
+
+                if (
+                    png != null &&
+                    png.Length > 0
+                )
+                {
+                    File.WriteAllBytes(
+                        outputPath,
+                        png
+                    );
+
+                    SyncToRepository(
+                        outputPath
+                    );
+                }
+
+                RenderTexture.active =
+                    previous;
+            }
+            catch (Exception ex)
+            {
+                result.Error +=
+                    Environment.NewLine +
+                    viewName +
+                    ": " +
+                    ex;
+            }
+        }
+
+        private static Vector3 GetCameraUpVector(
+            Vector3 direction
+        )
+        {
+            if (
+                Mathf.Abs(
+                    Vector3.Dot(
+                        direction.normalized,
+                        Vector3.up
+                    )
+                ) >
+                0.9f
+            )
+            {
+                return Vector3.forward;
+            }
+
+            return Vector3.up;
+        }
+
+        private static void AnalyzeDiagnosticPixels(
+            CoinMappingResult result,
+            Color32[] pixels
+        )
+        {
+            if (
+                pixels == null
+            )
+            {
+                return;
+            }
+
+            for (
+                int i = 0;
+                i < pixels.Length;
+                i++
+            )
+            {
+                Color32 pixel =
+                    pixels[i];
+
+                if (
+                    pixel.b <
+                    200
+                )
+                {
+                    continue;
+                }
+
+                float u =
+                    pixel.r /
+                    255f;
+
+                float v =
+                    pixel.g /
+                    255f;
+
+                if (u < result.MinU)
+                    result.MinU =
+                        u;
+
+                if (u > result.MaxU)
+                    result.MaxU =
+                        u;
+
+                if (v < result.MinV)
+                    result.MinV =
+                        v;
+
+                if (v > result.MaxV)
+                    result.MaxV =
+                        v;
+
+                result.ValidPixelCount++;
+            }
+        }
+
+        private static void WriteCoinReport(
+            CoinMappingResult result
+        )
+        {
+            try
+            {
+                using (
+                    StreamWriter writer =
+                        new StreamWriter(
+                            ReportFile,
+                            true
+                        )
+                )
+                {
+                    writer.WriteLine(
+                        "----------------------------------------"
+                    );
+
+                    writer.WriteLine(
+                        "Coin: " +
+                        result.CoinName
+                    );
+
+                    writer.WriteLine(
+                        "Mesh: " +
+                        result.MeshName
+                    );
+
+                    writer.WriteLine(
+                        "MappingFound: " +
+                        result.MappingFound
+                    );
+
+                    writer.WriteLine(
+                        "ValidPixelCount: " +
+                        result.ValidPixelCount
+                    );
+
+                    writer.WriteLine(
+                        "UV Min U: " +
+                        FormatFloat(
+                            result.MinU
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "UV Max U: " +
+                        FormatFloat(
+                            result.MaxU
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "UV Min V: " +
+                        FormatFloat(
+                            result.MinV
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "UV Max V: " +
+                        FormatFloat(
+                            result.MaxV
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "UV Width: " +
+                        FormatFloat(
+                            result.MaxU -
+                            result.MinU
+                        )
+                    );
+
+                    writer.WriteLine(
+                        "UV Height: " +
+                        FormatFloat(
+                            result.MaxV -
+                            result.MinV
+                        )
+                    );
+
+                    if (
+                        !string.IsNullOrWhiteSpace(
+                            result.Error
+                        )
+                    )
+                    {
+                        writer.WriteLine(
+                            "ERROR:"
+                        );
+
+                        writer.WriteLine(
+                            result.Error
+                        );
+                    }
+
+                    writer.WriteLine();
+                }
+
+                SyncToRepository(
+                    ReportFile
+                );
+
+                LogInfo(
+                    "Mapeamento concluido: " +
+                    result.CoinName +
+                    " | U=" +
+                    FormatFloat(
+                        result.MinU
+                    ) +
+                    ".." +
+                    FormatFloat(
+                        result.MaxU
+                    ) +
+                    " | V=" +
+                    FormatFloat(
+                        result.MinV
+                    ) +
+                    ".." +
+                    FormatFloat(
+                        result.MaxV
+                    )
+                );
+            }
+            catch (Exception ex)
+            {
+                LogError(
+                    "Erro escrevendo relatorio: " +
+                    ex
+                );
+            }
+        }
+
+        private static byte[] EncodeTextureToPng(
+            Texture2D texture
+        )
+        {
+            if (texture == null)
+                return null;
+
+            Color32[] pixels =
+                texture.GetPixels32();
+
+            if (
+                pixels == null ||
+                pixels.Length !=
+                texture.width *
+                texture.height
+            )
+            {
+                return null;
+            }
+
+            return EncodePixelsToPng(
+                pixels,
+                texture.width,
+                texture.height
+            );
+        }
+
+        private static byte[] EncodePixelsToPng(
+            Color32[] pixels,
+            int width,
+            int height
+        )
+        {
+            if (
+                pixels == null ||
+                pixels.Length !=
+                width *
+                height
+            )
+            {
+                return null;
+            }
+
+            using (
+                MemoryStream output =
+                    new MemoryStream()
+            )
+            {
+                output.Write(
+                    PngSignature,
+                    0,
+                    PngSignature.Length
+                );
+
+                byte[] ihdr =
+                    new byte[13];
+
+                WriteUInt32BigEndian(
+                    ihdr,
+                    0,
+                    (uint)width
+                );
+
+                WriteUInt32BigEndian(
+                    ihdr,
+                    4,
+                    (uint)height
+                );
+
+                ihdr[8] = 8;
+                ihdr[9] = 6;
+                ihdr[10] = 0;
+                ihdr[11] = 0;
+                ihdr[12] = 0;
+
+                WritePngChunk(
+                    output,
+                    "IHDR",
+                    ihdr
+                );
+
+                using (
+                    MemoryStream raw =
+                        new MemoryStream()
+                )
+                {
+                    for (
+                        int y = height - 1;
+                        y >= 0;
+                        y--
+                    )
+                    {
+                        raw.WriteByte(
+                            0
+                        );
+
+                        int rowStart =
+                            y *
+                            width;
+
+                        for (
+                            int x = 0;
+                            x < width;
+                            x++
+                        )
+                        {
+                            Color32 pixel =
+                                pixels[
+                                    rowStart +
+                                    x
+                                ];
+
+                            raw.WriteByte(
+                                pixel.r
+                            );
+
+                            raw.WriteByte(
+                                pixel.g
+                            );
+
+                            raw.WriteByte(
+                                pixel.b
+                            );
+
+                            raw.WriteByte(
+                                pixel.a
+                            );
+                        }
+                    }
+
+                    using (
+                        MemoryStream compressed =
+                            new MemoryStream()
+                    )
+                    {
+                        using (
+                            ZLibStream zlib =
+                                new ZLibStream(
+                                    compressed,
+                                    System.IO.Compression.CompressionLevel.Optimal,
+                                    true
+                                )
+                        )
+                        {
+                            byte[] rawBytes =
+                                raw.ToArray();
+
+                            zlib.Write(
+                                rawBytes,
+                                0,
+                                rawBytes.Length
+                            );
+                        }
+
+                        WritePngChunk(
+                            output,
+                            "IDAT",
+                            compressed.ToArray()
+                        );
+                    }
+                }
+
+                WritePngChunk(
+                    output,
+                    "IEND",
+                    new byte[0]
+                );
+
+                return output.ToArray();
+            }
+        }
+
+        private static void WritePngChunk(
+            Stream stream,
+            string type,
+            byte[] data
+        )
+        {
+            byte[] typeBytes =
+                Encoding.ASCII.GetBytes(
+                    type
+                );
+
+            WriteUInt32BigEndian(
+                stream,
+                (uint)data.Length
+            );
+
+            stream.Write(
+                typeBytes,
+                0,
+                typeBytes.Length
+            );
+
+            if (
+                data != null &&
+                data.Length > 0
+            )
+            {
+                stream.Write(
+                    data,
+                    0,
+                    data.Length
+                );
+            }
+
+            uint crc =
+                ComputeCrc32(
+                    typeBytes,
+                    data
+                );
+
+            WriteUInt32BigEndian(
+                stream,
+                crc
+            );
+        }
+
+        private static uint ComputeCrc32(
+            byte[] type,
+            byte[] data
+        )
+        {
+            uint crc =
+                0xFFFFFFFFu;
+
+            if (type != null)
+            {
+                for (
+                    int i = 0;
+                    i < type.Length;
+                    i++
+                )
+                {
+                    crc =
+                        UpdateCrc32(
+                            crc,
+                            type[i]
+                        );
+                }
+            }
+
+            if (data != null)
+            {
+                for (
+                    int i = 0;
+                    i < data.Length;
+                    i++
+                )
+                {
+                    crc =
+                        UpdateCrc32(
+                            crc,
+                            data[i]
+                        );
+                }
+            }
+
+            return ~crc;
+        }
+
+        private static uint UpdateCrc32(
+            uint crc,
+            byte value
+        )
+        {
+            uint current =
+                crc ^
+                value;
+
+            for (
+                int i = 0;
+                i < 8;
+                i++
+            )
+            {
+                if (
+                    (current & 1u) !=
+                    0u
+                )
+                {
+                    current =
+                        (
+                            current >>
+                            1
+                        ) ^
+                        0xEDB88320u;
+                }
+                else
+                {
+                    current >>=
+                        1;
+                }
+            }
+
+            return current;
+        }
+
+        private static void WriteUInt32BigEndian(
+            byte[] buffer,
+            int offset,
+            uint value
+        )
+        {
+            buffer[offset] =
+                (byte)(
+                    (value >> 24) &
+                    0xFF
+                );
+
+            buffer[offset + 1] =
+                (byte)(
+                    (value >> 16) &
+                    0xFF
+                );
+
+            buffer[offset + 2] =
+                (byte)(
+                    (value >> 8) &
+                    0xFF
+                );
+
+            buffer[offset + 3] =
+                (byte)(
+                    value &
+                    0xFF
+                );
+        }
+
+        private static void WriteUInt32BigEndian(
+            Stream stream,
+            uint value
+        )
+        {
+            stream.WriteByte(
+                (byte)(
+                    (value >> 24) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    (value >> 16) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    (value >> 8) &
+                    0xFF
+                )
+            );
+
+            stream.WriteByte(
+                (byte)(
+                    value &
+                    0xFF
+                )
+            );
+        }
+
+        private static void SyncToRepository(
+            string sourceFile
+        )
+        {
+            try
+            {
+                if (
+                    string.IsNullOrWhiteSpace(
+                        sourceFile
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !File.Exists(
+                        sourceFile
+                    )
+                )
+                {
+                    return;
+                }
+
+                if (
+                    !Directory.Exists(
+                        RepositoryRoot
+                    )
+                )
+                {
+                    return;
+                }
+
+                Directory.CreateDirectory(
+                    RepositoryAtlasDirectory
+                );
+
+                string destination =
+                    Path.Combine(
+                        RepositoryAtlasDirectory,
+                        Path.GetFileName(
+                            sourceFile
+                        )
+                    );
+
+                File.Copy(
+                    sourceFile,
+                    destination,
+                    true
+                );
+
+                if (
+                    Instance != null
+                )
+                {
+                    Instance.Log.LogInfo(
+                        "Sincronizado: " +
+                        destination
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                if (Instance != null)
+                {
+                    Instance.Log.LogError(
+                        "Erro sincronizando: " +
+                        ex
+                    );
+                }
+            }
+        }
+
+        private static string SanitizeFileName(
+            string value
+        )
+        {
+            char[] invalidChars =
+                Path.GetInvalidFileNameChars();
+
+            for (
+                int i = 0;
+                i < invalidChars.Length;
+                i++
+            )
+            {
+                value =
+                    value.Replace(
+                        invalidChars[i],
+                        '_'
+                    );
+            }
+
+            return value;
+        }
+
+        private static string FormatFloat(
+            float value
+        )
+        {
+            return value.ToString(
+                "0.000000",
+                CultureInfo.InvariantCulture
+            );
+        }
+
+        private static void LogInfo(
+            string message
+        )
+        {
+            if (Instance != null)
+            {
+                Instance.Log.LogInfo(
+                    message
+                );
+            }
+        }
+
+        private static void LogError(
+            string message
+        )
+        {
+            if (Instance != null)
+            {
+                Instance.Log.LogError(
+                    message
+                );
+            }
+        }
+
+        private sealed class CoinMappingResult
+        {
+            public string CoinName;
+
+            public string MeshName;
+
+            public bool MappingFound;
+
+            public int ValidPixelCount;
+
+            public float MinU;
+
+            public float MaxU;
+
+            public float MinV;
+
+            public float MaxV;
+
+            public string Error;
+        }
+    }
+}

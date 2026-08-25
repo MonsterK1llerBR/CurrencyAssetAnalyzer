@@ -5,7 +5,7 @@ Trigger: SpawnMoney
 Type: BILL
 MoneyPack: 50 Dollar Pack
 Value: 50
-InstanceID: -5548
+InstanceID: -5550
 ActiveSelf: True
 ActiveInHierarchy: True
 
