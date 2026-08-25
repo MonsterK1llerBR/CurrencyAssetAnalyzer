@@ -1,0 +1,39 @@
+========================================
+CURRENCY ATLAS VISUALIZATION
+VERSION: 3.1.0
+========================================
+
+Metodo: System.Drawing
+Atlas: 2048x2048
+
+Coin: SM_Coin_50_Cents
+Value: 0.50
+Color RGB: (255,0,0)
+Mask: SM_Coin_50_Cents_MASK.png
+Visual: SM_Coin_50_Cents_VISUAL.png
+
+Coin: SM_Coin_25_Cents
+Value: 0.25
+Color RGB: (0,255,0)
+Mask: SM_Coin_25_Cents_MASK.png
+Visual: SM_Coin_25_Cents_VISUAL.png
+
+Coin: SM_Coin_10_Cents
+Value: 0.10
+Color RGB: (0,0,255)
+Mask: SM_Coin_10_Cents_MASK.png
+Visual: SM_Coin_10_Cents_VISUAL.png
+
+Coin: SM_Coin_5_Cents
+Value: 0.05
+Color RGB: (255,255,0)
+Mask: SM_Coin_5_Cents_MASK.png
+Visual: SM_Coin_5_Cents_VISUAL.png
+
+Coin: SM_Coin_1_Cent
+Value: 0.01
+Color RGB: (255,0,255)
+Mask: SM_Coin_1_Cent_MASK.png
+Visual: SM_Coin_1_Cent_VISUAL.png
+
+Combined: CurrencyAtlas_VisualMap.png
