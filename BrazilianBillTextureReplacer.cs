@@ -226,6 +226,13 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 texture.name =
                     "Brazilian50Runtime";
 
+                UnityEngine.Object.DontDestroyOnLoad(
+                    texture
+                );
+
+                texture.hideFlags |=
+                    HideFlags.DontUnloadUnusedAsset;
+
                 texture.filterMode =
                     FilterMode.Bilinear;
 
