@@ -66,8 +66,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84564
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -145,8 +145,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84566
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -224,8 +224,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84568
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -303,8 +303,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84570
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -382,8 +382,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84572
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -461,8 +461,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84574
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -540,8 +540,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84576
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -619,8 +619,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84578
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -698,8 +698,8 @@ Count: 5
       Materials: 1
 
       MATERIAL #1
-      Name: 50$ Paper Front
-      InstanceID: 63156
+      Name: 50$ Paper Front (Instance)
+      InstanceID: -84580
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
