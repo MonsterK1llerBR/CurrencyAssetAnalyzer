@@ -1,0 +1,19 @@
+========================================
+BRAZILIAN MONEY TEXTURE REPLACER
+VERSION: 1.0.0
+========================================
+
+Metodo:
+SpawnMoney -> GameObject -> Renderer -> Material Instance
+-> _BaseMap/_MainTex -> BrazilianCoinAtlas_FINAL.png
+
+Mesh: NAO ALTERADO.
+UV: NAO ALTERADO.
+Material original: NAO ALTERADO.
+Textura original: NAO ALTERADA.
+
+
+ATLAS PATH
+--------------------------------
+B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
+Atlas encontrado: TRUE

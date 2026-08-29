@@ -51,6 +51,11 @@
             <Private>false</Private>
         </Reference>
 
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\UnityEngine.ImageConversionModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
         <Reference Include="Unity.TextMeshPro">
             <HintPath>B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
             <Private>false</Private>
