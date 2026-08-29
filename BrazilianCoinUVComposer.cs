@@ -26,8 +26,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         private const string NAME =
             "Brazilian Coin UV Composer";
 
-        private const string VERSION =
-            "1.1.0";
+        private const string VERSION = "1.3.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -1873,11 +1872,28 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
 
             /*
-             * Mantemos uma pequena margem para evitar
-             * que a arte encoste exatamente na borda
-             * da ilha UV.
+             * Remove somente uma fina faixa externa da
+             * referencia para reduzir halo/borda artificial.
+             *
+             * Nao removemos pixels escuros individualmente,
+             * pois eles podem fazer parte da moeda real.
              */
-            const int padding = 4;
+            const int haloTrim = 2;
+
+            Rectangle trimmedBounds =
+                TrimBounds(
+                    contentBounds,
+                    haloTrim,
+                    source.Width,
+                    source.Height
+                );
+
+            /*
+             * Margem muito pequena dentro da ilha UV.
+             * A escala anterior ficou praticamente perfeita,
+             * portanto mantemos uma margem de apenas 2 pixels.
+             */
+            const int padding = 2;
 
             int availableWidth =
                 Math.Max(
@@ -1901,16 +1917,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
             double scaleX =
                 (double)availableWidth /
-                contentBounds.Width;
+                trimmedBounds.Width;
 
             double scaleY =
                 (double)availableHeight /
-                contentBounds.Height;
+                trimmedBounds.Height;
 
-            /*
-             * Fit proporcional:
-             * nunca deformamos a moeda.
-             */
             double scale =
                 Math.Min(
                     scaleX,
@@ -1920,9 +1932,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             int drawWidth =
                 Math.Max(
                     1,
-                    (int)
-                    Math.Round(
-                        contentBounds.Width *
+                    (int)Math.Round(
+                        trimmedBounds.Width *
                         scale
                     )
                 );
@@ -1930,9 +1941,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             int drawHeight =
                 Math.Max(
                     1,
-                    (int)
-                    Math.Round(
-                        contentBounds.Height *
+                    (int)Math.Round(
+                        trimmedBounds.Height *
                         scale
                     )
                 );
@@ -1989,7 +1999,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         drawWidth,
                         drawHeight
                     ),
-                    contentBounds,
+                    trimmedBounds,
                     GraphicsUnit.Pixel
                 );
             }
@@ -2003,6 +2013,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 contentBounds.Width +
                 "x" +
                 contentBounds.Height +
+                " | Trimmed=" +
+                trimmedBounds.Width +
+                "x" +
+                trimmedBounds.Height +
                 " | Output=" +
                 safeWidth +
                 "x" +
@@ -2032,13 +2046,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             int maxY =
                 -1;
 
-            /*
-             * Procuramos somente pixels visíveis.
-             *
-             * As referências das moedas devem possuir
-             * fundo transparente. Isso elimina automaticamente
-             * as margens vazias da imagem original.
-             */
             for (
                 int y = 0;
                 y < source.Height;
@@ -2111,6 +2118,79 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 minY,
                 maxX + 1,
                 maxY + 1
+            );
+        }
+
+        private Rectangle TrimBounds(
+            Rectangle bounds,
+            int trim,
+            int sourceWidth,
+            int sourceHeight
+        )
+        {
+            int x =
+                bounds.X + trim;
+
+            int y =
+                bounds.Y + trim;
+
+            int right =
+                bounds.Right - trim;
+
+            int bottom =
+                bounds.Bottom - trim;
+
+            if (
+                right <= x
+            )
+            {
+                x =
+                    bounds.X;
+
+                right =
+                    bounds.Right;
+            }
+
+            if (
+                bottom <= y
+            )
+            {
+                y =
+                    bounds.Y;
+
+                bottom =
+                    bounds.Bottom;
+            }
+
+            x =
+                Math.Max(
+                    0,
+                    x
+                );
+
+            y =
+                Math.Max(
+                    0,
+                    y
+                );
+
+            right =
+                Math.Min(
+                    sourceWidth,
+                    right
+                );
+
+            bottom =
+                Math.Min(
+                    sourceHeight,
+                    bottom
+                );
+
+            return Rectangle.FromLTRB(
+                x,
+                y,
+                right,
+                bottom
             );
         }
 
@@ -2314,4 +2394,5 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
+
 
