@@ -55,14 +55,14 @@ WasCollected : System.Boolean
 METHODS RELACIONADOS A DADOS
 --------------------------------
 System.Int32 get_vertexCount()
-System.Int32 get_subMeshCount()
-System.Void GetUVsImpl(System.Int32 uvIndex,  uvs, System.Int32 dim)
 System.Int32 GetVertexAttributeStream(UnityEngine.Rendering.VertexAttribute attr)
 System.Int32 GetVertexAttributeOffset(UnityEngine.Rendering.VertexAttribute attr)
 System.Int32 GetVertexBufferStride(System.Int32 stream)
 System.UInt32 GetIndexCount(System.Int32 submesh)
 UnityEngine.Rendering.IndexFormat get_indexFormat()
 UnityEngine.GraphicsBuffer GetVertexBuffer(System.Int32 index)
+System.Int32 get_subMeshCount()
+System.Void GetUVsImpl(System.Int32 uvIndex,  uvs, System.Int32 dim)
 System.Void set_indexFormat(UnityEngine.Rendering.IndexFormat value)
 UnityEngine.GraphicsBuffer+Target get_vertexBufferTarget()
 System.Void set_vertexBufferTarget(UnityEngine.GraphicsBuffer+Target value)
