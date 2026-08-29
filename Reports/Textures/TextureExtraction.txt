@@ -63,25 +63,6 @@ Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\C
 Success: True
 
 ----------------------------------------
-Texture: T_Money_AlbedoTransparency
-Type: UnityEngine.Texture
-InstanceID: 232060
-Width: 2048
-Height: 2048
-FilterMode: Bilinear
-WrapMode: Repeat
-AnisoLevel: 1
-Format: N/A
-MipmapCount: N/A
-IsReadable: N/A
-Material: M_Money
-MaterialInstanceID: 61678
-Property: _BaseMap
-GameObject: SM_Coin_50_Cents
-Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-Success: True
-
-----------------------------------------
 Texture: T_Money_Normal
 Type: UnityEngine.Texture
 InstanceID: 232062
@@ -93,8 +74,8 @@ AnisoLevel: 1
 Format: N/A
 MipmapCount: N/A
 IsReadable: N/A
-Material: M_Money
-MaterialInstanceID: 61678
+Material: M_Money (Instance)
+MaterialInstanceID: -75550
 Property: _BumpMap
 GameObject: SM_Coin_50_Cents
 Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_Normal_232062.png
@@ -112,8 +93,8 @@ AnisoLevel: 1
 Format: N/A
 MipmapCount: N/A
 IsReadable: N/A
-Material: M_Money
-MaterialInstanceID: 61678
+Material: M_Money (Instance)
+MaterialInstanceID: -75550
 Property: _MetallicGlossMap
 GameObject: SM_Coin_50_Cents
 Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_SpecularSmoothness_232064.png

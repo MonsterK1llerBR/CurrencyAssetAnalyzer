@@ -873,8 +873,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private bool IsTargetCoin(
-            GameObject root
-        )
+    GameObject root
+)
         {
             if (
                 root == null
@@ -883,71 +883,21 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 return false;
             }
 
-            string rootName =
-                root.name ??
-                string.Empty;
-
-            for (
-                int i = 0;
-                i < CoinNameMarkers.Length;
-                i++
-            )
+            try
             {
-                if (
-                    rootName.IndexOf(
-                        CoinNameMarkers[i],
-                        StringComparison.OrdinalIgnoreCase
-                    ) >= 0
-                )
-                {
-                    return true;
-                }
-            }
-
-            Transform transform =
-                root.transform;
-
-            if (
-                transform == null
-            )
-            {
-                return false;
-            }
-
-            int childCount =
-                transform.childCount;
-
-            for (
-                int i = 0;
-                i < childCount;
-                i++
-            )
-            {
-                Transform child =
-                    transform.GetChild(
-                        i
-                    );
-
-                if (
-                    child == null
-                )
-                {
-                    continue;
-                }
-
-                string childName =
-                    child.name ??
+                string rootName =
+                    root.name ??
                     string.Empty;
 
                 for (
-                    int c = 0;
-                    c < CoinNameMarkers.Length;
-                    c++
+                    int i = 0;
+                    i < CoinNameMarkers.Length;
+                    i++
                 )
                 {
                     if (
-                        childName.IndexOf(
-                            CoinNameMarkers[c],
+                        rootName.IndexOf(
+                            CoinNameMarkers[i],
                             StringComparison.OrdinalIgnoreCase
                         ) >= 0
                     )
@@ -955,6 +905,97 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         return true;
                     }
                 }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                Transform rootTransform =
+                    root.transform;
+
+                if (
+                    rootTransform == null
+                )
+                {
+                    return false;
+                }
+
+                /*
+                 * IMPORTANTE:
+                 *
+                 * A moeda real nao esta necessariamente no root
+                 * nem no primeiro nivel de filhos.
+                 *
+                 * Exemplo descoberto pelo MoneyMaterialProbe:
+                 *
+                 * 1 Cent Pack
+                 *   -> Visuals
+                 *      -> 1 Cent Pack
+                 *         -> Coin_1_Cent
+                 *            -> SM_Coin_1_Cent
+                 *
+                 * Portanto procuramos recursivamente toda a hierarquia.
+                 */
+                Transform[] allTransforms =
+                    root.GetComponentsInChildren<Transform>(
+                        true
+                    );
+
+                if (
+                    allTransforms == null
+                )
+                {
+                    return false;
+                }
+
+                for (
+                    int i = 0;
+                    i < allTransforms.Length;
+                    i++
+                )
+                {
+                    Transform transform =
+                        allTransforms[i];
+
+                    if (
+                        transform == null
+                    )
+                    {
+                        continue;
+                    }
+
+                    string objectName =
+                        transform.name ??
+                        string.Empty;
+
+                    for (
+                        int c = 0;
+                        c < CoinNameMarkers.Length;
+                        c++
+                    )
+                    {
+                        if (
+                            objectName.IndexOf(
+                                CoinNameMarkers[c],
+                                StringComparison.OrdinalIgnoreCase
+                            ) >= 0
+                        )
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            catch (
+                Exception ex
+            )
+            {
+                Log.LogWarning(
+                    "Erro procurando moeda na hierarquia: " +
+                    ex
+                );
             }
 
             return false;

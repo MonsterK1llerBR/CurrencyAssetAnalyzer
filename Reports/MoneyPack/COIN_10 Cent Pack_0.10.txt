@@ -77,31 +77,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76638
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -180,7 +180,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -191,31 +191,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76640
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -294,7 +294,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -305,31 +305,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76642
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -408,7 +408,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -419,31 +419,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76644
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -522,7 +522,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -533,31 +533,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76646
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -636,7 +636,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -647,31 +647,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76648
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -750,7 +750,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -761,31 +761,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76650
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -864,7 +864,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -875,31 +875,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76652
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -978,7 +978,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -989,31 +989,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76654
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1092,7 +1092,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1103,31 +1103,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76656
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1206,7 +1206,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1217,31 +1217,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76658
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1320,7 +1320,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1331,31 +1331,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76660
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1434,7 +1434,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1445,31 +1445,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76662
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1548,7 +1548,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1559,31 +1559,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76664
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1662,7 +1662,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1673,31 +1673,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76666
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1776,7 +1776,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1787,31 +1787,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76668
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -1890,7 +1890,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -1901,31 +1901,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76670
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -2004,7 +2004,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -2015,31 +2015,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76672
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -2118,7 +2118,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -2129,31 +2129,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76674
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -2232,7 +2232,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -2243,31 +2243,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76676
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -2346,7 +2346,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -2357,31 +2357,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76678
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
@@ -2460,7 +2460,7 @@ Count: 5
         Count: 4
         - UnityEngine.Transform
         - UnityEngine.Component
-        - UnityEngine.Component
+        - UnityEngine.Renderer
         - UnityEngine.Component
 
         RENDERERS
@@ -2471,31 +2471,31 @@ Count: 5
         Materials: 1
 
         MATERIAL #1
-        Name: M_Money
-        InstanceID: 61678
+        Name: M_Money (Instance)
+        InstanceID: -76680
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _MainTex
-        Name: T_Money_AlbedoTransparency
+        Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: 232060
-        TextureInstanceID: 232060
+        InstanceID: -75548
+        TextureInstanceID: -75548
         Width: 2048
         Height: 2048
         AnisoLevel: 1
         FilterMode: Bilinear
-        WrapMode: Repeat
+        WrapMode: Clamp
         TEXTURE
         Property: _BumpMap
         Name: T_Money_Normal
