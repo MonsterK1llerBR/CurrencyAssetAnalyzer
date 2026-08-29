@@ -67,7 +67,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86880
+      InstanceID: -83048
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -146,7 +146,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86882
+      InstanceID: -83050
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -225,7 +225,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86884
+      InstanceID: -83052
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -304,7 +304,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86886
+      InstanceID: -83054
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -383,7 +383,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86888
+      InstanceID: -83056
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -462,7 +462,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86890
+      InstanceID: -83058
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -541,7 +541,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86892
+      InstanceID: -83060
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -620,7 +620,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86894
+      InstanceID: -83062
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -699,7 +699,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -86896
+      InstanceID: -83064
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap

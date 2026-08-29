@@ -1,0 +1,108 @@
+========================================
+BILL INTERACTION PROBE
+VERSION: 1.0.0
+========================================
+TYPE: CheckoutChangeManager
+
+METHOD: AddOrRemoveMoney
+  Return: System.Boolean
+  Parameters: 2
+    moneyPack : MoneyPack
+    add : System.Boolean
+
+METHOD: ResetChange
+  Return: System.Void
+  Parameters: 0
+
+METHOD: SpawnMoney
+  Return: System.Void
+  Parameters: 2
+    moneyPack : MoneyPack
+    isCoin : System.Boolean
+
+METHOD: DespawnMoney
+  Return: System.Boolean
+  Parameters: 2
+    moneyPack : MoneyPack
+    isCoin : System.Boolean
+
+METHOD: UpdateMoneyPosition
+  Return: System.Void
+  Parameters: 1
+    indexFrom : System.Int32
+
+METHOD: get_m_MoneyJumpPower
+  Return: System.Single
+  Parameters: 0
+
+METHOD: set_m_MoneyJumpPower
+  Return: System.Void
+  Parameters: 1
+     : System.Single
+
+METHOD: get_m_MoneyJumpDuration
+  Return: System.Single
+  Parameters: 0
+
+METHOD: set_m_MoneyJumpDuration
+  Return: System.Void
+  Parameters: 1
+     : System.Single
+
+METHOD: get_m_PaperMoneySpawnPosition
+  Return: UnityEngine.Transform
+  Parameters: 0
+
+METHOD: set_m_PaperMoneySpawnPosition
+  Return: System.Void
+  Parameters: 1
+     : UnityEngine.Transform
+
+METHOD: get_m_GapBetweenPaperMoney
+  Return: System.Single
+  Parameters: 0
+
+METHOD: set_m_GapBetweenPaperMoney
+  Return: System.Void
+  Parameters: 1
+     : System.Single
+
+METHOD: get_m_CoinSpawnPosition
+  Return: UnityEngine.Transform
+  Parameters: 0
+
+METHOD: set_m_CoinSpawnPosition
+  Return: System.Void
+  Parameters: 1
+     : UnityEngine.Transform
+
+METHOD: get_m_SpawnedMoney
+  Return: Il2CppSystem.Collections.Generic.List`1[Money]
+  Parameters: 0
+
+METHOD: set_m_SpawnedMoney
+  Return: System.Void
+  Parameters: 1
+     : Il2CppSystem.Collections.Generic.List`1[Money]
+
+METHOD: get_m_SpawnedCoin
+  Return: Il2CppSystem.Collections.Generic.List`1[Money]
+  Parameters: 0
+
+METHOD: set_m_SpawnedCoin
+  Return: System.Void
+  Parameters: 1
+     : Il2CppSystem.Collections.Generic.List`1[Money]
+
+METHOD: get_m_MoneyPacks
+  Return: Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[MoneyPack]
+  Parameters: 0
+
+METHOD: set_m_MoneyPacks
+  Return: System.Void
+  Parameters: 1
+     : Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppReferenceArray`1[MoneyPack]
+
+========================================
+ANALYSIS COMPLETE
+========================================
