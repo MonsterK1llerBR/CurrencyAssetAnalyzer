@@ -133,7 +133,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -212,7 +212,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -291,7 +291,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -370,7 +370,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -449,7 +449,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -528,7 +528,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -607,7 +607,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 
@@ -686,7 +686,7 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
+      - UnityEngine.Component
       - UnityEngine.Component
       - UnityEngine.Component
 

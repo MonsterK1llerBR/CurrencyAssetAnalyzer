@@ -12,7 +12,7 @@
 [Message:   BepInEx] Chainloader initialized
 [Warning:Il2CppInterop] Class::Init signatures have been exhausted, using a substitute!
 [Info   :Il2CppInterop] Registered mono type Il2CppInterop.Runtime.DelegateSupport+Il2CppToMonoDelegateReference in il2cpp domain
-[Info   :   BepInEx] 21 plugins to load
+[Info   :   BepInEx] 22 plugins to load
 [Info   :   BepInEx] Loading [Currency Atlas Mask Visualizer 3.1.0]
 [Info   :Currency Atlas Mask Visualizer] ========================================
 [Info   :Currency Atlas Mask Visualizer] Currency Atlas Mask Visualizer v3.1.0
@@ -96,6 +96,30 @@ System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from as
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Bill Material State Probe] Patch de SpawnMoney aplicado.
+[Info   :   BepInEx] Loading [Brazilian Bill Texture Replacer 1.0.1]
+[Info   :Brazilian Bill Texture Replacer] ========================================
+[Info   :Brazilian Bill Texture Replacer] Brazilian Bill Texture Replacer v1.0.1
+[Info   :Brazilian Bill Texture Replacer] ========================================
+[Info   :Brazilian Bill Texture Replacer] Alvo: 50 Dollar Pack
+[Info   :Brazilian Bill Texture Replacer] Objeto: Paper Dollar Base
+[Info   :Brazilian Bill Texture Replacer] Material esperado: 50$ Paper Front
+[Info   :Brazilian Bill Texture Replacer] Textura: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianBillTextureReplacer\50_REAIS.png
+[Warning:Brazilian Bill Texture Replacer] Textura R$50 nao encontrada.
+[Warning:Brazilian Bill Texture Replacer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianBillTextureReplacer\50_REAIS.png
+[Info   :Brazilian Bill Texture Replacer] SceneLoaded registrado.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Bill Texture Replacer] Patch de SpawnMoney aplicado.
+[Warning:Brazilian Bill Texture Replacer] Scan ignorado: textura R$50 nao carregada.
+[Info   :Brazilian Bill Texture Replacer] Inicializacao concluida.
 [Info   :   BepInEx] Loading [Brazilian Coin Atlas Generator 1.0.1]
 [Info   :Brazilian Coin Atlas Generator] ========================================
 [Info   :Brazilian Coin Atlas Generator] Brazilian Coin Atlas Generator v1.0.1
@@ -196,11 +220,13 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] ToMoneyText encontrado: System.String ToMoneyText(Single, Single, Single)
 [Info   :Brazilian Coin UV Composer] ========================================
 [Info   :Brazilian Coin UV Composer] Compondo: SM_Coin_50_Cents
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_50_Cents
 [Info   :Brazilian Currency Format] [Debug] Procurando setter TMP_Text.text para diagnóstico...
 [Info   :Brazilian Currency Format] [Debug] TMP_Text.text setter encontrado: Void set_text(System.String)
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_50_Cents
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_50_Cents | Pixels substituidos: 116254
 [Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_25_Cents
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_25_Cents | Pixels substituidos: 73375
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
 [Info   :Brazilian Currency Format] [Debug] Procurando classe PosTerminal...
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -387,8 +413,6 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean Equals(System.Object)
 [Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetHashCode()
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.Start() encontrado: Void Start()
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_25_Cents | Pixels substituidos: 73375
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_10_Cents | Pixels substituidos: 37523
 [Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_5_Cents
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
@@ -415,6 +439,7 @@ System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from as
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.RemoveCharacter() encontrado: Void RemoveCharacter()
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_1_Cent | Pixels substituidos: 45378
 [Info   :Brazilian Currency Format] Brazilian Currency Format 1.0.0 carregado.
 [Info   :   BepInEx] Loading [Currency Asset Analyzer 8.2.3]
 [Info   :Currency Asset Analyzer] ========================================
@@ -430,7 +455,6 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Currency Asset Analyzer] Relatorios: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8
 [Info   :Currency Asset Analyzer] Texturas: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures
 [Info   :Currency Asset Analyzer] Destino: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_1_Cent | Pixels substituidos: 45378
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -458,13 +482,14 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Coin UV Composer] Side: Pixels=14858 | X=31..49 | Y=23..804
 [Info   :Brazilian Coin UV Composer] Face A: Pixels=50702 | X=134..387 | Y=291..544
 [Info   :Brazilian Coin UV Composer] Face B: Pixels=50694 | X=134..387 | Y=24..277
+[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=343x345 | Trimmed=339x341 | Output=254x254 | Draw=251x252
 [Info   :Brazilian Coin Atlas Generator] ========================================
 [Info   :Brazilian Coin Atlas Generator] SUBSTITUICAO DE TESTE CONCLUIDA.
 [Info   :Brazilian Coin Atlas Generator] Pixels totais substituidos: 340822
 [Info   :Brazilian Coin Atlas Generator] Atlas: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinAtlas\BrazilianCoinAtlas_TEST.png
 [Info   :Brazilian Coin Atlas Generator] Preview: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinAtlas\BrazilianCoinAtlas_MASK_PREVIEW.png
 [Info   :Brazilian Coin Atlas Generator] ========================================
-[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=343x345 | Trimmed=339x341 | Output=254x254 | Draw=251x252
+[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=329x332 | Trimmed=325x328 | Output=254x254 | Draw=250x252
 [Info   :Currency Atlas Mapper] Sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\AtlasMapping\UV_Diagnostic_1024.png
 [Info   :Currency Atlas Mapper] Textura diagnostica criada.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
@@ -546,7 +571,6 @@ Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, 
 System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=329x332 | Trimmed=325x328 | Output=254x254 | Draw=250x252
 [Info   :Mesh GPU Probe] Patch aplicado.
 [Info   :   BepInEx] Loading [Mesh GPU Readback Probe 1.0.0]
 [Info   :Mesh GPU Readback Probe] ========================================
@@ -591,6 +615,16 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Message: Game Info] Game Developer: Nokta Games
 [Message: Game Info] Game Version: v1.6.0(223)
 [Info   :   BepInEx] Loading [Timestamp 3.0.1]
+[Info   :Brazilian Coin UV Composer] ========================================
+[Info   :Brazilian Coin UV Composer] BRAZILIAN COIN UV COMPOSER CONCLUIDO.
+[Info   :Brazilian Coin UV Composer] Moedas processadas: 1/5
+[Info   :Brazilian Coin UV Composer] FINAL:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
+[Info   :Brazilian Coin UV Composer] PREVIEW:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL_PREVIEW.png
+[Info   :Brazilian Coin UV Composer] REPORT:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinUVComposerReport.txt
+[Info   :Brazilian Coin UV Composer] ========================================
 [Info   :   BepInEx] Loading [File Tree 2.0.0]
 [Info   : File Tree] File Tree logging is enabled.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
@@ -603,13 +637,14 @@ Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, 
 System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Message: Timestamp] It is currently Sat, 29 Aug 2026 21:20:22 GMT according to time.cloudflare.com
 [Info   : File Tree] B:\SteamLibrary\steamapps\common\Supermarket Simulator
 [Info   : File Tree] |
 [Info   : File Tree] |-- BepInEx
 [Info   : File Tree] |   |
 [Info   : File Tree] |   |-- cache
 [Info   : File Tree] |   |   |
-[Info   : File Tree] |   |   \-- chainloader_typeloader.dat [7,12 KB]
+[Info   : File Tree] |   |   \-- chainloader_typeloader.dat [7,43 KB]
 [Info   : File Tree] |   |
 [Info   : File Tree] |   |-- config
 [Info   : File Tree] |   |   |
@@ -886,7 +921,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |   |-- BILL_10 Dollar Pack_10.00.txt [20,3 KB]
 [Info   : File Tree] |   |       |   |   |-- BILL_20 Dollar Pack_20.00.txt [20,28 KB]
 [Info   : File Tree] |   |       |   |   |-- BILL_5 Dollar Pack_5.00.txt [20,23 KB]
-[Info   : File Tree] |   |       |   |   |-- BILL_50 Dollar Pack_50.00.txt [20,33 KB]
+[Info   : File Tree] |   |       |   |   |-- BILL_50 Dollar Pack_50.00.txt [20,44 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_1 Cent Pack_0.01.txt [37,7 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_10 Cent Pack_0.10.txt [74,5 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_25 Cent Pack_0.25.txt [37,87 KB]
@@ -977,6 +1012,8 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   \-- BillMaterialStateReport.txt [176 B]
 [Info   : File Tree] |   |       |
+[Info   : File Tree] |   |       |-- BrazilianBillTextureReplacer
+[Info   : File Tree] |   |       |
 [Info   : File Tree] |   |       |-- BrazilianCoinAtlas
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   |-- BrazilianCoinAtlasReport.txt [2,22 KB]
@@ -992,7 +1029,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |   \-- README.txt [530 B]
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_50CENTAVOS_GOOD.png [3,44 MB]
-[Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL.png [1,9 MB]
+[Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL.png [3,45 MB]
 [Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL_PREVIEW.png [21,51 KB]
 [Info   : File Tree] |   |       |   \-- BrazilianCoinUVComposerReport.txt [1,21 KB]
 [Info   : File Tree] |   |       |
@@ -1020,7 +1057,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   \-- MoneyMaterialProbeReport.txt [494 B]
 [Info   : File Tree] |   |       |
-[Info   : File Tree] |   |       |-- CurrencyAssetAnalyzer.dll [175,62 KB]
+[Info   : File Tree] |   |       |-- CurrencyAssetAnalyzer.dll [182,78 KB]
 [Info   : File Tree] |   |       |-- Microsoft.Win32.SystemEvents.dll [27,92 KB]
 [Info   : File Tree] |   |       \-- System.Drawing.Common.dll [441,14 KB]
 [Info   : File Tree] |   |
@@ -1108,7 +1145,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |   \-- UnityEngine.XRModule.dll [77,31 KB]
 [Info   : File Tree] |   |
 [Info   : File Tree] |   |-- ErrorLog.log [0 B]
-[Info   : File Tree] |   \-- LogOutput.log [64,99 KB]
+[Info   : File Tree] |   \-- LogOutput.log [68,85 KB]
 [Info   : File Tree] |
 [Info   : File Tree] |-- D3D12
 [Info   : File Tree] |   |
@@ -1131,23 +1168,12 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |-- UnityCrashHandler64.exe [1,61 MB]
 [Info   : File Tree] |-- UnityPlayer.dll [35,72 MB]
 [Info   : File Tree] \-- winhttp.dll [26,11 KB]
-[Message: Timestamp] It is currently Sat, 29 Aug 2026 20:43:36 GMT according to time.cloudflare.com
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
    at System.Reflection.Assembly.GetTypes()
    at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
 System.TypeLoadException: Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Info   :Brazilian Coin UV Composer] ========================================
-[Info   :Brazilian Coin UV Composer] BRAZILIAN COIN UV COMPOSER CONCLUIDO.
-[Info   :Brazilian Coin UV Composer] Moedas processadas: 1/5
-[Info   :Brazilian Coin UV Composer] FINAL:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
-[Info   :Brazilian Coin UV Composer] PREVIEW:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL_PREVIEW.png
-[Info   :Brazilian Coin UV Composer] REPORT:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinUVComposerReport.txt
-[Info   :Brazilian Coin UV Composer] ========================================
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'Seed4' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type 'Initial' from assembly 'UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -1202,6 +1228,14 @@ System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEng
 System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
 Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -1288,14 +1322,6 @@ System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly
 System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Failure has occurred while loading a type.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1372,6 +1398,14 @@ System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEng
 System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 GenericArguments[0], 'UnityEngine.UIElements.PointerStationaryEvent', on 'UnityEngine.UIElements.EventBase`1[T]' violates the constraint of type parameter 'T'.
 Could not load type 'LineNumberFullPathEqualityComparer' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -1458,14 +1492,6 @@ System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly
 System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Failure has occurred while loading a type.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1484,45 +1510,36 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Brazilian Bill Texture Replacer] SceneLoaded: SignIn
+[Warning:Brazilian Bill Texture Replacer] Scan ignorado: textura R$50 nao carregada.
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Brazilian Bill Texture Replacer] SceneLoaded: Main Menu
+[Warning:Brazilian Bill Texture Replacer] Scan ignorado: textura R$50 nao carregada.
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
@@ -1534,76 +1551,81 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Brazilian Bill Texture Replacer] SceneLoaded: Main Scene
+[Warning:Brazilian Bill Texture Replacer] Scan ignorado: textura R$50 nao carregada.
 [Info   :Bill Atlas Triangle Mapper] ========================================
 [Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
 [Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
@@ -1728,6 +1750,569 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Money Material Probe] Value: 50.00
 [Info   :Money Material Probe] GameObject InstanceID: -5550
 [Info   :Money Material Probe] Analise concluida: 50 Dollar Pack
+[Info   :Money Material Probe] ========================================
+[Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
+[Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.
+[Info   :Bill Atlas Triangle Mapper] Mascara da nota gerada:
+[Info   :Bill Atlas Triangle Mapper] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BillAtlasTriangleMapper\BILL_50_Dollar_MASK.png
+[Info   :Bill Atlas Triangle Mapper] Pixels marcados: 4190209
+[Info   :Bill Atlas Triangle Mapper] ========================================
+[Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
+[Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
+[Info   :Bill Atlas Triangle Mapper] Mesh: 1_Dollar_Plane
+[Info   :Bill Atlas Triangle Mapper] VertexCount: 24
+[Info   :Bill Atlas Triangle Mapper] VertexStride: 48
+[Info   :Bill Atlas Triangle Mapper] UVOffset: 40
+[Info   :Bill Atlas Triangle Mapper] IndexStride: 2
+[Info   :Bill Atlas Triangle Mapper] SubMeshes: 2
+[Info   :Bill Atlas Triangle Mapper] Vertex Readback solicitado.
+[Info   :Supermarket Simulator - Brazilian Money] Dinheiro detectado: Type=BILL | Name=50 Dollar Pack | Value=50
+[Info   :Supermarket Simulator - Brazilian Money] ----- ANÁLISE DO MONEY PACK -----
+[Info   :Supermarket Simulator - Brazilian Money] Type: BILL
+[Info   :Supermarket Simulator - Brazilian Money] Name: 50 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Value: 50
+[Info   :Supermarket Simulator - Brazilian Money] InstanceID: -5550
+[Info   :Supermarket Simulator - Brazilian Money] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Objetos na hierarquia: 12
+[Info   :Supermarket Simulator - Brazilian Money] Object: 50 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 50 Dollar Pack: 5
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - MoneyPack
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Visuals
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Visuals: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: 50 Dollar Pack Variant
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 50 Dollar Pack Variant: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base: 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (1)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (1): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (2)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (2): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (3)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (3): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (4)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (4): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (5)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (5): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (6)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (6): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (7)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (7): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (8)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (8): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
+[Info   :Money Material Probe] ========================================
+[Info   :Money Material Probe] MONEY MATERIAL PROBE
+[Info   :Money Material Probe] MoneyPack Type: MoneyPack
+[Info   :Money Material Probe] Tipo informado pelo SpawnMoney: BILL
+[Info   :Money Material Probe] GameObject resolvido: 50 Dollar Pack
+[Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
+[Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.
+[Info   :Bill Atlas Triangle Mapper] Mascara da nota gerada:
+[Info   :Bill Atlas Triangle Mapper] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BillAtlasTriangleMapper\BILL_50_Dollar_MASK.png
+[Info   :Bill Atlas Triangle Mapper] Pixels marcados: 4190209
+[Info   :Bill Atlas Triangle Mapper] ========================================
+[Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
+[Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
+[Info   :Bill Atlas Triangle Mapper] Mesh: 1_Dollar_Plane
+[Info   :Bill Atlas Triangle Mapper] VertexCount: 24
+[Info   :Bill Atlas Triangle Mapper] VertexStride: 48
+[Info   :Bill Atlas Triangle Mapper] UVOffset: 40
+[Info   :Bill Atlas Triangle Mapper] IndexStride: 2
+[Info   :Bill Atlas Triangle Mapper] SubMeshes: 2
+[Info   :Bill Atlas Triangle Mapper] Vertex Readback solicitado.
+[Info   :Supermarket Simulator - Brazilian Money] Dinheiro detectado: Type=BILL | Name=20 Dollar Pack | Value=20
+[Info   :Supermarket Simulator - Brazilian Money] ----- ANÁLISE DO MONEY PACK -----
+[Info   :Supermarket Simulator - Brazilian Money] Type: BILL
+[Info   :Supermarket Simulator - Brazilian Money] Name: 20 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Value: 20
+[Info   :Supermarket Simulator - Brazilian Money] InstanceID: -5460
+[Info   :Supermarket Simulator - Brazilian Money] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/20 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Objetos na hierarquia: 12
+[Info   :Supermarket Simulator - Brazilian Money] Object: 20 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 20 Dollar Pack: 5
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - MoneyPack
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Visuals
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Visuals: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: 20 Dollar Pack Variant
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 20 Dollar Pack Variant: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base: 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (1)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (1): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (2)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (2): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (3)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (3): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (4)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (4): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (5)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (5): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (6)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (6): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (7)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (7): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (8)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (8): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
+[Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=20 Dollar Pack | Value=20
+[Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_20 Dollar Pack_20.00.txt
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_20 Dollar Pack_20.00.txt
+[Info   :Money Material Probe] ========================================
+[Info   :Money Material Probe] MONEY MATERIAL PROBE
+[Info   :Money Material Probe] MoneyPack Type: MoneyPack
+[Info   :Money Material Probe] Tipo informado pelo SpawnMoney: BILL
+[Info   :Money Material Probe] GameObject resolvido: 20 Dollar Pack
+[Info   :Money Material Probe] Value: 20.00
+[Info   :Money Material Probe] GameObject InstanceID: -5460
+[Info   :Money Material Probe] Analise concluida: 20 Dollar Pack
+[Info   :Money Material Probe] ========================================
+[Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
+[Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.
+[Info   :Bill Atlas Triangle Mapper] Mascara da nota gerada:
+[Info   :Bill Atlas Triangle Mapper] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BillAtlasTriangleMapper\BILL_50_Dollar_MASK.png
+[Info   :Bill Atlas Triangle Mapper] Pixels marcados: 4190209
+[Info   :Bill Atlas Triangle Mapper] ========================================
+[Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
+[Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
+[Info   :Bill Atlas Triangle Mapper] Mesh: 1_Dollar_Plane
+[Info   :Bill Atlas Triangle Mapper] VertexCount: 24
+[Info   :Bill Atlas Triangle Mapper] VertexStride: 48
+[Info   :Bill Atlas Triangle Mapper] UVOffset: 40
+[Info   :Bill Atlas Triangle Mapper] IndexStride: 2
+[Info   :Bill Atlas Triangle Mapper] SubMeshes: 2
+[Info   :Bill Atlas Triangle Mapper] Vertex Readback solicitado.
+[Info   :Supermarket Simulator - Brazilian Money] Dinheiro detectado: Type=BILL | Name=10 Dollar Pack | Value=10
+[Info   :Supermarket Simulator - Brazilian Money] ----- ANÁLISE DO MONEY PACK -----
+[Info   :Supermarket Simulator - Brazilian Money] Type: BILL
+[Info   :Supermarket Simulator - Brazilian Money] Name: 10 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Value: 10
+[Info   :Supermarket Simulator - Brazilian Money] InstanceID: -5370
+[Info   :Supermarket Simulator - Brazilian Money] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/10 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Objetos na hierarquia: 12
+[Info   :Supermarket Simulator - Brazilian Money] Object: 10 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 10 Dollar Pack: 5
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - MoneyPack
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Visuals
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Visuals: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: 10 Dollar Pack Variant
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 10 Dollar Pack Variant: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base: 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (1)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (1): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (2)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (2): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (3)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (3): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (4)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (4): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (5)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (5): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (6)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (6): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (7)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (7): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (8)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (8): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
+[Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=10 Dollar Pack | Value=10
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base
+[Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058
+[Info   :Currency Asset Analyzer] Criando RenderTexture: 1024x512
+[Info   :Currency Asset Analyzer] Pixels capturados: 524288
+[Info   :Currency Asset Analyzer] PNG gravado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US10dollarbill-Series_2004A_181058.png | Bytes=432247
+[Info   :Currency Asset Analyzer] TEXTURA EXTRAIDA COM SUCESSO: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US10dollarbill-Series_2004A_181058.png
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\Textures\US10dollarbill-Series_2004A_181058.png
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\Textures\TextureExtraction.txt
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (1)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (1)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (2)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (2)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (3)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (3)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (4)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (4)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (5)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (5)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (6)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (6)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (7)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (7)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (8)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (8)
+[Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_10 Dollar Pack_10.00.txt
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_10 Dollar Pack_10.00.txt
+[Info   :Money Material Probe] ========================================
+[Info   :Money Material Probe] MONEY MATERIAL PROBE
+[Info   :Money Material Probe] MoneyPack Type: MoneyPack
+[Info   :Money Material Probe] Tipo informado pelo SpawnMoney: BILL
+[Info   :Money Material Probe] GameObject resolvido: 10 Dollar Pack
+[Info   :Money Material Probe] Value: 10.00
+[Info   :Money Material Probe] GameObject InstanceID: -5370
+[Info   :Money Material Probe] Analise concluida: 10 Dollar Pack
+[Info   :Money Material Probe] ========================================
+[Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
+[Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.
+[Info   :Bill Atlas Triangle Mapper] Mascara da nota gerada:
+[Info   :Bill Atlas Triangle Mapper] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BillAtlasTriangleMapper\BILL_50_Dollar_MASK.png
+[Info   :Bill Atlas Triangle Mapper] Pixels marcados: 4190209
+[Info   :Bill Atlas Triangle Mapper] ========================================
+[Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
+[Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
+[Info   :Bill Atlas Triangle Mapper] Mesh: 1_Dollar_Plane
+[Info   :Bill Atlas Triangle Mapper] VertexCount: 24
+[Info   :Bill Atlas Triangle Mapper] VertexStride: 48
+[Info   :Bill Atlas Triangle Mapper] UVOffset: 40
+[Info   :Bill Atlas Triangle Mapper] IndexStride: 2
+[Info   :Bill Atlas Triangle Mapper] SubMeshes: 2
+[Info   :Bill Atlas Triangle Mapper] Vertex Readback solicitado.
+[Info   :Supermarket Simulator - Brazilian Money] Dinheiro detectado: Type=BILL | Name=5 Dollar Pack | Value=5
+[Info   :Supermarket Simulator - Brazilian Money] ----- ANÁLISE DO MONEY PACK -----
+[Info   :Supermarket Simulator - Brazilian Money] Type: BILL
+[Info   :Supermarket Simulator - Brazilian Money] Name: 5 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Value: 5
+[Info   :Supermarket Simulator - Brazilian Money] InstanceID: -5280
+[Info   :Supermarket Simulator - Brazilian Money] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/5 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Objetos na hierarquia: 12
+[Info   :Supermarket Simulator - Brazilian Money] Object: 5 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 5 Dollar Pack: 5
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - MoneyPack
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Visuals
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Visuals: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: 5 Dollar Pack Variant
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 5 Dollar Pack Variant: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base: 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (1)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (1): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (2)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (2): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (3)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (3): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (4)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (4): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (5)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (5): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (6)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (6): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (7)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (7): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (8)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (8): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
+[Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=5 Dollar Pack | Value=5
+[Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_5 Dollar Pack_5.00.txt
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_5 Dollar Pack_5.00.txt
+[Info   :Money Material Probe] ========================================
+[Info   :Money Material Probe] MONEY MATERIAL PROBE
+[Info   :Money Material Probe] MoneyPack Type: MoneyPack
+[Info   :Money Material Probe] Tipo informado pelo SpawnMoney: BILL
+[Info   :Money Material Probe] GameObject resolvido: 5 Dollar Pack
+[Info   :Money Material Probe] Value: 5.00
+[Info   :Money Material Probe] GameObject InstanceID: -5280
+[Info   :Money Material Probe] Analise concluida: 5 Dollar Pack
+[Info   :Money Material Probe] ========================================
+[Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
+[Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.
+[Info   :Bill Atlas Triangle Mapper] Mascara da nota gerada:
+[Info   :Bill Atlas Triangle Mapper] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BillAtlasTriangleMapper\BILL_50_Dollar_MASK.png
+[Info   :Bill Atlas Triangle Mapper] Pixels marcados: 4190209
+[Info   :Bill Atlas Triangle Mapper] ========================================
+[Info   :Bill Atlas Triangle Mapper] 50 Dollar Pack detectado.
+[Info   :Bill Atlas Triangle Mapper] Renderer: Paper Dollar Base
+[Info   :Bill Atlas Triangle Mapper] Mesh: 1_Dollar_Plane
+[Info   :Bill Atlas Triangle Mapper] VertexCount: 24
+[Info   :Bill Atlas Triangle Mapper] VertexStride: 48
+[Info   :Bill Atlas Triangle Mapper] UVOffset: 40
+[Info   :Bill Atlas Triangle Mapper] IndexStride: 2
+[Info   :Bill Atlas Triangle Mapper] SubMeshes: 2
+[Info   :Bill Atlas Triangle Mapper] Vertex Readback solicitado.
+[Info   :Supermarket Simulator - Brazilian Money] Dinheiro detectado: Type=BILL | Name=1 Dollar Pack | Value=1
+[Info   :Supermarket Simulator - Brazilian Money] ----- ANÁLISE DO MONEY PACK -----
+[Info   :Supermarket Simulator - Brazilian Money] Type: BILL
+[Info   :Supermarket Simulator - Brazilian Money] Name: 1 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Value: 1
+[Info   :Supermarket Simulator - Brazilian Money] InstanceID: -5190
+[Info   :Supermarket Simulator - Brazilian Money] Hierarchy: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/1 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money] Objetos na hierarquia: 12
+[Info   :Supermarket Simulator - Brazilian Money] Object: 1 Dollar Pack
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 1 Dollar Pack: 5
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - MoneyPack
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Visuals
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Visuals: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: 1 Dollar Pack Variant
+[Info   :Supermarket Simulator - Brazilian Money]   Components de 1 Dollar Pack Variant: 1
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base: 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Renderer
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (1)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (1): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (2)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (2): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (3)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (3): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (4)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (4): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (5)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (5): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (6)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (6): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (7)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (7): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] Object: Paper Dollar Base (8)
+[Info   :Supermarket Simulator - Brazilian Money]   Components de Paper Dollar Base (8): 4
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Transform
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.MeshFilter
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
+[Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
+[Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=1 Dollar Pack | Value=1
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base
+[Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270
+[Info   :Currency Asset Analyzer] Criando RenderTexture: 512x256
+[Info   :Currency Asset Analyzer] Pixels capturados: 131072
+[Info   :Currency Asset Analyzer] PNG gravado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US_one_dollar_bill,_obverse,_series_2009_350270.png | Bytes=101352
+[Info   :Currency Asset Analyzer] TEXTURA EXTRAIDA COM SUCESSO: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US_one_dollar_bill,_obverse,_series_2009_350270.png
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\Textures\US_one_dollar_bill,_obverse,_series_2009_350270.png
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\Textures\TextureExtraction.txt
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (1)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (1)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (2)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (2)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (3)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (3)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (4)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (4)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (5)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (5)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (6)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (6)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (7)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (7)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base (8)
+[Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_MainTex | GameObject=Paper Dollar Base (8)
+[Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_1 Dollar Pack_1.00.txt
+[Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_1 Dollar Pack_1.00.txt
+[Info   :Money Material Probe] ========================================
+[Info   :Money Material Probe] MONEY MATERIAL PROBE
+[Info   :Money Material Probe] MoneyPack Type: MoneyPack
+[Info   :Money Material Probe] Tipo informado pelo SpawnMoney: BILL
+[Info   :Money Material Probe] GameObject resolvido: 1 Dollar Pack
+[Info   :Money Material Probe] Value: 1.00
+[Info   :Money Material Probe] GameObject InstanceID: -5190
+[Info   :Money Material Probe] Analise concluida: 1 Dollar Pack
 [Info   :Money Material Probe] ========================================
 [Info   :Bill Atlas Triangle Mapper] Index Readback solicitado.
 [Info   :Bill Atlas Triangle Mapper] Relatorio da nota gerado.

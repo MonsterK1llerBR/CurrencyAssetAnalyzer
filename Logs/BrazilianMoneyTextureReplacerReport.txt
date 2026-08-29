@@ -22,3 +22,13 @@ Atlas encontrado: TRUE
 SpawnMoney patch: SUCCESS
 POSTFIX EXECUTADO
 isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
