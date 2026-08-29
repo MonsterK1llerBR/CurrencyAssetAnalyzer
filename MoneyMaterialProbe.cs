@@ -26,7 +26,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Money Material Probe";
 
         private const string VERSION =
-            "1.0.0";
+            "1.1.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -55,6 +55,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "_SpecGlossMap"
         };
 
+        private static readonly string[] InterestingNames =
+        {
+            "M_Money",
+            "T_Money",
+            "Albedo",
+            "Money"
+        };
+
         public override void Load()
         {
             Instance =
@@ -80,6 +88,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 Log.LogInfo(
+                    "Metodo: SpawnMoney + analise IL2CPP do objeto recebido."
+                );
+
+                Log.LogInfo(
                     "Mesh: NAO ALTERADO."
                 );
 
@@ -102,10 +114,30 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             catch (Exception ex)
             {
                 Log.LogError(
-                    "Erro durante inicializacao do probe: " +
+                    "Erro durante inicializacao do probe:"
+                );
+
+                Log.LogError(
                     ex
                 );
             }
+        }
+
+        private string GetOutputDirectory()
+        {
+            return Path.Combine(
+                Paths.PluginPath,
+                RootFolder,
+                OutputFolder
+            );
+        }
+
+        private string GetReportPath()
+        {
+            return Path.Combine(
+                GetOutputDirectory(),
+                ReportFileName
+            );
         }
 
         private void InitializeReport()
@@ -120,10 +152,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 string path =
-                    Path.Combine(
-                        directory,
-                        ReportFileName
-                    );
+                    GetReportPath();
 
                 using (
                     StreamWriter writer =
@@ -157,15 +186,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "Identificar exatamente quais Renderer,"
+                        "Identificar Renderer, Material, Shader"
                     );
 
                     writer.WriteLine(
-                        "Material e propriedades de textura"
-                    );
-
-                    writer.WriteLine(
-                        "sao usados pelos MoneyPack."
+                        "e propriedades de textura dos MoneyPack."
                     );
 
                     writer.WriteLine();
@@ -176,6 +201,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                     writer.WriteLine(
                         "Nenhum asset do jogo sera alterado."
+                    );
+
+                    writer.WriteLine(
+                        "Nenhum Material sera modificado."
+                    );
+
+                    writer.WriteLine(
+                        "Nenhuma Texture sera modificada."
                     );
 
                     writer.WriteLine();
@@ -214,27 +247,13 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             catch (Exception ex)
             {
                 Log.LogError(
-                    "Erro criando relatorio: " +
+                    "Erro criando relatorio:"
+                );
+
+                Log.LogError(
                     ex
                 );
             }
-        }
-
-        private string GetOutputDirectory()
-        {
-            return Path.Combine(
-                Paths.PluginPath,
-                RootFolder,
-                OutputFolder
-            );
-        }
-
-        private string GetReportPath()
-        {
-            return Path.Combine(
-                GetOutputDirectory(),
-                ReportFileName
-            );
         }
 
         private void PatchSpawnMoney()
@@ -272,16 +291,43 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 )
                 {
                     Log.LogError(
-                        "SpawnMoney(MoneyPack, Boolean) nao encontrado."
+                        "SpawnMoney nao encontrado."
                     );
 
                     return;
                 }
 
                 Log.LogInfo(
-                    "SpawnMoney encontrado: " +
-                    spawnMoney
+                    "SpawnMoney encontrado:"
                 );
+
+                Log.LogInfo(
+                    spawnMoney.ToString()
+                );
+
+                ParameterInfo[] parameters =
+                    spawnMoney.GetParameters();
+
+                Log.LogInfo(
+                    "Parametros de SpawnMoney: " +
+                    parameters.Length
+                );
+
+                for (
+                    int i = 0;
+                    i < parameters.Length;
+                    i++
+                )
+                {
+                    Log.LogInfo(
+                        "  [" +
+                        i +
+                        "] " +
+                        parameters[i].ParameterType.FullName +
+                        " " +
+                        parameters[i].Name
+                    );
+                }
 
                 HarmonyInstance =
                     new Harmony(
@@ -322,7 +368,10 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             catch (Exception ex)
             {
                 Log.LogError(
-                    "Erro aplicando patch: " +
+                    "Erro aplicando patch:"
+                );
+
+                Log.LogError(
                     ex
                 );
             }
@@ -332,79 +381,79 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             string name
         )
         {
+            Assembly[] assemblies;
+
             try
             {
-                Assembly[] assemblies =
+                assemblies =
                     AppDomain.CurrentDomain.GetAssemblies();
+            }
+            catch
+            {
+                return null;
+            }
 
-                for (
-                    int i = 0;
-                    i < assemblies.Length;
-                    i++
+            for (
+                int i = 0;
+                i < assemblies.Length;
+                i++
+            )
+            {
+                Assembly assembly =
+                    assemblies[i];
+
+                if (
+                    assembly == null
                 )
                 {
-                    Assembly assembly =
-                        assemblies[i];
+                    continue;
+                }
+
+                Type[] types;
+
+                try
+                {
+                    types =
+                        assembly.GetTypes();
+                }
+                catch
+                {
+                    continue;
+                }
+
+                for (
+                    int t = 0;
+                    t < types.Length;
+                    t++
+                )
+                {
+                    Type type =
+                        types[t];
 
                     if (
-                        assembly == null
+                        type == null
                     )
                     {
                         continue;
                     }
 
-                    try
-                    {
-                        Type[] types =
-                            assembly.GetTypes();
-
-                        for (
-                            int t = 0;
-                            t < types.Length;
-                            t++
+                    if (
+                        string.Equals(
+                            type.Name,
+                            name,
+                            StringComparison.Ordinal
                         )
-                        {
-                            Type type =
-                                types[t];
-
-                            if (
-                                type == null
-                            )
-                            {
-                                continue;
-                            }
-
-                            if (
-                                string.Equals(
-                                    type.Name,
-                                    name,
-                                    StringComparison.Ordinal
-                                )
-                                ||
-                                string.Equals(
-                                    type.FullName,
-                                    name,
-                                    StringComparison.Ordinal
-                                )
-                            )
-                            {
-                                return type;
-                            }
-                        }
-                    }
-                    catch
+                        ||
+                        string.Equals(
+                            type.FullName,
+                            name,
+                            StringComparison.Ordinal
+                        )
+                    )
                     {
+                        return type;
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                Log.LogError(
-                    "Erro procurando tipo " +
-                    name +
-                    ": " +
-                    ex
-                );
             }
 
             return null;
@@ -414,108 +463,235 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             Type managerType
         )
         {
+            MethodInfo[] methods;
+
             try
             {
-                MethodInfo[] methods =
+                methods =
                     managerType.GetMethods(
                         BindingFlags.Instance |
                         BindingFlags.Static |
                         BindingFlags.Public |
                         BindingFlags.NonPublic
                     );
-
-                for (
-                    int i = 0;
-                    i < methods.Length;
-                    i++
-                )
-                {
-                    MethodInfo method =
-                        methods[i];
-
-                    if (
-                        method.Name !=
-                        "SpawnMoney"
-                    )
-                    {
-                        continue;
-                    }
-
-                    ParameterInfo[] parameters =
-                        method.GetParameters();
-
-                    if (
-                        parameters.Length !=
-                        2
-                    )
-                    {
-                        continue;
-                    }
-
-                    if (
-                        parameters[1].ParameterType !=
-                        typeof(bool)
-                    )
-                    {
-                        continue;
-                    }
-
-                    return method;
-                }
             }
             catch (Exception ex)
             {
                 Log.LogError(
-                    "Erro procurando SpawnMoney: " +
+                    "Erro lendo metodos de CheckoutChangeManager:"
+                );
+
+                Log.LogError(
                     ex
                 );
+
+                return null;
             }
 
-            return null;
+            MethodInfo fallback =
+                null;
+
+            for (
+                int i = 0;
+                i < methods.Length;
+                i++
+            )
+            {
+                MethodInfo method =
+                    methods[i];
+
+                if (
+                    method == null ||
+                    method.Name !=
+                    "SpawnMoney"
+                )
+                {
+                    continue;
+                }
+
+                ParameterInfo[] parameters;
+
+                try
+                {
+                    parameters =
+                        method.GetParameters();
+                }
+                catch
+                {
+                    continue;
+                }
+
+                if (
+                    parameters.Length !=
+                    2
+                )
+                {
+                    continue;
+                }
+
+                if (
+                    parameters[1].ParameterType ==
+                    typeof(bool)
+                )
+                {
+                    Type firstType =
+                        parameters[0].ParameterType;
+
+                    if (
+                        IsMoneyPackType(
+                            firstType
+                        )
+                    )
+                    {
+                        return method;
+                    }
+
+                    if (
+                        fallback == null
+                    )
+                    {
+                        fallback =
+                            method;
+                    }
+                }
+            }
+
+            return fallback;
+        }
+
+        private bool IsMoneyPackType(
+            Type type
+        )
+        {
+            if (
+                type == null
+            )
+            {
+                return false;
+            }
+
+            if (
+                string.Equals(
+                    type.Name,
+                    "MoneyPack",
+                    StringComparison.Ordinal
+                )
+            )
+            {
+                return true;
+            }
+
+            if (
+                type.FullName != null &&
+                type.FullName.IndexOf(
+                    "MoneyPack",
+                    StringComparison.OrdinalIgnoreCase
+                ) >= 0
+            )
+            {
+                return true;
+            }
+
+            return false;
         }
 
         private static void SpawnMoneyPostfix(
-            object moneyPack,
-            bool isCoin
+            object __0,
+            bool __1
         )
         {
             try
             {
                 if (
-                    Instance == null ||
-                    moneyPack == null
+                    Instance == null
                 )
                 {
                     return;
                 }
 
-                GameObject gameObject =
-                    ReadMoneyPackGameObject(
-                        moneyPack
+                if (
+                    __0 == null
+                )
+                {
+                    Instance.Log.LogWarning(
+                        "SpawnMoney recebeu MoneyPack = null."
                     );
+
+                    return;
+                }
+
+                GameObject gameObject =
+                    Instance.ResolveMoneyPackGameObject(
+                        __0
+                    );
+
+                Instance.Log.LogInfo(
+                    "========================================"
+                );
+
+                Instance.Log.LogInfo(
+                    "MONEY MATERIAL PROBE"
+                );
+
+                Instance.Log.LogInfo(
+                    "MoneyPack Type: " +
+                    __0.GetType().FullName
+                );
+
+                Instance.Log.LogInfo(
+                    "Tipo informado pelo SpawnMoney: " +
+                    (
+                        __1
+                            ? "COIN"
+                            : "BILL"
+                    )
+                );
+
+                Instance.Log.LogInfo(
+                    "GameObject resolvido: " +
+                    (
+                        gameObject != null
+                            ? gameObject.name
+                            : "NULL"
+                    )
+                );
 
                 if (
                     gameObject == null
                 )
                 {
                     Instance.Log.LogWarning(
-                        "MoneyPack encontrado, mas GameObject nao foi obtido."
+                        "Nao foi possivel resolver o GameObject do MoneyPack."
+                    );
+
+                    Instance.Log.LogInfo(
+                        "Dumpando membros do MoneyPack para investigacao."
+                    );
+
+                    Instance.DumpMoneyPackMembers(
+                        __0
+                    );
+
+                    Instance.Log.LogInfo(
+                        "========================================"
                     );
 
                     return;
                 }
 
                 float value =
-                    ReadMoneyPackValue(
-                        moneyPack
+                    Instance.ReadMoneyPackValue(
+                        __0
                     );
 
                 string key =
                     (
-                        isCoin
+                        __1
                             ? "COIN"
                             : "BILL"
                     ) +
+                    "|" +
+                    gameObject.GetInstanceID() +
                     "|" +
                     gameObject.name +
                     "|" +
@@ -534,36 +710,68 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 }
 
                 Instance.Log.LogInfo(
+                    "Value: " +
+                    value.ToString(
+                        "0.00",
+                        CultureInfo.InvariantCulture
+                    )
+                );
+
+                Instance.Log.LogInfo(
+                    "GameObject InstanceID: " +
+                    gameObject.GetInstanceID()
+                );
+
+                Instance.AppendLine();
+
+                Instance.AppendLine(
                     "========================================"
                 );
 
-                Instance.Log.LogInfo(
-                    "MONEY MATERIAL PROBE"
+                Instance.AppendLine(
+                    "MONEY PACK ANALYSIS"
                 );
 
-                Instance.Log.LogInfo(
-                    "Tipo: " +
+                Instance.AppendLine(
+                    "Type: " +
                     (
-                        isCoin
+                        __1
                             ? "COIN"
                             : "BILL"
                     )
                 );
 
-                Instance.Log.LogInfo(
+                Instance.AppendLine(
+                    "MoneyPack Type: " +
+                    __0.GetType().FullName
+                );
+
+                Instance.AppendLine(
                     "GameObject: " +
                     gameObject.name
                 );
 
-                Instance.Log.LogInfo(
+                Instance.AppendLine(
+                    "GameObject InstanceID: " +
+                    gameObject.GetInstanceID()
+                );
+
+                Instance.AppendLine(
                     "Value: " +
                     value.ToString(
+                        "0.00",
                         CultureInfo.InvariantCulture
                     )
                 );
 
-                AnalyzeHierarchy(
+                Instance.AppendLine();
+
+                Instance.AnalyzeHierarchy(
                     gameObject
+                );
+
+                Instance.AppendLine(
+                    "========================================"
                 );
 
                 Instance.Log.LogInfo(
@@ -582,124 +790,104 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 )
                 {
                     Instance.Log.LogError(
-                        "Erro no Postfix: " +
+                        "Erro no Postfix:"
+                    );
+
+                    Instance.Log.LogError(
                         ex
                     );
                 }
             }
         }
 
-        private static float ReadMoneyPackValue(
+        private GameObject ResolveMoneyPackGameObject(
             object moneyPack
         )
         {
-            try
+            if (
+                moneyPack == null
+            )
             {
-                Type type =
-                    moneyPack.GetType();
-
-                PropertyInfo property =
-                    type.GetProperty(
-                        "Value",
-                        BindingFlags.Instance |
-                        BindingFlags.Public |
-                        BindingFlags.NonPublic
-                    );
-
-                if (
-                    property != null
-                )
-                {
-                    object result =
-                        property.GetValue(
-                            moneyPack,
-                            null
-                        );
-
-                    if (
-                        result is float
-                    )
-                    {
-                        return (
-                            float
-                        )
-                        result;
-                    }
-                }
-            }
-            catch
-            {
+                return null;
             }
 
-            try
+            GameObject direct =
+                TryResolveDirectly(
+                    moneyPack
+                );
+
+            if (
+                direct != null
+            )
             {
-                Type type =
-                    moneyPack.GetType();
-
-                FieldInfo field =
-                    type.GetField(
-                        "m_Value",
-                        BindingFlags.Instance |
-                        BindingFlags.Public |
-                        BindingFlags.NonPublic
-                    );
-
-                if (
-                    field != null
-                )
-                {
-                    object result =
-                        field.GetValue(
-                            moneyPack
-                        );
-
-                    if (
-                        result is float
-                    )
-                    {
-                        return (
-                            float
-                        )
-                        result;
-                    }
-                }
-            }
-            catch
-            {
+                return direct;
             }
 
-            return -1f;
+            direct =
+                TryResolveUnityComponent(
+                    moneyPack
+                );
+
+            if (
+                direct != null
+            )
+            {
+                return direct;
+            }
+
+            direct =
+                TryResolveMembers(
+                    moneyPack
+                );
+
+            if (
+                direct != null
+            )
+            {
+                return direct;
+            }
+
+            return null;
         }
 
-        private static GameObject ReadMoneyPackGameObject(
-            object moneyPack
+        private GameObject TryResolveDirectly(
+            object value
         )
         {
             try
             {
-                Type type =
-                    moneyPack.GetType();
-
-                PropertyInfo property =
-                    type.GetProperty(
-                        "gameObject",
-                        BindingFlags.Instance |
-                        BindingFlags.Public |
-                        BindingFlags.NonPublic
-                    );
+                GameObject gameObject =
+                    value as GameObject;
 
                 if (
-                    property != null
+                    gameObject != null
                 )
                 {
-                    object result =
-                        property.GetValue(
-                            moneyPack,
-                            null
-                        );
+                    return gameObject;
+                }
+            }
+            catch
+            {
+            }
 
+            return null;
+        }
+
+        private GameObject TryResolveUnityComponent(
+            object value
+        )
+        {
+            try
+            {
+                Component component =
+                    value as Component;
+
+                if (
+                    component != null
+                )
+                {
                     GameObject gameObject =
-                        result as GameObject;
+                        component.gameObject;
 
                     if (
                         gameObject != null
@@ -716,7 +904,579 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
-        private static void AnalyzeHierarchy(
+        private GameObject TryResolveMembers(
+            object moneyPack
+        )
+        {
+            Type type =
+                moneyPack.GetType();
+
+            PropertyInfo[] properties;
+
+            try
+            {
+                properties =
+                    type.GetProperties(
+                        BindingFlags.Instance |
+                        BindingFlags.Public |
+                        BindingFlags.NonPublic
+                    );
+            }
+            catch
+            {
+                properties =
+                    Array.Empty<PropertyInfo>();
+            }
+
+            for (
+                int i = 0;
+                i < properties.Length;
+                i++
+            )
+            {
+                PropertyInfo property =
+                    properties[i];
+
+                if (
+                    property == null ||
+                    property.GetIndexParameters().Length != 0
+                )
+                {
+                    continue;
+                }
+
+                object value;
+
+                try
+                {
+                    value =
+                        property.GetValue(
+                            moneyPack,
+                            null
+                        );
+                }
+                catch
+                {
+                    continue;
+                }
+
+                GameObject gameObject =
+                    TryResolveMemberValue(
+                        value
+                    );
+
+                if (
+                    gameObject != null
+                )
+                {
+                    return gameObject;
+                }
+            }
+
+            FieldInfo[] fields;
+
+            try
+            {
+                fields =
+                    type.GetFields(
+                        BindingFlags.Instance |
+                        BindingFlags.Public |
+                        BindingFlags.NonPublic
+                    );
+            }
+            catch
+            {
+                fields =
+                    Array.Empty<FieldInfo>();
+            }
+
+            for (
+                int i = 0;
+                i < fields.Length;
+                i++
+            )
+            {
+                FieldInfo field =
+                    fields[i];
+
+                if (
+                    field == null
+                )
+                {
+                    continue;
+                }
+
+                object value;
+
+                try
+                {
+                    value =
+                        field.GetValue(
+                            moneyPack
+                        );
+                }
+                catch
+                {
+                    continue;
+                }
+
+                GameObject gameObject =
+                    TryResolveMemberValue(
+                        value
+                    );
+
+                if (
+                    gameObject != null
+                )
+                {
+                    return gameObject;
+                }
+            }
+
+            return null;
+        }
+
+        private GameObject TryResolveMemberValue(
+            object value
+        )
+        {
+            if (
+                value == null
+            )
+            {
+                return null;
+            }
+
+            GameObject gameObject =
+                TryResolveDirectly(
+                    value
+                );
+
+            if (
+                gameObject != null
+            )
+            {
+                return gameObject;
+            }
+
+            gameObject =
+                TryResolveUnityComponent(
+                    value
+                );
+
+            if (
+                gameObject != null
+            )
+            {
+                return gameObject;
+            }
+
+            return null;
+        }
+
+        private float ReadMoneyPackValue(
+            object moneyPack
+        )
+        {
+            Type type =
+                moneyPack.GetType();
+
+            string[] propertyNames =
+            {
+                "Value",
+                "value",
+                "MoneyValue"
+            };
+
+            for (
+                int i = 0;
+                i < propertyNames.Length;
+                i++
+            )
+            {
+                try
+                {
+                    PropertyInfo property =
+                        type.GetProperty(
+                            propertyNames[i],
+                            BindingFlags.Instance |
+                            BindingFlags.Public |
+                            BindingFlags.NonPublic
+                        );
+
+                    if (
+                        property == null ||
+                        property.GetIndexParameters().Length != 0
+                    )
+                    {
+                        continue;
+                    }
+
+                    object result =
+                        property.GetValue(
+                            moneyPack,
+                            null
+                        );
+
+                    if (
+                        result is float
+                    )
+                    {
+                        return (
+                            float
+                        )
+                        result;
+                    }
+
+                    if (
+                        result is double
+                    )
+                    {
+                        return (
+                            float
+                        )
+                        (
+                            double
+                        )
+                        result;
+                    }
+                }
+                catch
+                {
+                }
+            }
+
+            string[] fieldNames =
+            {
+                "m_Value",
+                "value",
+                "_value",
+                "MoneyValue"
+            };
+
+            for (
+                int i = 0;
+                i < fieldNames.Length;
+                i++
+            )
+            {
+                try
+                {
+                    FieldInfo field =
+                        type.GetField(
+                            fieldNames[i],
+                            BindingFlags.Instance |
+                            BindingFlags.Public |
+                            BindingFlags.NonPublic
+                        );
+
+                    if (
+                        field == null
+                    )
+                    {
+                        continue;
+                    }
+
+                    object result =
+                        field.GetValue(
+                            moneyPack
+                        );
+
+                    if (
+                        result is float
+                    )
+                    {
+                        return (
+                            float
+                        )
+                        result;
+                    }
+
+                    if (
+                        result is double
+                    )
+                    {
+                        return (
+                            float
+                        )
+                        (
+                            double
+                        )
+                        result;
+                    }
+                }
+                catch
+                {
+                }
+            }
+
+            return -1f;
+        }
+
+        private void DumpMoneyPackMembers(
+            object moneyPack
+        )
+        {
+            try
+            {
+                AppendLine();
+
+                AppendLine(
+                    "MONEY PACK MEMBER DUMP"
+                );
+
+                AppendLine(
+                    "--------------------------------"
+                );
+
+                Type type =
+                    moneyPack.GetType();
+
+                AppendLine(
+                    "Type: " +
+                    type.FullName
+                );
+
+                PropertyInfo[] properties;
+
+                try
+                {
+                    properties =
+                        type.GetProperties(
+                            BindingFlags.Instance |
+                            BindingFlags.Public |
+                            BindingFlags.NonPublic
+                        );
+                }
+                catch
+                {
+                    properties =
+                        Array.Empty<PropertyInfo>();
+                }
+
+                AppendLine(
+                    "Properties: " +
+                    properties.Length
+                );
+
+                for (
+                    int i = 0;
+                    i < properties.Length;
+                    i++
+                )
+                {
+                    PropertyInfo property =
+                        properties[i];
+
+                    if (
+                        property == null
+                    )
+                    {
+                        continue;
+                    }
+
+                    string valueText =
+                        "<unreadable>";
+
+                    try
+                    {
+                        if (
+                            property.GetIndexParameters().Length ==
+                            0
+                        )
+                        {
+                            object value =
+                                property.GetValue(
+                                    moneyPack,
+                                    null
+                                );
+
+                            valueText =
+                                DescribeObject(
+                                    value
+                                );
+                        }
+                    }
+                    catch (
+                        Exception ex
+                    )
+                    {
+                        valueText =
+                            "<error: " +
+                            ex.Message +
+                            ">";
+                    }
+
+                    AppendLine(
+                        "PROPERTY: " +
+                        property.Name +
+                        " | TYPE=" +
+                        (
+                            property.PropertyType != null
+                                ? property.PropertyType.FullName
+                                : "null"
+                        ) +
+                        " | VALUE=" +
+                        valueText
+                    );
+                }
+
+                FieldInfo[] fields;
+
+                try
+                {
+                    fields =
+                        type.GetFields(
+                            BindingFlags.Instance |
+                            BindingFlags.Public |
+                            BindingFlags.NonPublic
+                        );
+                }
+                catch
+                {
+                    fields =
+                        Array.Empty<FieldInfo>();
+                }
+
+                AppendLine(
+                    "Fields: " +
+                    fields.Length
+                );
+
+                for (
+                    int i = 0;
+                    i < fields.Length;
+                    i++
+                )
+                {
+                    FieldInfo field =
+                        fields[i];
+
+                    if (
+                        field == null
+                    )
+                    {
+                        continue;
+                    }
+
+                    string valueText =
+                        "<unreadable>";
+
+                    try
+                    {
+                        object value =
+                            field.GetValue(
+                                moneyPack
+                            );
+
+                        valueText =
+                            DescribeObject(
+                                value
+                            );
+                    }
+                    catch (
+                        Exception ex
+                    )
+                    {
+                        valueText =
+                            "<error: " +
+                            ex.Message +
+                            ">";
+                    }
+
+                    AppendLine(
+                        "FIELD: " +
+                        field.Name +
+                        " | TYPE=" +
+                        (
+                            field.FieldType != null
+                                ? field.FieldType.FullName
+                                : "null"
+                        ) +
+                        " | VALUE=" +
+                        valueText
+                    );
+                }
+            }
+            catch (Exception ex)
+            {
+                AppendLine(
+                    "ERRO DUMP MONEY PACK: " +
+                    ex
+                );
+            }
+        }
+
+        private string DescribeObject(
+            object value
+        )
+        {
+            if (
+                value == null
+            )
+            {
+                return "null";
+            }
+
+            try
+            {
+                GameObject gameObject =
+                    value as GameObject;
+
+                if (
+                    gameObject != null
+                )
+                {
+                    return
+                        "GameObject(" +
+                        gameObject.name +
+                        ")";
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                Component component =
+                    value as Component;
+
+                if (
+                    component != null
+                )
+                {
+                    return
+                        "Component(" +
+                        component.GetType().FullName +
+                        ", GameObject=" +
+                        (
+                            component.gameObject != null
+                                ? component.gameObject.name
+                                : "null"
+                        ) +
+                        ")";
+                }
+            }
+            catch
+            {
+            }
+
+            try
+            {
+                return
+                    value.GetType().FullName +
+                    " | " +
+                    value;
+            }
+            catch
+            {
+                return
+                    "<object>";
+            }
+        }
+
+        private void AnalyzeHierarchy(
             GameObject root
         )
         {
@@ -727,17 +1487,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 return;
             }
 
-            string path =
-                root.name;
-
             AnalyzeGameObject(
                 root,
-                path,
+                root.name,
                 0
             );
         }
 
-        private static void AnalyzeGameObject(
+        private void AnalyzeGameObject(
             GameObject gameObject,
             string hierarchyPath,
             int depth
@@ -750,84 +1507,55 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 return;
             }
 
+            string indent =
+                new string(
+                    ' ',
+                    depth * 2
+                );
+
+            AppendLine(
+                indent +
+                "GAMEOBJECT"
+            );
+
+            AppendLine(
+                indent +
+                "--------------------------------"
+            );
+
+            AppendLine(
+                indent +
+                "Name: " +
+                gameObject.name
+            );
+
+            AppendLine(
+                indent +
+                "Path: " +
+                hierarchyPath
+            );
+
+            AppendLine(
+                indent +
+                "InstanceID: " +
+                gameObject.GetInstanceID()
+            );
+
+            AnalyzeRenderers(
+                gameObject,
+                hierarchyPath,
+                depth
+            );
+
+            AnalyzeMeshFilters(
+                gameObject,
+                depth
+            );
+
+            AppendLine();
+
             try
             {
-                string indent =
-                    new string(
-                        ' ',
-                        depth * 2
-                    );
-
-                StreamWriter writer =
-                    null;
-
-                try
-                {
-                    writer =
-                        new StreamWriter(
-                            Instance.GetReportPath(),
-                            true
-                        );
-
-                    writer.WriteLine(
-                        indent +
-                        "GAMEOBJECT"
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "--------------------------------"
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "Name: " +
-                        gameObject.name
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "Path: " +
-                        hierarchyPath
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "InstanceID: " +
-                        gameObject.GetInstanceID()
-                    );
-
-                    writer.WriteLine();
-
-                    AnalyzeRenderers(
-                        gameObject,
-                        hierarchyPath,
-                        depth,
-                        writer
-                    );
-
-                    writer.WriteLine();
-
-                    AnalyzeMeshFilters(
-                        gameObject,
-                        depth,
-                        writer
-                    );
-
-                    writer.WriteLine();
-
-                    writer.Flush();
-                }
-                finally
-                {
-                    if (
-                        writer != null
-                    )
-                    {
-                        writer.Dispose();
-                    }
-                }
-
                 Transform transform =
                     gameObject.transform;
 
@@ -884,19 +1612,25 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             catch (Exception ex)
             {
                 AppendLine(
-                    "ERRO ANALISANDO GAMEOBJECT: " +
+                    indent +
+                    "ERRO CHILDREN: " +
                     ex
                 );
             }
         }
 
-        private static void AnalyzeRenderers(
+        private void AnalyzeRenderers(
             GameObject gameObject,
             string hierarchyPath,
-            int depth,
-            StreamWriter writer
+            int depth
         )
         {
+            string indent =
+                new string(
+                    ' ',
+                    depth * 2
+                );
+
             try
             {
                 Renderer[] renderers =
@@ -910,18 +1644,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                string indent =
-                    new string(
-                        ' ',
-                        depth * 2
-                    );
-
-                writer.WriteLine(
+                AppendLine(
                     indent +
                     "RENDERERS"
                 );
 
-                writer.WriteLine(
+                AppendLine(
                     indent +
                     "--------------------------------"
                 );
@@ -942,7 +1670,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         continue;
                     }
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Renderer #" +
                         (
@@ -950,26 +1678,35 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         )
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Type: " +
                         renderer.GetType().FullName
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Enabled: " +
                         renderer.enabled
                     );
 
                     Material[] materials =
-                        renderer.sharedMaterials;
+                        null;
+
+                    try
+                    {
+                        materials =
+                            renderer.sharedMaterials;
+                    }
+                    catch
+                    {
+                    }
 
                     if (
                         materials == null
                     )
                     {
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "Materials: null"
                         );
@@ -977,7 +1714,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         continue;
                     }
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Materials: " +
                         materials.Length
@@ -996,12 +1733,23 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             material == null
                         )
                         {
+                            AppendLine(
+                                indent +
+                                "Material #" +
+                                (
+                                    m + 1
+                                ) +
+                                ": null"
+                            );
+
                             continue;
                         }
 
-                        writer.WriteLine();
+                        string materialName =
+                            material.name ??
+                            string.Empty;
 
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "MATERIAL #" +
                             (
@@ -1009,64 +1757,115 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             )
                         );
 
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "Name: " +
-                            material.name
+                            materialName
                         );
 
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "InstanceID: " +
                             material.GetInstanceID()
                         );
 
-                        Shader shader =
-                            material.shader;
-
-                        if (
-                            shader != null
-                        )
+                        try
                         {
-                            writer.WriteLine(
+                            Shader shader =
+                                material.shader;
+
+                            AppendLine(
                                 indent +
                                 "Shader: " +
-                                shader.name
+                                (
+                                    shader != null
+                                        ? shader.name
+                                        : "null"
+                                )
                             );
                         }
-                        else
+                        catch
                         {
-                            writer.WriteLine(
+                            AppendLine(
                                 indent +
-                                "Shader: null"
+                                "Shader: <error>"
                             );
                         }
+
+                        bool interestingMaterial =
+                            ContainsInterestingName(
+                                materialName
+                            );
+
+                        AppendLine(
+                            indent +
+                            "Interesting Material: " +
+                            (
+                                interestingMaterial
+                                    ? "TRUE"
+                                    : "FALSE"
+                            )
+                        );
 
                         AnalyzeTextureProperties(
                             material,
                             gameObject,
                             hierarchyPath,
-                            indent,
-                            writer
+                            indent
                         );
+
+                        AppendLine();
                     }
                 }
             }
             catch (Exception ex)
             {
-                writer.WriteLine(
+                AppendLine(
+                    indent +
                     "ERRO RENDERERS: " +
                     ex
                 );
             }
         }
 
-        private static void AnalyzeTextureProperties(
+        private bool ContainsInterestingName(
+            string name
+        )
+        {
+            if (
+                string.IsNullOrEmpty(
+                    name
+                )
+            )
+            {
+                return false;
+            }
+
+            for (
+                int i = 0;
+                i < InterestingNames.Length;
+                i++
+            )
+            {
+                if (
+                    name.IndexOf(
+                        InterestingNames[i],
+                        StringComparison.OrdinalIgnoreCase
+                    ) >= 0
+                )
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void AnalyzeTextureProperties(
             Material material,
             GameObject owner,
             string hierarchyPath,
-            string indent,
-            StreamWriter writer
+            string indent
         )
         {
             for (
@@ -1080,13 +1879,16 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                 try
                 {
-                    if (
-                        !material.HasProperty(
+                    bool hasProperty =
+                        material.HasProperty(
                             property
-                        )
+                        );
+
+                    if (
+                        !hasProperty
                     )
                     {
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "TextureProperty " +
                             property +
@@ -1101,24 +1903,15 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             property
                         );
 
-                    writer.WriteLine(
-                        indent +
-                        "TEXTURE PROPERTY"
-                    );
-
-                    writer.WriteLine(
-                        indent +
-                        "Property: " +
-                        property
-                    );
-
                     if (
                         texture == null
                     )
                     {
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
-                            "Texture: null"
+                            "TextureProperty " +
+                            property +
+                            ": null"
                         );
 
                         continue;
@@ -1128,25 +1921,36 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         texture.name ??
                         string.Empty;
 
-                    writer.WriteLine(
+                    AppendLine(
+                        indent +
+                        "TEXTURE PROPERTY"
+                    );
+
+                    AppendLine(
+                        indent +
+                        "Property: " +
+                        property
+                    );
+
+                    AppendLine(
                         indent +
                         "Texture Name: " +
                         textureName
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Texture Type: " +
                         texture.GetType().FullName
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Texture InstanceID: " +
                         texture.GetInstanceID()
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Dimensions: " +
                         texture.width +
@@ -1160,7 +1964,23 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             StringComparison.OrdinalIgnoreCase
                         ) >= 0;
 
-                    writer.WriteLine(
+                    bool interesting =
+                        target ||
+                        ContainsInterestingName(
+                            textureName
+                        );
+
+                    AppendLine(
+                        indent +
+                        "Interesting Texture: " +
+                        (
+                            interesting
+                                ? "TRUE"
+                                : "FALSE"
+                        )
+                    );
+
+                    AppendLine(
                         indent +
                         "TARGET MONEY ALBEDO: " +
                         (
@@ -1174,60 +1994,73 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         target
                     )
                     {
-                        Instance.Log.LogInfo(
-                            "TARGET TEXTURE ENCONTRADA:"
+                        Log.LogInfo(
+                            "########################################"
                         );
 
-                        Instance.Log.LogInfo(
-                            "GameObject=" +
+                        Log.LogInfo(
+                            "TARGET TEXTURE ENCONTRADA"
+                        );
+
+                        Log.LogInfo(
+                            "GameObject: " +
                             owner.name
                         );
 
-                        Instance.Log.LogInfo(
-                            "Path=" +
+                        Log.LogInfo(
+                            "Path: " +
                             hierarchyPath
                         );
 
-                        Instance.Log.LogInfo(
-                            "Material=" +
+                        Log.LogInfo(
+                            "Renderer Material: " +
                             material.name
                         );
 
-                        Instance.Log.LogInfo(
-                            "Property=" +
+                        Log.LogInfo(
+                            "Property: " +
                             property
                         );
 
-                        Instance.Log.LogInfo(
-                            "Texture=" +
+                        Log.LogInfo(
+                            "Texture: " +
                             textureName
                         );
 
-                        Instance.Log.LogInfo(
-                            "InstanceID=" +
+                        Log.LogInfo(
+                            "InstanceID: " +
                             texture.GetInstanceID()
+                        );
+
+                        Log.LogInfo(
+                            "########################################"
                         );
                     }
                 }
                 catch (Exception ex)
                 {
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "ERRO PROPERTY " +
                         property +
                         ": " +
-                        ex.Message
+                        ex
                     );
                 }
             }
         }
 
-        private static void AnalyzeMeshFilters(
+        private void AnalyzeMeshFilters(
             GameObject gameObject,
-            int depth,
-            StreamWriter writer
+            int depth
         )
         {
+            string indent =
+                new string(
+                    ' ',
+                    depth * 2
+                );
+
             try
             {
                 MeshFilter[] filters =
@@ -1241,18 +2074,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                string indent =
-                    new string(
-                        ' ',
-                        depth * 2
-                    );
-
-                writer.WriteLine(
+                AppendLine(
                     indent +
                     "MESH FILTERS"
                 );
 
-                writer.WriteLine(
+                AppendLine(
                     indent +
                     "--------------------------------"
                 );
@@ -1276,7 +2103,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     Mesh mesh =
                         filter.sharedMesh;
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "MeshFilter #" +
                         (
@@ -1288,7 +2115,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         mesh == null
                     )
                     {
-                        writer.WriteLine(
+                        AppendLine(
                             indent +
                             "Mesh: null"
                         );
@@ -1296,19 +2123,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         continue;
                     }
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Mesh Name: " +
                         mesh.name
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "Vertex Count: " +
                         mesh.vertexCount
                     );
 
-                    writer.WriteLine(
+                    AppendLine(
                         indent +
                         "SubMesh Count: " +
                         mesh.subMeshCount
@@ -1317,32 +2144,26 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             }
             catch (Exception ex)
             {
-                writer.WriteLine(
+                AppendLine(
+                    indent +
                     "ERRO MESH FILTERS: " +
                     ex
                 );
             }
         }
 
-        private static void AppendLine(
-            string line
+        private void AppendLine(
+            string line = ""
         )
         {
             try
             {
-                if (
-                    Instance == null
-                )
-                {
-                    return;
-                }
-
                 Directory.CreateDirectory(
-                    Instance.GetOutputDirectory()
+                    GetOutputDirectory()
                 );
 
                 File.AppendAllText(
-                    Instance.GetReportPath(),
+                    GetReportPath(),
                     line +
                     Environment.NewLine
                 );
