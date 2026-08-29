@@ -67,30 +67,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26484
+      InstanceID: -86880
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -133,8 +133,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -146,30 +146,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26482
+      InstanceID: -86882
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -212,8 +212,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -225,30 +225,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26480
+      InstanceID: -86884
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -291,8 +291,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -304,30 +304,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26478
+      InstanceID: -86886
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -370,8 +370,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -383,30 +383,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26476
+      InstanceID: -86888
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -449,8 +449,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -462,30 +462,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26474
+      InstanceID: -86890
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -528,8 +528,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -541,30 +541,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26472
+      InstanceID: -86892
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -607,8 +607,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -620,30 +620,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26470
+      InstanceID: -86894
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null
@@ -686,8 +686,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.MeshFilter
-      - UnityEngine.Renderer
+      - UnityEngine.Component
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -699,30 +699,30 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -26468
+      InstanceID: -86896
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _MainTex
-      Name: Brazilian50Runtime
+      Name: 50_USD_Series_2004_Note_Front
       Type: UnityEngine.Texture
-      InstanceID: -82
-      TextureInstanceID: -82
-      Width: 573
-      Height: 268
+      InstanceID: 289276
+      TextureInstanceID: 289276
+      Width: 1024
+      Height: 512
       AnisoLevel: 1
       FilterMode: Bilinear
-      WrapMode: Clamp
+      WrapMode: Repeat
       TEXTURE
       Property: _BumpMap
       Texture: null

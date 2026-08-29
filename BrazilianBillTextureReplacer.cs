@@ -515,17 +515,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 int rendererId =
                     renderer.GetInstanceID();
 
-                if (
-                    AppliedRenderers.Contains(
-                        rendererId
-                    )
-                )
-                {
-                    return false;
-                }
-
                 Material[] materials =
-                    renderer.materials;
+                    renderer.sharedMaterials;
 
                 if (
                     materials == null ||
@@ -535,7 +526,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return false;
                 }
 
-                bool changed =
+                bool targetFound =
                     false;
 
                 for (
@@ -558,17 +549,101 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         material.name ??
                         string.Empty;
 
-                    Log.LogInfo(
-                        "Material candidato: " +
-                        renderer.gameObject.name +
-                        " -> " +
-                        materialName
-                    );
-
                     if (
-                        !IsTargetMaterial(
+                        IsTargetMaterial(
                             materialName
                         )
+                    )
+                    {
+                        targetFound =
+                            true;
+
+                        break;
+                    }
+
+                    if (
+                        material.HasProperty(
+                            BaseMapProperty
+                        )
+                    )
+                    {
+                        Texture texture =
+                            material.GetTexture(
+                                BaseMapProperty
+                            );
+
+                        if (
+                            texture != null &&
+                            texture.name != null &&
+                            texture.name.IndexOf(
+                                "50_USD_Series_2004_Note_Front",
+                                StringComparison.OrdinalIgnoreCase
+                            ) >= 0
+                        )
+                        {
+                            targetFound =
+                                true;
+
+                            break;
+                        }
+                    }
+
+                    if (
+                        material.HasProperty(
+                            MainTexProperty
+                        )
+                    )
+                    {
+                        Texture texture =
+                            material.GetTexture(
+                                MainTexProperty
+                            );
+
+                        if (
+                            texture != null &&
+                            texture.name != null &&
+                            texture.name.IndexOf(
+                                "50_USD_Series_2004_Note_Front",
+                                StringComparison.OrdinalIgnoreCase
+                            ) >= 0
+                        )
+                        {
+                            targetFound =
+                                true;
+
+                            break;
+                        }
+                    }
+                }
+
+                if (
+                    !targetFound
+                )
+                {
+                    return false;
+                }
+
+                MaterialPropertyBlock block =
+                    new MaterialPropertyBlock();
+
+                renderer.GetPropertyBlock(
+                    block
+                );
+
+                bool changed =
+                    false;
+
+                for (
+                    int i = 0;
+                    i < materials.Length;
+                    i++
+                )
+                {
+                    Material material =
+                        materials[i];
+
+                    if (
+                        material == null
                     )
                     {
                         continue;
@@ -580,20 +655,15 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         )
                     )
                     {
-                        material.SetTexture(
-                            BaseMapProperty,
+                        block.SetTexture(
+                            Shader.PropertyToID(
+                                BaseMapProperty
+                            ),
                             Brazilian50Texture
                         );
 
                         changed =
                             true;
-
-                        Log.LogInfo(
-                            "R$50 aplicada em _BaseMap: " +
-                            GetHierarchyPath(
-                                renderer.transform
-                            )
-                        );
                     }
 
                     if (
@@ -602,44 +672,52 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         )
                     )
                     {
-                        material.SetTexture(
-                            MainTexProperty,
+                        block.SetTexture(
+                            Shader.PropertyToID(
+                                MainTexProperty
+                            ),
                             Brazilian50Texture
                         );
 
                         changed =
                             true;
-
-                        Log.LogInfo(
-                            "R$50 aplicada em _MainTex: " +
-                            GetHierarchyPath(
-                                renderer.transform
-                            )
-                        );
-                    }
-
-                    if (
-                        changed
-                    )
-                    {
-                        AppliedRenderers.Add(
-                            rendererId
-                        );
-
-                        Log.LogInfo(
-                            "TEXTURA R$50 SUBSTITUIDA."
-                        );
                     }
                 }
 
-                return changed;
+                if (
+                    !changed
+                )
+                {
+                    return false;
+                }
+
+                renderer.SetPropertyBlock(
+                    block
+                );
+
+                AppliedRenderers.Add(
+                    rendererId
+                );
+
+                Log.LogInfo(
+                    "TEXTURA R$50 APLICADA VIA PROPERTY BLOCK."
+                );
+
+                Log.LogInfo(
+                    "Renderer: " +
+                    GetHierarchyPath(
+                        renderer.transform
+                    )
+                );
+
+                return true;
             }
             catch (
                 Exception ex
             )
             {
                 Log.LogError(
-                    "Erro aplicando textura R$50:"
+                    "Erro aplicando PropertyBlock R$50:"
                 );
 
                 Log.LogError(
@@ -649,7 +727,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 return false;
             }
         }
-
         private bool IsTargetMaterial(
             string materialName
         )
@@ -1199,4 +1276,5 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
+
 
