@@ -1,0 +1,1301 @@
+========================================
+BILL MATERIAL STATE PROBE
+VERSION: 1.1.0
+========================================
+
+Somente leitura.
+Nenhum asset sera alterado.
+
+========================================
+50 DOLLAR PACK
+========================================
+Root: 50 Dollar Pack
+Root InstanceID: -5550
+
+Transforms encontrados: 12
+Renderers encontrados: 9
+
+
+----------------------------------------
+PAPER DOLLAR BASE #1
+GameObject: Paper Dollar Base
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5574
+Enabled: True
+
+LocalPosition: (0, 0, 0)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.8869, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84564
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #2
+GameObject: Paper Dollar Base (1)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (1)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5582
+Enabled: True
+
+LocalPosition: (0, 0, -0.0042)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.883248, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84566
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #3
+GameObject: Paper Dollar Base (2)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (2)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5590
+Enabled: True
+
+LocalPosition: (0, 0, -0.0081)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.879857, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84568
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #4
+GameObject: Paper Dollar Base (3)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (3)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5598
+Enabled: True
+
+LocalPosition: (0, 0, -0.012)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.876465, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84570
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #5
+GameObject: Paper Dollar Base (4)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (4)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5606
+Enabled: True
+
+LocalPosition: (0, 0, -0.0161)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.8729, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84572
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #6
+GameObject: Paper Dollar Base (5)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (5)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5614
+Enabled: True
+
+LocalPosition: (0, 0, -0.019)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.870378, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84574
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #7
+GameObject: Paper Dollar Base (6)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (6)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5622
+Enabled: True
+
+LocalPosition: (0, 0, -0.0229)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.866987, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84576
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #8
+GameObject: Paper Dollar Base (7)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (7)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5630
+Enabled: True
+
+LocalPosition: (0, 0, -0.0268)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.863596, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84578
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+----------------------------------------
+PAPER DOLLAR BASE #9
+GameObject: Paper Dollar Base (8)
+Path: ---MANAGERS---/Checkout Manager/Checkout/Cash Register/Checkout Drawer/50 Dollar Pack/Visuals/50 Dollar Pack Variant/Paper Dollar Base (8)
+Renderer Type: UnityEngine.Renderer
+Renderer InstanceID: -5638
+Enabled: True
+
+LocalPosition: (0, 0, -0.0309)
+LocalRotation: (-0, -0, 0)
+LocalScale: (2, 0.45, 2)
+WorldPosition: (-2.902, 0.86003, 5.585183)
+LossyScale: (1.739131, 0.391305, 1.739131)
+
+MESH
+Mesh Name: 1_Dollar_Plane
+Mesh InstanceID: 61946
+VertexCount: 24
+SubMeshCount: 2
+IndexFormat: UInt16
+BlendShapeCount: 0
+Bounds: Center: (0.00, 0.00, 0.00), Extents: (0.03, 0.08, 0.00)
+mesh.uv Length: 0
+mesh.vertices Length: 0
+
+SUBMESH 0
+IndexStart: 0
+IndexCount: 30
+BaseVertex: 0
+FirstVertex: 0
+VertexCount: 20
+Topology: Triangles
+
+SUBMESH 1
+IndexStart: 30
+IndexCount: 6
+BaseVertex: 0
+FirstVertex: 20
+VertexCount: 4
+Topology: Triangles
+
+SHARED MATERIALS: 1
+
+MATERIAL
+Source: sharedMaterials[0]
+Name: 50$ Paper Front
+InstanceID: 63156
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL
+Source: renderer.material
+Name: 50$ Paper Front (Instance)
+InstanceID: -84580
+Shader: Universal Render Pipeline/Lit
+
+TEXTURE PROPERTIES
+_BaseMap HasProperty=True
+_BaseMap Texture=50_USD_Series_2004_Note_Front
+_BaseMap TextureType=UnityEngine.Texture
+_BaseMap InstanceID=289276
+_BaseMap Scale=(1, 1)
+_BaseMap Offset=(0, 0)
+_MainTex HasProperty=True
+_MainTex Texture=50_USD_Series_2004_Note_Front
+_MainTex TextureType=UnityEngine.Texture
+_MainTex InstanceID=289276
+_MainTex Scale=(1, 1)
+_MainTex Offset=(0, 0)
+_BumpMap HasProperty=True
+_BumpMap Texture=null
+_BumpMap TextureType=null
+_BumpMap InstanceID=null
+_BumpMap Scale=(1, 1)
+_BumpMap Offset=(0, 0)
+_MetallicGlossMap HasProperty=True
+_MetallicGlossMap Texture=null
+_MetallicGlossMap TextureType=null
+_MetallicGlossMap InstanceID=null
+_MetallicGlossMap Scale=(1, 1)
+_MetallicGlossMap Offset=(0, 0)
+_SpecGlossMap HasProperty=True
+_SpecGlossMap Texture=null
+_SpecGlossMap TextureType=null
+_SpecGlossMap InstanceID=null
+_SpecGlossMap Scale=(1, 1)
+_SpecGlossMap Offset=(0, 0)
+
+NUMERIC / VECTOR PROPERTIES
+_BaseMap_ST Vector=(1, 1, 0, 0)
+_MainTex_ST Vector=(1, 1, 0, 0)
+_Color Vector=(1, 1, 1, 1)
+_BaseColor Vector=(1, 1, 1, 1)
+_Metallic Float=0
+_Smoothness Float=0
+_Glossiness Float=0
+_Cutoff Float=0.5
+
+MATERIAL PROPERTY BLOCK
+Nenhum override relevante encontrado.
+
+Paper Dollar Base analisados: 9
+
+========================================
+ANALYSIS COMPLETE
+========================================
