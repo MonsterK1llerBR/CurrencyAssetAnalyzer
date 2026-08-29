@@ -18,7 +18,7 @@ Format: N/A
 MipmapCount: N/A
 IsReadable: N/A
 Material: 50$ Paper Front (Instance)
-MaterialInstanceID: -79586
+MaterialInstanceID: -84520
 Property: _BaseMap
 GameObject: Paper Dollar Base
 Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\50_USD_Series_2004_Note_Front_289276.png
@@ -41,24 +41,5 @@ MaterialInstanceID: 64214
 Property: _BaseMap
 GameObject: Paper Dollar Base
 Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US10dollarbill-Series_2004A_181058.png
-Success: True
-
-----------------------------------------
-Texture: US_one_dollar_bill,_obverse,_series_2009
-Type: UnityEngine.Texture
-InstanceID: 350270
-Width: 512
-Height: 256
-FilterMode: Bilinear
-WrapMode: Repeat
-AnisoLevel: 1
-Format: N/A
-MipmapCount: N/A
-IsReadable: N/A
-Material: 1$ Paper Front
-MaterialInstanceID: 63104
-Property: _BaseMap
-GameObject: Paper Dollar Base
-Output: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\US_one_dollar_bill,_obverse,_series_2009_350270.png
 Success: True
 
