@@ -78,14 +78,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85824
+        InstanceID: -82358
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -95,8 +95,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -192,14 +192,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85826
+        InstanceID: -82360
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -209,8 +209,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -306,14 +306,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85828
+        InstanceID: -82362
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -323,8 +323,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -420,14 +420,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85830
+        InstanceID: -82364
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -437,8 +437,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -534,14 +534,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85832
+        InstanceID: -82366
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -551,8 +551,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -648,14 +648,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85834
+        InstanceID: -82368
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -665,8 +665,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -762,14 +762,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85836
+        InstanceID: -82370
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -779,8 +779,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -876,14 +876,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85838
+        InstanceID: -82372
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -893,8 +893,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -990,14 +990,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85840
+        InstanceID: -82374
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -1007,8 +1007,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -1104,14 +1104,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85842
+        InstanceID: -82376
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -1121,8 +1121,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -1218,14 +1218,14 @@ Count: 5
 
         MATERIAL #1
         Name: M_Money (Instance)
-        InstanceID: -85844
+        InstanceID: -82378
         Shader: Universal Render Pipeline/Lit
         TEXTURE
         Property: _BaseMap
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
@@ -1235,8 +1235,8 @@ Count: 5
         Property: _MainTex
         Name: BrazilianCoinAtlas_RUNTIME
         Type: UnityEngine.Texture
-        InstanceID: -81184
-        TextureInstanceID: -81184
+        InstanceID: -81470
+        TextureInstanceID: -81470
         Width: 2048
         Height: 2048
         AnisoLevel: 1
