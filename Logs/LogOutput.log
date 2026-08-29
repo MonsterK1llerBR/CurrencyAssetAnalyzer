@@ -67,9 +67,9 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Coin Atlas Generator] UV: NAO ALTERADO.
 [Info   :Brazilian Coin Atlas Generator] Textura original: NAO ALTERADA.
 [Info   :Brazilian Coin Atlas Generator] Metodo: mascara pixel a pixel.
-[Info   :   BepInEx] Loading [Brazilian Coin UV Composer 1.3.0]
+[Info   :   BepInEx] Loading [Brazilian Coin UV Composer 1.4.0]
 [Info   :Brazilian Coin UV Composer] ========================================
-[Info   :Brazilian Coin UV Composer] Brazilian Coin UV Composer v1.3.0
+[Info   :Brazilian Coin UV Composer] Brazilian Coin UV Composer v1.4.0
 [Info   :Brazilian Coin UV Composer] ========================================
 [Info   :Brazilian Coin UV Composer] Objetivo: compor frente, verso e lateral das moedas brasileiras.
 [Info   :Brazilian Coin UV Composer] Modo: PROCESSAMENTO PARCIAL AUTOMATICO.
@@ -82,18 +82,6 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Supermarket Simulator - Brazilian Money] Supermarket Simulator - Brazilian Money
 [Info   :Supermarket Simulator - Brazilian Money] Versão 1.0.0
 [Info   :Supermarket Simulator - Brazilian Money] ========================================
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Info   :Supermarket Simulator - Brazilian Money] CheckoutChangeManager encontrado: CheckoutChangeManager
-[Info   :Supermarket Simulator - Brazilian Money] SpawnMoney encontrado: Void SpawnMoney(MoneyPack, Boolean)
 [Info   :Brazilian Coin UV Composer] Atlas encontrado:
 [Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Brazilian Coin Atlas Generator] Mascaras encontradas no disco: 5
@@ -109,7 +97,19 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Coin Atlas Generator] Mascara aceita: SM_Coin_5_Cents
 [Info   :Brazilian Coin Atlas Generator] Mascaras validas: 5/5
 [Info   :Brazilian Coin Atlas Generator] Atlas e cinco mascaras encontrados.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Brazilian Coin UV Composer] Mascaras validas: 5/5
+[Info   :Supermarket Simulator - Brazilian Money] CheckoutChangeManager encontrado: CheckoutChangeManager
+[Info   :Supermarket Simulator - Brazilian Money] SpawnMoney encontrado: Void SpawnMoney(MoneyPack, Boolean)
 [Info   :Brazilian Coin UV Composer] Artes FRONT encontradas: 1/5
 [Info   :Brazilian Coin UV Composer] Artes BACK encontradas: 1/5
 [Info   :Brazilian Coin UV Composer] Moeda pronta para composicao: SM_Coin_50_Cents
@@ -157,9 +157,9 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] ToMoneyText encontrado: System.String ToMoneyText(Single, Single, Single)
 [Info   :Brazilian Coin UV Composer] ========================================
 [Info   :Brazilian Coin UV Composer] Compondo: SM_Coin_50_Cents
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_50_Cents
 [Info   :Brazilian Currency Format] [Debug] Procurando setter TMP_Text.text para diagnóstico...
 [Info   :Brazilian Currency Format] [Debug] TMP_Text.text setter encontrado: Void set_text(System.String)
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_50_Cents
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_50_Cents | Pixels substituidos: 116254
 [Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_25_Cents
 [Info   :Brazilian Currency Format] [Debug] Procurando classe PosTerminal...
@@ -349,7 +349,6 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetHashCode()
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.Start() encontrado: Void Start()
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_25_Cents | Pixels substituidos: 73375
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -360,6 +359,7 @@ Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, 
 System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.AddChar(string) encontrado: Void AddChar(System.String)
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -401,6 +401,8 @@ System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.C
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Currency Asset Analyzer] CheckoutChangeManager encontrado: CheckoutChangeManager
 [Info   :Currency Asset Analyzer] SpawnMoney selecionado: Void SpawnMoney(MoneyPack, Boolean)
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_5_Cents | Pixels substituidos: 68292
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_1_Cent
 [Info   :Currency Asset Analyzer] Patch de SpawnMoney aplicado com sucesso.
 [Info   :   BepInEx] Loading [Currency Atlas Mapper 2.0.0]
 [Info   :Currency Atlas Mapper] ========================================
@@ -412,21 +414,19 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Currency Atlas Mapper] Probe artificial: DESATIVADO.
 [Info   :Currency Atlas Mapper] Captura diagnostica U/V: ATIVADA.
 [Info   :Currency Atlas Mapper] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV9\AtlasMapping
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_5_Cents | Pixels substituidos: 68292
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_1_Cent
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_1_Cent | Pixels substituidos: 45378
 [Info   :Brazilian Coin UV Composer] Componentes detectados: 3
 [Info   :Brazilian Coin UV Composer] Side: Pixels=14858 | X=31..49 | Y=23..804
 [Info   :Brazilian Coin UV Composer] Face A: Pixels=50702 | X=134..387 | Y=291..544
 [Info   :Brazilian Coin UV Composer] Face B: Pixels=50694 | X=134..387 | Y=24..277
-[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=343x345 | Trimmed=339x341 | Output=254x254 | Draw=249x250
+[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=343x345 | Trimmed=339x341 | Output=254x254 | Draw=251x252
 [Info   :Brazilian Coin Atlas Generator] ========================================
 [Info   :Brazilian Coin Atlas Generator] SUBSTITUICAO DE TESTE CONCLUIDA.
 [Info   :Brazilian Coin Atlas Generator] Pixels totais substituidos: 340822
 [Info   :Brazilian Coin Atlas Generator] Atlas: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinAtlas\BrazilianCoinAtlas_TEST.png
 [Info   :Brazilian Coin Atlas Generator] Preview: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinAtlas\BrazilianCoinAtlas_MASK_PREVIEW.png
 [Info   :Brazilian Coin Atlas Generator] ========================================
-[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=329x332 | Trimmed=325x328 | Output=254x254 | Draw=248x250
+[Info   :Brazilian Coin UV Composer] PrepareSource: 1354x738 | Content=329x332 | Trimmed=325x328 | Output=254x254 | Draw=250x252
 [Info   :Currency Atlas Mapper] Sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\AtlasMapping\UV_Diagnostic_1024.png
 [Info   :Currency Atlas Mapper] Textura diagnostica criada.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
@@ -552,21 +552,8 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Message: Game Info] Game Developer: Nokta Games
 [Message: Game Info] Game Version: v1.6.0(223)
 [Info   :   BepInEx] Loading [Timestamp 3.0.1]
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Brazilian Coin UV Composer] ========================================
-[Info   :Brazilian Coin UV Composer] BRAZILIAN COIN UV COMPOSER CONCLUIDO.
-[Info   :Brazilian Coin UV Composer] Moedas processadas: 1/5
-[Info   :Brazilian Coin UV Composer] FINAL:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
-[Info   :Brazilian Coin UV Composer] PREVIEW:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL_PREVIEW.png
-[Info   :Brazilian Coin UV Composer] REPORT:
-[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinUVComposerReport.txt
-[Info   :Brazilian Coin UV Composer] ========================================
 [Info   :   BepInEx] Loading [File Tree 2.0.0]
 [Info   : File Tree] File Tree logging is enabled.
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -958,7 +945,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_50CENTAVOS_GOOD.png [3,44 MB]
 [Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL.png [3,45 MB]
-[Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL_PREVIEW.png [21,51 KB]
+[Info   : File Tree] |   |       |   |-- BrazilianCoinAtlas_FINAL_PREVIEW.png [0 B]
 [Info   : File Tree] |   |       |   \-- BrazilianCoinUVComposerReport.txt [1,21 KB]
 [Info   : File Tree] |   |       |
 [Info   : File Tree] |   |       |-- BrazilianMoneyTextureReplacer
@@ -1073,7 +1060,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |   \-- UnityEngine.XRModule.dll [77,31 KB]
 [Info   : File Tree] |   |
 [Info   : File Tree] |   |-- ErrorLog.log [0 B]
-[Info   : File Tree] |   \-- LogOutput.log [62,01 KB]
+[Info   : File Tree] |   \-- LogOutput.log [60,66 KB]
 [Info   : File Tree] |
 [Info   : File Tree] |-- D3D12
 [Info   : File Tree] |   |
@@ -1096,7 +1083,17 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |-- UnityCrashHandler64.exe [1,61 MB]
 [Info   : File Tree] |-- UnityPlayer.dll [35,72 MB]
 [Info   : File Tree] \-- winhttp.dll [26,11 KB]
-[Message: Timestamp] It is currently Sat, 29 Aug 2026 19:54:03 GMT according to time.cloudflare.com
+[Message: Timestamp] It is currently Sat, 29 Aug 2026 19:56:13 GMT according to time.cloudflare.com
+[Info   :Brazilian Coin UV Composer] ========================================
+[Info   :Brazilian Coin UV Composer] BRAZILIAN COIN UV COMPOSER CONCLUIDO.
+[Info   :Brazilian Coin UV Composer] Moedas processadas: 1/5
+[Info   :Brazilian Coin UV Composer] FINAL:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
+[Info   :Brazilian Coin UV Composer] PREVIEW:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL_PREVIEW.png
+[Info   :Brazilian Coin UV Composer] REPORT:
+[Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinUVComposerReport.txt
+[Info   :Brazilian Coin UV Composer] ========================================
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1135,28 +1132,6 @@ Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsM
    at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
 System.TypeLoadException: Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
@@ -1251,6 +1226,28 @@ System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly
 System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Failure has occurred while loading a type.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1305,28 +1302,6 @@ Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsM
    at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
 System.TypeLoadException: Could not load type 'Flags' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'SupportedUnityFeatures' from assembly 'UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
-System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 Could not load type 'TextureStackBase`1' from assembly 'UnityEngine.VirtualTexturingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
@@ -1421,6 +1396,28 @@ System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly
 System.TypeLoadException: Could not load type 'UxmlSerializedData' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
 System.TypeLoadException: Could not load type 'UnityEngine.UIElements.FilterFunction' from assembly 'UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' due to value type mismatch.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'Pooled`1' from assembly 'UnityEngine.VectorGraphicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'.
+System.TypeLoadException: Could not load type 'System.Collections.Generic.Dictionary`2' from assembly 'System.Runtime, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly __Generated, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Failure has occurred while loading a type.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1432,105 +1429,108 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Error  :Currency Atlas Mask Visualizer] Erro durante visualizacao: System.Runtime.InteropServices.ExternalException (0x80004005): A generic error occurred in GDI+.
    at System.Drawing.Image.Save(String filename, ImageCodecInfo encoder, EncoderParameters encoderParams)
    at MonsterK1llerBR.CurrencyAssetAnalyzer.AtlasMaskVisualizer.GenerateIndividual(Bitmap atlas, Bitmap mask, CoinVisualInfo coin)
    at MonsterK1llerBR.CurrencyAssetAnalyzer.AtlasMaskVisualizer.GenerateVisualization(String sourcePath, String[] maskPaths)
    at MonsterK1llerBR.CurrencyAssetAnalyzer.AtlasMaskVisualizer.ScanCallback(Object state)
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png

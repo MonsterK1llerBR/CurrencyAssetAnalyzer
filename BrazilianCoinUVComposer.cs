@@ -26,7 +26,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         private const string NAME =
             "Brazilian Coin UV Composer";
 
-        private const string VERSION = "1.3.0";
+        private const string VERSION = "1.4.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -1893,7 +1893,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
              * A escala anterior ficou praticamente perfeita,
              * portanto mantemos uma margem de apenas 2 pixels.
              */
-            const int padding = 2;
+            const int padding = 1;
 
             int availableWidth =
                 Math.Max(
@@ -2394,5 +2394,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
+
 
 
