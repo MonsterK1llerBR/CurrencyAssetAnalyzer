@@ -8,6 +8,7 @@ using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using UnityEngine;
+
 namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 {
     [BepInPlugin(
@@ -24,7 +25,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Brazilian Money Texture Replacer";
 
         private const string VERSION =
-            "1.0.0";
+            "1.1.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -240,15 +241,12 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         {
             try
             {
-                string expected =
+                AtlasPath =
                     Path.Combine(
                         GetPluginRoot(),
                         AtlasFolder,
                         AtlasFileName
                     );
-
-                AtlasPath =
-                    expected;
 
                 Log.LogInfo(
                     "Atlas alvo:"
@@ -294,10 +292,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                     AppendLine(
                         "Atlas encontrado: FALSE"
-                    );
-
-                    AppendLine(
-                        "O substituidor aguardara o arquivo."
                     );
                 }
             }
@@ -402,7 +396,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             )
             {
                 Log.LogError(
-                    "Erro aplicando patch de SpawnMoney:"
+                    "Erro aplicando patch:"
                 );
 
                 Log.LogError(
@@ -620,18 +614,20 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
-                if (
-                    !Instance.IsTargetCoin(
-                        gameObject
-                    )
-                )
-                {
-                    return;
-                }
+                Instance.Log.LogInfo(
+                    "MoneyPack GameObject: " +
+                    gameObject.name
+                );
 
+                /*
+                 * Nao usamos mais o bool __1 para decidir
+                 * se e moeda.
+                 *
+                 * A propria hierarquia e o Renderer
+                 * definem isso.
+                 */
                 Instance.ReplaceCoinTexture(
-                    gameObject,
-                    __1
+                    gameObject
                 );
             }
             catch (
@@ -643,7 +639,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 )
                 {
                     Instance.Log.LogError(
-                        "Erro no substituidor de textura:"
+                        "Erro no Postfix:"
                     );
 
                     Instance.Log.LogError(
@@ -872,130 +868,431 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             return null;
         }
 
-        private bool IsTargetCoin(
-    GameObject root
-)
+        private void ReplaceCoinTexture(
+            GameObject root
+        )
         {
             if (
                 root == null
             )
             {
-                return false;
+                return;
             }
+
+            if (
+                !EnsureAtlasLoaded()
+            )
+            {
+                return;
+            }
+
+            int gameObjectId =
+                root.GetInstanceID();
+
+            if (
+                ReplacedGameObjects.Contains(
+                    gameObjectId
+                )
+            )
+            {
+                return;
+            }
+
+            Renderer[] renderers;
 
             try
             {
-                string rootName =
-                    root.name ??
-                    string.Empty;
-
-                for (
-                    int i = 0;
-                    i < CoinNameMarkers.Length;
-                    i++
-                )
-                {
-                    if (
-                        rootName.IndexOf(
-                            CoinNameMarkers[i],
-                            StringComparison.OrdinalIgnoreCase
-                        ) >= 0
-                    )
-                    {
-                        return true;
-                    }
-                }
-            }
-            catch
-            {
-            }
-
-            try
-            {
-                Transform rootTransform =
-                    root.transform;
-
-                if (
-                    rootTransform == null
-                )
-                {
-                    return false;
-                }
-
-                /*
-                 * IMPORTANTE:
-                 *
-                 * A moeda real nao esta necessariamente no root
-                 * nem no primeiro nivel de filhos.
-                 *
-                 * Exemplo descoberto pelo MoneyMaterialProbe:
-                 *
-                 * 1 Cent Pack
-                 *   -> Visuals
-                 *      -> 1 Cent Pack
-                 *         -> Coin_1_Cent
-                 *            -> SM_Coin_1_Cent
-                 *
-                 * Portanto procuramos recursivamente toda a hierarquia.
-                 */
-                Transform[] allTransforms =
-                    root.GetComponentsInChildren<Transform>(
+                renderers =
+                    root.GetComponentsInChildren<Renderer>(
                         true
                     );
-
-                if (
-                    allTransforms == null
-                )
-                {
-                    return false;
-                }
-
-                for (
-                    int i = 0;
-                    i < allTransforms.Length;
-                    i++
-                )
-                {
-                    Transform transform =
-                        allTransforms[i];
-
-                    if (
-                        transform == null
-                    )
-                    {
-                        continue;
-                    }
-
-                    string objectName =
-                        transform.name ??
-                        string.Empty;
-
-                    for (
-                        int c = 0;
-                        c < CoinNameMarkers.Length;
-                        c++
-                    )
-                    {
-                        if (
-                            objectName.IndexOf(
-                                CoinNameMarkers[c],
-                                StringComparison.OrdinalIgnoreCase
-                            ) >= 0
-                        )
-                        {
-                            return true;
-                        }
-                    }
-                }
             }
             catch (
                 Exception ex
             )
             {
-                Log.LogWarning(
-                    "Erro procurando moeda na hierarquia: " +
+                Log.LogError(
+                    "Erro procurando Renderers:"
+                );
+
+                Log.LogError(
                     ex
                 );
+
+                return;
+            }
+
+            if (
+                renderers == null ||
+                renderers.Length == 0
+            )
+            {
+                Log.LogWarning(
+                    "Nenhum Renderer encontrado em " +
+                    root.name
+                );
+
+                return;
+            }
+
+            bool replaced =
+                false;
+
+            for (
+                int i = 0;
+                i < renderers.Length;
+                i++
+            )
+            {
+                Renderer renderer =
+                    renderers[i];
+
+                if (
+                    renderer == null
+                )
+                {
+                    continue;
+                }
+
+                GameObject rendererObject =
+                    renderer.gameObject;
+
+                if (
+                    rendererObject == null
+                )
+                {
+                    continue;
+                }
+
+                string rendererName =
+                    rendererObject.name ??
+                    string.Empty;
+
+                if (
+                    !IsCoinRendererName(
+                        rendererName
+                    )
+                )
+                {
+                    continue;
+                }
+
+                Log.LogInfo(
+                    "Renderer de moeda encontrado: " +
+                    rendererName
+                );
+
+                Material material =
+                    null;
+
+                try
+                {
+                    /*
+                     * material retorna a instancia usada
+                     * pelo Renderer.
+                     */
+                    material =
+                        renderer.material;
+                }
+                catch (
+                    Exception ex
+                )
+                {
+                    Log.LogWarning(
+                        "Nao foi possivel obter material de " +
+                        rendererName
+                    );
+
+                    Log.LogWarning(
+                        ex
+                    );
+
+                    continue;
+                }
+
+                if (
+                    material == null
+                )
+                {
+                    Log.LogWarning(
+                        "Material null em " +
+                        rendererName
+                    );
+
+                    continue;
+                }
+
+                int materialId =
+                    material.GetInstanceID();
+
+                string materialName =
+                    material.name ??
+                    string.Empty;
+
+                bool materialMatches =
+                    materialName.IndexOf(
+                        "M_Money",
+                        StringComparison.OrdinalIgnoreCase
+                    ) >= 0;
+
+                bool textureChanged =
+                    false;
+
+                for (
+                    int p = 0;
+                    p < TextureProperties.Length;
+                    p++
+                )
+                {
+                    string property =
+                        TextureProperties[p];
+
+                    try
+                    {
+                        if (
+                            !material.HasProperty(
+                                property
+                            )
+                        )
+                        {
+                            continue;
+                        }
+
+                        Texture currentTexture =
+                            material.GetTexture(
+                                property
+                            );
+
+                        string previousName =
+                            currentTexture != null
+                                ? currentTexture.name
+                                : "null";
+
+                        bool moneyTexture =
+                            currentTexture != null &&
+                            previousName.IndexOf(
+                                "T_Money",
+                                StringComparison.OrdinalIgnoreCase
+                            ) >= 0;
+
+                        /*
+                         * So aceitamos:
+                         *
+                         * 1. material M_Money
+                         * 2. textura T_Money
+                         */
+                        if (
+                            !materialMatches &&
+                            !moneyTexture
+                        )
+                        {
+                            continue;
+                        }
+
+                        material.SetTexture(
+                            property,
+                            BrazilianAtlas
+                        );
+
+                        textureChanged =
+                            true;
+
+                        ReplacedMaterials.Add(
+                            materialId
+                        );
+
+                        string logKey =
+                            gameObjectId +
+                            "|" +
+                            rendererName +
+                            "|" +
+                            materialId +
+                            "|" +
+                            property;
+
+                        if (
+                            LoggedObjects.Add(
+                                logKey
+                            )
+                        )
+                        {
+                            Log.LogInfo(
+                                "########################################"
+                            );
+
+                            Log.LogInfo(
+                                "TEXTURA SUBSTITUIDA"
+                            );
+
+                            Log.LogInfo(
+                                "Coin Root: " +
+                                root.name
+                            );
+
+                            Log.LogInfo(
+                                "Renderer: " +
+                                rendererName
+                            );
+
+                            Log.LogInfo(
+                                "Material: " +
+                                materialName
+                            );
+
+                            Log.LogInfo(
+                                "Material InstanceID: " +
+                                materialId
+                            );
+
+                            Log.LogInfo(
+                                "Property: " +
+                                property
+                            );
+
+                            Log.LogInfo(
+                                "Texture anterior: " +
+                                previousName
+                            );
+
+                            Log.LogInfo(
+                                "Texture nova: " +
+                                BrazilianAtlas.name
+                            );
+
+                            Log.LogInfo(
+                                "########################################"
+                            );
+                        }
+
+                        AppendLine();
+
+                        AppendLine(
+                            "TEXTURE REPLACEMENT"
+                        );
+
+                        AppendLine(
+                            "Coin Root: " +
+                            root.name
+                        );
+
+                        AppendLine(
+                            "Renderer: " +
+                            rendererName
+                        );
+
+                        AppendLine(
+                            "Material: " +
+                            materialName
+                        );
+
+                        AppendLine(
+                            "Material InstanceID: " +
+                            materialId
+                        );
+
+                        AppendLine(
+                            "Property: " +
+                            property
+                        );
+
+                        AppendLine(
+                            "Previous Texture: " +
+                            previousName
+                        );
+
+                        AppendLine(
+                            "New Texture: " +
+                            BrazilianAtlas.name
+                        );
+                    }
+                    catch (
+                        Exception ex
+                    )
+                    {
+                        Log.LogWarning(
+                            "Erro definindo " +
+                            property +
+                            " em " +
+                            materialName
+                        );
+
+                        Log.LogWarning(
+                            ex
+                        );
+                    }
+                }
+
+                if (
+                    textureChanged
+                )
+                {
+                    replaced =
+                        true;
+                }
+            }
+
+            if (
+                replaced
+            )
+            {
+                ReplacedGameObjects.Add(
+                    gameObjectId
+                );
+
+                AppendLine();
+
+                AppendLine(
+                    "COIN REPLACED: " +
+                    root.name
+                );
+
+                AppendLine(
+                    "Root InstanceID: " +
+                    gameObjectId
+                );
+
+                AppendLine(
+                    "Renderer Count: " +
+                    renderers.Length
+                );
+            }
+            else
+            {
+                Log.LogInfo(
+                    "Renderer de moeda encontrado, mas nenhuma textura foi substituida: " +
+                    root.name
+                );
+            }
+        }
+
+        private bool IsCoinRendererName(
+            string rendererName
+        )
+        {
+            if (
+                string.IsNullOrEmpty(
+                    rendererName
+                )
+            )
+            {
+                return false;
+            }
+
+            for (
+                int i = 0;
+                i < CoinNameMarkers.Length;
+                i++
+            )
+            {
+                if (
+                    rendererName.IndexOf(
+                        CoinNameMarkers[i],
+                        StringComparison.OrdinalIgnoreCase
+                    ) >= 0
+                )
+                {
+                    return true;
+                }
             }
 
             return false;
@@ -1179,374 +1476,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 );
 
                 return false;
-            }
-        }
-
-        private void ReplaceCoinTexture(
-            GameObject root,
-            bool isCoin
-        )
-        {
-            if (
-                root == null
-            )
-            {
-                return;
-            }
-
-            if (
-                !isCoin
-            )
-            {
-                return;
-            }
-
-            if (
-                !EnsureAtlasLoaded()
-            )
-            {
-                return;
-            }
-
-            int rootId =
-                root.GetInstanceID();
-
-            if (
-                ReplacedGameObjects.Contains(
-                    rootId
-                )
-            )
-            {
-                return;
-            }
-
-            Renderer[] renderers;
-
-            try
-            {
-                renderers =
-                    root.GetComponentsInChildren<Renderer>(
-                        true
-                    );
-            }
-            catch (
-                Exception ex
-            )
-            {
-                Log.LogError(
-                    "Erro procurando Renderers:"
-                );
-
-                Log.LogError(
-                    ex
-                );
-
-                return;
-            }
-
-            if (
-                renderers == null ||
-                renderers.Length == 0
-            )
-            {
-                Log.LogWarning(
-                    "Nenhum Renderer encontrado em " +
-                    root.name
-                );
-
-                return;
-            }
-
-            bool replaced =
-                false;
-
-            for (
-                int i = 0;
-                i < renderers.Length;
-                i++
-            )
-            {
-                Renderer renderer =
-                    renderers[i];
-
-                if (
-                    renderer == null
-                )
-                {
-                    continue;
-                }
-
-                Material material =
-                    null;
-
-                try
-                {
-                    /*
-                     * IMPORTANTE:
-                     *
-                     * renderer.material cria/fornece uma instancia
-                     * do material para aquele Renderer.
-                     *
-                     * Assim evitamos modificar o asset compartilhado
-                     * M_Money.
-                     */
-                    material =
-                        renderer.material;
-                }
-                catch (
-                    Exception ex
-                )
-                {
-                    Log.LogWarning(
-                        "Nao foi possivel obter material de " +
-                        renderer.gameObject.name
-                    );
-
-                    Log.LogWarning(
-                        ex
-                    );
-
-                    continue;
-                }
-
-                if (
-                    material == null
-                )
-                {
-                    continue;
-                }
-
-                int materialId =
-                    material.GetInstanceID();
-
-                string materialName =
-                    material.name ??
-                    string.Empty;
-
-                bool interesting =
-                    materialName.IndexOf(
-                        "M_Money",
-                        StringComparison.OrdinalIgnoreCase
-                    ) >= 0;
-
-                bool propertyChanged =
-                    false;
-
-                for (
-                    int p = 0;
-                    p < TextureProperties.Length;
-                    p++
-                )
-                {
-                    string property =
-                        TextureProperties[p];
-
-                    try
-                    {
-                        if (
-                            !material.HasProperty(
-                                property
-                            )
-                        )
-                        {
-                            continue;
-                        }
-
-                        Texture current =
-                            material.GetTexture(
-                                property
-                            );
-
-                        string currentName =
-                            current != null
-                                ? current.name
-                                : "null";
-
-                        /*
-                         * Evita trocar materiais que nao aparentam
-                         * pertencer ao sistema de dinheiro.
-                         */
-                        bool isMoneyTexture =
-                            current != null &&
-                            currentName.IndexOf(
-                                "T_Money",
-                                StringComparison.OrdinalIgnoreCase
-                            ) >= 0;
-
-                        if (
-                            !interesting &&
-                            !isMoneyTexture
-                        )
-                        {
-                            continue;
-                        }
-
-                        material.SetTexture(
-                            property,
-                            BrazilianAtlas
-                        );
-
-                        propertyChanged =
-                            true;
-
-                        ReplacedMaterials.Add(
-                            materialId
-                        );
-
-                        if (
-                            LoggedObjects.Add(
-                                root.name +
-                                "|" +
-                                renderer.gameObject.name +
-                                "|" +
-                                materialId +
-                                "|" +
-                                property
-                            )
-                        )
-                        {
-                            Log.LogInfo(
-                                "########################################"
-                            );
-
-                            Log.LogInfo(
-                                "TEXTURA SUBSTITUIDA"
-                            );
-
-                            Log.LogInfo(
-                                "Coin Root: " +
-                                root.name
-                            );
-
-                            Log.LogInfo(
-                                "Renderer: " +
-                                renderer.gameObject.name
-                            );
-
-                            Log.LogInfo(
-                                "Material: " +
-                                materialName
-                            );
-
-                            Log.LogInfo(
-                                "Material InstanceID: " +
-                                materialId
-                            );
-
-                            Log.LogInfo(
-                                "Property: " +
-                                property
-                            );
-
-                            Log.LogInfo(
-                                "Texture anterior: " +
-                                currentName
-                            );
-
-                            Log.LogInfo(
-                                "Texture nova: " +
-                                BrazilianAtlas.name
-                            );
-
-                            Log.LogInfo(
-                                "########################################"
-                            );
-                        }
-
-                        AppendLine();
-
-                        AppendLine(
-                            "TEXTURE REPLACEMENT"
-                        );
-
-                        AppendLine(
-                            "Coin Root: " +
-                            root.name
-                        );
-
-                        AppendLine(
-                            "Renderer: " +
-                            renderer.gameObject.name
-                        );
-
-                        AppendLine(
-                            "Material: " +
-                            materialName
-                        );
-
-                        AppendLine(
-                            "Material InstanceID: " +
-                            materialId
-                        );
-
-                        AppendLine(
-                            "Property: " +
-                            property
-                        );
-
-                        AppendLine(
-                            "Previous Texture: " +
-                            currentName
-                        );
-
-                        AppendLine(
-                            "New Texture: " +
-                            BrazilianAtlas.name
-                        );
-
-                        propertyChanged =
-                            true;
-                    }
-                    catch (
-                        Exception ex
-                    )
-                    {
-                        Log.LogWarning(
-                            "Erro definindo " +
-                            property +
-                            " em " +
-                            materialName
-                        );
-
-                        Log.LogWarning(
-                            ex
-                        );
-                    }
-                }
-
-                if (
-                    propertyChanged
-                )
-                {
-                    replaced =
-                        true;
-                }
-            }
-
-            if (
-                replaced
-            )
-            {
-                ReplacedGameObjects.Add(
-                    rootId
-                );
-
-                AppendLine();
-
-                AppendLine(
-                    "COIN REPLACED: " +
-                    root.name
-                );
-
-                AppendLine(
-                    "Root InstanceID: " +
-                    rootId
-                );
-
-                AppendLine(
-                    "Renderer Count: " +
-                    renderers.Length
-                );
             }
         }
 
