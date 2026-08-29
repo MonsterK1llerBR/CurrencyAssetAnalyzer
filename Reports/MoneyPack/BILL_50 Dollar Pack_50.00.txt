@@ -55,7 +55,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -134,7 +134,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -213,7 +213,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -292,7 +292,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -371,7 +371,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -450,7 +450,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -529,7 +529,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -608,7 +608,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS
@@ -687,7 +687,7 @@ Count: 5
       Count: 4
       - UnityEngine.Transform
       - UnityEngine.Component
-      - UnityEngine.Renderer
+      - UnityEngine.Component
       - UnityEngine.Component
 
       RENDERERS

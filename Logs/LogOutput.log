@@ -82,20 +82,8 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Supermarket Simulator - Brazilian Money] Supermarket Simulator - Brazilian Money
 [Info   :Supermarket Simulator - Brazilian Money] Versão 1.0.0
 [Info   :Supermarket Simulator - Brazilian Money] ========================================
-[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
-Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
-   at System.Reflection.Assembly.GetTypes()
-   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
-System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Brazilian Coin UV Composer] Atlas encontrado:
 [Info   :Brazilian Coin UV Composer] B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Supermarket Simulator - Brazilian Money] CheckoutChangeManager encontrado: CheckoutChangeManager
-[Info   :Supermarket Simulator - Brazilian Money] SpawnMoney encontrado: Void SpawnMoney(MoneyPack, Boolean)
 [Info   :Brazilian Coin Atlas Generator] Mascaras encontradas no disco: 5
 [Info   :Brazilian Coin Atlas Generator] Mascara analisada: SM_Coin_10_Cents_MASK.png -> SM_Coin_10_Cents
 [Info   :Brazilian Coin Atlas Generator] Mascara aceita: SM_Coin_10_Cents
@@ -109,7 +97,19 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Coin Atlas Generator] Mascara aceita: SM_Coin_5_Cents
 [Info   :Brazilian Coin Atlas Generator] Mascaras validas: 5/5
 [Info   :Brazilian Coin Atlas Generator] Atlas e cinco mascaras encontrados.
+[Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.Assembly.GetTypes()
+   at HarmonyLib.AccessTools.GetTypesFromAssembly(Assembly assembly)
+System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
+System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Brazilian Coin UV Composer] Mascaras validas: 5/5
+[Info   :Supermarket Simulator - Brazilian Money] CheckoutChangeManager encontrado: CheckoutChangeManager
+[Info   :Supermarket Simulator - Brazilian Money] SpawnMoney encontrado: Void SpawnMoney(MoneyPack, Boolean)
 [Info   :Brazilian Coin UV Composer] Artes FRONT encontradas: 1/5
 [Info   :Brazilian Coin UV Composer] Artes BACK encontradas: 1/5
 [Info   :Brazilian Coin UV Composer] Moeda pronta para composicao: SM_Coin_50_Cents
@@ -125,9 +125,9 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Supermarket Simulator - Brazilian Money] Patch de SpawnMoney aplicado com sucesso.
 [Info   :Supermarket Simulator - Brazilian Money] Plugin inicializado com sucesso.
 [Info   :Supermarket Simulator - Brazilian Money] Harmony inicializado com sucesso.
-[Info   :   BepInEx] Loading [Brazilian Money Texture Replacer 1.1.0]
+[Info   :   BepInEx] Loading [Brazilian Money Texture Replacer 1.2.0]
 [Info   :Brazilian Money Texture Replacer] ========================================
-[Info   :Brazilian Money Texture Replacer] Brazilian Money Texture Replacer v1.1.0
+[Info   :Brazilian Money Texture Replacer] Brazilian Money Texture Replacer v1.2.0
 [Info   :Brazilian Money Texture Replacer] ========================================
 [Info   :Brazilian Money Texture Replacer] Objetivo: substituir o albedo das moedas em runtime.
 [Info   :Brazilian Money Texture Replacer] Mesh: NAO ALTERADO.
@@ -141,7 +141,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Money Texture Replacer] BrazilianCoinAtlas_FINAL.png encontrado.
 [Info   :Brazilian Money Texture Replacer] SpawnMoney encontrado:
 [Info   :Brazilian Money Texture Replacer] Void SpawnMoney(MoneyPack, Boolean)
-[Info   :Brazilian Money Texture Replacer] Patch de SpawnMoney aplicado.
+[Info   :Brazilian Money Texture Replacer] Patch de SpawnMoney aplicado com sucesso.
 [Info   :   BepInEx] Loading [Brazilian Currency Format 1.0.0]
 [Info   :Brazilian Currency Format] [Debug] Procurando Extensions.ToMoneyText(float, float, float)...
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
@@ -162,6 +162,8 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] TMP_Text.text setter encontrado: Void set_text(System.String)
 [Info   :Brazilian Coin Atlas Generator] SM_Coin_50_Cents | Pixels substituidos: 116254
 [Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_25_Cents
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_25_Cents | Pixels substituidos: 73375
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
 [Info   :Brazilian Currency Format] [Debug] Procurando classe PosTerminal...
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -348,8 +350,8 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   :Brazilian Currency Format] [Debug] PosTerminal método: Boolean Equals(System.Object)
 [Info   :Brazilian Currency Format] [Debug] PosTerminal método: Int32 GetHashCode()
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.Start() encontrado: Void Start()
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_25_Cents | Pixels substituidos: 73375
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_10_Cents
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_10_Cents | Pixels substituidos: 37523
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_5_Cents
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -360,9 +362,9 @@ Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, 
 System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_10_Cents | Pixels substituidos: 37523
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_5_Cents
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.AddChar(string) encontrado: Void AddChar(System.String)
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_5_Cents | Pixels substituidos: 68292
+[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_1_Cent
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'DirectChildrenEnumerable' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
@@ -374,8 +376,7 @@ System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from as
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Brazilian Currency Format] [Debug] PosTerminal.RemoveCharacter() encontrado: Void RemoveCharacter()
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_5_Cents | Pixels substituidos: 68292
-[Info   :Brazilian Coin Atlas Generator] Processando: SM_Coin_1_Cent
+[Info   :Brazilian Coin Atlas Generator] SM_Coin_1_Cent | Pixels substituidos: 45378
 [Info   :Brazilian Currency Format] Brazilian Currency Format 1.0.0 carregado.
 [Info   :   BepInEx] Loading [Currency Asset Analyzer 8.2.3]
 [Info   :Currency Asset Analyzer] ========================================
@@ -402,7 +403,6 @@ System.TypeLoadException: Could not load type 'DirectChildrenEnumerable' from as
 System.TypeLoadException: Could not load type '<>c' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly 'UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
 [Info   :Currency Asset Analyzer] CheckoutChangeManager encontrado: CheckoutChangeManager
-[Info   :Brazilian Coin Atlas Generator] SM_Coin_1_Cent | Pixels substituidos: 45378
 [Info   :Currency Asset Analyzer] SpawnMoney selecionado: Void SpawnMoney(MoneyPack, Boolean)
 [Info   :Currency Asset Analyzer] Patch de SpawnMoney aplicado com sucesso.
 [Info   :   BepInEx] Loading [Currency Atlas Mapper 2.0.0]
@@ -853,9 +853,9 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |   |
 [Info   : File Tree] |   |       |   |   |-- BILL_1 Dollar Pack_1.00.txt [20,47 KB]
 [Info   : File Tree] |   |       |   |   |-- BILL_10 Dollar Pack_10.00.txt [20,29 KB]
-[Info   : File Tree] |   |       |   |   |-- BILL_20 Dollar Pack_20.00.txt [20,28 KB]
+[Info   : File Tree] |   |       |   |   |-- BILL_20 Dollar Pack_20.00.txt [20,27 KB]
 [Info   : File Tree] |   |       |   |   |-- BILL_5 Dollar Pack_5.00.txt [20,22 KB]
-[Info   : File Tree] |   |       |   |   |-- BILL_50 Dollar Pack_50.00.txt [20,33 KB]
+[Info   : File Tree] |   |       |   |   |-- BILL_50 Dollar Pack_50.00.txt [20,32 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_1 Cent Pack_0.01.txt [37,69 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_10 Cent Pack_0.10.txt [74,5 KB]
 [Info   : File Tree] |   |       |   |   |-- COIN_25 Cent Pack_0.25.txt [37,87 KB]
@@ -957,7 +957,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |
 [Info   : File Tree] |   |       |-- BrazilianMoneyTextureReplacer
 [Info   : File Tree] |   |       |   |
-[Info   : File Tree] |   |       |   \-- BrazilianMoneyTextureReplacerReport.txt [588 B]
+[Info   : File Tree] |   |       |   \-- BrazilianMoneyTextureReplacerReport.txt [666 B]
 [Info   : File Tree] |   |       |
 [Info   : File Tree] |   |       |-- MeshApiProbe
 [Info   : File Tree] |   |       |   |
@@ -979,7 +979,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |       |   |
 [Info   : File Tree] |   |       |   \-- MoneyMaterialProbeReport.txt [494 B]
 [Info   : File Tree] |   |       |
-[Info   : File Tree] |   |       |-- CurrencyAssetAnalyzer.dll [152,58 KB]
+[Info   : File Tree] |   |       |-- CurrencyAssetAnalyzer.dll [153,6 KB]
 [Info   : File Tree] |   |       |-- Microsoft.Win32.SystemEvents.dll [27,92 KB]
 [Info   : File Tree] |   |       \-- System.Drawing.Common.dll [441,14 KB]
 [Info   : File Tree] |   |
@@ -1067,7 +1067,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |   |   \-- UnityEngine.XRModule.dll [77,31 KB]
 [Info   : File Tree] |   |
 [Info   : File Tree] |   |-- ErrorLog.log [0 B]
-[Info   : File Tree] |   \-- LogOutput.log [61,38 KB]
+[Info   : File Tree] |   \-- LogOutput.log [61,4 KB]
 [Info   : File Tree] |
 [Info   : File Tree] |-- D3D12
 [Info   : File Tree] |   |
@@ -1090,7 +1090,7 @@ System.TypeLoadException: Could not load type 'IdentityAttributes' from assembly
 [Info   : File Tree] |-- UnityCrashHandler64.exe [1,61 MB]
 [Info   : File Tree] |-- UnityPlayer.dll [35,72 MB]
 [Info   : File Tree] \-- winhttp.dll [26,11 KB]
-[Message: Timestamp] It is currently Sat, 29 Aug 2026 19:28:23 GMT according to time.cloudflare.com
+[Message: Timestamp] It is currently Sat, 29 Aug 2026 19:32:51 GMT according to time.cloudflare.com
 [Warning:  HarmonyX] AccessTools.GetTypesFromAssembly: assembly UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null => System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
 Could not load type 'BindingsMarshaller' from assembly 'UnityEngine.MarshallingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' because the format is invalid.
    at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
@@ -1437,117 +1437,97 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
-[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
 [Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
 [Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Todas as mascaras encontradas.
+[Info   :Currency Atlas Mask Visualizer] Atlas encontrado: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\Textures\T_Money_AlbedoTransparency_232060.png
+[Info   :Currency Atlas Mask Visualizer] Dimensoes do atlas: 2048x2048
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_50_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_25_Cents
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_10_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
-[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
-[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_5_Cents
+[Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
+[Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
+[Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
 [Info   :Currency Atlas Mask Visualizer] Mapa combinado gerado.
 [Info   :Currency Atlas Mask Visualizer] Saida: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV11\AtlasVisualization\CurrencyAtlas_VisualMap.png
 [Info   :Currency Atlas Mask Visualizer] Visualizacao gerada: SM_Coin_1_Cent
@@ -1629,12 +1609,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 1 Dollar Pack
-[Info   :Brazilian Money Texture Replacer] Carregando BrazilianCoinAtlas_FINAL.png
-[Info   :Brazilian Money Texture Replacer] Bytes: 3199481
-[Info   :Brazilian Money Texture Replacer] Atlas carregado com sucesso.
-[Info   :Brazilian Money Texture Replacer] Dimensions: 2048x2048
-[Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado, mas nenhuma textura foi substituida: 1 Dollar Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=1 Dollar Pack | Value=1
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270 | Material=1$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base
 [Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: US_one_dollar_bill,_obverse,_series_2009 | Type=UnityEngine.Texture | InstanceID=350270
@@ -1748,8 +1723,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 5 Dollar Pack
-[Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado, mas nenhuma textura foi substituida: 5 Dollar Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=5 Dollar Pack | Value=5
 [Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_5 Dollar Pack_5.00.txt
 [Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_5 Dollar Pack_5.00.txt
@@ -1838,8 +1812,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 10 Dollar Pack
-[Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado, mas nenhuma textura foi substituida: 10 Dollar Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=10 Dollar Pack | Value=10
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058 | Material=10$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base
 [Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: US10dollarbill-Series_2004A | Type=UnityEngine.Texture | InstanceID=181058
@@ -1953,8 +1926,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 20 Dollar Pack
-[Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado, mas nenhuma textura foi substituida: 20 Dollar Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=20 Dollar Pack | Value=20
 [Info   :Currency Asset Analyzer] Relatorio MoneyPack salvo: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\AnalyzerV8\MoneyPack\BILL_20 Dollar Pack_20.00.txt
 [Info   :Currency Asset Analyzer] Arquivo sincronizado: C:\Users\natan\Documents\Mods\SupermarketSimulator\CurrencyAssetAnalyzer\Reports\MoneyPack\BILL_20 Dollar Pack_20.00.txt
@@ -2043,8 +2015,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 50 Dollar Pack
-[Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado, mas nenhuma textura foi substituida: 50 Dollar Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=False | moneyPack=MoneyPack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: BILL | Name=50 Dollar Pack | Value=50
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: 50_USD_Series_2004_Note_Front | Type=UnityEngine.Texture | InstanceID=289276 | Material=50$ Paper Front | Property=_BaseMap | GameObject=Paper Dollar Base
 [Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: 50_USD_Series_2004_Note_Front | Type=UnityEngine.Texture | InstanceID=289276
@@ -2226,217 +2197,254 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 50 Cent Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=True | moneyPack=MoneyPack
+[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject resolvido: 50 Cent Pack
+[Info   :Brazilian Money Texture Replacer] Carregando BrazilianCoinAtlas_FINAL.png
+[Info   :Brazilian Money Texture Replacer] Bytes: 3199481
+[Info   :Brazilian Money Texture Replacer] Atlas carregado com sucesso.
+[Info   :Brazilian Money Texture Replacer] Dimensions: 2048x2048
+[Info   :Brazilian Money Texture Replacer] Renderers encontrados em 50 Cent Pack: 10
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78410
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82646
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78410
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82646
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78410
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78412
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82648
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78412
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82648
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78412
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78414
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82650
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78414
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82650
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78414
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78416
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82652
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78416
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82652
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78416
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78418
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82654
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78418
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82654
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78418
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78420
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82656
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78420
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82656
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78420
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78422
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82658
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78422
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82658
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78422
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78424
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82660
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78424
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82660
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78424
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78426
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82662
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78426
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82662
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78426
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_50_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78428
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82664
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78428
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 50 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_50_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82664
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78428
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] COIN REPLACED: 50 Cent Pack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: COIN | Name=50 Cent Pack | Value=0,5
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062 | Material=M_Money (Instance) | Property=_BumpMap | GameObject=SM_Coin_50_Cents
 [Info   :Currency Asset Analyzer] INICIANDO EXTRACAO: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062
@@ -2550,7 +2558,7 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Mesh GPU Probe] Buffer Stride: 48
 [Info   :Mesh GPU Probe] Buffer Target: Vertex, CopySource
 [Info   :Mesh GPU Probe] Buffer IsValid: True
-[Info   :Mesh GPU Probe] NativeBufferPtr: 1543316288928
+[Info   :Mesh GPU Probe] NativeBufferPtr: 2138277349472
 [Info   :Mesh GPU Probe] 
 [Info   :Mesh GPU Probe] INDEX BUFFER
 [Info   :Mesh GPU Probe] --------------------------------
@@ -2809,238 +2817,274 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 25 Cent Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=True | moneyPack=MoneyPack
+[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject resolvido: 25 Cent Pack
+[Info   :Brazilian Money Texture Replacer] Renderers encontrados em 25 Cent Pack: 11
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78550
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82786
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78550
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82786
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78550
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78552
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82788
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78552
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82788
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78552
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78554
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82790
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78554
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82790
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78554
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78556
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82792
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78556
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82792
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78556
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78558
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82794
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78558
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82794
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78558
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78560
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82796
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78560
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82796
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78560
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78562
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82798
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78562
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82798
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78562
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78564
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82800
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78564
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82800
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78564
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78566
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82802
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78566
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82802
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78566
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78568
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82804
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78568
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82804
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78568
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_25_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78570
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82806
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78570
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 25 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_25_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82806
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78570
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] COIN REPLACED: 25 Cent Pack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: COIN | Name=25 Cent Pack | Value=0,25
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062 | Material=M_Money (Instance) | Property=_BumpMap | GameObject=SM_Coin_25_Cents
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_SpecularSmoothness | Type=UnityEngine.Texture | InstanceID=232064 | Material=M_Money (Instance) | Property=_MetallicGlossMap | GameObject=SM_Coin_25_Cents
@@ -3369,469 +3413,538 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 10 Cent Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=True | moneyPack=MoneyPack
+[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject resolvido: 10 Cent Pack
+[Info   :Brazilian Money Texture Replacer] Renderers encontrados em 10 Cent Pack: 22
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78706
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82942
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78706
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82942
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78706
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78708
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82944
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78708
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82944
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78708
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78710
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82946
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78710
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82946
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78710
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78712
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82948
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78712
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82948
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78712
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78714
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82950
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78714
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82950
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78714
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78716
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82952
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78716
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82952
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78716
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78718
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82954
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78718
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82954
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78718
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78720
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82956
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78720
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82956
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78720
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78722
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82958
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78722
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82958
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78722
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78724
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82960
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78724
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82960
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78724
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78726
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82962
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78726
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82962
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78726
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78728
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82964
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78728
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82964
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78728
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78730
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82966
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78730
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82966
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78730
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78732
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82968
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78732
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82968
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78732
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78734
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82970
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78734
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82970
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78734
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78736
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82972
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78736
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82972
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78736
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78738
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82974
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78738
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82974
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78738
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78740
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82976
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78740
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82976
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78740
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78742
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82978
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78742
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82978
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78742
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78744
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82980
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78744
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82980
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78744
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78746
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82982
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78746
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82982
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78746
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_10_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-78748
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82984
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78748
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 10 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_10_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -82984
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -78748
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] COIN REPLACED: 10 Cent Pack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: COIN | Name=10 Cent Pack | Value=0,1
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062 | Material=M_Money (Instance) | Property=_BumpMap | GameObject=SM_Coin_10_Cents
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_SpecularSmoothness | Type=UnityEngine.Texture | InstanceID=232064 | Material=M_Money (Instance) | Property=_MetallicGlossMap | GameObject=SM_Coin_10_Cents
@@ -4083,238 +4196,274 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 5 Cent Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=True | moneyPack=MoneyPack
+[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject resolvido: 5 Cent Pack
+[Info   :Brazilian Money Texture Replacer] Renderers encontrados em 5 Cent Pack: 11
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79382
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83098
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79382
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83098
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79382
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79384
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83100
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79384
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83100
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79384
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79386
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83102
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79386
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83102
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79386
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79388
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83104
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79388
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83104
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79388
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79390
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83106
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79390
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83106
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79390
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79392
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83108
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79392
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83108
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79392
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79394
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83110
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79394
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83110
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79394
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79396
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83112
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79396
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83112
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79396
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79398
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83114
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79398
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83114
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79398
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79400
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83116
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79400
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83116
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79400
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_5_Cents
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79402
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83118
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79402
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 5 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_5_Cents
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83118
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79402
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] COIN REPLACED: 5 Cent Pack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: COIN | Name=5 Cent Pack | Value=0,05
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062 | Material=M_Money (Instance) | Property=_BumpMap | GameObject=SM_Coin_5_Cents
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_SpecularSmoothness | Type=UnityEngine.Texture | InstanceID=232064 | Material=M_Money (Instance) | Property=_MetallicGlossMap | GameObject=SM_Coin_5_Cents
@@ -4533,238 +4682,274 @@ System.TypeLoadException: Failure has occurred while loading a type.
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money]   - UnityEngine.Component
 [Info   :Supermarket Simulator - Brazilian Money] ----- FIM DA ANÁLISE -----
-[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject: 1 Cent Pack
+[Info   :Brazilian Money Texture Replacer] POSTFIX SpawnMoney EXECUTADO | isCoin=True | moneyPack=MoneyPack
+[Info   :Brazilian Money Texture Replacer] MoneyPack GameObject resolvido: 1 Cent Pack
+[Info   :Brazilian Money Texture Replacer] Renderers encontrados em 1 Cent Pack: 11
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79516
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83568
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79516
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83568
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79516
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79518
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83570
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79518
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83570
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79518
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79520
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83572
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79520
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83572
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79520
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79522
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83574
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79522
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83574
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79522
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79524
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83576
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79524
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83576
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79524
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79526
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83578
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79526
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83578
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79526
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79528
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83580
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79528
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83580
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79528
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79530
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83582
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79530
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83582
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79530
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79532
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83584
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79532
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83584
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79532
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79534
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83586
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79534
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83586
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79534
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] Renderer de moeda encontrado: SM_Coin_1_Cent
+[Info   :Brazilian Money Texture Replacer] Material encontrado: M_Money (Instance) | InstanceID=-79536
+[Info   :Brazilian Money Texture Replacer] Property: _BaseMap | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83588
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79536
 [Info   :Brazilian Money Texture Replacer] Property: _BaseMap
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] Property: _MainTex | Texture atual: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] ########################################
 [Info   :Brazilian Money Texture Replacer] TEXTURA SUBSTITUIDA
 [Info   :Brazilian Money Texture Replacer] Coin Root: 1 Cent Pack
 [Info   :Brazilian Money Texture Replacer] Renderer: SM_Coin_1_Cent
 [Info   :Brazilian Money Texture Replacer] Material: M_Money (Instance)
-[Info   :Brazilian Money Texture Replacer] Material InstanceID: -83588
+[Info   :Brazilian Money Texture Replacer] Material InstanceID: -79536
 [Info   :Brazilian Money Texture Replacer] Property: _MainTex
 [Info   :Brazilian Money Texture Replacer] Texture anterior: T_Money_AlbedoTransparency
 [Info   :Brazilian Money Texture Replacer] Texture nova: BrazilianCoinAtlas_RUNTIME
 [Info   :Brazilian Money Texture Replacer] ########################################
+[Info   :Brazilian Money Texture Replacer] COIN REPLACED: 1 Cent Pack
 [Info   :Currency Asset Analyzer] Novo MoneyPack descoberto: COIN | Name=1 Cent Pack | Value=0,01
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_Normal | Type=UnityEngine.Texture | InstanceID=232062 | Material=M_Money (Instance) | Property=_BumpMap | GameObject=SM_Coin_1_Cent
 [Info   :Currency Asset Analyzer] TEXTURA ALVO ENCONTRADA: T_Money_SpecularSmoothness | Type=UnityEngine.Texture | InstanceID=232064 | Material=M_Money (Instance) | Property=_MetallicGlossMap | GameObject=SM_Coin_1_Cent

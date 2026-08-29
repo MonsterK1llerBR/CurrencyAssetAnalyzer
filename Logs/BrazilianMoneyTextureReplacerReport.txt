@@ -1,11 +1,13 @@
 ========================================
 BRAZILIAN MONEY TEXTURE REPLACER
-VERSION: 1.1.0
+VERSION: 1.2.0
 ========================================
 
 Metodo:
-SpawnMoney -> GameObject -> Renderer -> Material Instance
--> _BaseMap/_MainTex -> BrazilianCoinAtlas_FINAL.png
+SpawnMoney -> Postfix -> MoneyPack -> GameObject
+-> GetComponentsInChildren<Renderer>
+-> Material Instance -> _BaseMap/_MainTex
+-> BrazilianCoinAtlas_FINAL.png
 
 Mesh: NAO ALTERADO.
 UV: NAO ALTERADO.
@@ -17,17 +19,34 @@ ATLAS PATH
 --------------------------------
 B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
 Atlas encontrado: TRUE
+SpawnMoney patch: SUCCESS
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=False
+POSTFIX EXECUTADO
+isCoin=True
+GameObject resolvido: 50 Cent Pack
 
 ATLAS CARREGADO
 Texture Name: BrazilianCoinAtlas_RUNTIME
 Dimensions: 2048x2048
 Source: B:\SteamLibrary\steamapps\common\Supermarket Simulator\BepInEx\plugins\CurrencyAssetAnalyzer\BrazilianCoinUVComposer\BrazilianCoinAtlas_FINAL.png
 
+RENDERERS ENCONTRADOS: 10
+Renderer de moeda: SM_Coin_50_Cents
+
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82646
+Material InstanceID: -78410
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -36,16 +55,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82646
+Material InstanceID: -78410
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82648
+Material InstanceID: -78412
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -54,16 +74,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82648
+Material InstanceID: -78412
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82650
+Material InstanceID: -78414
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -72,16 +93,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82650
+Material InstanceID: -78414
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82652
+Material InstanceID: -78416
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -90,16 +112,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82652
+Material InstanceID: -78416
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82654
+Material InstanceID: -78418
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -108,16 +131,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82654
+Material InstanceID: -78418
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82656
+Material InstanceID: -78420
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -126,16 +150,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82656
+Material InstanceID: -78420
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82658
+Material InstanceID: -78422
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -144,16 +169,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82658
+Material InstanceID: -78422
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82660
+Material InstanceID: -78424
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -162,16 +188,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82660
+Material InstanceID: -78424
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82662
+Material InstanceID: -78426
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -180,16 +207,17 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82662
+Material InstanceID: -78426
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_50_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82664
+Material InstanceID: -78428
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -198,7 +226,7 @@ TEXTURE REPLACEMENT
 Coin Root: 50 Cent Pack
 Renderer: SM_Coin_50_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82664
+Material InstanceID: -78428
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -206,12 +234,18 @@ New Texture: BrazilianCoinAtlas_RUNTIME
 COIN REPLACED: 50 Cent Pack
 Root InstanceID: -6482
 Renderer Count: 10
+POSTFIX EXECUTADO
+isCoin=True
+GameObject resolvido: 25 Cent Pack
+
+RENDERERS ENCONTRADOS: 11
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82786
+Material InstanceID: -78550
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -220,16 +254,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82786
+Material InstanceID: -78550
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82788
+Material InstanceID: -78552
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -238,16 +273,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82788
+Material InstanceID: -78552
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82790
+Material InstanceID: -78554
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -256,16 +292,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82790
+Material InstanceID: -78554
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82792
+Material InstanceID: -78556
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -274,16 +311,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82792
+Material InstanceID: -78556
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82794
+Material InstanceID: -78558
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -292,16 +330,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82794
+Material InstanceID: -78558
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82796
+Material InstanceID: -78560
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -310,16 +349,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82796
+Material InstanceID: -78560
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82798
+Material InstanceID: -78562
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -328,16 +368,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82798
+Material InstanceID: -78562
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82800
+Material InstanceID: -78564
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -346,16 +387,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82800
+Material InstanceID: -78564
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82802
+Material InstanceID: -78566
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -364,16 +406,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82802
+Material InstanceID: -78566
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82804
+Material InstanceID: -78568
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -382,16 +425,17 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82804
+Material InstanceID: -78568
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_25_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82806
+Material InstanceID: -78570
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -400,7 +444,7 @@ TEXTURE REPLACEMENT
 Coin Root: 25 Cent Pack
 Renderer: SM_Coin_25_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82806
+Material InstanceID: -78570
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -408,12 +452,18 @@ New Texture: BrazilianCoinAtlas_RUNTIME
 COIN REPLACED: 25 Cent Pack
 Root InstanceID: -6310
 Renderer Count: 11
+POSTFIX EXECUTADO
+isCoin=True
+GameObject resolvido: 10 Cent Pack
+
+RENDERERS ENCONTRADOS: 22
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82942
+Material InstanceID: -78706
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -422,16 +472,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82942
+Material InstanceID: -78706
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82944
+Material InstanceID: -78708
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -440,16 +491,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82944
+Material InstanceID: -78708
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82946
+Material InstanceID: -78710
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -458,16 +510,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82946
+Material InstanceID: -78710
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82948
+Material InstanceID: -78712
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -476,16 +529,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82948
+Material InstanceID: -78712
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82950
+Material InstanceID: -78714
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -494,16 +548,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82950
+Material InstanceID: -78714
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82952
+Material InstanceID: -78716
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -512,16 +567,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82952
+Material InstanceID: -78716
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82954
+Material InstanceID: -78718
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -530,16 +586,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82954
+Material InstanceID: -78718
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82956
+Material InstanceID: -78720
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -548,16 +605,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82956
+Material InstanceID: -78720
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82958
+Material InstanceID: -78722
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -566,16 +624,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82958
+Material InstanceID: -78722
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82960
+Material InstanceID: -78724
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -584,16 +643,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82960
+Material InstanceID: -78724
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82962
+Material InstanceID: -78726
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -602,16 +662,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82962
+Material InstanceID: -78726
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82964
+Material InstanceID: -78728
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -620,16 +681,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82964
+Material InstanceID: -78728
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82966
+Material InstanceID: -78730
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -638,16 +700,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82966
+Material InstanceID: -78730
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82968
+Material InstanceID: -78732
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -656,16 +719,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82968
+Material InstanceID: -78732
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82970
+Material InstanceID: -78734
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -674,16 +738,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82970
+Material InstanceID: -78734
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82972
+Material InstanceID: -78736
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -692,16 +757,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82972
+Material InstanceID: -78736
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82974
+Material InstanceID: -78738
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -710,16 +776,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82974
+Material InstanceID: -78738
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82976
+Material InstanceID: -78740
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -728,16 +795,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82976
+Material InstanceID: -78740
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82978
+Material InstanceID: -78742
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -746,16 +814,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82978
+Material InstanceID: -78742
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82980
+Material InstanceID: -78744
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -764,16 +833,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82980
+Material InstanceID: -78744
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82982
+Material InstanceID: -78746
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -782,16 +852,17 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82982
+Material InstanceID: -78746
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_10_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82984
+Material InstanceID: -78748
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -800,7 +871,7 @@ TEXTURE REPLACEMENT
 Coin Root: 10 Cent Pack
 Renderer: SM_Coin_10_Cents
 Material: M_Money (Instance)
-Material InstanceID: -82984
+Material InstanceID: -78748
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -808,12 +879,18 @@ New Texture: BrazilianCoinAtlas_RUNTIME
 COIN REPLACED: 10 Cent Pack
 Root InstanceID: -5984
 Renderer Count: 22
+POSTFIX EXECUTADO
+isCoin=True
+GameObject resolvido: 5 Cent Pack
+
+RENDERERS ENCONTRADOS: 11
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83098
+Material InstanceID: -79382
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -822,16 +899,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83098
+Material InstanceID: -79382
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83100
+Material InstanceID: -79384
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -840,16 +918,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83100
+Material InstanceID: -79384
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83102
+Material InstanceID: -79386
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -858,16 +937,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83102
+Material InstanceID: -79386
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83104
+Material InstanceID: -79388
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -876,16 +956,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83104
+Material InstanceID: -79388
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83106
+Material InstanceID: -79390
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -894,16 +975,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83106
+Material InstanceID: -79390
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83108
+Material InstanceID: -79392
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -912,16 +994,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83108
+Material InstanceID: -79392
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83110
+Material InstanceID: -79394
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -930,16 +1013,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83110
+Material InstanceID: -79394
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83112
+Material InstanceID: -79396
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -948,16 +1032,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83112
+Material InstanceID: -79396
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83114
+Material InstanceID: -79398
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -966,16 +1051,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83114
+Material InstanceID: -79398
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83116
+Material InstanceID: -79400
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -984,16 +1070,17 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83116
+Material InstanceID: -79400
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_5_Cents
 
 TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83118
+Material InstanceID: -79402
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1002,7 +1089,7 @@ TEXTURE REPLACEMENT
 Coin Root: 5 Cent Pack
 Renderer: SM_Coin_5_Cents
 Material: M_Money (Instance)
-Material InstanceID: -83118
+Material InstanceID: -79402
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1010,12 +1097,18 @@ New Texture: BrazilianCoinAtlas_RUNTIME
 COIN REPLACED: 5 Cent Pack
 Root InstanceID: -5812
 Renderer Count: 11
+POSTFIX EXECUTADO
+isCoin=True
+GameObject resolvido: 1 Cent Pack
+
+RENDERERS ENCONTRADOS: 11
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83568
+Material InstanceID: -79516
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1024,16 +1117,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83568
+Material InstanceID: -79516
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83570
+Material InstanceID: -79518
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1042,16 +1136,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83570
+Material InstanceID: -79518
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83572
+Material InstanceID: -79520
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1060,16 +1155,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83572
+Material InstanceID: -79520
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83574
+Material InstanceID: -79522
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1078,16 +1174,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83574
+Material InstanceID: -79522
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83576
+Material InstanceID: -79524
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1096,16 +1193,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83576
+Material InstanceID: -79524
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83578
+Material InstanceID: -79526
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1114,16 +1212,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83578
+Material InstanceID: -79526
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83580
+Material InstanceID: -79528
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1132,16 +1231,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83580
+Material InstanceID: -79528
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83582
+Material InstanceID: -79530
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1150,16 +1250,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83582
+Material InstanceID: -79530
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83584
+Material InstanceID: -79532
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1168,16 +1269,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83584
+Material InstanceID: -79532
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83586
+Material InstanceID: -79534
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1186,16 +1288,17 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83586
+Material InstanceID: -79534
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
+Renderer de moeda: SM_Coin_1_Cent
 
 TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83588
+Material InstanceID: -79536
 Property: _BaseMap
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME
@@ -1204,7 +1307,7 @@ TEXTURE REPLACEMENT
 Coin Root: 1 Cent Pack
 Renderer: SM_Coin_1_Cent
 Material: M_Money (Instance)
-Material InstanceID: -83588
+Material InstanceID: -79536
 Property: _MainTex
 Previous Texture: T_Money_AlbedoTransparency
 New Texture: BrazilianCoinAtlas_RUNTIME

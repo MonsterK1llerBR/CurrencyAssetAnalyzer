@@ -25,7 +25,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             "Brazilian Money Texture Replacer";
 
         private const string VERSION =
-            "1.1.0";
+            "1.2.0";
 
         private const string RootFolder =
             "CurrencyAssetAnalyzer";
@@ -195,11 +195,19 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     );
 
                     writer.WriteLine(
-                        "SpawnMoney -> GameObject -> Renderer -> Material Instance"
+                        "SpawnMoney -> Postfix -> MoneyPack -> GameObject"
                     );
 
                     writer.WriteLine(
-                        "-> _BaseMap/_MainTex -> BrazilianCoinAtlas_FINAL.png"
+                        "-> GetComponentsInChildren<Renderer>"
+                    );
+
+                    writer.WriteLine(
+                        "-> Material Instance -> _BaseMap/_MainTex"
+                    );
+
+                    writer.WriteLine(
+                        "-> BrazilianCoinAtlas_FINAL.png"
                     );
 
                     writer.WriteLine();
@@ -379,16 +387,27 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
+                /*
+                 * Mesma estrategia comprovadamente funcional
+                 * usada pelo MeshGPUReadbackProbe.
+                 */
                 HarmonyInstance.Patch(
                     spawnMoney,
-                    postfix:
-                        new HarmonyMethod(
-                            postfix
-                        )
+                    null,
+                    new HarmonyMethod(
+                        postfix
+                    ),
+                    null,
+                    null,
+                    null
                 );
 
                 Log.LogInfo(
-                    "Patch de SpawnMoney aplicado."
+                    "Patch de SpawnMoney aplicado com sucesso."
+                );
+
+                AppendLine(
+                    "SpawnMoney patch: SUCCESS"
                 );
             }
             catch (
@@ -578,8 +597,8 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
 
         private static void SpawnMoneyPostfix(
-            object __0,
-            bool __1
+            object moneyPack,
+            bool isCoin
         )
         {
             try
@@ -591,43 +610,87 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     return;
                 }
 
+                /*
+                 * ESTE E O PRIMEIRO MARCADOR DO CALLBACK.
+                 *
+                 * Se esta linha aparecer no log,
+                 * sabemos que o postfix realmente esta
+                 * sendo executado pelo IL2CPP/Harmony.
+                 */
+                Instance.Log.LogInfo(
+                    "POSTFIX SpawnMoney EXECUTADO | isCoin=" +
+                    isCoin +
+                    " | moneyPack=" +
+                    (
+                        moneyPack != null
+                            ? moneyPack.GetType().FullName
+                            : "null"
+                    )
+                );
+
+                Instance.AppendLine(
+                    "POSTFIX EXECUTADO"
+                );
+
+                Instance.AppendLine(
+                    "isCoin=" +
+                    isCoin
+                );
+
                 if (
-                    __0 == null
+                    !isCoin
                 )
                 {
                     return;
                 }
 
-                GameObject gameObject =
+                if (
+                    moneyPack == null
+                )
+                {
+                    Instance.Log.LogWarning(
+                        "SpawnMoney recebeu moneyPack=null."
+                    );
+
+                    Instance.AppendLine(
+                        "moneyPack=null"
+                    );
+
+                    return;
+                }
+
+                GameObject root =
                     Instance.ResolveGameObject(
-                        __0
+                        moneyPack
                     );
 
                 if (
-                    gameObject == null
+                    root == null
                 )
                 {
                     Instance.Log.LogWarning(
                         "Nao foi possivel resolver GameObject do MoneyPack."
                     );
 
+                    Instance.AppendLine(
+                        "GameObject resolvido: NULL"
+                    );
+
                     return;
                 }
 
                 Instance.Log.LogInfo(
-                    "MoneyPack GameObject: " +
-                    gameObject.name
+                    "MoneyPack GameObject resolvido: " +
+                    root.name
                 );
 
-                /*
-                 * Nao usamos mais o bool __1 para decidir
-                 * se e moeda.
-                 *
-                 * A propria hierarquia e o Renderer
-                 * definem isso.
-                 */
+                Instance.AppendLine(
+                    "GameObject resolvido: " +
+                    root.name
+                );
+
                 Instance.ReplaceCoinTexture(
-                    gameObject
+                    root
                 );
             }
             catch (
@@ -644,6 +707,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
 
                     Instance.Log.LogError(
                         ex
+                    );
+
+                    Instance.AppendLine(
+                        "POSTFIX ERROR:"
+                    );
+
+                    Instance.AppendLine(
+                        ex.ToString()
                     );
                 }
             }
@@ -932,8 +1003,27 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     root.name
                 );
 
+                AppendLine(
+                    "Nenhum Renderer encontrado em " +
+                    root.name
+                );
+
                 return;
             }
+
+            Log.LogInfo(
+                "Renderers encontrados em " +
+                root.name +
+                ": " +
+                renderers.Length
+            );
+
+            AppendLine();
+
+            AppendLine(
+                "RENDERERS ENCONTRADOS: " +
+                renderers.Length
+            );
 
             bool replaced =
                 false;
@@ -982,15 +1072,16 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     rendererName
                 );
 
+                AppendLine(
+                    "Renderer de moeda: " +
+                    rendererName
+                );
+
                 Material material =
                     null;
 
                 try
                 {
-                    /*
-                     * material retorna a instancia usada
-                     * pelo Renderer.
-                     */
                     material =
                         renderer.material;
                 }
@@ -999,7 +1090,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 )
                 {
                     Log.LogWarning(
-                        "Nao foi possivel obter material de " +
+                        "Erro obtendo material de " +
                         rendererName
                     );
 
@@ -1028,6 +1119,13 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 string materialName =
                     material.name ??
                     string.Empty;
+
+                Log.LogInfo(
+                    "Material encontrado: " +
+                    materialName +
+                    " | InstanceID=" +
+                    materialId
+                );
 
                 bool materialMatches =
                     materialName.IndexOf(
@@ -1075,12 +1173,13 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                                 StringComparison.OrdinalIgnoreCase
                             ) >= 0;
 
-                        /*
-                         * So aceitamos:
-                         *
-                         * 1. material M_Money
-                         * 2. textura T_Money
-                         */
+                        Log.LogInfo(
+                            "Property: " +
+                            property +
+                            " | Texture atual: " +
+                            previousName
+                        );
+
                         if (
                             !materialMatches &&
                             !moneyTexture
@@ -1101,68 +1200,52 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                             materialId
                         );
 
-                        string logKey =
-                            gameObjectId +
-                            "|" +
-                            rendererName +
-                            "|" +
-                            materialId +
-                            "|" +
-                            property;
+                        Log.LogInfo(
+                            "########################################"
+                        );
 
-                        if (
-                            LoggedObjects.Add(
-                                logKey
-                            )
-                        )
-                        {
-                            Log.LogInfo(
-                                "########################################"
-                            );
+                        Log.LogInfo(
+                            "TEXTURA SUBSTITUIDA"
+                        );
 
-                            Log.LogInfo(
-                                "TEXTURA SUBSTITUIDA"
-                            );
+                        Log.LogInfo(
+                            "Coin Root: " +
+                            root.name
+                        );
 
-                            Log.LogInfo(
-                                "Coin Root: " +
-                                root.name
-                            );
+                        Log.LogInfo(
+                            "Renderer: " +
+                            rendererName
+                        );
 
-                            Log.LogInfo(
-                                "Renderer: " +
-                                rendererName
-                            );
+                        Log.LogInfo(
+                            "Material: " +
+                            materialName
+                        );
 
-                            Log.LogInfo(
-                                "Material: " +
-                                materialName
-                            );
+                        Log.LogInfo(
+                            "Material InstanceID: " +
+                            materialId
+                        );
 
-                            Log.LogInfo(
-                                "Material InstanceID: " +
-                                materialId
-                            );
+                        Log.LogInfo(
+                            "Property: " +
+                            property
+                        );
 
-                            Log.LogInfo(
-                                "Property: " +
-                                property
-                            );
+                        Log.LogInfo(
+                            "Texture anterior: " +
+                            previousName
+                        );
 
-                            Log.LogInfo(
-                                "Texture anterior: " +
-                                previousName
-                            );
+                        Log.LogInfo(
+                            "Texture nova: " +
+                            BrazilianAtlas.name
+                        );
 
-                            Log.LogInfo(
-                                "Texture nova: " +
-                                BrazilianAtlas.name
-                            );
-
-                            Log.LogInfo(
-                                "########################################"
-                            );
-                        }
+                        Log.LogInfo(
+                            "########################################"
+                        );
 
                         AppendLine();
 
@@ -1219,6 +1302,15 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                         Log.LogWarning(
                             ex
                         );
+
+                        AppendLine(
+                            "PROPERTY ERROR: " +
+                            property
+                        );
+
+                        AppendLine(
+                            ex.ToString()
+                        );
                     }
                 }
 
@@ -1237,6 +1329,11 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             {
                 ReplacedGameObjects.Add(
                     gameObjectId
+                );
+
+                Log.LogInfo(
+                    "COIN REPLACED: " +
+                    root.name
                 );
 
                 AppendLine();
@@ -1259,7 +1356,14 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             else
             {
                 Log.LogInfo(
-                    "Renderer de moeda encontrado, mas nenhuma textura foi substituida: " +
+                    "Nenhuma textura foi substituida em " +
+                    root.name
+                );
+
+                AppendLine();
+
+                AppendLine(
+                    "Nenhuma textura foi substituida em " +
                     root.name
                 );
             }
@@ -1533,7 +1637,7 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
             {
             }
 
-            return true;
+            return base.Unload();
         }
     }
 }
