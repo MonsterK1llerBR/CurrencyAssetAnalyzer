@@ -6,7 +6,7 @@ Objetivo: descobrir a API real de UnityEngine.Mesh no runtime.
 
 ----------------------------------------
 MESH
-Name: SM_Coin_1_Cent
+Name: SM_Coin_50_Cents
 RuntimeType: UnityEngine.Mesh
 Assembly: UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 VertexCount: 194
@@ -64,6 +64,9 @@ System.UInt32 GetIndexStart(System.Int32 submesh)
 System.UInt32 GetIndexCount(System.Int32 submesh)
 System.UInt32 GetBaseVertex(System.Int32 submesh)
 UnityEngine.GraphicsBuffer GetVertexBuffer(System.Int32 index)
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv()
+Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_vertices()
+UnityEngine.Rendering.SubMeshDescriptor GetSubMesh(System.Int32 index)
 System.Void GetUVsImpl(System.Int32 uvIndex,  uvs, System.Int32 dim)
 UnityEngine.GraphicsBuffer GetIndexBuffer()
 System.Void set_indexFormat(UnityEngine.Rendering.IndexFormat value)
@@ -72,13 +75,11 @@ System.Void set_vertexBufferTarget(UnityEngine.GraphicsBuffer+Target value)
 UnityEngine.GraphicsBuffer+Target get_indexBufferTarget()
 System.Void set_indexBufferTarget(UnityEngine.GraphicsBuffer+Target value)
 System.Void set_subMeshCount(System.Int32 value)
-Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_vertices()
 System.Void set_vertices(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
 Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_normals()
 System.Void set_normals(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
 Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_tangents()
 System.Void set_tangents(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
-Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv()
 System.Void set_uv(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
 Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] get_uv2()
 System.Void set_uv2(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] value)
@@ -288,7 +289,6 @@ UnityEngine.GraphicsBuffer GetVertexBufferImpl(System.Int32 index)
 UnityEngine.GraphicsBuffer GetIndexBufferImpl()
 System.Void GetBlendShapeFrameVertices(System.Int32 shapeIndex, System.Int32 frameIndex, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaVertices, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaNormals, Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppStructArray`1[[UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]] deltaTangents)
 System.Void SetSubMesh(System.Int32 index, UnityEngine.Rendering.SubMeshDescriptor desc, UnityEngine.Rendering.MeshUpdateFlags flags)
-UnityEngine.Rendering.SubMeshDescriptor GetSubMesh(System.Int32 index)
 System.Void RecalculateNormalsImpl(UnityEngine.Rendering.MeshUpdateFlags flags)
 System.Void RecalculateTangentsImpl(UnityEngine.Rendering.MeshUpdateFlags flags)
 System.Void UploadMeshDataImpl(System.Boolean markNoLongerReadable)
