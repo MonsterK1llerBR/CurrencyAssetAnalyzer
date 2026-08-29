@@ -5,7 +5,7 @@ Trigger: SpawnMoney
 Type: BILL
 MoneyPack: 1 Dollar Pack
 Value: 1
-InstanceID: -5190
+InstanceID: -5196
 ActiveSelf: True
 ActiveInHierarchy: True
 
@@ -133,8 +133,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -212,8 +212,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -291,8 +291,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -370,8 +370,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -449,8 +449,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -528,8 +528,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -607,8 +607,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS
@@ -686,8 +686,8 @@ Count: 5
       --------------------------------
       Count: 4
       - UnityEngine.Transform
-      - UnityEngine.Component
-      - UnityEngine.Component
+      - UnityEngine.MeshFilter
+      - UnityEngine.Renderer
       - UnityEngine.Component
 
       RENDERERS

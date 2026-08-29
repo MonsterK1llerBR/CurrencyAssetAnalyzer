@@ -5,7 +5,7 @@ Trigger: SpawnMoney
 Type: BILL
 MoneyPack: 50 Dollar Pack
 Value: 50
-InstanceID: -5552
+InstanceID: -5556
 ActiveSelf: True
 ActiveInHierarchy: True
 
@@ -67,7 +67,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83048
+      InstanceID: -73846
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -146,7 +146,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83050
+      InstanceID: -73848
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -225,7 +225,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83052
+      InstanceID: -73850
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -304,7 +304,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83054
+      InstanceID: -73852
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -383,7 +383,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83056
+      InstanceID: -73854
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -462,7 +462,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83058
+      InstanceID: -73856
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -541,7 +541,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83060
+      InstanceID: -73858
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -620,7 +620,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83062
+      InstanceID: -73860
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
@@ -699,7 +699,7 @@ Count: 5
 
       MATERIAL #1
       Name: 50$ Paper Front (Instance)
-      InstanceID: -83064
+      InstanceID: -73862
       Shader: Universal Render Pipeline/Lit
       TEXTURE
       Property: _BaseMap
