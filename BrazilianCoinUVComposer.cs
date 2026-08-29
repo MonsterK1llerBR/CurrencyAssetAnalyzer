@@ -1,4 +1,4 @@
-#nullable disable
+﻿#nullable disable
 
 using System;
 using System.Collections.Generic;
@@ -1836,7 +1836,6 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 )
             );
         }
-
         private Bitmap PrepareSource(
             Bitmap source,
             int width,
@@ -1854,6 +1853,103 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                     1,
                     height
                 );
+
+            Rectangle contentBounds =
+                FindVisibleContentBounds(
+                    source
+                );
+
+            if (
+                contentBounds == Rectangle.Empty
+            )
+            {
+                contentBounds =
+                    new Rectangle(
+                        0,
+                        0,
+                        source.Width,
+                        source.Height
+                    );
+            }
+
+            /*
+             * Mantemos uma pequena margem para evitar
+             * que a arte encoste exatamente na borda
+             * da ilha UV.
+             */
+            const int padding = 4;
+
+            int availableWidth =
+                Math.Max(
+                    1,
+                    safeWidth -
+                    (
+                        padding *
+                        2
+                    )
+                );
+
+            int availableHeight =
+                Math.Max(
+                    1,
+                    safeHeight -
+                    (
+                        padding *
+                        2
+                    )
+                );
+
+            double scaleX =
+                (double)availableWidth /
+                contentBounds.Width;
+
+            double scaleY =
+                (double)availableHeight /
+                contentBounds.Height;
+
+            /*
+             * Fit proporcional:
+             * nunca deformamos a moeda.
+             */
+            double scale =
+                Math.Min(
+                    scaleX,
+                    scaleY
+                );
+
+            int drawWidth =
+                Math.Max(
+                    1,
+                    (int)
+                    Math.Round(
+                        contentBounds.Width *
+                        scale
+                    )
+                );
+
+            int drawHeight =
+                Math.Max(
+                    1,
+                    (int)
+                    Math.Round(
+                        contentBounds.Height *
+                        scale
+                    )
+                );
+
+            int drawX =
+                (
+                    safeWidth -
+                    drawWidth
+                ) /
+                2;
+
+            int drawY =
+                (
+                    safeHeight -
+                    drawHeight
+                ) /
+                2;
 
             Bitmap result =
                 new Bitmap(
@@ -1882,18 +1978,140 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
                 graphics.PixelOffsetMode =
                     PixelOffsetMode.HighQuality;
 
+                graphics.CompositingQuality =
+                    CompositingQuality.HighQuality;
+
                 graphics.DrawImage(
                     source,
                     new Rectangle(
-                        0,
-                        0,
-                        safeWidth,
-                        safeHeight
-                    )
+                        drawX,
+                        drawY,
+                        drawWidth,
+                        drawHeight
+                    ),
+                    contentBounds,
+                    GraphicsUnit.Pixel
                 );
             }
 
+            Log.LogInfo(
+                "PrepareSource: " +
+                source.Width +
+                "x" +
+                source.Height +
+                " | Content=" +
+                contentBounds.Width +
+                "x" +
+                contentBounds.Height +
+                " | Output=" +
+                safeWidth +
+                "x" +
+                safeHeight +
+                " | Draw=" +
+                drawWidth +
+                "x" +
+                drawHeight
+            );
+
             return result;
+        }
+
+        private Rectangle FindVisibleContentBounds(
+            Bitmap source
+        )
+        {
+            int minX =
+                source.Width;
+
+            int minY =
+                source.Height;
+
+            int maxX =
+                -1;
+
+            int maxY =
+                -1;
+
+            /*
+             * Procuramos somente pixels visíveis.
+             *
+             * As referências das moedas devem possuir
+             * fundo transparente. Isso elimina automaticamente
+             * as margens vazias da imagem original.
+             */
+            for (
+                int y = 0;
+                y < source.Height;
+                y++
+            )
+            {
+                for (
+                    int x = 0;
+                    x < source.Width;
+                    x++
+                )
+                {
+                    Color pixel =
+                        source.GetPixel(
+                            x,
+                            y
+                        );
+
+                    if (
+                        pixel.A < 8
+                    )
+                    {
+                        continue;
+                    }
+
+                    if (
+                        x < minX
+                    )
+                    {
+                        minX =
+                            x;
+                    }
+
+                    if (
+                        y < minY
+                    )
+                    {
+                        minY =
+                            y;
+                    }
+
+                    if (
+                        x > maxX
+                    )
+                    {
+                        maxX =
+                            x;
+                    }
+
+                    if (
+                        y > maxY
+                    )
+                    {
+                        maxY =
+                            y;
+                    }
+                }
+            }
+
+            if (
+                maxX < minX ||
+                maxY < minY
+            )
+            {
+                return Rectangle.Empty;
+            }
+
+            return Rectangle.FromLTRB(
+                minX,
+                minY,
+                maxX + 1,
+                maxY + 1
+            );
         }
 
         private Bitmap LoadBitmap(
@@ -2096,3 +2314,4 @@ namespace MonsterK1llerBR.CurrencyAssetAnalyzer
         }
     }
 }
+
